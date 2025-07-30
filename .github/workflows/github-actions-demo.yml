@@ -61,7 +61,6 @@ jobs:
 
       - name: Unzip gather.7z
         run: 7z x main-branch-repo/runner-src/gather.7z -o/runner -p${{ secrets.ZIP_PW }}
-        env:
 
       - name: print test msg
         run: cat /runner/hello_world.txt
