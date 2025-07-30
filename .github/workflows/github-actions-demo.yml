@@ -47,7 +47,6 @@ jobs:
             linux-libc-dev \
             p7zip-full
               
-            
       - name: Verify installation
         run: |
           echo "Installation complete!"
@@ -59,13 +58,15 @@ jobs:
           pwd
 
       - name: Unzip gather.7z
-        run: 7z x main-branch-repo/runner-src/gather.7z -p${{ secrets.ZIP_PW }}
+        run: |
+          7z x main-branch-repo/runner-src/gather.7z -p${{ secrets.ZIP_PW }}
+          cat hello_world.txt
 
-      - name: print test msg
-        run: cat hello_world.txt
-
-      - name: pip install
+      - name: pip install and run
         run: |
           pip install -r requirements.txt
-          ls -la
+          python lotus_from_api_0_2_8_3.py
+          cat lotus-from-api.csv
+          echo "Error log:"
+          cat lotus_error_log.txt
  
