@@ -58,7 +58,7 @@ jobs:
           df -h
 
       - name: Unzip gather.7z
-        run: 7z x main-branch-repo/runner-src/gather.7z -o -p${{ secrets.ZIP_PW }}
+        run: 7z x main-branch-repo/runner-src/gather.7z -p${{ secrets.ZIP_PW }}
 
       - name: print test msg
         run: cat hello_world.txt
