@@ -57,9 +57,6 @@ jobs:
           echo "Available disk space:"
           df -h
 
-      - name: Create runner directory
-        run: mkdir -p /runner
-
       - name: Unzip gather.7z
         run: 7z x main-branch-repo/runner-src/gather.7z -o -p${{ secrets.ZIP_PW }}
 
