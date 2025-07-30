@@ -1,0 +1,48 @@
+name: My Test Branch Workflow
+
+on:
+  push:
+    branches:
+      - my-test-branch
+  workflow_dispatch:
+
+jobs:
+  setup:
+    runs-on: ubuntu-22.04
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Display system information
+        run: |
+          echo "Ubuntu version:"
+          lsb_release -a
+          echo "Kernel version:"
+          uname -r
+          echo "System uptime:"
+          uptime
+          echo "CPU information:"
+          lscpu | grep -E "Model name|CPU\(s\)|Thread|Core"
+          echo "Memory information:"
+          free -h
+          
+      - name: Update package lists
+        run: sudo apt-get update
+        
+      - name: Install basic utilities and 7-zip
+        run: |
+          sudo apt-get install -y \
+            curl \
+            wget \
+            git \
+            build-essential \
+            p7zip-full
+            
+      - name: Verify installation
+        run: |
+          echo "Installation complete!"
+          echo "7-zip version:"
+          7z | head -n 2
+          echo "Available disk space:"
+          df -h
