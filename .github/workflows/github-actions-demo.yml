@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }} # Ensure checking out the correct repository
+          ref: main # Checkout the main branch to access gather.7z
+          path: main-branch-repo # Specify a path to avoid conflicts with the current branch checkout        
         
       - name: Display system information
         run: |
@@ -30,11 +34,14 @@ jobs:
           python -V
           
       - name: Update package lists
-        run: sudo apt-get update
+        run: sudo apt update
+        
+      - name: Show upgradables
+        run: apt list --upgradable        
         
       - name: Install basic utilities and 7-zip
         run: |
-          sudo apt-get install -y \
+          sudo apt install -y \
             build-essential \
             p7zip-full
             
@@ -48,3 +55,14 @@ jobs:
           7z | head -n 2
           echo "Available disk space:"
           df -h
+
+      - name: Create runner directory
+        run: mkdir -p /runner
+
+      - name: Unzip gather.7z
+        run: 7z x main-branch-repo/runner-src/gather.7z -o/runner -p${{ secrets.ZIP_PW }}
+        env:
+
+      - name: print test msg
+        run: cat /runner/hello_world.txt
+        
