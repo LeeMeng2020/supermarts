@@ -8,7 +8,7 @@ on:
 
 jobs:
   setup:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     
     steps:
       - name: Checkout code
@@ -26,6 +26,8 @@ jobs:
           lscpu | grep -E "Model name|CPU\(s\)|Thread|Core"
           echo "Memory information:"
           free -h
+          echo "Python version"
+          python -V
           
       - name: Update package lists
         run: sudo apt-get update
@@ -33,11 +35,11 @@ jobs:
       - name: Install basic utilities and 7-zip
         run: |
           sudo apt-get install -y \
-            curl \
-            wget \
-            git \
             build-essential \
             p7zip-full
+            
+      - name: Do apt upgrade
+        run: sudo apt-get upgrade -y           
             
       - name: Verify installation
         run: |
