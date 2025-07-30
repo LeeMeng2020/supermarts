@@ -34,14 +34,13 @@ jobs:
           python -V
           
       - name: Update package lists
-        run: sudo apt update
-        
-      - name: Show upgradables
-        run: apt list --upgradable        
+        run: |
+          sudo apt update
+          apt list --upgradable        
         
       - name: Install basic utilities and 7-zip
         run: |
-          sudo apt install -y \
+          sudo apt-get install -y \
             build-essential \
             python3-problem-report \
             linux-tools-common \
@@ -56,10 +55,17 @@ jobs:
           7z | head -n 2
           echo "Available disk space:"
           df -h
+          echo "Current directory:"
+          pwd
 
       - name: Unzip gather.7z
         run: 7z x main-branch-repo/runner-src/gather.7z -p${{ secrets.ZIP_PW }}
 
       - name: print test msg
         run: cat hello_world.txt
-        
+
+      - name: pip install
+        run: |
+          pip install -r requirements.txt
+          ls -la
+ 
