@@ -1,10 +1,10 @@
-name: My Test Branch Workflow
+name: Lotus Workflow
 
 on:
-  push:
-    branches:
-      - my-test-branch
-  workflow_dispatch:
+  workflow_dispatch: # Retains manual trigger ability
+  schedule:
+    # Run every day at 8:20 AM Malaysia time (00:20 AM UTC)
+    - cron: '20 0 * * *' 
 
 jobs:
   setup:
