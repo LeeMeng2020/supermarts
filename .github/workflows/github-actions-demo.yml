@@ -71,18 +71,18 @@ jobs:
           echo "Error log:"
           cat lotus_error_log.txt
  
-       - name: Set up Git
+      - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-       - name: Commit and push generated files
-         run: |
-           mkdir -p main-branch-repo/raw_data # Create the target directory if it doesn't exist
-           cp lotus-from-api.csv main-branch-repo/raw_data/
-           cp lotus_error_log.txt main-branch-repo/raw_data/
-           cd main-branch-repo
-           git add raw_data/lotus-from-api.csv raw_data/lotus_error_log.txt
-           git commit -m "Add generated files from workflow" || echo "No changes to commit"
-           git push origin main
-           
+      - name: Commit and push generated files
+        run: |
+          mkdir -p main-branch-repo/raw_data # Create the target directory if it doesn't exist
+          cp lotus-from-api.csv main-branch-repo/raw_data/
+          cp lotus_error_log.txt main-branch-repo/raw_data/
+          cd main-branch-repo
+          git add raw_data/lotus-from-api.csv raw_data/lotus_error_log.txt
+          git commit -m "Add generated files from workflow" || echo "No changes to commit"
+          git push origin main
+      
