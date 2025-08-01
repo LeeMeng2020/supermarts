@@ -3,8 +3,8 @@ name: Lotus Workflow
 on:
   workflow_dispatch: # Retains manual trigger ability
   schedule:
-    # Run every day at 8:20 AM MY time (00:20 AM UTC), evening
-    - cron: '20 0 * * *' 
+    # Run every day at 8:05 AM MY time (00:05 AM UTC), evening
+    - cron: '5 0 * * *' 
     # 4:00 PM MYT (08:00 UTC)
     - cron: '0 8 * * *'
 
@@ -66,12 +66,14 @@ jobs:
           7z x main-branch-repo/runner-src/gather.7z -p${{ secrets.ZIP_PW }}
           cat hello_world.txt
 
-      - name: pip install and run
+      - name: pip install
+        run: pip install -r requirements.txt
+          
+      - name: Run script
         run: |
-          pip install -r requirements.txt
           python lotus_from_api_0_2_8_3.py
           echo "Error log:"
-          cat lotus_error_log.txt
+          cat lotus_error_log.txt          
  
       - name: Set up Git
         run: |

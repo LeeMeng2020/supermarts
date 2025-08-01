@@ -1,0 +1,66 @@
+name: Jaya Workflow (Gather-branch)
+
+on:
+  workflow_dispatch: # Retains manual trigger ability
+  schedule:
+    # Run every day at 8:01 AM MY time (00:01 AM UTC)
+    - cron: '1 0 * * *' 
+
+jobs:
+  setup:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write # Grant write permissions for pushing changes
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: gather-branch # Specify gather-branch directly for the primary checkout
+          path: . # CHANGE: Checkout to the root of the runner's working directory      
+        
+      - name: Display system information
+        run: |
+          echo "Ubuntu version:"
+          lsb_release -a
+          echo "Python version"
+          python -V
+          
+      - name: Update package lists
+        run: |
+          sudo apt update
+          apt list --upgradable        
+        
+      - name: Install basic utilities and 7-zip
+        run: |
+          sudo apt-get install -y \
+            build-essential \
+            python3-problem-report \
+            linux-tools-common \
+            linux-libc-dev \
+            p7zip-full
+              
+      - name: Unzip gather-jaya.7z
+        run: |
+          7z x runner-src/gather-jaya.7z -p${{ secrets.ZIP_PW }}
+          cat hello_world.txt
+
+      - name: pip install
+        run: pip install -r requirements.txt
+          
+      - name: Run script
+        run: |
+          python jaya_pwright_2025_009_multi_thread.py
+ 
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+    
+      - name: Commit and push generated files
+        run: |
+          mkdir -p raw_data
+          cp jaya-2-threads.csv raw_data/
+          git add raw_data/jaya-2-threads.csv
+          git commit -m "Automated: Add generated Jaya files" || echo "No changes to commit"
+          git push origin gather-branch      
