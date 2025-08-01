@@ -3,8 +3,10 @@ name: Lotus Workflow
 on:
   workflow_dispatch: # Retains manual trigger ability
   schedule:
-    # Run every day at 8:20 AM Malaysia time (00:20 AM UTC)
+    # Run every day at 8:20 AM MY time (00:20 AM UTC), evening
     - cron: '20 0 * * *' 
+    # 4:00 PM MYT (08:00 UTC)
+    - cron: '0 8 * * *'
 
 jobs:
   setup:
