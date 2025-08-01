@@ -50,6 +50,7 @@ jobs:
           
       - name: Run script
         run: |
+          playwright install chromium
           python jaya_pwright_2025_009_multi_thread.py
  
       - name: Set up Git
