@@ -51,7 +51,7 @@ jobs:
       - name: Run script
         run: |
           echo "Install playwright chromium"
-          playwright install chromium > /dev/null
+          playwright install chromium
           Echo "running script"
           python jaya_pwright_2025_009_multi_thread.py
  
