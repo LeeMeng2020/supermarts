@@ -1,10 +1,10 @@
 name: Lotus Workflow
 
 on:
-  workflow_dispatch: # Retains manual trigger ability
+  workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 8:05 AM MY time (00:05 AM UTC), evening
-    - cron: '5 0 * * *' 
+    # Run every day at 7:33 AM MY time 11:33 PM UTC), evening
+    - cron: '33 23 * * *' 
     # 4:00 PM MYT (08:00 UTC)
     - cron: '0 8 * * *'
 
@@ -18,22 +18,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository }} # Ensure checking out the correct repository
-          ref: main # Checkout the main branch to access gather.7z
-          path: main-branch-repo # Specify a path to avoid conflicts with the current branch checkout        
+          ref: gather-branch # Specify gather-branch directly for the primary checkout
+          path: . # CHANGE: Checkout to the root of the runner's working directory      
         
       - name: Display system information
         run: |
           echo "Ubuntu version:"
           lsb_release -a
-          echo "Kernel version:"
-          uname -r
-          echo "System uptime:"
-          uptime
-          echo "CPU information:"
-          lscpu | grep -E "Model name|CPU\(s\)|Thread|Core"
-          echo "Memory information:"
-          free -h
           echo "Python version"
           python -V
           
@@ -50,20 +41,10 @@ jobs:
             linux-tools-common \
             linux-libc-dev \
             p7zip-full
-              
-      - name: Verify installation
+             
+      - name: Unzip gather-lotus.7z
         run: |
-          echo "Installation complete!"
-          echo "7-zip version:"
-          7z | head -n 2
-          echo "Available disk space:"
-          df -h
-          echo "Current directory:"
-          pwd
-
-      - name: Unzip gather.7z
-        run: |
-          7z x main-branch-repo/runner-src/gather.7z -p${{ secrets.ZIP_PW }}
+          7z x runner-src/gather-lotus.7z -p${{ secrets.ZIP_PW }}
           cat hello_world.txt
 
       - name: pip install
@@ -82,11 +63,9 @@ jobs:
 
       - name: Commit and push generated files
         run: |
-          mkdir -p main-branch-repo/raw_data # Create the target directory if it doesn't exist
-          cp lotus-from-api.csv main-branch-repo/raw_data/
-          cp lotus_error_log.txt main-branch-repo/raw_data/
-          cd main-branch-repo
+          mkdir -p raw_data
+          cp lotus-from-api.csv raw_data/
+          cp lotus_error_log.txt raw_data/
           git add raw_data/lotus-from-api.csv raw_data/lotus_error_log.txt
-          git commit -m "Add generated files from workflow" || echo "No changes to commit"
-          git push origin main
-      
+          git commit -m "Automated: Add generated Lotus files" || echo "No changes to commit"
+          git push origin gather-branch    

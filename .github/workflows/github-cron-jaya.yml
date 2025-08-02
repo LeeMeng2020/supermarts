@@ -1,10 +1,10 @@
 name: Jaya Workflow (Gather-branch)
 
 on:
-  workflow_dispatch: # Retains manual trigger ability
+  workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 8:01 AM MY time (00:01 AM UTC)
-    - cron: '1 0 * * *' 
+    # Run every day at 7:35 AM MY time, 11:35 PM UTC
+    - cron: '35 23 * * *' 
 
 jobs:
   setup:
@@ -50,7 +50,9 @@ jobs:
           
       - name: Run script
         run: |
-          playwright install chromium
+          echo "Install playwright chromium"
+          playwright install chromium > /dev/null
+          Echo "running script"
           python jaya_pwright_2025_009_multi_thread.py
  
       - name: Set up Git
