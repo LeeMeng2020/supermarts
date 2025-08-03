@@ -52,7 +52,7 @@ jobs:
         run: |
           echo "Install playwright chromium"
           python -m playwright install --with-deps --only-shell
-          Echo "running script"
+          echo "running script"
           python jaya_pwright_2025_009_multi_thread.py
  
       - name: Set up Git
