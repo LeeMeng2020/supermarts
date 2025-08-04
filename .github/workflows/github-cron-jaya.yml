@@ -3,8 +3,8 @@ name: Jaya Workflow (Gather-branch)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 7:29 AM MY time, 11:29 PM UTC
-    - cron: '29 23 * * *' 
+    # Run every day at 7:27 AM MY time, 11:27 PM UTC
+    - cron: '27 23 * * *' 
 
 jobs:
   setup:
@@ -59,6 +59,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes before push
+        run: |
+          git pull origin gather-branch --rebase
+          git push origin gather-branch
     
       - name: Commit and push generated files
         run: |
