@@ -5,8 +5,6 @@ on:
   schedule:
     # Run every day at 7:28 AM MY time 11:28 PM UTC), evening
     - cron: '28 23 * * *' 
-    # 3:12 PM MYT (7:12 AM UTC)
-    - cron: '12 7 * * *'
 
 jobs:
   setup:
