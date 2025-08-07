@@ -53,7 +53,7 @@ jobs:
           sleep 3
           python lotus_0283_part1.py
           wait
-          exho "Scripts done."
+          echo "Scripts done."
           echo "Error log:"
           cat lotus_error_log.txt          
  
