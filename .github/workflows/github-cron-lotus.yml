@@ -43,14 +43,15 @@ jobs:
       - name: Unzip gather-lotus.7z
         run: |
           7z x runner-src/gather-lotus.7z -p${{ secrets.ZIP_PW }}
-          cat hello_world.txt
 
       - name: pip install
         run: pip install -r requirements.txt
           
       - name: Run script
         run: |
-          python lotus_from_api_0_2_8_3.py
+          python lotus_0283_part2.py &
+          sleep 3
+          python lotus_0283_part1.py
           echo "Error log:"
           cat lotus_error_log.txt          
  
@@ -67,8 +68,8 @@ jobs:
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
-          cp lotus-from-api.csv raw_data/
+          cp lotus-from-api* raw_data/
           cp lotus_error_log.txt raw_data/
-          git add raw_data/lotus-from-api.csv raw_data/lotus_error_log.txt
+          git add raw_data/lotus*
           git commit -m "Automated: Add generated Lotus files" || echo "No changes to commit"
           git push origin gather-branch    
