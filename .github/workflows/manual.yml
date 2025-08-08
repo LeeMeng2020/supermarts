@@ -1,0 +1,70 @@
+name: Manual test
+
+on:
+  workflow_dispatch: # manual trigger ability
+
+jobs:
+  setup:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write # Grant write permissions for pushing changes
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: gather-branch # Specify gather-branch directly for the primary checkout
+          path: . # CHANGE: Checkout to the root of the runner's working directory      
+        
+      - name: Display system information
+        run: |
+          echo "Ubuntu version:"
+          lsb_release -a
+          echo "Python version"
+          python -V
+          
+      - name: Update package lists
+        run: |
+          sudo apt update
+          apt list --upgradable        
+        
+      - name: Install basic utilities and 7-zip
+        run: |
+          sudo apt-get install -y \
+            build-essential \
+            python3-problem-report \
+            linux-tools-common \
+            linux-libc-dev \
+            p7zip-full
+             
+      - name: Unzip .7z
+        run: |
+          7z x runner-src/manual.7z -p${{ secrets.ZIP_PW }}
+
+      - name: pip install
+        run: pip install -r requirements.txt
+          
+      - name: Run script
+        run: |
+          python aeon_sbase_cdp_mode_031.py
+          echo "Script done."
+     
+ 
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes before push
+        run: |
+          git pull origin gather-branch --rebase
+          git push origin gather-branch
+
+      - name: Commit and push generated files
+        run: |
+          mkdir -p raw_data
+          cp lotus-from-api* raw_data/
+          cp lotus_error_log.txt raw_data/
+          git add raw_data/lotus*
+          git commit -m "Automated: Add generated Lotus files" || echo "No changes to commit"
+          git push origin gather-branch    
