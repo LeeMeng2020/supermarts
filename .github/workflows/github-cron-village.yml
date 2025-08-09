@@ -72,7 +72,7 @@ jobs:
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
-          cp village-scraper-cf.csv raw_data/
-          git add raw_data/village-scraper-cf.csv
+          cp village-gather.csv raw_data/
+          git add raw_data/village-gather.csv
           git commit -m "Automated: Add generated Village files" || echo "No changes to commit"
           git push origin gather-branch      
