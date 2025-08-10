@@ -48,8 +48,6 @@ jobs:
       - name: Unzip gather-village.7z
         run: |
           7z x runner-src/gather-village.7z -p${{ secrets.ZIP_PW }}
-          pwd
-          ls -l
 
       - name: pip install
         run: pip install -r requirements.txt
