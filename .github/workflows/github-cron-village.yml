@@ -55,7 +55,7 @@ jobs:
       - name: Run script
         run: |
           echo "running script"
-          python village_scrape_036.py
+          python village_scrape_037.py
           echo "Error log:"
           cat village_error_log.txt  
  
