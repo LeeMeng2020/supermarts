@@ -45,9 +45,9 @@ jobs:
             linux-libc-dev \
             p7zip-full
               
-      - name: Unzip gather-village.7z
+      - name: Unzip gather-village-b.7z
         run: |
-          7z x runner-src/gather-village.7z -p${{ secrets.ZIP_PW }}
+          7z x runner-src/gather-village-b.7z -p${{ secrets.ZIP_PW }}
           ls -l
 
       - name: pip install
