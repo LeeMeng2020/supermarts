@@ -26,7 +26,7 @@ jobs:
 
     - name: Start SOCKS5 tunnel
       run: |
-        sshpass -p "${{ secrets.SOCKS_PASS }}" \
+        sudo sshpass -p "${{ secrets.SOCKS_PASS }}" \
         ssh -p 5920 -o StrictHostKeyChecking=no \
         -N -D $SOCKS_PORT ${{ secrets.SOCKS_USER }}@${{ secrets.SOCKS_HOST }} &       
         echo $! > ssh_pid.txt
@@ -34,7 +34,7 @@ jobs:
 
     - name: Run task through Proxychains
       run: |
-        proxychains4 curl http://ifconfig.me  # Replace with your actual task
+        proxychains4 curl https://checkip.amazonaws.com  # Replace with your actual task
         proxychains4 curl http://whatismyip.akamai.com
 
     - name: Disconnect SOCKS tunnel
