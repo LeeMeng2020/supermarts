@@ -35,7 +35,7 @@ jobs:
     - name: Run task through Proxychains
       run: |
         proxychains4 curl http://ifconfig.me  # Replace with your actual task
-        proxychains4 curl 
+        proxychains4 curl http://whatismyip.akamai.com
 
     - name: Disconnect SOCKS tunnel
       run: |
