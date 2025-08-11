@@ -1,0 +1,42 @@
+name: SOCKS_test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-with-proxy:
+    runs-on: ubuntu-latest
+
+    env:
+      SOCKS_PORT: 1080
+
+    steps:
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y proxychains4 openssh-client
+
+    - name: Configure Proxychains
+      run: |
+        echo "strict_chain" > ~/.proxychains.conf
+        echo "proxy_dns" >> ~/.proxychains.conf
+        echo "tcp_read_time_out 15000" >> ~/.proxychains.conf
+        echo "tcp_connect_time_out 8000" >> ~/.proxychains.conf
+        echo "socks5 127.0.0.1 $SOCKS_PORT" >> ~/.proxychains.conf
+
+    - name: Start SOCKS5 tunnel
+      run: |
+        sshpass -p "${{ secrets.SOCKS_PASS }}" \
+        ssh -p 5920 -o StrictHostKeyChecking=no \
+        -N -D $SOCKS_PORT ${{ secrets.SOCKS_USER }}@${{ secrets.SOCKS_HOST }} &       
+        echo $! > ssh_pid.txt
+        sleep 4  # Give tunnel time to establish
+
+    - name: Run task through Proxychains
+      run: |
+        proxychains4 curl http://ifconfig.me  # Replace with your actual task
+        proxychains4 curl 
+
+    - name: Disconnect SOCKS tunnel
+      run: |
+        kill $(cat ssh_pid.txt)
