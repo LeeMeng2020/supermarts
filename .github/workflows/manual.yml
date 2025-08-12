@@ -37,7 +37,7 @@ jobs:
       - name: Display system information
         run: |
           echo "Windows version:"
-          ver
+          systeminfo
           echo "Python version"
           python -V
 
@@ -55,22 +55,4 @@ jobs:
         run: |
           python aeon_sbase_cdp_mode_031.py
           echo "Script done."
-     
-      - name: Set up Git
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Pull latest changes before push
-        run: |
-          git pull origin gather-branch --rebase
-          git push origin gather-branch
-
-      - name: Commit and push generated files
-        run: |
-          mkdir -p raw_data
-          cp lotus-from-api* raw_data/
-          cp lotus_error_log.txt raw_data/
-          git add raw_data/lotus*
-          git commit -m "Automated: Add generated Lotus files" || echo "No changes to commit"
-          git push origin gather-branch    
+          type *.csv
