@@ -5,7 +5,7 @@ on:
 
 jobs:
   setup:
-    runs-on: ubuntu-24.04
+    runs-on: windows-latest
     permissions:
       contents: write # Grant write permissions for pushing changes
     
@@ -15,31 +15,38 @@ jobs:
         with:
           ref: gather-branch # Specify gather-branch directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's working directory      
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.10'
+
+      - name: Download 7-Zip installer
+        run: |
+          Invoke-WebRequest -Uri "https://www.7-zip.org/a/7z2301-x64.exe" -OutFile "7zip_installer.exe"
+
+      - name: Install 7-Zip silently
+        run: |
+          Start-Process -FilePath ".\7zip_installer.exe" -ArgumentList "/S" -Wait
+
+      - name: Add 7-Zip to PATH
+        run: |
+          $env:Path += ";C:\Program Files\7-Zip"
+          echo "PATH updated"
         
       - name: Display system information
         run: |
-          echo "Ubuntu version:"
-          lsb_release -a
+          echo "Windows version:"
+          ver
           echo "Python version"
           python -V
-          
-      - name: Update package lists
-        run: |
-          sudo apt update
-          apt list --upgradable        
-        
-      - name: Install basic utilities and 7-zip
-        run: |
-          sudo apt-get install -y \
-            build-essential \
-            python3-problem-report \
-            linux-tools-common \
-            linux-libc-dev \
-            p7zip-full
-             
+
+      - name: Set display resolution to 1920x1080
+        run: powershell.exe -Command "Set-DisplayResolution -Width 1920 -Height 1080 -Force"
+                       
       - name: Unzip .7z
         run: |
-          7z x runner-src/manual.7z -p${{ secrets.ZIP_PW }}
+          & "C:\Program Files\7-Zip\7z.exe" x runner-src/manual.7z -p${{ secrets.ZIP_PW }}
 
       - name: pip install
         run: pip install -r requirements.txt
@@ -49,7 +56,6 @@ jobs:
           python aeon_sbase_cdp_mode_031.py
           echo "Script done."
      
- 
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
