@@ -68,8 +68,7 @@ jobs:
          
       - name: Commit and push generated files
         run: |
-          mkdir -p raw_data
-          cp aeon-selenium.csv raw_data/
+          copy aeon-selenium.csv raw_data/
           git add raw_data/aeon-selenium.csv         
           git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
           git push origin gather-branch              
