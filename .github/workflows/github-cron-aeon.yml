@@ -1,4 +1,4 @@
-name: Manual test
+name: Aeon flow (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -46,7 +46,7 @@ jobs:
                        
       - name: Unzip .7z
         run: |
-          & "C:\Program Files\7-Zip\7z.exe" x runner-src/manual.7z -p${{ secrets.ZIP_PW }}
+          & "C:\Program Files\7-Zip\7z.exe" x runner-src/aeon-gather.7z -p${{ secrets.ZIP_PW }}
 
       - name: pip install
         run: pip install -r requirements.txt
@@ -55,4 +55,21 @@ jobs:
         run: |
           python aeon_sbase_cdp_mode_031.py
           echo "Script done."
-          type *.csv
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes before push
+        run: |
+          git pull origin gather-branch --rebase
+          git push origin gather-branch
+         
+      - name: Commit and push generated files
+        run: |
+          mkdir -p raw_data
+          cp aeon-selenium.csv raw_data/
+          git add raw_data/aeon-selenium.csv         
+          git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
+          git push origin gather-branch              
