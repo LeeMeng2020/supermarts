@@ -46,7 +46,7 @@ jobs:
                        
       - name: Unzip .7z
         run: |
-          & "C:\Program Files\7-Zip\7z.exe" x runner-src/aeon-gather.7z -p${{ secrets.ZIP_PW }}
+          & "C:\Program Files\7-Zip\7z.exe" x runner-src/gather-aeon.7z -p${{ secrets.ZIP_PW }}
 
       - name: pip install
         run: pip install -r requirements.txt
