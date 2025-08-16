@@ -2,6 +2,9 @@ name: Aeon flow (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
+  schedule:
+    # Run every day at 7:13 AM MY time 11:13 PM UTC), evening
+    - cron: '13 23 * * *' 
 
 jobs:
   setup:
@@ -72,7 +75,7 @@ jobs:
          
       - name: Commit and push generated files
         run: |
-          copy aeon-selenium.csv raw_data/
-          git add raw_data/aeon-selenium.csv         
+          copy aeon-out-part1.csv raw_data/
+          git add raw_data/aeon-out-part1.csv         
           git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
           git push origin gather-branch              
