@@ -57,7 +57,7 @@ jobs:
           
       - name: Run script
         run: |
-          python aeon_sbase_cdp_mode_031.py
+          python aeon_cdp_args_032.py -c aeon-categories-1.txt -o aeon-out-part1.csv
           echo "Script done."
 
       - name: Set up Git
