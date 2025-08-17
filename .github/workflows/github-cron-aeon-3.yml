@@ -1,0 +1,80 @@
+name: Aeon flow 3 (gather-branch)
+
+on:
+  workflow_dispatch: # manual trigger ability
+  schedule:
+    # Run every day at 7:15 AM MY time 11:15 PM UTC), evening
+    - cron: '15 23 * * *' 
+
+jobs:
+  setup:
+    runs-on: windows-latest
+    permissions:
+      contents: write # Grant write permissions for pushing changes
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: gather-branch # Specify gather-branch directly for the primary checkout
+          path: . # CHANGE: Checkout to the root of the runner's working directory      
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.10'
+
+      - name: Download 7-Zip installer
+        run: |
+          Invoke-WebRequest -Uri "https://www.7-zip.org/a/7z2301-x64.exe" -OutFile "7zip_installer.exe"
+
+      - name: Install 7-Zip silently
+        run: |
+          Start-Process -FilePath ".\7zip_installer.exe" -ArgumentList "/S" -Wait
+
+      - name: Add 7-Zip to PATH
+        run: |
+          $env:Path += ";C:\Program Files\7-Zip"
+          echo "PATH updated"
+        
+      - name: Display system information
+        run: |
+          echo "Windows version:"
+          systeminfo
+          echo "Python version"
+          python -V
+          echo "IP address"
+          curl https://api.ipify.org
+          
+
+      - name: Set display resolution to 1920x1080
+        run: powershell.exe -Command "Set-DisplayResolution -Width 1920 -Height 1080 -Force"
+                       
+      - name: Unzip .7z
+        run: |
+          & "C:\Program Files\7-Zip\7z.exe" x runner-src/gather-aeon.7z -p${{ secrets.ZIP_PW }}
+
+      - name: pip install
+        run: pip install -r requirements.txt
+          
+      - name: Run script
+        run: |
+          python aeon_cdp_args_032.py -c aeon-categories-3.txt -o aeon-out-part3.csv
+          echo "Script done."
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes before push
+        run: |
+          git pull origin gather-branch --rebase
+          git push origin gather-branch
+         
+      - name: Commit and push generated files
+        run: |
+          copy aeon-out-part3.csv raw_data/
+          git add raw_data/aeon-out-part3.csv         
+          git commit -m "Automated: Add generated Aeon 3 file" || echo "No changes to commit"
+          git push origin gather-branch              
