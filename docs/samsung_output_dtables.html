@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samsung</title>
+    <style>
+        body { font-family: sans-serif; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">
+</head>
+<body>
+    <h1>Samsung</h1>
+
+    <div style="margin-bottom: 20px;">
+        <h3>Filter by condition</h3>
+        <input type="checkbox" id="excellent" checked>
+        <label for="excellent">Excellent</label>
+        <input type="checkbox" id="good" checked>
+        <label for="good">Good</label>
+        <input type="checkbox" id="fair" checked>
+        <label for="fair">Fair</label>
+    </div>
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Phone</th>
+                <th>Colour</th>
+                <th>RAM</th>
+                <th>Condition</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Galaxy Z Flip6 + Get a Surprise Galaxy Watch for FREE!</td>
+                <td>Blue</td>
+                <td>12GB/256GB</td>
+                <td>Excellent</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td>Galaxy Z Flip6 + Get a Surprise Galaxy Watch for FREE!</td>
+                <td>Crafted Black</td>
+                <td>12GB/256GB</td>
+                <td>Excellent</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td>Galaxy Z Flip6 + Get a Surprise Galaxy Watch for FREE!</td>
+                <td>Mint</td>
+                <td>12GB/256GB</td>
+                <td>Excellent</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td>Galaxy Z Flip6 + Get a Surprise Galaxy Watch for FREE!</td>
+                <td>Silver Shadow</td>
+                <td>12GB/256GB</td>
+                <td>Excellent</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td>Galaxy Z Flip6 + Get a Surprise Galaxy Watch for FREE!</td>
+                <td>White</td>
+                <td>12GB/256GB</td>
+                <td>Excellent</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td>Galaxy Z Flip6 + Get a Surprise Galaxy Watch for FREE!</td>
+                <td>Yellow</td>
+                <td>12GB/256GB</td>
+                <td>Excellent</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Amber Yellow</td>
+                <td>12GB/256GB</td>
+                <td>Excellent</td>
+                <td>3199</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Amber Yellow</td>
+                <td>12GB/256GB</td>
+                <td>Good</td>
+                <td>3099</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Amber Yellow</td>
+                <td>12GB/256GB</td>
+                <td>Fair</td>
+                <td>2999</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Amber Yellow</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3299</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Amber Yellow</td>
+                <td>12GB/512GB</td>
+                <td>Good</td>
+                <td>3199</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Amber Yellow</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3099</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Cobalt Violet</td>
+                <td>12GB/256GB</td>
+                <td>Excellent</td>
+                <td>3199</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Cobalt Violet</td>
+                <td>12GB/256GB</td>
+                <td>Good</td>
+                <td>3099</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Cobalt Violet</td>
+                <td>12GB/256GB</td>
+                <td>Fair</td>
+                <td>2999</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Cobalt Violet</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3299</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Cobalt Violet</td>
+                <td>12GB/512GB</td>
+                <td>Good</td>
+                <td>3199</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Cobalt Violet</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3099</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Jade Green</td>
+                <td>12GB/256GB</td>
+                <td>Excellent</td>
+                <td>3199</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Jade Green</td>
+                <td>12GB/256GB</td>
+                <td>Good</td>
+                <td>3099</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Jade Green</td>
+                <td>12GB/256GB</td>
+                <td>Fair</td>
+                <td>2999</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Jade Green</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3299</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Jade Green</td>
+                <td>12GB/512GB</td>
+                <td>Good</td>
+                <td>3199</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Jade Green</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3099</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Marble Gray</td>
+                <td>12GB/256GB</td>
+                <td>Excellent</td>
+                <td>3199</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Marble Gray</td>
+                <td>12GB/256GB</td>
+                <td>Good</td>
+                <td>3099</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Marble Gray</td>
+                <td>12GB/256GB</td>
+                <td>Fair</td>
+                <td>2999</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Marble Gray</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3299</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Marble Gray</td>
+                <td>12GB/512GB</td>
+                <td>Good</td>
+                <td>3199</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Marble Gray</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3099</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Onyx Black</td>
+                <td>12GB/256GB</td>
+                <td>Excellent</td>
+                <td>3199</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Onyx Black</td>
+                <td>12GB/256GB</td>
+                <td>Good</td>
+                <td>3099</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Onyx Black</td>
+                <td>12GB/256GB</td>
+                <td>Fair</td>
+                <td>2199</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Onyx Black</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3299</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Onyx Black</td>
+                <td>12GB/512GB</td>
+                <td>Good</td>
+                <td>3199</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24+</td>
+                <td>Onyx Black</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3099</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Black</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3899</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Black</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3699</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Blue</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3899</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Blue</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3699</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Gray</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3899</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Gray</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3699</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Green</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3899</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Green</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3699</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Orange</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3899</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Orange</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3699</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Violet</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3899</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Violet</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3699</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Yellow</td>
+                <td>12GB/512GB</td>
+                <td>Excellent</td>
+                <td>3899</td>
+            </tr>
+            <tr>
+                <td>Galaxy S24 Ultra 5G Lowest Price</td>
+                <td>Titanium Yellow</td>
+                <td>12GB/512GB</td>
+                <td>Fair</td>
+                <td>3699</td>
+            </tr>
+            <tr>
+                <td>Galaxy S22+ 5G 256GB (Excellent)</td>
+                <td>Phantom Black</td>
+                <td>8GB/256GB</td>
+                <td>Good</td>
+                <td>1599</td>
+            </tr>
+            <tr>
+                <td>Galaxy S22+ 5G 256GB (Excellent)</td>
+                <td>Pink Gold</td>
+                <td>8GB/256GB</td>
+                <td>Good</td>
+                <td>1599</td>
+            </tr>
+            <tr>
+                <td>Galaxy S22+ 5G 256GB (Excellent)</td>
+                <td>White</td>
+                <td>8GB/256GB</td>
+                <td>Good</td>
+                <td>1599</td>
+            </tr>
+            <tr>
+                <td>Galaxy S22+ 5G 256GB (Excellent)</td>
+                <td>Green</td>
+                <td>8GB/256GB</td>
+                <td>Good</td>
+                <td>1599</td>
+            </tr>
+            <tr>
+                <td>Galaxy S22+ 5G (Excellent)</td>
+                <td>Phantom Black</td>
+                <td>8GB/256GB</td>
+                <td>Excellent</td>
+                <td>1499</td>
+            </tr>
+            <tr>
+                <td>Galaxy S22+ 5G (Excellent)</td>
+                <td>Pink</td>
+                <td>8GB/256GB</td>
+                <td>Excellent</td>
+                <td>1499</td>
+            </tr>
+            <tr>
+                <td>Galaxy S22+ 5G (Excellent)</td>
+                <td>White</td>
+                <td>8GB/256GB</td>
+                <td>Excellent</td>
+                <td>1499</td>
+            </tr>
+            <tr>
+                <td>Galaxy S22+ 5G (Excellent)</td>
+                <td>Green</td>
+                <td>8GB/256GB</td>
+                <td>Excellent</td>
+                <td>1499</td>
+            </tr>
+            <tr>
+                <td>Galaxy S21 FE 5G</td>
+                <td>White</td>
+                <td>8GB/128GB</td>
+                <td>Excellent</td>
+                <td>899</td>
+            </tr>
+            <tr>
+                <td>Galaxy S21 FE 5G</td>
+                <td>White</td>
+                <td>8GB/256GB</td>
+                <td>Excellent</td>
+                <td>999</td>
+            </tr>
+            <tr>
+                <td>Galaxy S21 FE 5G</td>
+                <td>Graphite</td>
+                <td>8GB/128GB</td>
+                <td>Excellent</td>
+                <td>899</td>
+            </tr>
+            <tr>
+                <td>Galaxy S21 FE 5G</td>
+                <td>Graphite</td>
+                <td>8GB/256GB</td>
+                <td>Excellent</td>
+                <td>999</td>
+            </tr>
+            <tr>
+                <td>Galaxy S21 FE 5G</td>
+                <td>Olive</td>
+                <td>8GB/128GB</td>
+                <td>Excellent</td>
+                <td>899</td>
+            </tr>
+            <tr>
+                <td>Galaxy S21 FE 5G</td>
+                <td>Olive</td>
+                <td>8GB/256GB</td>
+                <td>Excellent</td>
+                <td>999</td>
+            </tr>
+            <tr>
+                <td>Galaxy S21 FE 5G</td>
+                <td>Lavender</td>
+                <td>8GB/128GB</td>
+                <td>Excellent</td>
+                <td>899</td>
+            </tr>
+            <tr>
+                <td>Galaxy S21 FE 5G</td>
+                <td>Lavender</td>
+                <td>8GB/256GB</td>
+                <td>Excellent</td>
+                <td>999</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+
+    <script>
+        $(document).ready( function () {
+            // Initialize the DataTable
+            var myTable = $('#myTable').DataTable();
+
+            // Custom filter function for condition
+            $.fn.dataTable.ext.search.push(
+                function(settings, data, dataIndex) {
+                    var condition = data[3].trim(); // Get the value from the "Condition" column (index 3) and trim whitespace
+                    var conditionsToShow = [];
+
+                    // Build an array of conditions to show based on checked checkboxes
+                    if ($('#excellent').prop('checked')) {
+                        conditionsToShow.push('Excellent');
+                    }
+                    if ($('#good').prop('checked')) {
+                        conditionsToShow.push('Good');
+                    }
+                    if ($('#fair').prop('checked')) {
+                        conditionsToShow.push('Fair');
+                    }
+
+                    // If no conditions are selected, show nothing
+                    if (conditionsToShow.length === 0) {
+                        return false;
+                    }
+
+                    // Return true if the row's condition is in the list of conditions to show
+                    return conditionsToShow.includes(condition);
+                }
+            );
+
+            // Redraw the table on checkbox change
+            $('#excellent, #good, #fair').on('change', function () {
+                myTable.draw();
+            });
+        } );
+    </script>
+</body>
+</html>
