@@ -1,7 +1,10 @@
-name: Aeon flow 3 (gather-branch)
+name: Aeon 3 n Village (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
+  schedule:
+    # Run every day at 7:16 AM MY time, 11:16 PM UTC
+    - cron: '16 23 * * *' 
 
 jobs:
   setup:
@@ -49,15 +52,25 @@ jobs:
                        
       - name: Unzip .7z
         run: |
-          & "C:\Program Files\7-Zip\7z.exe" x runner-src/gather-aeon.7z -p${{ secrets.ZIP_PW }}
+          & "C:\Program Files\7-Zip\7z.exe" x runner-src/gather_aeon_vill.7z -p${{ secrets.ZIP_PW }}
 
       - name: pip install
-        run: pip install -r requirements.txt
+        run: pip install -r requirements_2.txt
           
-      - name: Run script
+      - name: Run scripts concurrently and wait
+        shell: pwsh
         run: |
-          python aeon_cdp_args_032.py -c aeon-categories-3.txt -o aeon-out-part3.csv
-          echo "Script done."
+          $p1 = Start-Process -FilePath "python" -ArgumentList "aeon_cdp_args_032.py", "-c", "aeon-categories-3.txt", "-o", "aeon-out-part3.csv" -PassThru
+          $p2 = Start-Process -FilePath "python" -ArgumentList "village_038_one_thread.py" -PassThru
+
+          Write-Host "Scripts launched. Waiting for completion..."
+          Wait-Process -Id $p1.Id
+          Wait-Process -Id $p2.Id
+
+          Write-Host "Scripts done."
+          Write-Host "Error log:"
+          Get-Content village_error_log.txt
+
 
       - name: Set up Git
         run: |
@@ -72,6 +85,8 @@ jobs:
       - name: Commit and push generated files
         run: |
           copy aeon-out-part3.csv raw_data/
-          git add raw_data/aeon-out-part3.csv         
-          git commit -m "Automated: Add generated Aeon 3 file" || echo "No changes to commit"
+          git add raw_data/aeon-out-part3.csv     
+          cp village-gather.csv raw_data/
+          git add raw_data/village-gather.csv          
+          git commit -m "Automated: Add generated Aeon 3 and Village file" || echo "No changes to commit"
           git push origin gather-branch              
