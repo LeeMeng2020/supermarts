@@ -46,7 +46,6 @@ jobs:
           echo "IP address"
           curl https://api.ipify.org
           
-
       - name: Set display resolution to 1920x1080
         run: powershell.exe -Command "Set-DisplayResolution -Width 1920 -Height 1080 -Force"
                        
@@ -60,17 +59,19 @@ jobs:
       - name: Run scripts concurrently and wait
         shell: pwsh
         run: |
-          $p1 = Start-Process -FilePath "python" -ArgumentList "aeon_cdp_args_032.py", "-c", "aeon-categories-3.txt", "-o", "aeon-out-part3.csv" -PassThru
-          $p2 = Start-Process -FilePath "python" -ArgumentList "village_038_one_thread.py" -PassThru
-
-          Write-Host "Scripts launched. Waiting for completion..."
-          Wait-Process -Id $p1.Id
-          Wait-Process -Id $p2.Id
-
+          $job1 = Start-Job -ScriptBlock { python aeon_cdp_args_032.py -c aeon-categories-3.txt -o aeon-out-part3.csv }
+          $job2 = Start-Job -ScriptBlock { python village_038_one_thread.py }
+      
+          Write-Host "Jobs started. Waiting for completion..."
+          Wait-Job -Job $job1, $job2
+      
+          Write-Host "Job outputs:"
+          Receive-Job -Job $job1
+          Receive-Job -Job $job2
+      
           Write-Host "Scripts done."
           Write-Host "Error log:"
           Get-Content village_error_log.txt
-
 
       - name: Set up Git
         run: |
