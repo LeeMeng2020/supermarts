@@ -60,8 +60,6 @@ jobs:
           
       - name: Run script
         run: |
-          python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv
-          echo "Script done."
           $job1 = Start-Job -ScriptBlock { python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv }
           $job2 = Start-Job -ScriptBlock { python aeon_cdp_args_032_proxy.py -c aeon-categories-4.txt -o aeon-out-part4.csv }
       
@@ -86,7 +84,8 @@ jobs:
          
       - name: Commit and push generated files
         run: |
-          copy aeon-out-part2.csv raw_data/
-          git add raw_data/aeon-out-part2.csv         
+          copy aeon-out-part* raw_data/
+          git add raw_data/aeon-out-part2.csv     
+          git add raw_data/aeon-out-part4.csv     
           git commit -m "Automated: Add generated Aeon 2 file" || echo "No changes to commit"
           git push origin gather-branch              
