@@ -62,6 +62,17 @@ jobs:
         run: |
           python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv
           echo "Script done."
+          $job1 = Start-Job -ScriptBlock { python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv }
+          $job2 = Start-Job -ScriptBlock { python aeon_cdp_args_032_proxy.py -c aeon-categories-4.txt -o aeon-out-part4.csv }
+      
+          Write-Host "Jobs started. Waiting for completion..."
+          Wait-Job -Job $job1, $job2
+      
+          Write-Host "Job outputs:"
+          Receive-Job -Job $job1
+          Receive-Job -Job $job2
+      
+          Write-Host "Scripts done."
 
       - name: Set up Git
         run: |
