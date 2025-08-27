@@ -47,7 +47,6 @@ jobs:
           curl https://ipinfo.io/ip
           curl https://api.ipify.org
           
-
       - name: Set display resolution to 1920x1080
         run: powershell.exe -Command "Set-DisplayResolution -Width 1920 -Height 1080 -Force"
                        
@@ -58,10 +57,26 @@ jobs:
       - name: pip install
         run: pip install -r requirements.txt
           
-      - name: Run script
+      - name: Run script and validate output
+        shell: pwsh
         run: |
           python aeon_cdp_args_032.py -c aeon-categories-1.txt -o aeon-out-part1.csv
-          echo "Script done."
+          Write-Host "Script done."
+      
+          # Check if file exists
+          if (-Not (Test-Path "aeon-out-part1.csv")) {
+            Write-Error "** Output file does not exist, aborting **"
+            exit 1
+          }
+      
+          # Check file size
+          $filesize = (Get-Item "aeon-out-part1.csv").Length
+          if ($filesize -lt 1500) {
+            Write-Error "** Output file is too small ($filesize bytes), aborting **"
+            exit 1
+          }
+      
+          Write-Host "Validation passed: output file seems OK."
 
       - name: Set up Git
         run: |
