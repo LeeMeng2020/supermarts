@@ -1,10 +1,7 @@
-name: Aeon 3 n Village (gather-branch)
+name: Aeon flow (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
-  schedule:
-    # Run every day at 7:16 AM MY time, 11:16 PM UTC
-    - cron: '16 23 * * *' 
 
 jobs:
   setup:
@@ -44,6 +41,7 @@ jobs:
           echo "Python version"
           python -V
           echo "IP address"
+          curl https://ipinfo.io/ip
           curl https://api.ipify.org
           
       - name: Set display resolution to 1920x1080
@@ -51,27 +49,31 @@ jobs:
                        
       - name: Unzip .7z
         run: |
-          & "C:\Program Files\7-Zip\7z.exe" x runner-src/gather_aeon_vill.7z -p${{ secrets.ZIP_PW }}
+          & "C:\Program Files\7-Zip\7z.exe" x runner-src/gather-aeon.7z -p${{ secrets.ZIP_PW }}
 
       - name: pip install
-        run: pip install -r requirements_2.txt
+        run: pip install -r requirements.txt
           
-      - name: Run scripts concurrently and wait
+      - name: Run script and validate output
         shell: pwsh
         run: |
-          $job1 = Start-Job -ScriptBlock { python aeon_cdp_args_032.py -c aeon-categories-3.txt -o aeon-out-part3.csv }
-          $job2 = Start-Job -ScriptBlock { python village_038_one_thread.py }
+          python aeon_cdp_args_033.py -c aeon-categories-5.txt -o aeon-out-part5.csv -p proxy2.txt
+          Write-Host "Script done."
       
-          Write-Host "Jobs started. Waiting for completion..."
-          Wait-Job -Job $job1, $job2
+          # Check if file exists
+          if (-Not (Test-Path "aeon-out-part5.csv")) {
+            Write-Error "** Output file does not exist, aborting **"
+            exit 1
+          }
       
-          Write-Host "Job outputs:"
-          Receive-Job -Job $job1
-          Receive-Job -Job $job2
+          # Check file size
+          $filesize = (Get-Item "aeon-out-part5.csv").Length
+          if ($filesize -lt 1500) {
+            Write-Error "** Output file is too small ($filesize bytes), aborting **"
+            exit 1
+          }
       
-          Write-Host "Scripts done."
-          Write-Host "Error log:"
-          Get-Content village_error_log.txt
+          Write-Host "Validation passed: output file seems OK."
 
       - name: Set up Git
         run: |
@@ -79,16 +81,13 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Pull latest changes before push
-        run: |      
-          git fetch origin gather-branch
-          git rebase origin/gather-branch
-          git push origin HEAD:gather-branch
+        run: |
+          git pull origin gather-branch --rebase
+          git push origin gather-branch
          
       - name: Commit and push generated files
         run: |
-          copy aeon-out-part3.csv raw_data/
-          git add raw_data/aeon-out-part3.csv     
-          cp village-gather.csv raw_data/
-          git add raw_data/village-gather.csv          
-          git commit -m "Automated: Add generated Aeon 3 and Village file" || echo "No changes to commit"
+          copy aeon-out-part1.csv raw_data/
+          git add raw_data/aeon-out-part1.csv         
+          git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
           git push origin gather-branch              
