@@ -2,6 +2,9 @@ name: Village Workflow (Gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
+  schedule:
+    # Run every day at 7:15 AM MY time 11:15 PM UTC
+    - cron: '15 23 * * *' 
 
 jobs:
   setup:

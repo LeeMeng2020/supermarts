@@ -3,8 +3,8 @@ name: Aeon flow 3 (aeon-branch)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 7:14 AM MY time 11:14 PM UTC), evening
-    - cron: '14 23 * * *' 
+    # Run every day at 7:11 AM MY time 11:11 PM UTC), evening
+    - cron: '11 23 * * *' 
 
 jobs:
   setup:
