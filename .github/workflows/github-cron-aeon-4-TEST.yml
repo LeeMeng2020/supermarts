@@ -1,4 +1,4 @@
-name: Aeon flow (gather-branch)
+name: Aeon 4 TEST
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -57,7 +57,7 @@ jobs:
       - name: Run script and validate output
         shell: pwsh
         run: |
-          python aeon_cdp_args_033.py -c aeon-categories-5.txt -o aeon-out-part5.csv -p proxy2.txt
+          python aeon_cdp_args_033_proxy.py -c aeon-categories-5.txt -o aeon-out-part5.csv -p proxy2.txt
           Write-Host "Script done."
       
           # Check if file exists
