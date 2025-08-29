@@ -1,4 +1,4 @@
-name: Aeon flow 2 (gather-branch)
+name: Aeon flow 2 (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: gather-branch # Specify gather-branch directly for the primary checkout
+          ref: aeon-branch # Specify aeon-branch directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's working directory      
 
       - name: Set up Python
@@ -61,7 +61,7 @@ jobs:
       - name: Run script
         run: |
           $job1 = Start-Job -ScriptBlock { python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv }
-          $job2 = Start-Job -ScriptBlock { python aeon_cdp_args_032_proxy.py -c aeon-categories-4.txt -o aeon-out-part4.csv }
+          $job2 = Start-Job -ScriptBlock { python aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt }
       
           Write-Host "Jobs started. Waiting for completion..."
           Wait-Job -Job $job1, $job2
@@ -79,13 +79,13 @@ jobs:
 
       - name: Pull latest changes before push
         run: |
-          git pull origin gather-branch --rebase
-          git push origin gather-branch
+          git pull origin aeon-branch --rebase
+          git push origin aeon-branch
          
       - name: Commit and push generated files
         run: |
           copy aeon-out-part* raw_data/
           git add raw_data/aeon-out-part2.csv     
-          git add raw_data/aeon-out-part4.csv     
-          git commit -m "Automated: Add generated Aeon 2 file" || echo "No changes to commit"
-          git push origin gather-branch              
+          git add raw_data/aeon-out-part3.csv     
+          git commit -m "Automated: Add generated Aeon 2 files" || echo "No changes to commit"
+          git push origin aeon-branch              

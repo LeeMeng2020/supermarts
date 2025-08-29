@@ -1,4 +1,4 @@
-name: Aeon flow (gather-branch)
+name: Aeon flow (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: gather-branch # Specify gather-branch directly for the primary checkout
+          ref: aeon-branch # Specify aeon-branch directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's working directory      
 
       - name: Set up Python
@@ -85,12 +85,12 @@ jobs:
 
       - name: Pull latest changes before push
         run: |
-          git pull origin gather-branch --rebase
-          git push origin gather-branch
+          git pull origin aeon-branch --rebase
+          git push origin aeon-branch
          
       - name: Commit and push generated files
         run: |
           copy aeon-out-part1.csv raw_data/
           git add raw_data/aeon-out-part1.csv         
           git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
-          git push origin gather-branch              
+          git push origin aeon-branch              
