@@ -46,7 +46,6 @@ jobs:
           echo "IP address"
           curl https://ipinfo.io/ip
           curl https://api.ipify.org
-          
 
       - name: Set display resolution to 1920x1080
         run: powershell.exe -Command "Set-DisplayResolution -Width 1920 -Height 1080 -Force"
@@ -57,6 +56,12 @@ jobs:
 
       - name: pip install
         run: pip install -r requirements.txt
+
+      - name: Ensure archived_logs dir exists
+        run: |
+          if not exist archived_logs (
+            mkdir archived_logs
+          )
           
       - name: Run script
         run: |
