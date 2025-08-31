@@ -59,9 +59,9 @@ jobs:
 
       - name: Ensure archived_logs dir exists
         run: |
-          if not exist archived_logs (
-            mkdir archived_logs
-          )
+          if (!(Test-Path "archived_logs")) {
+            New-Item -ItemType Directory -Path "archived_logs"
+          }
           
       - name: Run script
         run: |
