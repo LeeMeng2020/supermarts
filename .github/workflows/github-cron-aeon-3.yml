@@ -58,6 +58,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Ensure log dirs exists (Windows)
+        shell: pwsh
         run: |
           if (!(Test-Path "archived_logs")) {
             New-Item -ItemType Directory -Path "archived_logs"

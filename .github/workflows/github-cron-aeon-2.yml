@@ -58,7 +58,7 @@ jobs:
       - name: pip install
         run: pip install -r requirements.txt
 
-      - name: Ensure archived_logs dir exists
+      - name: Ensure log dirs exists (Windows)
         shell: pwsh
         run: |
           if (!(Test-Path "archived_logs")) {

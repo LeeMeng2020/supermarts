@@ -56,6 +56,16 @@ jobs:
 
       - name: pip install
         run: pip install -r requirements.txt
+        
+       - name: Ensure archived_logs dir exists
+        shell: pwsh
+        run: |
+          if (!(Test-Path "archived_logs")) {
+            New-Item -ItemType Directory -Path "archived_logs"
+          }
+          if (!(Test-Path "latest_logs")) {
+            New-Item -ItemType Directory -Path "latest_logs"
+          }      
           
       - name: Run script and validate output
         shell: pwsh
