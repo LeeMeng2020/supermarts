@@ -1,10 +1,10 @@
-name: Aeon flow 3 (aeon-branch)
+name: Aeon flow 4 (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 7:11 AM MY time 11:11 PM UTC), evening
-    - cron: '10 23 * * *' 
+    # Run every day at 7:13 AM MY time 11:13 PM UTC), evening
+    - cron: '9 23 * * *' 
 
 jobs:
   setup:
@@ -44,9 +44,8 @@ jobs:
           echo "Python version"
           python -V
           echo "IP address"
-          curl https://ipinfo.io/ip
           curl https://api.ipify.org
-
+          
       - name: Set display resolution to 1920x1080
         run: powershell.exe -Command "Set-DisplayResolution -Width 1920 -Height 1080 -Force"
                        
@@ -56,8 +55,8 @@ jobs:
 
       - name: pip install
         run: pip install -r requirements.txt
-
-      - name: Ensure log dirs exists (Windows)
+        
+       - name: Ensure archived_logs dir exists
         shell: pwsh
         run: |
           if (!(Test-Path "archived_logs")) {
@@ -65,22 +64,22 @@ jobs:
           }
           if (!(Test-Path "latest_logs")) {
             New-Item -ItemType Directory -Path "latest_logs"
-          }
-
-      - name: Run script
+          }      
+          
+      - name: Run script and validate output
         shell: pwsh
         run: |
-          python aeon_cdp_args_032.py -c aeon-categories-4.txt -o aeon-out-part4.csv
+          python aeon_cdp_args_032.py -c aeon-categories-5.txt -o aeon-out-part5.csv
           Write-Host "Script done."
       
           # Check if file exists
-          if (-Not (Test-Path "aeon-out-part4.csv")) {
+          if (-Not (Test-Path "aeon-out-part5.csv")) {
             Write-Error "** Output file does not exist, aborting **"
             exit 1
           }
       
           # Check file size
-          $filesize = (Get-Item "aeon-out-part4.csv").Length
+          $filesize = (Get-Item "aeon-out-part5.csv").Length
           if ($filesize -lt 1500) {
             Write-Error "** Output file is too small ($filesize bytes), aborting **"
             exit 1
@@ -100,7 +99,7 @@ jobs:
          
       - name: Commit and push generated files
         run: |
-          copy aeon-out-part* raw_data/
-          git add raw_data/aeon-out-part4.csv       
-          git commit -m "Automated: Add generated Aeon 3 files" || echo "No changes to commit"
+          copy aeon-out-part5.csv raw_data/
+          git add raw_data/aeon-out-part5.csv         
+          git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
           git push origin aeon-branch              

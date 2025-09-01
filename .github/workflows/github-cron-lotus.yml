@@ -1,4 +1,4 @@
-name: Lotus Workflow
+name: Lotus workflow
 
 on:
   workflow_dispatch: # manual trigger ability
