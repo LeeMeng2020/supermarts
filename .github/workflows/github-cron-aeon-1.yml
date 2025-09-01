@@ -1,4 +1,4 @@
-name: Aeon flow (aeon-branch)
+name: Aeon flow 1 (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
