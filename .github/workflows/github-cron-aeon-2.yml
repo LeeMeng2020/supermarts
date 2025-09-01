@@ -62,6 +62,9 @@ jobs:
           if (!(Test-Path "archived_logs")) {
             New-Item -ItemType Directory -Path "archived_logs"
           }
+          if (!(Test-Path "latest_logs")) {
+            New-Item -ItemType Directory -Path "latest_logs"
+          }
           
       - name: Run script
         run: |
