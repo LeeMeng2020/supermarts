@@ -67,7 +67,15 @@ jobs:
           if (!(Test-Path "latest_logs")) {
             New-Item -ItemType Directory -Path "latest_logs"
           }
-          
+          Write-Host "Created archived_logs: $(Test-Path 'archived_logs')"
+
+      - name: Set permissions on log dirs
+        shell: pwsh
+        run: |
+          $acl = Get-Acl "."
+          Set-Acl "archived_logs" $acl
+          Set-Acl "latest_logs" $acl
+
       - name: Run script
         run: |
           $job1 = Start-Job -ScriptBlock { python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv }
