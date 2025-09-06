@@ -52,9 +52,9 @@ jobs:
           
       - name: Run script
         run: |
-          python lotus_0283_part2.py &
-          sleep 3
-          python lotus_0283_part1.py
+          python lotus_from_api_029_part2.py &
+          sleep 2
+          python lotus_from_api_029_part1.py
           wait
           echo "Scripts done."
           echo "Error log:"
