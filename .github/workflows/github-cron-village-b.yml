@@ -50,7 +50,7 @@ jobs:
               
       - name: Unzip gather-village-b.7z
         run: |
-          7z x runner-src/gather-village-b.7z -p${{ secrets.ZIP_PW }}
+          7z x runner-src/gather-village.7z -p${{ secrets.ZIP_PW }}
           ls -l
 
       - name: pip install
@@ -78,7 +78,7 @@ jobs:
           fi
           echo "✅ File exists and is larger than 100 KB: ${FILESIZE} bytes"
 
-      - name: Run script
+      - name: Run processing script
         run: |
           echo "running processing script"
           python village_fixer_033.py
