@@ -2,9 +2,9 @@ name: Village Workflow (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
-  #schedule:
+  schedule:
     # Run every day at 7:15 AM MY time 11:15 PM UTC
-    #- cron: '15 23 * * *' 
+    - cron: '15 23 * * *' 
 
 jobs:
   setup:
@@ -61,8 +61,28 @@ jobs:
           echo "running script"
           python village_038_one_thread.py
           echo "Error log:"
-          cat village_error_log.txt  
- 
+          cat village_error_log.txt 
+          
+      - name: Validate output file
+        run: |
+          FILE="village-gather.csv"
+          echo "Checking if $FILE exists and is larger than 100 KB..."
+          if [ ! -f "$FILE" ]; then
+            echo "❌ File does not exist: $FILE"
+            exit 1
+          fi
+          FILESIZE=$(stat -c%s "$FILE")
+          if [ "$FILESIZE" -lt 102400 ]; then
+            echo "❌ File size is too small: ${FILESIZE} bytes"
+            exit 1
+          fi
+          echo "✅ File exists and is larger than 100 KB: ${FILESIZE} bytes"
+
+      - name: Run script
+        run: |
+          echo "running processing script"
+          python village_fixer_033.py
+
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -77,6 +97,8 @@ jobs:
         run: |
           mkdir -p raw_data
           cp village-gather.csv raw_data/
+          cp village-output* processed/
           git add raw_data/village-gather.csv
+          git add processed/*
           git commit -m "Automated: Add generated Village files" || echo "No changes to commit"
           git push origin gather-branch      
