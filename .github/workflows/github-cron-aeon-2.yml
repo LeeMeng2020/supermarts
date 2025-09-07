@@ -3,7 +3,7 @@ name: Aeon flow 2 (aeon-branch)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 7:14 AM MY time 11:14 PM UTC), evening
+    # Run every day at 7:14 AM MY time (11:14 PM UTC), evening
     - cron: '14 23 * * *' 
 
 jobs:
@@ -76,15 +76,26 @@ jobs:
           Set-Acl "archived_logs" $acl
           Set-Acl "latest_logs" $acl
 
-      - name: Run script
+      - name: Run scripts concurrently (Windows)
+        shell: pwsh
         run: |
-          $job1 = Start-Job -ScriptBlock { python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv }
-          $job2 = Start-Job -ScriptBlock { python aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt }
+          $workspace = $env:GITHUB_WORKSPACE
       
-          Write-Host "Jobs started. Waiting for completion..."
+          $job1 = Start-Job -ScriptBlock {
+            param($wd)
+            Set-Location $wd
+            python aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt
+          } -ArgumentList $workspace
+      
+          Start-Sleep -Seconds 1
+      
+          $job2 = Start-Job -ScriptBlock {
+            param($wd)
+            Set-Location $wd
+            python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv
+          } -ArgumentList $workspace
+      
           Wait-Job -Job $job1, $job2
-      
-          Write-Host "Job outputs:"
           Receive-Job -Job $job1
           Receive-Job -Job $job2
       
