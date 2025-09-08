@@ -1,4 +1,4 @@
-name: Aeon flow 2 (aeon-branch)
+name: Aeon flow 2b (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -83,34 +83,31 @@ jobs:
           start python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv
 
       - name: Await completion
-        shell: cmd
+        shell: pwsh
         run: |
-          echo "Waiting for 9 minutes..."
-          timeout /t 540 /nobreak
+          Write-Host "Waiting for 9.5 minutes..."
+          Start-Sleep -Seconds 570
       
-          set "MAX_WAIT_MIN=22"
-          set /a "END_TIME=%time:~0,2%*60 + %time:~3,2% + %MAX_WAIT_MIN%"
-          set "LOOP_COUNT=0"
+          $maxWaitMinutes = 22
+          $endTime = (Get-Date).AddMinutes($maxWaitMinutes)
+          $loopCount = 0
       
-          :check_loop
-          if exist "aeon-out-part2.csv " (
-            if exist "aeon-out-part3.csv " (
-              echo "Both files found. Continuing..."
-              goto :eof
-            )
-          )
+          while ((Get-Date) -lt $endTime) {
+            if (Test-Path "aeon-out-part2.csv" -PathType Leaf) {
+              if (Test-Path "aeon-out-part3.csv" -PathType Leaf) {
+                Write-Host "Both files found. Continuing..."
+                exit 0
+              }
+            }
       
-          set /a "CURRENT_TIME=%time:~0,2%*60 + %time:~3,2%"
-          if %CURRENT_TIME% geq %END_TIME% (
-            echo "Timeout: Aborting action after 31 minutes."
-            exit 1
-          )
+            $loopCount++
+            Write-Host "Output files not found. Waiting for 1 minute ($loopCount of $maxWaitMinutes)."
+            Start-Sleep -Seconds 60
+          }
       
-          set /a "LOOP_COUNT+=1"
-          echo "Files not found. Waiting for 1 minute (check %LOOP_COUNT% of 22)."
-          timeout /t 60 /nobreak
-          goto :check_loop
-
+          Write-Host "Timeout: Aborting action after 31 minutes."
+          exit 1
+      
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
