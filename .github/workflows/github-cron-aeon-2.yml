@@ -77,29 +77,39 @@ jobs:
           Set-Acl "latest_logs" $acl
 
       - name: Run scripts concurrently (Windows)
-        shell: pwsh
+        shell: cmd
         run: |
-          $workspace = $env:GITHUB_WORKSPACE
+          start python aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt
+          start python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv
+
+      - name: Await completion
+        shell: cmd
+        run: |
+          echo "Waiting for 9 minutes..."
+          timeout /t 540 /nobreak
       
-          $job1 = Start-Job -ScriptBlock {
-            param($wd)
-            Set-Location $wd
-            python aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt
-          } -ArgumentList $workspace
+          set "MAX_WAIT_MIN=22"
+          set /a "END_TIME=%time:~0,2%*60 + %time:~3,2% + %MAX_WAIT_MIN%"
+          set "LOOP_COUNT=0"
       
-          Start-Sleep -Seconds 1
+          :check_loop
+          if exist "aeon-out-part2.csv " (
+            if exist "aeon-out-part3.csv " (
+              echo "Both files found. Continuing..."
+              goto :eof
+            )
+          )
       
-          $job2 = Start-Job -ScriptBlock {
-            param($wd)
-            Set-Location $wd
-            python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv
-          } -ArgumentList $workspace
+          set /a "CURRENT_TIME=%time:~0,2%*60 + %time:~3,2%"
+          if %CURRENT_TIME% geq %END_TIME% (
+            echo "Timeout: Aborting action after 31 minutes."
+            exit 1
+          )
       
-          Wait-Job -Job $job1, $job2
-          Receive-Job -Job $job1
-          Receive-Job -Job $job2
-      
-          Write-Host "Scripts done."
+          set /a "LOOP_COUNT+=1"
+          echo "Files not found. Waiting for 1 minute (check %LOOP_COUNT% of 22)."
+          timeout /t 60 /nobreak
+          goto :check_loop
 
       - name: Set up Git
         run: |
