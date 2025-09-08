@@ -38,6 +38,7 @@ jobs:
           echo "PATH updated"
         
       - name: Display system information
+        shell: pwsh
         run: |
           echo "Windows version:"
           systeminfo
@@ -46,7 +47,8 @@ jobs:
           echo "IP address"
           curl https://ipinfo.io/ip
           curl https://api.ipify.org
-          Write-Host $PSVersionTable.PSVersion          
+          Write-Host $PSVersionTable.PSVersion
+          $PSVersionTable.PSVersion
 
       - name: Set display resolution to 1920x1080
         run: powershell.exe -Command "Set-DisplayResolution -Width 1920 -Height 1080 -Force"
@@ -76,37 +78,14 @@ jobs:
           Set-Acl "archived_logs" $acl
           Set-Acl "latest_logs" $acl
 
-      - name: Run scripts concurrently (Windows)
-        shell: cmd
-        run: |
-          start python aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt
-          start python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv
-
-      - name: Await completion
+      - name: Run Python scripts concurrently (Windows)
         shell: pwsh
         run: |
-          Write-Host "Waiting for 9.5 minutes..."
-          Start-Sleep -Seconds 570
-      
-          $maxWaitMinutes = 22
-          $endTime = (Get-Date).AddMinutes($maxWaitMinutes)
-          $loopCount = 0
-      
-          while ((Get-Date) -lt $endTime) {
-            if (Test-Path "aeon-out-part2.csv" -PathType Leaf) {
-              if (Test-Path "aeon-out-part3.csv" -PathType Leaf) {
-                Write-Host "Both files found. Continuing..."
-                exit 0
-              }
-            }
-      
-            $loopCount++
-            Write-Host "Output files not found. Waiting for 1 minute ($loopCount of $maxWaitMinutes)."
-            Start-Sleep -Seconds 60
-          }
-      
-          Write-Host "Timeout: Aborting action after 31 minutes."
-          exit 1
+          python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv &
+          Start-Sleep -Seconds 1
+          python aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt
+          Wait-Process -Name python
+          Write-Host "✅ Scripts completed."
       
       - name: Set up Git
         run: |
