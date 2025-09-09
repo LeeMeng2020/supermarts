@@ -81,15 +81,35 @@ jobs:
       - name: Run Python scripts concurrently (Windows)
         shell: pwsh
         run: |
-          python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv *> part2.log &
-          Start-Sleep -Seconds 1
+          python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv &
+          Start-Sleep -Seconds 2
           python aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt
+
+          $file = "aeon-out-part2.csv"
+          $maxAttempts = 4
+          $delaySeconds = 45
+          $found = $false
       
-          Get-Content part2.log
+          for ($i = 1; $i -le $maxAttempts; $i++) {
+            Write-Host "🔍 Attempt $i: Checking for '$file'..."
+            if (Test-Path $file) {
+              Write-Host "✅ File found: $file"
+              $found = $true
+              break
+            } else {
+              Write-Host "⏳ File not found. Waiting $delaySeconds seconds..."
+              Start-Sleep -Seconds $delaySeconds
+            }
+          }
+      
+          if (-not $found) {
+            Write-Host "⚠️ File '$file' was not found after $maxAttempts attempts. Continuing workflow..."
+          }
+
           Write-Host "✅ Scripts completed."
 
           # Check if file exists
-          if (-Not (Test-Path "aeon-out-part2.csv")) {
+          if (-Not (Test-Path $file) {
             Write-Error "** Output file1 does not exist, aborting **"
             exit 1
           }
@@ -100,7 +120,7 @@ jobs:
           }
       
           # Check file size
-          $filesize = (Get-Item "aeon-out-part2.csv").Length
+          $filesize = (Get-Item $file).Length
           if ($filesize -lt 2500) {
             Write-Error "** Output file is too small ($filesize bytes), aborting **"
             exit 1
