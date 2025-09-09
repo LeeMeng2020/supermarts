@@ -88,17 +88,14 @@ jobs:
           Get-Content part2.log
           Write-Host "✅ Scripts completed."
 
-      - name: Validate output script
-        shell: pwsh
-        run: |     
           # Check if file exists
           if (-Not (Test-Path "aeon-out-part2.csv")) {
-            Write-Error "** Output file does not exist, aborting **"
+            Write-Error "** Output file1 does not exist, aborting **"
             exit 1
           }
 
           if (-Not (Test-Path "aeon-out-part3.csv")) {
-            Write-Error "** Output file does not exist, aborting **"
+            Write-Error "** Output file2 does not exist, aborting **"
             exit 1
           }
       
