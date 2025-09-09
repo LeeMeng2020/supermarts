@@ -81,12 +81,36 @@ jobs:
       - name: Run Python scripts concurrently (Windows)
         shell: pwsh
         run: |
-          python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv &
+          python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv *> part2.log &
           Start-Sleep -Seconds 1
           python aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt
-          Wait-Process -Name python
-          Write-Host "✅ Scripts completed."
       
+          Get-Content part2.log
+          Write-Host "✅ Scripts completed."
+
+      - name: Validate output script
+        shell: pwsh
+        run: |     
+          # Check if file exists
+          if (-Not (Test-Path "aeon-out-part2.csv")) {
+            Write-Error "** Output file does not exist, aborting **"
+            exit 1
+          }
+
+          if (-Not (Test-Path "aeon-out-part3.csv")) {
+            Write-Error "** Output file does not exist, aborting **"
+            exit 1
+          }
+      
+          # Check file size
+          $filesize = (Get-Item "aeon-out-part2.csv").Length
+          if ($filesize -lt 2500) {
+            Write-Error "** Output file is too small ($filesize bytes), aborting **"
+            exit 1
+          }
+      
+          Write-Host "✅ Validation passed: output file seems OK."
+
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"

@@ -45,7 +45,6 @@ jobs:
           python -V
           echo "IP address"
           curl https://ipinfo.io/ip
-          curl https://api.ipify.org
           
       - name: Set display resolution to 1920x1080
         run: powershell.exe -Command "Set-DisplayResolution -Width 1920 -Height 1080 -Force"
