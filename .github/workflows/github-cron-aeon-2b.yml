@@ -110,7 +110,7 @@ jobs:
           Write-Host "✅ Scripts completed."
 
           # Check if file exists
-          if (-Not (Test-Path $file) {
+          if (-Not (Test-Path $file)) {
             Write-Error "** Output file1 does not exist, aborting **"
             exit 1
           }
