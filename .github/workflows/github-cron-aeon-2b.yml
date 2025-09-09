@@ -45,7 +45,6 @@ jobs:
           echo "Python version"
           python -V
           echo "IP address"
-          curl https://ipinfo.io/ip
           curl https://api.ipify.org
           Write-Host $PSVersionTable.PSVersion
           $PSVersionTable.PSVersion
@@ -84,10 +83,10 @@ jobs:
           python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv &
           Start-Sleep -Seconds 2
           python aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt
-          Start-Sleep -Seconds 10
+          Start-Sleep -Seconds 20
 
           $file = "aeon-out-part2.csv"
-          $maxAttempts = 5
+          $maxAttempts = 8
           $delaySeconds = 45
           $found = $false
       
