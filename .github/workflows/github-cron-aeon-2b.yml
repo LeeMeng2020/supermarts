@@ -84,14 +84,15 @@ jobs:
           python aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv &
           Start-Sleep -Seconds 2
           python aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt
+          Start-Sleep -Seconds 10
 
           $file = "aeon-out-part2.csv"
-          $maxAttempts = 4
+          $maxAttempts = 5
           $delaySeconds = 45
           $found = $false
       
           for ($i = 1; $i -le $maxAttempts; $i++) {
-            Write-Host "🔍 Attempt $i: Checking for '$file'..."
+            Write-Host "🔍 Attempt $i - Checking for '$file'..."
             if (Test-Path $file) {
               Write-Host "✅ File found: $file"
               $found = $true
