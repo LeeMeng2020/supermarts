@@ -1,10 +1,10 @@
-name: Village Workflow (gather-branch)
+name: Lotus workflow
 
 on:
   workflow_dispatch: # manual trigger ability
-  #schedule:
-    # Run every day at 7:15 AM MY time 11:15 PM UTC
-    #- cron: '15 23 * * *' 
+  schedule:
+    # Run every day at 7:14 AM MY time 11:14 PM UTC), evening
+    - cron: '14 23 * * *' 
 
 jobs:
   setup:
@@ -19,11 +19,6 @@ jobs:
           ref: gather-branch # Specify gather-branch directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's working directory      
         
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11.10'       
-    
       - name: Display system information
         run: |
           echo "Ubuntu version:"
@@ -31,7 +26,6 @@ jobs:
           echo "Python version"
           python -V
           echo "IP address"
-          curl --no-progress-meter https://ipinfo.io/ip
           curl --no-progress-meter https://api.ipify.org
           
       - name: Update package lists
@@ -47,22 +41,44 @@ jobs:
             linux-tools-common \
             linux-libc-dev \
             p7zip-full
-              
-      - name: Unzip gather-village-b.7z
+             
+      - name: Unzip gather-lotus.7z
         run: |
-          7z x runner-src/gather-village-b.7z -p${{ secrets.ZIP_PW }}
-          ls -l
+          7z x runner-src/gather-lotus.7z -p${{ secrets.ZIP_PW }}
 
       - name: pip install
         run: pip install -r requirements.txt
           
       - name: Run script
         run: |
-          echo "running script"
-          python village_038_one_thread.py
+          python lotus_from_api_029_part2.py &
+          sleep 2
+          python lotus_from_api_029_part1.py
+          wait
+          echo "Scripts done."
           echo "Error log:"
-          cat village_error_log.txt  
- 
+          cat lotus_error_log.txt
+
+      - name: Validate output file
+        run: |
+          FILE="lotus-from-api-part1.csv"
+          echo "Checking if $FILE exists and is larger than 100 KB..."
+          if [ ! -f "$FILE" ]; then
+            echo "❌ File does not exist: $FILE"
+            exit 1
+          fi
+          FILESIZE=$(stat -c%s "$FILE")
+          if [ "$FILESIZE" -lt 102400 ]; then
+            echo "❌ File size is too small: ${FILESIZE} bytes"
+            exit 1
+          fi
+          echo "✅ File exists and is larger than 100 KB: ${FILESIZE} bytes"
+
+      - name: Run processing script
+        run: |
+          echo "running processing script"
+          python lotus fixer 0.3.5_concat.py
+
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -72,11 +88,14 @@ jobs:
         run: |
           git pull origin gather-branch --rebase
           git push origin gather-branch
-    
+
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
-          cp village-gather.csv raw_data/
-          git add raw_data/village-gather.csv
-          git commit -m "Automated: Add generated Village files" || echo "No changes to commit"
-          git push origin gather-branch      
+          cp lotus-from-api* raw_data/
+          cp lotus-output* processed/
+          cp lotus_error_log.txt raw_data/
+          git add raw_data/lotus*
+          git add processed/lotus*
+          git commit -m "Automated: Add generated Lotus files" || echo "No changes to commit"
+          git push origin gather-branch    
