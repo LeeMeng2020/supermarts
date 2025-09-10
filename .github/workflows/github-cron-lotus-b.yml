@@ -1,4 +1,4 @@
-name: Lotus workflow
+name: Lotus-b workflow
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -77,7 +77,7 @@ jobs:
       - name: Run processing script
         run: |
           echo "running processing script"
-          python lotus fixer 0.3.5_concat.py
+          python lotus_fixer_035_concat.py
 
       - name: Set up Git
         run: |
