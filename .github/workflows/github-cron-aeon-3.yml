@@ -44,7 +44,6 @@ jobs:
           echo "Python version"
           python -V
           echo "IP address"
-          curl https://ipinfo.io/ip
           curl https://api.ipify.org
 
       - name: Set display resolution to 1920x1080
@@ -67,7 +66,7 @@ jobs:
             New-Item -ItemType Directory -Path "latest_logs"
           }
 
-      - name: Run script
+      - name: Run script and validate output
         shell: pwsh
         run: |
           python aeon_cdp_args_032.py -c aeon-categories-4.txt -o aeon-out-part4.csv

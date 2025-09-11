@@ -1,4 +1,4 @@
-name: Jaya Workflow (gather-branch)
+name: Jaya-b workflow (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
