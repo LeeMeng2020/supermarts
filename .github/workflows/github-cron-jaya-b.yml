@@ -45,7 +45,6 @@ jobs:
       - name: Unzip gather-jaya.7z
         run: |
           7z x runner-src/gather-jaya.7z -p${{ secrets.ZIP_PW }}
-          cat hello_world.txt
 
       - name: pip install
         run: pip install -r requirements.txt
@@ -71,6 +70,11 @@ jobs:
             exit 1
           fi
           echo "✅ File exists and is larger than 100 KB: ${FILESIZE} bytes"
+
+      - name: Run processing script
+        run: |
+          echo "running processing script"
+          python jaya_fixer_00.py
  
       - name: Set up Git
         run: |
@@ -86,6 +90,8 @@ jobs:
         run: |
           mkdir -p raw_data
           cp jaya-2-threads.csv raw_data/
+          cp jaya-output* raw_data/
           git add raw_data/jaya-2-threads.csv
+          git add raw_data/jaya-output*
           git commit -m "Automated: Add generated Jaya files" || echo "No changes to commit"
           git push origin gather-branch      
