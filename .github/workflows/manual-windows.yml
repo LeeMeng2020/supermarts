@@ -29,33 +29,30 @@ jobs:
           git pull origin aeon-branch --rebase
           git push origin aeon-branch
 
-      - name: Check timestamps and run aeon-concat.py if recent
-        shell: pwsh
+      - name: Check commit timestamps and run aeon-concat.py if recent
+        shell: bash
         run: |
-          $threshold = (Get-Date).AddHours(-1)
-          $files = @(
-            "raw_data/aeon-out-part1.csv",
-            "raw_data/aeon-out-part2.csv",
-            "raw_data/aeon-out-part3.csv",
-            "raw_data/aeon-out-part4.csv"
-          )
+          # git fetch origin aeon-branch
+          # git checkout aeon-branch
 
-          $runScript = $false
-          foreach ($file in $files) {
-            if (Test-Path $file) {
-              $lastModified = (Get-Item $file).LastWriteTime
-              Write-Host "$file last modified: $lastModified"
-              if ($lastModified -gt $threshold) {
-                $runScript = $true
-              }
-            } else {
-              Write-Host "$file not found, skipping."
-            }
-          }
+          threshold=$(date -d '1 hour ago' +%s)
+          run_script=false
 
-          if ($runScript) {
-            Write-Host "Recent changes detected. Running aeon-concat.py..."
-            # python aeon-concat.py
-          } else {
-            Write-Host "No recent changes. Skipping aeon-concat.py."
-          }
+          for file in raw_data/aeon-out-part{1..4}.csv; do
+            if git ls-tree -r HEAD --name-only | grep -q "$file"; then
+              commit_time=$(git log -1 --format="%ct" -- "$file")
+              echo "$file last commit timestamp: $commit_time"
+              if [ "$commit_time" -gt "$threshold" ]; then
+                run_script=true
+              fi
+            else
+              echo "$file not found in aeon-branch"
+            fi
+          done
+
+          if [ "$run_script" = true ]; then
+            echo "Recent changes detected. Running aeon-concat.py..."
+            python aeon-concat.py
+          else
+            echo "No recent changes. Skipping aeon-concat.py."
+          fi
