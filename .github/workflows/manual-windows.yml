@@ -1,0 +1,61 @@
+name: Manual test
+
+on:
+  workflow_dispatch: # manual trigger ability
+
+jobs:
+  setup:
+    runs-on: windows-latest
+    permissions:
+      contents: write # Grant write permissions for pushing changes
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: aeon-branch # Specify branch directly for the primary checkout
+          path: . # CHANGE: Checkout to the root of the runner's working directory      
+
+         
+      - name: Display system information
+        run: |
+          echo "Windows version:"
+          systeminfo
+          echo "Python version"
+          python -V
+
+      - name: Pull latest changes before push
+        run: |
+          git pull origin aeon-branch --rebase
+          git push origin aeon-branch
+
+      - name: Check timestamps and run aeon-concat.py if recent
+        shell: pwsh
+        run: |
+          $threshold = (Get-Date).AddHours(-1)
+          $files = @(
+            "raw_data/aeon-out-part1.csv",
+            "raw_data/aeon-out-part2.csv",
+            "raw_data/aeon-out-part3.csv",
+            "raw_data/aeon-out-part4.csv"
+          )
+
+          $runScript = $false
+          foreach ($file in $files) {
+            if (Test-Path $file) {
+              $lastModified = (Get-Item $file).LastWriteTime
+              Write-Host "$file last modified: $lastModified"
+              if ($lastModified -gt $threshold) {
+                $runScript = $true
+              }
+            } else {
+              Write-Host "$file not found, skipping."
+            }
+          }
+
+          if ($runScript) {
+            Write-Host "Recent changes detected. Running aeon-concat.py..."
+            # python aeon-concat.py
+          } else {
+            Write-Host "No recent changes. Skipping aeon-concat.py."
+          }
