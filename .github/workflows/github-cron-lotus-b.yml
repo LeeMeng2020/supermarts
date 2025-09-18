@@ -51,9 +51,9 @@ jobs:
           
       - name: Run script
         run: |
-          python lotus_from_api_029_part2.py &
+          python lotus_from_api_args_030.py -c lotus_categories_1.json -o lotus-from-api-part1.csv &
           sleep 2
-          python lotus_from_api_029_part1.py
+          python lotus_from_api_args_030.py -c lotus_categories_2.json -o lotus-from-api-part2.csv
           wait
           echo "Scripts done."
           echo "Error log:"
