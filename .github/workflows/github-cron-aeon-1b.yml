@@ -2,9 +2,6 @@ name: Aeon flow 1 (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
-  schedule:
-    # Run every day at 7:13 AM MY time 11:13 PM UTC), evening
-    - cron: '13 23 * * *' 
 
 jobs:
   setup:
@@ -27,9 +24,11 @@ jobs:
       - name: Download 7-Zip installer
         run: |
           Invoke-WebRequest -Uri "https://www.7-zip.org/a/7z2301-x64.exe" -OutFile "7zip_installer.exe"
+
       - name: Install 7-Zip silently
         run: |
           Start-Process -FilePath ".\7zip_installer.exe" -ArgumentList "/S" -Wait
+
       - name: Add 7-Zip to PATH
         run: |
           $env:Path += ";C:\Program Files\7-Zip"
@@ -50,6 +49,7 @@ jobs:
       - name: Unzip .7z
         run: |
           & "C:\Program Files\7-Zip\7z.exe" x runner-src/gather-aeon.7z -p${{ secrets.ZIP_PW }}
+
       - name: pip install
         run: pip install -r requirements.txt
         
@@ -61,33 +61,53 @@ jobs:
           }
           if (!(Test-Path "latest_logs")) {
             New-Item -ItemType Directory -Path "latest_logs"
-          }      
-          
-      - name: Run script and validate output
+          }   
+
+      - name: Run script and validate output with retry
         shell: pwsh
         run: |
-          python aeon_cdp_args_032.py -c aeon-categories-1.txt -o aeon-out-part1.csv
-          Write-Host "Script done."
+          function Run-Script {
+            python aeon_cdp_args_032.py -c aeon-categories-1.txt -o aeon-out-part1.csv
+            Write-Host "Script done."
       
-          # Check if file exists
-          if (-Not (Test-Path "aeon-out-part1.csv")) {
-            Write-Error "** Output file does not exist, aborting **"
-            exit 1
+            # Check if file exists
+            if (-Not (Test-Path "aeon-out-part1.csv")) {
+              Write-Error "** Output file does not exist **"
+              return $false
+            }
+      
+            # Check file size
+            $filesize = (Get-Item "aeon-out-part1.csv").Length
+            if ($filesize -lt 1500) {
+              Write-Error "** Output file is too small ($filesize bytes) **"
+              return $false
+            }
+      
+            Write-Host "Validation passed: output file seems OK."
+            return $true
           }
       
-          # Check file size
-          $filesize = (Get-Item "aeon-out-part1.csv").Length
-          if ($filesize -lt 1500) {
-            Write-Error "** Output file is too small ($filesize bytes), aborting **"
-            exit 1
-          }
+          # First attempt
+          $success = Run-Script
       
-          Write-Host "Validation passed: output file seems OK."
+          if (-Not $success) {
+            Write-Host "Initial run failed. Retrying in 15 seconds..."
+            Start-Sleep -Seconds 15
+      
+            # Second attempt
+            $success = Run-Script
+      
+            if (-Not $success) {
+              Write-Error "** Script failed after retry. Aborting. **"
+              exit 1
+            }
+          }
 
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Pull latest changes before push
         run: |
           git pull origin aeon-branch --rebase
@@ -98,4 +118,4 @@ jobs:
           copy aeon-out-part1.csv raw_data/
           git add raw_data/aeon-out-part1.csv         
           git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
-          git push origin aeon-branch   
+          git push origin aeon-branch              
