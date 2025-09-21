@@ -1,4 +1,4 @@
-name: Lotus-b workflow
+name: Lotus-b flow
 
 on:
   workflow_dispatch: # manual trigger ability

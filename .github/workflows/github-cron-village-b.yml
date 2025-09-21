@@ -1,4 +1,4 @@
-name: Village Workflow-b (gather-branch)
+name: Village flow-b (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
