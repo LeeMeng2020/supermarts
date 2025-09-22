@@ -99,6 +99,6 @@ jobs:
           cp village-gather.csv raw_data/
           cp village-output* processed/
           git add raw_data/village-gather.csv
-          git add processed/*
+          git add processed/v*
           git commit -m "Automated: Add generated Village files" || echo "No changes to commit"
           git push origin gather-branch      
