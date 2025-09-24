@@ -18,12 +18,7 @@ jobs:
         with:
           ref: gather-branch # Specify gather-branch directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's working directory      
-        
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11.10'       
-    
+
       - name: Display system information
         run: |
           echo "Ubuntu version:"
@@ -59,7 +54,7 @@ jobs:
       - name: Run script
         run: |
           echo "running script"
-          python village_038_one_thread.py
+          python village_038_one_thread_args.py -c village-categories.txt -o village-gather.csv
           echo "Error log:"
           cat village_error_log.txt 
           
