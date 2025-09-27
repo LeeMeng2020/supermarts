@@ -53,7 +53,7 @@ jobs:
         run: |
           python lotus_from_api_args_030.py -c lotus_categories_1.json -o lotus-from-api-part1.csv &
           sleep 1
-          python lotus_from_api_args_030.py -c lotus_categories_2.json -o lotus-from-api-part2.csv
+          python lotus_from_api_args_030.py -c lotus_categories_2.json -o lotus-from-api-part2.csv &
           sleep 1
           python lotus_from_api_args_030.py -c lotus_categories_3.json -o lotus-from-api-part3.csv
           wait
