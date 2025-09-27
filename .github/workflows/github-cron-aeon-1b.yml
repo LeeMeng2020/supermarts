@@ -89,19 +89,20 @@ jobs:
             Write-Host "Validation passed: output file seems OK."
             return $true
           }
-
+         
           function Run-And-Validate {
-            python aeon_cdp_args_032.py -c aeon-categories-1.txt -o aeon-out-part1.csv
-            Write-Host "Script done."
+            $pyOutput = python -u aeon_cdp_args_032.py -c aeon-categories-1.txt -o aeon-out-part1.csv
+            Write-Output $pyOutput
+            Write-Output "Script done."
             return (Check-OutputFile -FilePath "aeon-out-part1.csv" -MinSize 1500)
           }
       
           if (-Not (Run-And-Validate)) {
-            Write-Host "Initial check failed. Retrying after 15 seconds..."
+            Write-Host "Initial output file check failed. Retrying after 15 seconds..."
             Start-Sleep -Seconds 15
       
             if (-Not (Run-And-Validate)) {
-              Write-Error "** Retry failed. Aborting. **"
+              Write-Error "** Scrape retry failed. Aborting. **"
               exit 1
             }
           }
