@@ -76,33 +76,34 @@ jobs:
             )
       
             if (-Not (Test-Path $FilePath)) {
-              Write-Host "** Output file does not exist **"
+              Write-Output "** Output file does not exist **"
               return $false
             }
       
             $filesize = (Get-Item $FilePath).Length
             if ($filesize -lt $MinSize) {
-              Write-Host "** Output file is too small ($filesize bytes) **"
+              Write-Output "** Output file is too small ($filesize bytes) **"
               return $false
             }
       
-            Write-Host "Validation passed: output file seems OK."
+            Write-Output "Validation passed: output file seems OK."
             return $true
           }
-         
-          function Run-And-Validate {
-            $pyOutput = python -u aeon_cdp_args_032.py -c aeon-categories-1.txt -o aeon-out-part1.csv
-            Write-Output $pyOutput
-            Write-Output "Script done."
-            return (Check-OutputFile -FilePath "aeon-out-part1.csv" -MinSize 1500)
-          }
       
-          if (-Not (Run-And-Validate)) {
-            Write-Host "Initial output file check failed. Retrying after 15 seconds..."
+          Write-Output "=== First attempt ==="
+          python -u aeon_cdp_args_032.py -c aeon-categories-1.txt -o aeon-out-part1.csv
+          $isValid = Check-OutputFile -FilePath "aeon-out-part1.csv" -MinSize 1500
+      
+          if (-Not $isValid) {
+            Write-Output "Initial output file check failed. Retrying after 15 seconds..."
             Start-Sleep -Seconds 15
       
-            if (-Not (Run-And-Validate)) {
-              Write-Error "** Scrape retry failed. Aborting. **"
+            Write-Output "=== Second attempt ==="
+            python -u aeon_cdp_args_032.py -c aeon-categories-1.txt -o aeon-out-part1.csv
+            $isValid = Check-OutputFile -FilePath "aeon-out-part1.csv" -MinSize 1500
+      
+            if (-Not $isValid) {
+              Write-Error "** Retry failed. Aborting. **"
               exit 1
             }
           }
