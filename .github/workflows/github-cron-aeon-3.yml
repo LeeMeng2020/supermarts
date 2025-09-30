@@ -95,7 +95,6 @@ jobs:
       - name: Pull latest changes before push
         run: |
           git pull origin aeon-branch --rebase
-          git push origin aeon-branch
          
       - name: Commit and push generated files
         run: |
