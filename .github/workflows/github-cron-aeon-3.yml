@@ -66,26 +66,49 @@ jobs:
             New-Item -ItemType Directory -Path "latest_logs"
           }
 
-      - name: Run script and validate output
+
+      - name: Run script and validate output with retry
         shell: pwsh
         run: |
-          python aeon_cdp_args_032.py -c aeon-categories-4.txt -o aeon-out-part4.csv
-          Write-Host "Script done."
+          function Check-OutputFile {
+            param (
+              [string]$FilePath,
+              [int]$MinSize
+            )
       
-          # Check if file exists
-          if (-Not (Test-Path "aeon-out-part4.csv")) {
-            Write-Error "** Output file does not exist, aborting **"
-            exit 1
+            if (-Not (Test-Path $FilePath)) {
+              Write-Output "** Output file does not exist **"
+              return $false
+            }
+      
+            $filesize = (Get-Item $FilePath).Length
+            if ($filesize -lt $MinSize) {
+              Write-Output "** Output file is too small ($filesize bytes) **"
+              return $false
+            }
+      
+            Write-Output "Validation passed: output file seems OK."
+            return $true
           }
       
-          # Check file size
-          $filesize = (Get-Item "aeon-out-part4.csv").Length
-          if ($filesize -lt 1500) {
-            Write-Error "** Output file is too small ($filesize bytes), aborting **"
-            exit 1
-          }
+          Write-Output "=== First attempt ==="
+          python -u aeon_cdp_args_032.py -c aeon-categories-4.txt -o aeon-out-part4.csv
+          $isValid = Check-OutputFile -FilePath "aeon-out-part4.csv" -MinSize 1500
       
-          Write-Host "Validation passed: output file seems OK."
+          if (-Not $isValid) {
+            Write-Output "Initial output file check failed. Retrying after 15 seconds..."
+            Start-Sleep -Seconds 15
+      
+            Write-Output "=== Second attempt ==="
+            python -u aeon_cdp_args_032.py -c aeon-categories-4.txt -o aeon-out-part4.csv
+            $isValid = Check-OutputFile -FilePath "aeon-out-part1.csv" -MinSize 1500
+      
+            if (-Not $isValid) {
+              Write-Error "** Retry failed. Aborting. **"
+              exit 1
+            }
+          }
+
 
       - name: Set up Git
         run: |
