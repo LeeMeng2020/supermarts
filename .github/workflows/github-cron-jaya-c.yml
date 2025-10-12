@@ -53,12 +53,18 @@ jobs:
         run: |
           echo "Install playwright chromium"
           python -m playwright install --with-deps --only-shell > /dev/null
-          echo "running script"
-          python jaya_pwright_2025_010_mthread_arg.py -s jaya_settings.json
+          echo "running scripts"
+          python jaya_pwright_2025_010_one_thread_arg.py -s jaya_settings_1.json &
+          sleep 1
+          python jaya_pwright_2025_010_one_thread_arg.py -s jaya_settings_2.json &
+          sleep 1
+          python jaya_pwright_2025_010_one_thread_arg.py -s jaya_settings_3.json
+          wait
+          echo "Scripts done."
 
       - name: Validate output file
         run: |
-          FILE="jaya-2-threads.csv"
+          FILE="jaya_one_thread_1.csv"
           echo "Checking if $FILE exists and is larger than 100 KB..."
           if [ ! -f "$FILE" ]; then
             echo "❌ File does not exist: $FILE"
@@ -74,7 +80,7 @@ jobs:
       - name: Run processing script
         run: |
           echo "running processing script"
-          python jaya_fixer_00.py
+          python jaya_fixer_01.py
  
       - name: Set up Git
         run: |
@@ -89,9 +95,9 @@ jobs:
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
-          cp jaya-2-threads.csv raw_data/
+          cp jaya_one* raw_data/
           cp jaya-output* raw_data/
-          git add raw_data/jaya-2-threads.csv
+          git add raw_data/jaya_one*
           git add raw_data/jaya-output*
           git commit -m "Automated: Add generated Jaya files" || echo "No changes to commit"
           git push origin gather-branch      
