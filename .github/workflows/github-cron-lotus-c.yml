@@ -1,4 +1,4 @@
-name: Lotus-b flow
+name: Lotus-c flow (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
