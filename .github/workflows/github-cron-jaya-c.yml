@@ -90,7 +90,6 @@ jobs:
       - name: Pull latest changes before push
         run: |
           git pull origin gather-branch --rebase
-          git push origin gather-branch
     
       - name: Commit and push generated files
         run: |
