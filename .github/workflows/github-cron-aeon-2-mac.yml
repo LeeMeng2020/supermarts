@@ -1,0 +1,114 @@
+name: Aeon flow 2 Mac (aeon-branch)
+
+on:
+  workflow_dispatch: # manual trigger ability
+  schedule:
+    # Run every day at 7:14 AM MY time 11:14 PM UTC), evening
+    - cron: '14 23 * * *'
+
+jobs:
+  setup:
+    runs-on: macos-14
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: aeon-branch
+          path: .
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.10'
+
+      - name: Install p7zip
+        run: brew install p7zip
+
+      - name: Display system information
+        run: |
+          echo "macOS version:"
+          sw_vers
+          echo "Python version:"
+          python3 -V
+          echo "IP address:"
+          curl --no-progress-meter https://api.ipify.org
+
+      - name: Unzip .7z
+        run: 7z x runner-src/gather-aeon.7z -p${{ secrets.ZIP_PW }}
+
+      - name: pip install
+        run: pip3 install -r requirements.txt
+
+      - name: Run Python scripts concurrently with independent validation and retry (macOS)
+        run: |
+          run_script_1() {
+            echo "▶ Running aeon_cdp_args_032.py..."
+            python3 aeon_cdp_args_032.py -c aeon-categories-2.txt -o aeon-out-part2.csv
+          }
+      
+          run_script_2() {
+            echo "▶ Running aeon_cdp_args_033_proxy.py..."
+            python3 aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt
+          }
+      
+          validate_file() {
+            local file=$1
+            local minsize=1500
+            if [ ! -f "$file" ]; then
+              echo "❌ File missing: $file"
+              return 1
+            fi
+            filesize=$(stat -f%z "$file")
+            if [ "$filesize" -lt "$minsize" ]; then
+              echo "❌ File too small: $file ($filesize bytes)"
+              return 1
+            fi
+            echo "✅ File validated: $file ($filesize bytes)"
+            return 0
+          }
+      
+          # Run both scripts concurrently
+          run_script_1 &
+          sleep 2
+          run_script_2
+          wait
+          echo "✅ Initial script execution complete."
+      
+          # Validate aeon-out-part2.csv
+          validate_file aeon-out-part2.csv
+          if [ $? -ne 0 ]; then
+            echo "⚠️ Retrying aeon-out-part2.csv in 15 seconds..."
+            sleep 15
+            run_script_1
+            validate_file aeon-out-part2.csv || { echo "❌ aeon-out-part2.csv failed again. Aborting."; exit 1; }
+          fi
+      
+          # Validate aeon-out-part3.csv
+          validate_file aeon-out-part3.csv
+          if [ $? -ne 0 ]; then
+            echo "⚠️ Retrying aeon-out-part3.csv in 15 seconds..."
+            sleep 15
+            run_script_2
+            validate_file aeon-out-part3.csv || { echo "❌ aeon-out-part3.csv failed again. Aborting."; exit 1; }
+          fi
+      
+          echo "🎉 All files validated successfully."
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes before push
+        run: |
+          git pull origin aeon-branch --rebase
+
+      - name: Commit and push generated files
+        run: |
+          cp aeon-out-part* raw_data/
+          git add raw_data/aeon-out-part*
+          git commit -m "Automated: Add generated Aeon files" || echo "No changes to commit"
+          git push origin aeon-branch
