@@ -54,6 +54,7 @@ https://jgut.jayagrocer.com/collections/bakery,Bakery,Alpine Grain Bread 1unit,R
 https://jgut.jayagrocer.com/collections/bakery,Bakery,Wholemeal Burger Bun 5pcs/pack,RM 6.80,,https://jgut.jayagrocer.com/products/wholemeal-burger-bun-5pcs-1?variant=40940523389089
 https://jgut.jayagrocer.com/collections/bakery,Bakery,8 Grain Bread 1unit,RM 8.30,,https://jgut.jayagrocer.com/products/8-grain-bread-320g-1?variant=40939965579425
 https://jgut.jayagrocer.com/collections/bakery,Bakery,Butter Loaf 1unit,RM 7.90,,https://jgut.jayagrocer.com/products/butter-loaf-1-pc-1?variant=40940110839969
+https://jgut.jayagrocer.com/collections/bakery,Bakery,Burger Bun 5pcs/pack,RM 6.30,,https://jgut.jayagrocer.com/products/burger-bun-1pack-1?variant=40939533795489
 https://jgut.jayagrocer.com/collections/breakfast,Breakfast,Capilano Twist And Squeeze Pure Australian Honey 400g,RM 22.50,,https://jgut.jayagrocer.com/products/capilano-pure-australian-honey-400g-1?variant=40939276533921
 https://jgut.jayagrocer.com/collections/breakfast,Breakfast,Kelloggs Cornflakes Jumbo 500g,RM 15.90,,https://jgut.jayagrocer.com/products/kellogg-s-corn-flakes-cereal-500g-1?variant=40939580194977
 https://jgut.jayagrocer.com/collections/breakfast,Breakfast,Quaker Instant Oatmeal 800g,RM 10.50,,https://jgut.jayagrocer.com/products/quaker-instant-oatmeal-800g-1?variant=40939419730081
@@ -203,7 +204,6 @@ https://jgut.jayagrocer.com/collections/breakfast,Breakfast,Naturel Soft Margari
 https://jgut.jayagrocer.com/collections/breakfast,Breakfast,Naturel Soft Margarine Reduce Fat Spread 500g,RM 12.50,,https://jgut.jayagrocer.com/products/naturel-soft-margarine-reduce-fat-spread-500g?variant=43824991633569
 https://jgut.jayagrocer.com/collections/breakfast,Breakfast,Sainsburys Taste The Difference Pure Can Red Maple Syrup 250g,RM 26.90,,https://jgut.jayagrocer.com/products/sainsburys-taste-the-difference-pure-can-red-maple-syrup-250g?variant=44739967647905
 https://jgut.jayagrocer.com/collections/breakfast,Breakfast,Bonne Maman Apricot Jam 370g,RM 19.99,RM 23.90,https://jgut.jayagrocer.com/products/bonne-maman-apricot-jam-370g-1?variant=43842757132449
-https://jgut.jayagrocer.com/collections/breakfast,Breakfast,Cadbury Milk Chocolate Spread 400g,RM 29.90,RM 32.90,https://jgut.jayagrocer.com/products/cadbury-milk-chocolate-spread-400g-1?variant=40940023218337
 https://jgut.jayagrocer.com/collections/breakfast,Breakfast,Hershey Caramel Syrup 623g,RM 20.50,,https://jgut.jayagrocer.com/products/hershey-caramel-syrup-623g?variant=43337881911457
 https://jgut.jayagrocer.com/collections/breakfast,Breakfast,Starbucks Nespresso Breakfast Blend Capsule Stick 56g,RM 24.90,RM 28.90,https://jgut.jayagrocer.com/products/starbucks-nespresso-breakfast-blend-capsule-stick-56g?variant=44499112460449
 https://jgut.jayagrocer.com/collections/breakfast,Breakfast,Nestle Cerelac Rice and Mixed Vegetables 250g,RM 13.30,,https://jgut.jayagrocer.com/products/nestle-cerelac-rice-mixed-vege-250g?variant=40939173740705
@@ -739,7 +739,7 @@ https://jgut.jayagrocer.com/collections/beverages,Beverages,Ahmad Tea Detox 20pc
 https://jgut.jayagrocer.com/collections/beverages,Beverages,Marigold Peel Fresh Power Juice No Added Sugar Mixed Kale & Veggie Juice Drink 1L,RM 7.29,RM 8.30,https://jgut.jayagrocer.com/products/marigold-peel-fresh-power-juice-no-added-sugar-mixed-kale-veggie-juice-drink-1l-1?variant=43812364681377
 https://jgut.jayagrocer.com/collections/beverages,Beverages,Illy Intense Taste Instant Coffee 95g,RM 50.00,,https://jgut.jayagrocer.com/products/illy-intense-taste-instant-coffee-95g-1?variant=40940469780641
 https://jgut.jayagrocer.com/collections/beverages,Beverages,Monster Energy Drink Zero Sugar Ultra 355ml,RM 4.99,RM 5.90,https://jgut.jayagrocer.com/products/monster-ultra-355ml?variant=42597287231649
-https://jgut.jayagrocer.com/collections/beverages,Beverages,Twining Camomile and Honey Tea Bags 20pcs/pack,RM 21.90,,https://jgut.jayagrocer.com/products/twinings-camomile-honey20s-1?variant=41974922018977
+https://jgut.jayagrocer.com/collections/beverages,Beverages,Twining Camomile and Honey Tea Bags 20pcs/pack,RM 22.90,,https://jgut.jayagrocer.com/products/twinings-camomile-honey20s-1?variant=41974922018977
 https://jgut.jayagrocer.com/collections/beverages,Beverages,OSK Osmanthus Green Tea Bags 50pcs/pack,RM 24.90,,https://jgut.jayagrocer.com/products/osk-osmanthus-green-tea-bags-50pcs-pack?variant=43905837662369
 https://jgut.jayagrocer.com/collections/beverages,Beverages,Nescafe Ready-to-Drink Mocha Coffee 240ml,RM 3.00,,https://jgut.jayagrocer.com/products/nescafe-ready-to-drink-mocha-coffee-240ml?variant=44950417670305
 https://jgut.jayagrocer.com/collections/beverages,Beverages,Pokka Houjicha Roasted Tea 1.5L,RM 6.20,,https://jgut.jayagrocer.com/products/pokka-houjicha-roasted-tea-1-5l?variant=43687432978593
@@ -892,6 +892,7 @@ https://jgut.jayagrocer.com/collections/beverages,Beverages,Twinings Peach Flavo
 https://jgut.jayagrocer.com/collections/beverages,Beverages,Paldo Pororo Tropical Fruit Drink 235ml,RM 4.20,,https://jgut.jayagrocer.com/products/paldo-pororo-tropical-fruits-flavour-drink-235ml-1?variant=42522360840353
 https://jgut.jayagrocer.com/collections/beverages,Beverages,Dilmah Pure Ceylon Green Tea with Lemongrass Teabags 2g x 20,RM 14.90,,https://jgut.jayagrocer.com/products/dilmah-green-tea-lemongrass-20sx2g-1?variant=40939448074401
 https://jgut.jayagrocer.com/collections/beverages,Beverages,Super Cha Roast White Coffee Hazelnut 36g x 15,RM 17.90,,https://jgut.jayagrocer.com/products/super-cha-roast-w-c-hazelnut-36gx15s-1?variant=40939434705057
+https://jgut.jayagrocer.com/collections/beverages,Beverages,Wonda Gold Class Instant Coffee Jar 100g,RM 18.99,RM 20.90,https://jgut.jayagrocer.com/products/wonda-gold-jar-100g?variant=44713530359969
 https://jgut.jayagrocer.com/collections/beverages,Beverages,Boh Seri Songket Lychee with Rose Tea 20pcs/pack,RM 9.99,,https://jgut.jayagrocer.com/products/boh-seri-songket-lychee-with-rose-tea-20pcs-pack?variant=44707370598561
 https://jgut.jayagrocer.com/collections/beverages,Beverages,137 Almond Milk with Avocado 180ml x 3,RM 15.90,,https://jgut.jayagrocer.com/products/137-almond-milk-with-avocado-180ml-x-3?variant=44739840213153
 https://jgut.jayagrocer.com/collections/beverages,Beverages,137 Unsweetened Degrees Oat Milk 180ml x 3,RM 14.50,,https://jgut.jayagrocer.com/products/137-unsweetened-degrees-oat-milk-180ml-x-3?variant=44739826385057
