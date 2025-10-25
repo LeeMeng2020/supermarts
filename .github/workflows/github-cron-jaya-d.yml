@@ -1,10 +1,10 @@
-name: Lotus-c flow (gather-branch)
+name: Jaya-d flow (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 7:14 AM MY time 11:14 PM UTC), evening
-    - cron: '14 23 * * *' 
+    # Run every day at 7:17 AM MY time, 11:17 PM UTC
+    - cron: '17 23 * * *' 
 
 jobs:
   setup:
@@ -26,7 +26,7 @@ jobs:
           echo "Python version"
           python -V
           echo "IP address"
-          curl --no-progress-meter https://api.ipify.org
+          curl --no-progress-meter https://ipinfo.io/ip
           
       - name: Update package lists
         run: |
@@ -41,29 +41,30 @@ jobs:
             linux-tools-common \
             linux-libc-dev \
             p7zip-full
-             
-      - name: Unzip gather-lotus.7z
+              
+      - name: Unzip gather-jaya.7z
         run: |
-          7z x runner-src/gather-lotus.7z -p${{ secrets.ZIP_PW }}
+          7z x runner-src/gather-jaya.7z -p${{ secrets.ZIP_PW }}
 
       - name: pip install
         run: pip install -r requirements.txt
           
       - name: Run script
         run: |
-          python lotus_from_api_args_030.py -c lotus_categories_1.json -o lotus-from-api-part1.csv &
+          echo "Install playwright chromium"
+          python -m playwright install --with-deps --only-shell > /dev/null
+          echo "running scripts"
+          python jaya_pwright_2025_010_one_thread_arg.py -s jaya_settings_1.json &
           sleep 1
-          python lotus_from_api_args_030.py -c lotus_categories_2.json -o lotus-from-api-part2.csv &
+          python jaya_pwright_2025_010_one_thread_arg.py -s jaya_settings_2.json &
           sleep 1
-          python lotus_from_api_args_030.py -c lotus_categories_3.json -o lotus-from-api-part3.csv
+          python jaya_pwright_2025_010_one_thread_arg.py -s jaya_settings_3.json
           wait
           echo "Scripts done."
-          echo "Error log:"
-          cat lotus_error_log.txt
 
-      - name: Validate output files
+      - name: Validate output file
         run: |
-          FILES=("lotus-from-api-part1.csv" "lotus-from-api-part2.csv" "lotus-from-api-part3.csv")
+          FILES=("jaya_one_thread_1.csv" "jaya_one_thread_2.csv" "jaya_one_thread_3.csv")
           for FILE in "${FILES[@]}"; do
             echo "Checking if $FILE exists and is larger than 100 KB..."
             if [ ! -f "$FILE" ]; then
@@ -82,8 +83,8 @@ jobs:
       - name: Run processing script
         run: |
           echo "running processing script"
-          python lotus_fixer_036_concat.py
-
+          python jaya_fixer_01.py
+ 
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -92,15 +93,13 @@ jobs:
       - name: Pull latest changes before push
         run: |
           git pull origin gather-branch --rebase
-          git push origin gather-branch
-
+    
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
-          cp lotus-from-api* raw_data/
-          cp lotus-output* processed/
-          cp lotus_error_log.txt raw_data/
-          git add raw_data/lotus*
-          git add processed/lotus*
-          git commit -m "Automated: Add generated Lotus files" || echo "No changes to commit"
-          git push origin gather-branch    
+          cp jaya_one* raw_data/
+          cp jaya-output* raw_data/
+          git add raw_data/jaya_one*
+          git add raw_data/jaya-output*
+          git commit -m "Automated: Add generated Jaya files" || echo "No changes to commit"
+          git push origin gather-branch      
