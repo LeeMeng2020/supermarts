@@ -1,0 +1,89 @@
+name: Aeon flow 2b manual (aeon-branch)
+
+on:
+  workflow_dispatch: # manual trigger ability
+
+jobs:
+  setup:
+    runs-on: macos-14
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: aeon-branch
+          path: .
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.10'
+
+      - name: Install p7zip
+        run: brew install p7zip
+
+      - name: Display system information
+        run: |
+          echo "macOS version:"
+          sw_vers
+          echo "Python version:"
+          python3 -V
+          echo "IP address:"
+          curl --no-progress-meter https://api.ipify.org
+
+      - name: Unzip .7z
+        run: 7z x runner-src/gather-aeon.7z -p${{ secrets.ZIP_PW }}
+
+      - name: pip install
+        run: pip3 install -r requirements.txt
+
+      - name: Run script and validate output with retry
+        run: |
+          run_and_validate() {
+            echo "Running script..."
+            python3 aeon_cdp_args_032.py -c aeon-categories-3.txt -o aeon-out-part3.csv
+      
+            if [ ! -f aeon-out-part3.csv ]; then
+              echo "** Output file does not exist **"
+              return 1
+            fi
+      
+            filesize=$(stat -f%z aeon-out-part3.csv)
+            if [ "$filesize" -lt 1500 ]; then
+              echo "** Output file is too small ($filesize bytes) **"
+              return 1
+            fi
+      
+            echo "✅ Validation passed: output file seems OK."
+            return 0
+          }
+      
+          # First attempt
+          run_and_validate
+          if [ $? -ne 0 ]; then
+            echo "⚠️ First attempt failed. Retrying in 15 seconds..."
+            sleep 15
+            run_and_validate
+            if [ $? -ne 0 ]; then
+              echo "❌ Second attempt failed. Aborting."
+              exit 1
+            fi
+          fi
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes before push
+        run: |
+          git pull origin aeon-branch --rebase
+
+      - name: Commit and push generated files
+        run: |
+          cp aeon-out-part3.csv raw_data/
+          git add raw_data/aeon-out-part3.csv
+          git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
+          git push origin aeon-branch
