@@ -1,7 +1,10 @@
-name: Aeon flow 2a manual (aeon-branch)
+name: Aeon flow 2a (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
+  schedule:
+    # Run every day at 7:13 AM MY time 11:13 PM UTC), evening
+    - cron: '13 23 * * *'
 
 jobs:
   setup:
