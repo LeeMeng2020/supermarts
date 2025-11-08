@@ -48,7 +48,7 @@ jobs:
       
           run_script_2() {
             echo "▶ Running aeon_cdp_args_033_proxy.py..."
-            python3 aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy1.txt
+            python3 aeon_cdp_args_033_proxy.py -c aeon-categories-3.txt -o aeon-out-part3.csv -p proxy2.txt
           }
       
           validate_file() {
