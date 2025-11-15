@@ -53,7 +53,7 @@ jobs:
           fi
 
           filesize=$(stat -f%z aeon-out-part5.csv)
-          if [ "$filesize" -lt 1500 ]; then
+          if [ "$filesize" -lt 2000 ]; then
             echo "** Output file is too small ($filesize bytes), aborting **"
             exit 1
           fi
