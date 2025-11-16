@@ -46,7 +46,7 @@ jobs:
         run: |
           run_and_validate() {
             echo "Running script..."
-            python3 aeon_cdp_args_032.py -c aeon-categories-3.txt -o aeon-out-part3.csv
+            python3 aeon_cdp_args_033.py -c aeon-categories-3.txt -o aeon-out-part3.csv
       
             if [ ! -f aeon-out-part3.csv ]; then
               echo "** Output file does not exist **"
