@@ -91,7 +91,7 @@ jobs:
           }
       
           Write-Output "=== First attempt ==="
-          python -u aeon_cdp_args_033.py -c aeon-categories-1.txt -o aeon-out-part1.csv
+          python -u aeon_cdp_args_032.py -c aeon-categories-1.txt -o aeon-out-part1.csv
           $isValid = Check-OutputFile -FilePath "aeon-out-part1.csv" -MinSize 2000
       
           if (-Not $isValid) {
