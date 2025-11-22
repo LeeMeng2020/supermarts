@@ -1,7 +1,10 @@
-name: Aeon 2a mac manual (aeon-branch)
+name: Aeon 2a mac (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
+  schedule:
+    # Run every day at 7:14 AM MY time 11:14 PM UTC), evening
+    - cron: '14 23 * * *'  
 
 jobs:
   setup:
