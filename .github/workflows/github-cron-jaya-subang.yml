@@ -46,6 +46,12 @@ jobs:
         run: |
           7z x runner-src/gather-jaya.7z -p${{ secrets.ZIP_PW }}
 
+      - name: Random delay
+        run: |
+          DELAY=$((RANDOM % 9))   # Random number between 0 and 8
+          echo "Sleeping for $DELAY seconds..."
+          sleep $DELAY
+
       - name: pip install
         run: pip install -r requirements.txt
           
