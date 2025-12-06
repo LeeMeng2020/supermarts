@@ -3,8 +3,10 @@ name: Jaya-d flow (gather-branch)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 7:17 AM MY time, 11:17 PM UTC
-    - cron: '17 23 * * *' 
+    # Weekdays (Mon–Fri at 7:18 AM MY time (11:18 PM UTC)
+    - cron: '18 23 * * 1-5'
+    # Weekends (Sat–Sun) at 8:18 AM MY time (12:18 AM UTC)
+    - cron: '18 0 * * 6,0'
 
 jobs:
   setup:
