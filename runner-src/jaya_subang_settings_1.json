@@ -1,0 +1,21 @@
+[
+    {
+        "output_file": "jaya_subang_one_thread_1.csv",
+        "base_url": "https://jgsj.jayagrocer.com",
+        "goog_url": "https://www.google.com",
+        "categories": [
+            "https://jgsj.jayagrocer.com/collections/bathroom-roll",
+            "https://jgsj.jayagrocer.com/collections/paper-products",
+            "https://jgsj.jayagrocer.com/collections/household-products",
+            "https://jgsj.jayagrocer.com/collections/laundry",
+            "https://jgsj.jayagrocer.com/collections/dairy-produce",
+            "https://jgsj.jayagrocer.com/collections/water",
+            "https://jgsj.jayagrocer.com/collections/fruits",
+            "https://jgsj.jayagrocer.com/collections/rice-and-grains",
+            "https://jgsj.jayagrocer.com/collections/eggs",
+            "https://jgsj.jayagrocer.com/collections/alcohol"
+        ]
+    }
+]
+
+

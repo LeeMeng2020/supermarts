@@ -1,0 +1,21 @@
+[
+    {
+        "output_file": "jaya_subang_one_thread_2.csv",
+        "base_url": "https://jgsj.jayagrocer.com",
+        "goog_url": "https://www.google.com",
+        "categories": [
+            "https://jgsj.jayagrocer.com/collections/non-halal-food-cupboard",
+            "https://jgsj.jayagrocer.com/collections/breakfast",
+            "https://jgsj.jayagrocer.com/collections/bakery",
+            "https://jgsj.jayagrocer.com/collections/beverages",
+            "https://jgsj.jayagrocer.com/collections/chilled-and-frozen",
+            "https://jgsj.jayagrocer.com/collections/snacks",
+            "https://jgsj.jayagrocer.com/collections/fresh-market",
+            "https://jgsj.jayagrocer.com/collections/food-essentials",
+            "https://jgsj.jayagrocer.com/collections/beauty-and-health",
+            "https://jgsj.jayagrocer.com/collections/feminine-care"
+        ]
+    }
+]
+
+
