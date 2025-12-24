@@ -42,9 +42,10 @@ jobs:
             linux-libc-dev \
             p7zip-full
               
-      - name: Unzip gather-jaya.7z
+      - name: Unzip gather-jaya and settings files
         run: |
-          7z x runner-src/gather-jaya.7z -p${{ secrets.ZIP_PW }}
+          7z x runner-src/gather-jaya-src.7z -p${{ secrets.ZIP_PW }}
+          cp -v runner-src/jaya_subang_settings* .
 
       - name: Random delay
         run: |

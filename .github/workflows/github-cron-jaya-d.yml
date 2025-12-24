@@ -44,9 +44,9 @@ jobs:
             linux-libc-dev \
             p7zip-full
               
-      - name: Unzip gather-jaya.7z
+      - name: Unzip gather-jaya
         run: |
-          7z x runner-src/gather-jaya.7z -p${{ secrets.ZIP_PW }}
+          7z x runner-src/gather-jaya-src.7z -p${{ secrets.ZIP_PW }}
 
       - name: pip install
         run: pip install -r requirements.txt
