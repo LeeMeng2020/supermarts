@@ -46,7 +46,7 @@ jobs:
              
       - name: Unzip gather-lotus, categories, and reqs
         run: |
-          7z x runner-src/gather-lotus.7z -p${{ secrets.ZIP_PW }}
+          7z x runner-src/gather-lotus-src.7z -p${{ secrets.ZIP_PW }}
           cp -v runner-src/lotus_categories* .
           cp -v runner-src/requirements.txt .
 
