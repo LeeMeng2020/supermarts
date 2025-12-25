@@ -44,9 +44,11 @@ jobs:
             linux-libc-dev \
             p7zip-full
              
-      - name: Unzip gather-lotus.7z
+      - name: Unzip gather-lotus, categories, and reqs
         run: |
           7z x runner-src/gather-lotus.7z -p${{ secrets.ZIP_PW }}
+          cp -v runner-src/lotus_categories* .
+          cp -v runner-src/requirements.txt .
 
       - name: pip install
         run: pip install -r requirements.txt
