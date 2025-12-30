@@ -36,9 +36,11 @@ jobs:
           echo "IP address:"
           curl --no-progress-meter https://api.ipify.org
 
-      - name: Unzip .7z
-        run: 7z x runner-src/gather-aeon.7z -p${{ secrets.ZIP_PW }}
-
+      - name: Unzip src, copy reqs
+        run: |
+          7z x runner-src/gather-aeon-src.7z -p${{ secrets.ZIP_PW }}
+          cp -v runner-src/requirements.txt .
+        
       - name: pip install
         run: pip3 install -r requirements.txt
 
