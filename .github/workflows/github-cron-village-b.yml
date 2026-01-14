@@ -45,7 +45,8 @@ jobs:
               
       - name: Unzip gather-village-b.7z
         run: |
-          7z x runner-src/gather-village.7z -p${{ secrets.ZIP_PW }}
+          7z x runner-src/gather-village-src.7z -p${{ secrets.ZIP_PW }}
+          cp -v runner-src/village-categories.txt .
           ls -l
 
       - name: pip install
