@@ -47,6 +47,7 @@ jobs:
       - name: Unzip gather-jaya
         run: |
           7z x runner-src/gather-jaya-src.7z -p${{ secrets.ZIP_PW }}
+          cp -v runner-src/jaya_settings* .
 
       - name: pip install
         run: pip install -r requirements.txt
