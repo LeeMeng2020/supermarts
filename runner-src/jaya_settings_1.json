@@ -1,0 +1,17 @@
+[
+    {
+        "output_file": "jaya_one_thread_1.csv",
+        "base_url": "https://jgut.jayagrocer.com",
+        "goog_url": "https://www.google.com",
+        "categories": [
+            "https://jgut.jayagrocer.com/collections/eggs",
+            "https://jgut.jayagrocer.com/collections/laundry",
+            "https://jgut.jayagrocer.com/collections/bathroom-roll",
+            "https://jgut.jayagrocer.com/collections/dairy-produce",
+            "https://jgut.jayagrocer.com/collections/water",
+            "https://jgut.jayagrocer.com/collections/fruits",
+            "https://jgut.jayagrocer.com/collections/rice-and-grains",
+            "https://jgut.jayagrocer.com/collections/alcohol"
+        ]
+    }
+]

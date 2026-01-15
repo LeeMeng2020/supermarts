@@ -1,0 +1,12 @@
+[
+    {
+        "output_file": "jaya_one_thread_3.csv",
+        "base_url": "https://jgut.jayagrocer.com",
+        "goog_url": "https://www.google.com",
+        "categories": [
+            "https://jgut.jayagrocer.com/collections/snacks",
+            "https://jgut.jayagrocer.com/collections/fresh-market",
+            "https://jgut.jayagrocer.com/collections/food-essentials"
+        ]
+    }
+]
