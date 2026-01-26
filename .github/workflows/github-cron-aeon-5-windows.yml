@@ -49,10 +49,11 @@ jobs:
       - name: Set display resolution to 1920x1080
         run: powershell.exe -Command "Set-DisplayResolution -Width 1920 -Height 1080 -Force"
                        
-      - name: Unzip .7z, copy requirements
+      - name: Unzip .7z, copy categories and requirements
         run: |
           & "C:\Program Files\7-Zip\7z.exe" x runner-src/gather-aeon-src.7z -p${{ secrets.ZIP_PW }}
           Copy-Item "runner-src\requirements.txt" . -Verbose
+          Copy-Item "runner-src\aeon-categories*" . -Verbose
 
       - name: pip install
         run: pip install -r requirements.txt
