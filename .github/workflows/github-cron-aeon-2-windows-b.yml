@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: aeon-branch # Specify aeon-branch directly for the primary checkout
+          ref: aeon-branch-2 # Specify aeon-branch-2 directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's working directory      
 
       - name: Set up Python
