@@ -4,7 +4,11 @@ on:
   workflow_dispatch: # manual trigger ability
   schedule:
     # Run every day at 8:15 AM MY time (12:15 AM PM UTC)
-    - cron: '15 0 * * *'     
+    - cron: '15 0 * * *'  
+
+concurrency:
+  group: aeon-branch
+  cancel-in-progress: false    
 
 jobs:
   setup:
@@ -12,10 +16,6 @@ jobs:
     permissions:
       contents: write # Grant write permissions for pushing changes
     
-concurrency:
-  group: aeon-branch
-  cancel-in-progress: false
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
