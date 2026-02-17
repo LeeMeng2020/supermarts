@@ -12,6 +12,10 @@ jobs:
     permissions:
       contents: write # Grant write permissions for pushing changes
     
+concurrency:
+  group: aeon-branch
+  cancel-in-progress: false
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
