@@ -5,6 +5,10 @@ on:
   schedule:
     # Run every day at 8:18 AM MY time (12:18 AM PM UTC)
     - cron: '11 0 * * *' 
+    
+concurrency:
+  group: aeon-branch
+  cancel-in-progress: false  
 
 jobs:
   setup:
