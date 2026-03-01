@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # manual trigger ability
   schedule:
     # Run every day at 8:16 AM MY time (12:16 AM PM UTC)
-    - cron: '16 23 * * *'   
+    - cron: '36 23 * * *'   
 
 jobs:
   setup:
