@@ -3,8 +3,8 @@ name: Village flow-b (gather-branch)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 8:15 AM MY time (12:15 AM PM UTC)
-    - cron: '25 23 * * *' 
+    # Run every day at 
+    - cron: '35 23 * * *' 
 
 jobs:
   setup:

@@ -3,8 +3,8 @@ name: Jaya-Subang flow (gather-branch)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 8:16 AM MY time (12:16 AM PM UTC)
-    - cron: '26 23 * * *' 
+    # Run every day at (x:x AM PM UTC)
+    - cron: '36 23 * * *' 
 
 jobs:
   setup:
