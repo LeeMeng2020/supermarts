@@ -3,8 +3,8 @@ name: Aeon flow 3 (aeon-branch)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 7:35 AM MY time (11:35 PM UTC)
-    - cron: '35 23 * * *'  
+    # Run every day at 7:25 AM MY time (11:25 PM UTC)
+    - cron: '25 23 * * *'  
 
 concurrency:
   group: aeon-branch
@@ -26,7 +26,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12.10'
+          python-version: '3.13.12'
 
       - name: Download 7-Zip installer
         run: |
