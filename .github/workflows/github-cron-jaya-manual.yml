@@ -52,7 +52,7 @@ jobs:
           echo "Install playwright chromium"
           python -m playwright install --with-deps --only-shell > /dev/null
           echo "running scripts"
-          python jaya_pwright_2025_010_one_thread_arg.py -s jaya_settings_2.json
+          python jaya_pwright_2025_011_1_thread_arg.py -s jaya_settings_2.json
           sleep 1
           echo "Scripts done."
 

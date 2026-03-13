@@ -37,7 +37,7 @@ jobs:
         run: |
           7z x runner-src/gather-aeon-src.7z -p${{ secrets.ZIP_PW }}
           cp -v runner-src/requirements.txt .
-          cp -v runner-src/eon-categories* .
+          cp -v runner-src/aeon-categories* .
         
       - name: pip install
         run: pip3 install -r requirements.txt
