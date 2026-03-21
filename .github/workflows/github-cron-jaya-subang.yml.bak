@@ -46,7 +46,6 @@ jobs:
         run: |
           7z x runner-src/gather-jaya-src.7z -p${{ secrets.ZIP_PW }}
           cp -v runner-src/jaya_subang_settings* .
-          cp -v runner-src/jaya_requirements.txt .
 
       - name: Random delay
         run: |
@@ -55,7 +54,7 @@ jobs:
           sleep $DELAY
 
       - name: pip install
-        run: pip install -r jaya_requirements.txt
+        run: pip install -r requirements.txt
           
       - name: Run script
         run: |
