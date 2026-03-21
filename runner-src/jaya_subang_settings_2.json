@@ -3,6 +3,7 @@
         "output_file": "jaya_subang_one_thread_2.csv",
         "base_url": "https://jgsj.jayagrocer.com",
         "goog_url": "https://www.google.com",
+        "ship_policy_url": "https://jgsj.jayagrocer.com/policies/shipping-policy",
         "categories": [
             "https://jgsj.jayagrocer.com/collections/non-halal-food-cupboard",
             "https://jgsj.jayagrocer.com/collections/breakfast",
