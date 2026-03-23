@@ -93,7 +93,7 @@ jobs:
       
           Write-Output "=== First attempt ==="
           python -u aeon_cdp_args_033.py -c aeon-categories-4.txt -o aeon-out-part4.csv
-          $isValid = Check-OutputFile -FilePath "aeon-out-part4.csv" -MinSize 2000
+          $isValid = Check-OutputFile -FilePath "aeon-out-part4.csv" -MinSize 5000
       
           if (-Not $isValid) {
             Write-Output "Initial output file check failed. Retrying after 15 seconds..."
@@ -101,7 +101,7 @@ jobs:
       
             Write-Output "=== Second attempt ==="
             python -u aeon_cdp_args_033.py -c aeon-categories-4.txt -o aeon-out-part4.csv
-            $isValid = Check-OutputFile -FilePath "aeon-out-part4.csv" -MinSize 2000
+            $isValid = Check-OutputFile -FilePath "aeon-out-part4.csv" -MinSize 5000
       
             if (-Not $isValid) {
               Write-Error "** Retry failed. Aborting. **"
