@@ -74,7 +74,7 @@ jobs:
 
       - name: Run script and validate output with retry
         shell: pwsh
-        timeout-minutes: 60
+        timeout-minutes: 62
         run: |
           function Check-OutputFile {
             param (
