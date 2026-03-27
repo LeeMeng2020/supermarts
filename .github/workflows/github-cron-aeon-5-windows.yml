@@ -68,9 +68,9 @@ jobs:
             New-Item -ItemType Directory -Path "latest_logs"
           }   
 
-      - name: Run script and validate output with retry
+      - name: Run script and validate output with one retry
         shell: pwsh
-        timeout-minutes: 60
+        timeout-minutes: 55
         run: |
           function Check-OutputFile {
             param (
@@ -93,20 +93,39 @@ jobs:
             return $true
           }
       
+          function Run-Script {
+            param (
+              [string]$Args
+            )
+            Write-Output "Running: python $Args"
+            python $Args
+            if ($LASTEXITCODE -ne 0) {
+              Write-Error "** Script exited with error code $LASTEXITCODE (likely timeout or crash) **"
+              return $false
+            }
+            return $true
+          }
+      
           Write-Output "=== First attempt ==="
-          python -u aeon_cdp_args_033.py -c aeon-categories-5.txt -o aeon-out-part5.csv
-          $isValid = Check-OutputFile -FilePath "aeon-out-part5.csv" -MinSize 5000
+          $ranOK = Run-Script "-u aeon_cdp_args_033.py -c aeon-categories-1.txt -o aeon-out-part1.csv"
+          $isValid = $false
+          if ($ranOK) {
+            $isValid = Check-OutputFile -FilePath "aeon-out-part1.csv" -MinSize 5000
+          }
       
           if (-Not $isValid) {
-            Write-Output "Initial output file check failed. Retrying after 15 seconds..."
+            Write-Output "First attempt failed (timeout or invalid output). Retrying after 15 seconds..."
             Start-Sleep -Seconds 15
       
             Write-Output "=== Second attempt ==="
-            python -u aeon_cdp_args_033.py -c aeon-categories-5.txt -o aeon-out-part5.csv
-            $isValid = Check-OutputFile -FilePath "aeon-out-part5.csv" -MinSize 5000
+            $ranOK = Run-Script "-u aeon_cdp_args_033.py -c aeon-categories-1.txt -o aeon-out-part1.csv"
+            $isValid = $false
+            if ($ranOK) {
+              $isValid = Check-OutputFile -FilePath "aeon-out-part1.csv" -MinSize 5000
+            }
       
             if (-Not $isValid) {
-              Write-Error "** Retry failed. Aborting. **"
+              Write-Error "** Retry failed: either script timed out/crashed OR output validation failed. Aborting. **"
               exit 1
             }
           }
