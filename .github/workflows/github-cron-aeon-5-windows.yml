@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: '3.13.12'
 
-      - name: Download 7-Zip installer
+      - name: Download 7-Zip installer with retry
         shell: pwsh
         run: |
           $url = "https://www.7-zip.org/a/7z2301-x64.exe"
