@@ -24,9 +24,31 @@ jobs:
         with:
           python-version: '3.13.12'
 
-      - name: Download 7-Zip installer
+      - name: Download 7-Zip installer with retry
+        shell: pwsh
         run: |
-          Invoke-WebRequest -Uri "https://www.7-zip.org/a/7z2301-x64.exe" -OutFile "7zip_installer.exe"
+          $url = "https://www.7-zip.org/a/7z2301-x64.exe"
+          $out = "7zip_installer.exe"
+          $maxAttempts = 3
+          $delaySeconds = 20
+
+          for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
+            Write-Output "=== Download attempt $attempt of $maxAttempts ==="
+            try {
+              Invoke-WebRequest -Uri $url -OutFile $out
+              Write-Output "Download succeeded."
+              break
+            } catch {
+              Write-Output "** Attempt $attempt failed: $($_.Exception.Message) **"
+              if ($attempt -lt $maxAttempts) {
+                Write-Output "Retrying in $delaySeconds seconds..."
+                Start-Sleep -Seconds $delaySeconds
+              } else {
+                Write-Error "** All $maxAttempts attempts failed for zip. Aborting. **"
+                exit 1
+              }
+            }
+          }
 
       - name: Install 7-Zip silently
         run: |

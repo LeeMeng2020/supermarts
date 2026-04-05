@@ -88,45 +88,77 @@ jobs:
           }
           if (!(Test-Path "latest_logs")) {
             New-Item -ItemType Directory -Path "latest_logs"
-          }   
+          }  
 
-      - name: Run script and validate output with retry
+      - name: Run script and validate output. With retry, timeout.
         shell: pwsh
-        timeout-minutes: 60
+        timeout-minutes: 120
         run: |
           function Check-OutputFile {
             param (
               [string]$FilePath,
               [int]$MinSize
             )
-      
             if (-Not (Test-Path $FilePath)) {
               Write-Output "** Output file does not exist **"
               return $false
             }
-      
             $filesize = (Get-Item $FilePath).Length
             if ($filesize -lt $MinSize) {
               Write-Output "** Output file is too small ($filesize bytes) **"
               return $false
             }
-      
             Write-Output "Validation passed: output file seems OK."
             return $true
           }
-      
-          Write-Output "=== First attempt ==="
-          python -u aeon_cdp_args_033.py -c aeon-categories-2.txt -o aeon-out-part2.csv
-          $isValid = Check-OutputFile -FilePath "aeon-out-part2.csv" -MinSize 5000
-      
+
+          function Run-WithTimeout {
+            param (
+              [string]$Categories,
+              [string]$Output,
+              [int]$TimeoutMinutes,
+              [string]$AttemptLabel
+            )
+
+            Write-Output "=== $AttemptLabel ==="
+            $job = Start-Job -ScriptBlock {
+              param($cats, $out)
+              & python -u aeon_cdp_args_033.py -c $cats -o $out
+            } -ArgumentList $Categories, $Output
+
+            $timeoutSecs = $TimeoutMinutes * 60
+            $finished = Wait-Job $job -Timeout $timeoutSecs
+
+            if (-Not $finished) {
+              Write-Output "** $AttemptLabel timed out after $TimeoutMinutes minutes. Stopping job. **"
+              Stop-Job $job
+              Remove-Job $job
+              return $false
+            }
+
+            Receive-Job $job
+            Remove-Job $job
+            return (Check-OutputFile -FilePath $Output -MinSize 5000)
+          }
+
+          $perAttemptTimeout = 58  # minutes per attempt
+
+          $isValid = Run-WithTimeout `
+            -Categories "aeon-categories-2.txt" `
+            -Output "aeon-out-part2.csv" `
+            -TimeoutMinutes $perAttemptTimeout `
+            -AttemptLabel "First attempt"
+
           if (-Not $isValid) {
-            Write-Output "Initial output file check failed. Retrying after 15 seconds..."
+            Write-Output "First attempt failed or timed out. Retrying after 15 seconds..."
             Start-Sleep -Seconds 15
-      
-            Write-Output "=== Second attempt ==="
-            python -u aeon_cdp_args_033.py -c aeon-categories-2.txt -o aeon-out-part2.csv
-            $isValid = Check-OutputFile -FilePath "aeon-out-part2.csv" -MinSize 5000
-      
+
+            $isValid = Run-WithTimeout `
+              -Categories "aeon-categories-2.txt" `
+              -Output "aeon-out-part2.csv" `
+              -TimeoutMinutes $perAttemptTimeout `
+              -AttemptLabel "Second attempt"
+
             if (-Not $isValid) {
               Write-Error "** Retry failed. Aborting. **"
               exit 1

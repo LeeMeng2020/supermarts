@@ -90,7 +90,7 @@ jobs:
             New-Item -ItemType Directory -Path "latest_logs"
           }   
 
-      - name: Run script and validate output with retry
+      - name: Run script and validate output. With retry, timeout.
         shell: pwsh
         timeout-minutes: 120
         run: |
