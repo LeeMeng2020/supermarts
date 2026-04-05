@@ -27,8 +27,8 @@ Bakery,Chocolate Rice Cake,450 g,11.99,13.99,2.00,14.30,,https://www.lotuss.com.
 Bakery,Chocolate Ring Donut (0898) 4pcs,4 pcs,5.49,6.69,1.20,17.90,1.37,https://www.lotuss.com.my/en/product/75053152,https://www.lotuss.com.my/en/category/bakery
 Bakery,Cocoaland Cocopie Chocolate,6 x 25 g,4.40,,,,0.73,https://www.lotuss.com.my/en/product/75158257,https://www.lotuss.com.my/en/category/bakery
 Bakery,Cocoaland Cocopie Dark Chocolate,6 x 25 g,4.40,,,,0.73,https://www.lotuss.com.my/en/product/cocoaland-cocopie-dark-chocolate-6x25g,https://www.lotuss.com.my/en/category/bakery
-Bakery,Delicia Milky Chocolate Spread,200 g,9.35,,,,,https://www.lotuss.com.my/en/product/delicia-milky-chocolate-spread-71924515,https://www.lotuss.com.my/en/category/bakery
 Bakery,Delicia Milky Chocolate Spread,375 g,16.55,,,,,https://www.lotuss.com.my/en/product/delicia-milky-chocolate-spread-375g-74490273,https://www.lotuss.com.my/en/category/bakery
+Bakery,Delicia Milky Chocolate Spread,200 g,9.35,,,,,https://www.lotuss.com.my/en/product/delicia-milky-chocolate-spread-71924515,https://www.lotuss.com.my/en/category/bakery
 Bakery,Eb Tiger Prawn Roll,250 g,20.05,,,,,https://www.lotuss.com.my/en/product/75126332,https://www.lotuss.com.my/en/category/bakery
 Bakery,Figo Lotus Leaf Bun,300 g,5.10,,,,,https://www.lotuss.com.my/en/product/75126048,https://www.lotuss.com.my/en/category/bakery
 Bakery,Fudge CakeLotussx450Gm,,11.99,14.59,2.60,17.80,,https://www.lotuss.com.my/en/product/74934384,https://www.lotuss.com.my/en/category/bakery
@@ -195,11 +195,11 @@ Bakery,Toastem Waffles - Vanilla,,1.60,,,,,https://www.lotuss.com.my/en/product/
 Bakery,Twiggies - Cream Dream,,2.20,,,,,https://www.lotuss.com.my/en/product/twiggies-cream-dream-905887,https://www.lotuss.com.my/en/category/bakery
 Bakery,Wraps Wholegrain 8pcs,8 pcs,5.99,8.29,2.30,27.70,0.75,https://www.lotuss.com.my/en/product/75040093,https://www.lotuss.com.my/en/category/bakery
 Beverages,100 Plus Isotonic,1.5 liter,2.79,3.65,0.86,23.60,,https://www.lotuss.com.my/en/product/100-plus-original-isotonic-drink-1-5l-1188798,https://www.lotuss.com.my/en/category/beverages
-Beverages,100 Plus Isotonic,325 ml,1.65,,,,,https://www.lotuss.com.my/en/product/100-plus-isotonic-325ml-1188720,https://www.lotuss.com.my/en/category/beverages
 Beverages,100 Plus Isotonic,500 ml,2.05,,,,,https://www.lotuss.com.my/en/product/100-plus-isotonic-500ml-517135,https://www.lotuss.com.my/en/category/beverages
+Beverages,100 Plus Isotonic,325 ml,1.65,,,,,https://www.lotuss.com.my/en/product/100-plus-isotonic-325ml-1188720,https://www.lotuss.com.my/en/category/beverages
 Beverages,100 Plus Isotonic,12 x 1.5 liter,33.45,39.75,6.30,15.80,,https://www.lotuss.com.my/en/product/cp12-100-plus-isotonic-15l-150115593,https://www.lotuss.com.my/en/category/beverages
 Beverages,100 Plus Isotonic Drink,6 x 325 ml,9.79,,,,1.63,https://www.lotuss.com.my/en/product/100-plus-isotonic-drink-sports-pack-6-x-325ml-511536,https://www.lotuss.com.my/en/category/beverages
-Beverages,100 Plus Isotonic Drink,24 x 325 ml,33.45,,,,1.39,https://www.lotuss.com.my/en/product/cp24-100-plus-isotonic-325ml-150115531,https://www.lotuss.com.my/en/category/beverages
+Beverages,100 Plus Isotonic Drink,24 x 325 ml,32.85,33.45,0.60,1.80,1.37,https://www.lotuss.com.my/en/product/cp24-100-plus-isotonic-325ml-150115531,https://www.lotuss.com.my/en/category/beverages
 Beverages,100 Plus Isotonic Zero,1.5 liter,2.89,3.65,0.76,20.80,,https://www.lotuss.com.my/en/product/100-plus-isotonic-zero-1-5l-74764020,https://www.lotuss.com.my/en/category/beverages
 Beverages,100 Plus Lemon Lime,500 ml,2.05,,,,,https://www.lotuss.com.my/en/product/100-plus-lmn-lime-500ml-1072498,https://www.lotuss.com.my/en/category/beverages
 Beverages,100 Plus Lemon Lime (C) Pet,1.5 liter,2.89,3.65,0.76,20.80,,https://www.lotuss.com.my/en/product/75128659,https://www.lotuss.com.my/en/category/beverages
@@ -330,8 +330,8 @@ Beverages,Bundaberg Sarsaparila,4 x 375 ml,22.55,25.20,2.65,10.50,5.64,https://w
 Beverages,Bundaberg Traditional Lemonade,4 x 375 ml,22.55,25.20,2.65,10.50,5.64,https://www.lotuss.com.my/en/product/bundaberg-traditional-lemonade-4-x-375ml-74607340,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cactus Mineral Water,5.5 liter,7.20,,,,,https://www.lotuss.com.my/en/product/cactus-mineral-water-5-5l-71839070,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cactus Mineral Water,9.5 liter,9.85,,,,,https://www.lotuss.com.my/en/product/cactus-mineral-water-9-5l-4619609,https://www.lotuss.com.my/en/category/beverages
-Beverages,Cactus Mineral Water,12 x 350 ml,6.50,,,,0.54,https://www.lotuss.com.my/en/product/cactus-mineral-water-350mlx12-74782398,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cactus Mineral Water,12 x 500 ml,8.75,,,,0.73,https://www.lotuss.com.my/en/product/cactus-mineral-water-500mlx12-73828416,https://www.lotuss.com.my/en/category/beverages
+Beverages,Cactus Mineral Water,12 x 350 ml,6.50,,,,0.54,https://www.lotuss.com.my/en/product/cactus-mineral-water-350mlx12-74782398,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cadbury 3In1 Hot Choc,13 x 30 g,15.99,16.69,0.70,4.20,1.23,https://www.lotuss.com.my/en/product/75105260,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cafe Aroma Ins Coffee,250 g,32.70,,,,,https://www.lotuss.com.my/en/product/75110960,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cap Masjid Serbuk Teh Campuran,900 g,14.90,,,,,https://www.lotuss.com.my/en/product/teh-cap-masjid-s-900g-2444674,https://www.lotuss.com.my/en/category/beverages
@@ -492,14 +492,14 @@ Beverages,Drinho Sugarcane,6 x 250 ml,4.50,4.95,0.45,9.10,0.75,https://www.lotus
 Beverages,Drinho Winter Melon,1 liter,1.79,2.85,1.06,37.20,,https://www.lotuss.com.my/en/product/drinho-winter-melon-1l-72503505,https://www.lotuss.com.my/en/category/beverages
 Beverages,Drinho Winter Melon,6 x 250 ml,4.50,4.95,0.45,9.10,0.75,https://www.lotuss.com.my/en/product/drinho-winter-melon-drink-6-x-250ml-238465,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Chocolate Drink,900 g,19.95,,,,,https://www.lotuss.com.my/en/product/dutch-lady-chocolate-drink-900g-70326398,https://www.lotuss.com.my/en/category/beverages
-Beverages,Dutch Lady Full Cream Uht Milk,1 liter,5.69,6.75,1.06,15.70,,https://www.lotuss.com.my/en/product/dutch-lady-pure-farm-full-cream-milk-1l-679062,https://www.lotuss.com.my/en/category/beverages
+Beverages,Dutch Lady Full Cream Uht Milk,1 liter,5.39,6.75,1.36,20.10,,https://www.lotuss.com.my/en/product/dutch-lady-pure-farm-full-cream-milk-1l-679062,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Full Cream Uht Milk,6 x 200 ml,8.29,9.60,1.31,13.60,1.38,https://www.lotuss.com.my/en/product/d-lady-uht-milk-full-cream-200mlx6-71398929,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Full Cream Uht Milk,12 x 1 liter,64.65,77.40,12.75,16.50,5.39,https://www.lotuss.com.my/en/product/cp12-dl-uht-full-cream-1l-150093341,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Low Fat Uht Milk,6 x 200 ml,8.29,9.60,1.31,13.60,1.38,https://www.lotuss.com.my/en/product/d-lady-uht-milk-low-fat-200mlx6-71398937,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Low Fat Uht Milk,12 x 1 liter,64.65,77.40,12.75,16.50,5.39,https://www.lotuss.com.my/en/product/cp12-dl-uht-low-fat-1l-150093426,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Strawberry Uht Milk,6 x 200 ml,8.29,9.60,1.31,13.60,1.38,https://www.lotuss.com.my/en/product/d-lady-uht-milk-strawberry-200mlx6-71398961,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Uht Banana Flavoured Milk,6 x 200 ml,9.65,,,,1.61,https://www.lotuss.com.my/en/product/dutch-lady-banana-flavoured-milk-6-x-200ml-74693123,https://www.lotuss.com.my/en/category/beverages
-Beverages,Dutch Lady Uht Chocolate Milk,1 liter,5.69,6.75,1.06,15.70,,https://www.lotuss.com.my/en/product/dutch-lady-pure-farm-chocolate-flavoured-milk-1l-679631,https://www.lotuss.com.my/en/category/beverages
+Beverages,Dutch Lady Uht Chocolate Milk,1 liter,5.39,6.75,1.36,20.10,,https://www.lotuss.com.my/en/product/dutch-lady-pure-farm-chocolate-flavoured-milk-1l-679631,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Uht Chocolate Milk,6 x 200 ml,8.29,9.60,1.31,13.60,1.38,https://www.lotuss.com.my/en/product/d-lady-uht-milk-chocolate-200mlx6-71398953,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Uht Cookies Cream,4 x 180 ml,6.45,,,,1.61,https://www.lotuss.com.my/en/product/74914782,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Uht Milk Chocolatex6X4x200Ml,,31.55,36.80,5.25,14.30,,https://www.lotuss.com.my/en/product/164319201,https://www.lotuss.com.my/en/category/beverages
@@ -510,7 +510,7 @@ Beverages,Dutch Lady Uht Milky Frozen Chocolate Triple Pack,8 x 125 ml,8.90,,,,1
 Beverages,Dutch Lady Uht Milky Frozen Full Cream,4 x 125 ml,4.99,5.20,0.21,4.00,1.25,https://www.lotuss.com.my/en/product/dl-uht-milky-frozen-full-cream-125mlx4-72488344,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Uht Milky Frozen Strawberry,4 x 125 ml,4.99,5.20,0.21,4.00,1.25,https://www.lotuss.com.my/en/product/dl-uht-milky-frozen-strawberry-125mlx4-72488387,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Uht Milky Marvel Full Cream,4 x 125 ml,4.99,5.20,0.21,4.00,1.25,https://www.lotuss.com.my/en/product/dl-uht-milky-marvel-full-cream-125mlx4-72488336,https://www.lotuss.com.my/en/category/beverages
-Beverages,Dutch Lady Uht Strawberry Milk,1 liter,5.69,6.75,1.06,15.70,,https://www.lotuss.com.my/en/product/dutch-lady-pure-farm-strawberry-flavoured-milk-1l-681857,https://www.lotuss.com.my/en/category/beverages
+Beverages,Dutch Lady Uht Strawberry Milk,1 liter,5.39,6.75,1.36,20.10,,https://www.lotuss.com.my/en/product/dutch-lady-pure-farm-strawberry-flavoured-milk-1l-681857,https://www.lotuss.com.my/en/category/beverages
 Beverages,Dutch Lady Uht Vanilla Ice Cream,4 x 180 ml,6.45,,,,1.61,https://www.lotuss.com.my/en/product/74914774,https://www.lotuss.com.my/en/category/beverages
 Beverages,Ensure Gold Vanilla Ybg,400 g,30.85,61.70,30.85,50.00,,https://www.lotuss.com.my/en/product/ensure-gold-vanilla-can-400g-74749145,https://www.lotuss.com.my/en/category/beverages
 Beverages,Ensure Gold Wheat Yeast Beta Glucan,400 g,30.85,61.70,30.85,50.00,,https://www.lotuss.com.my/en/product/ensure-gold-wheat-can-400g-74749153,https://www.lotuss.com.my/en/category/beverages
@@ -729,8 +729,8 @@ Beverages,Lotuss Chocomalt 3In1 Ori.,18 x 30 g,10.95,11.69,0.74,6.30,0.61,https:
 Beverages,Lotuss Cordial Orange,5 liter,17.99,18.70,0.71,3.80,,https://www.lotuss.com.my/en/product/lotuss-cordial-orange-5l-74716069,https://www.lotuss.com.my/en/category/beverages
 Beverages,Lotuss Cordial Rose,5 liter,17.99,18.55,0.56,3.00,,https://www.lotuss.com.my/en/product/lotuss-cordial-rose-5l-74716077,https://www.lotuss.com.my/en/category/beverages
 Beverages,Lotuss Drinking Water,500 ml,0.44,,,,,https://www.lotuss.com.my/en/product/75083981,https://www.lotuss.com.my/en/category/beverages
-Beverages,Lotuss Drinking Water,1.5 liter,0.87,,,,,https://www.lotuss.com.my/en/product/75063026,https://www.lotuss.com.my/en/category/beverages
 Beverages,Lotuss Drinking Water,5.5 liter,4.99,,,,,https://www.lotuss.com.my/en/product/75084112,https://www.lotuss.com.my/en/category/beverages
+Beverages,Lotuss Drinking Water,1.5 liter,0.87,,,,,https://www.lotuss.com.my/en/product/75063026,https://www.lotuss.com.my/en/category/beverages
 Beverages,Lotuss Drinking Water,12 x 500 ml,4.99,5.59,0.60,10.70,0.42,https://www.lotuss.com.my/en/product/75084228,https://www.lotuss.com.my/en/category/beverages
 Beverages,Lotuss Drinking Water,12 x 250 ml,4.99,,,,0.42,https://www.lotuss.com.my/en/product/75111642,https://www.lotuss.com.my/en/category/beverages
 Beverages,Lotuss Drinking Water,12 x 1.5 liter,10.13,,,,,https://www.lotuss.com.my/en/product/167638291,https://www.lotuss.com.my/en/category/beverages
@@ -811,7 +811,7 @@ Beverages,Milo Fuze 3In1,14 x 33 g,13.99,,,,1.00,https://www.lotuss.com.my/en/pr
 Beverages,Milo Fuze 3In1 18X33G Foc 3pcs,3 pcs,13.99,,,,4.66,https://www.lotuss.com.my/en/product/milo-3in1-18x33g-foc-3s-71387323,https://www.lotuss.com.my/en/category/beverages
 Beverages,Milo Hi Fibre,900 g,25.29,,,,,https://www.lotuss.com.my/en/product/74989952,https://www.lotuss.com.my/en/category/beverages
 Beverages,Milo Ready To Drink,12 x 1 liter,66.00,85.35,19.35,22.70,5.50,https://www.lotuss.com.my/en/product/167726972,https://www.lotuss.com.my/en/category/beverages
-Beverages,Milo Rtd,1 liter,7.40,,,,,https://www.lotuss.com.my/en/product/nestl-milo-chocolate-malt-drink-1l-4889509,https://www.lotuss.com.my/en/category/beverages
+Beverages,Milo Rtd,1 liter,5.50,7.40,1.90,25.70,,https://www.lotuss.com.my/en/product/nestl-milo-chocolate-malt-drink-1l-4889509,https://www.lotuss.com.my/en/category/beverages
 Beverages,Milo Softpack,200 g,5.25,,,,,https://www.lotuss.com.my/en/product/milo-softpk-200g-122882,https://www.lotuss.com.my/en/category/beverages
 Beverages,Milo Softpack,1.8 kg,38.50,,,,,https://www.lotuss.com.my/en/product/75149127,https://www.lotuss.com.my/en/category/beverages
 Beverages,Milo Uht Milk,4 x 125 ml,4.49,5.55,1.06,19.10,1.12,https://www.lotuss.com.my/en/product/nestl-milo-chocolate-malt-drink-4-x-125ml-4889495,https://www.lotuss.com.my/en/category/beverages
@@ -849,13 +849,13 @@ Beverages,Nescafe 3In1 Caramel Latte,15 x 23 g,14.65,,,,0.98,https://www.lotuss.
 Beverages,Nescafe 3In1 Hazelnut Latte,15 x 23 g,14.65,,,,0.98,https://www.lotuss.com.my/en/product/75174345,https://www.lotuss.com.my/en/category/beverages
 Beverages,Nescafe 3In1 Mild,25 x 18 g,11.69,13.85,2.16,15.60,0.47,https://www.lotuss.com.my/en/product/74945459,https://www.lotuss.com.my/en/category/beverages
 Beverages,Nescafe 3In1 Mocha Latte,15 x 25 g,14.65,,,,0.98,https://www.lotuss.com.my/en/product/75174346,https://www.lotuss.com.my/en/category/beverages
-Beverages,Nescafe 3In1 Ori,5 x 18 g,4.55,,,,0.91,https://www.lotuss.com.my/en/product/74945467,https://www.lotuss.com.my/en/category/beverages
 Beverages,Nescafe 3In1 Ori,25 x 18 g,11.69,13.85,2.16,15.60,0.47,https://www.lotuss.com.my/en/product/74944665,https://www.lotuss.com.my/en/category/beverages
+Beverages,Nescafe 3In1 Ori,5 x 18 g,4.55,,,,0.91,https://www.lotuss.com.my/en/product/74945467,https://www.lotuss.com.my/en/category/beverages
 Beverages,Nescafe 3In1 Rich,25 x 18 g,11.69,13.85,2.16,15.60,0.47,https://www.lotuss.com.my/en/product/74944673,https://www.lotuss.com.my/en/category/beverages
 Beverages,Nescafe 3In1 White Coffee,15 x 30 g,11.69,13.85,2.16,15.60,0.78,https://www.lotuss.com.my/en/product/75110759,https://www.lotuss.com.my/en/category/beverages
 Beverages,Nescafe Classic Dark Roast,200 g,19.85,,,,,https://www.lotuss.com.my/en/product/nescafe-classic-dark-roast-200g-74180177,https://www.lotuss.com.my/en/category/beverages
-Beverages,Nescafe Classic Jar,200 g,28.50,,,,,https://www.lotuss.com.my/en/product/nescafe-classic-jar-200g-1283510,https://www.lotuss.com.my/en/category/beverages
 Beverages,Nescafe Classic Jar,50 g,9.20,,,,,https://www.lotuss.com.my/en/product/nescafe-classic-jar-50g-1283367,https://www.lotuss.com.my/en/category/beverages
+Beverages,Nescafe Classic Jar,200 g,28.50,,,,,https://www.lotuss.com.my/en/product/nescafe-classic-jar-200g-1283510,https://www.lotuss.com.my/en/category/beverages
 Beverages,Nescafe Classic Jar,100 g,16.85,,,,,https://www.lotuss.com.my/en/product/1283480,https://www.lotuss.com.my/en/category/beverages
 Beverages,Nescafe Classic Refill Pack,200 g,19.95,,,,,https://www.lotuss.com.my/en/product/nescafe-classic-refill-pack-200g-1283804,https://www.lotuss.com.my/en/category/beverages
 Beverages,Nescafe Classic Refill Pack,100 g,13.95,,,,,https://www.lotuss.com.my/en/product/nescafe-classic-refill-pack-100g-1283669,https://www.lotuss.com.my/en/category/beverages
@@ -1779,8 +1779,8 @@ Canned Food,Hosen Whole Mushroom,425 g,4.19,4.90,0.71,14.50,,https://www.lotuss.
 Canned Food,Hosen Young Corn Spear,425 g,4.99,5.80,0.81,14.00,,https://www.lotuss.com.my/en/product/hosen-young-corn-spear-425g-2941295,https://www.lotuss.com.my/en/category/canned-food
 Canned Food,King Cup Mackerel,155 g,4.79,,,,,https://www.lotuss.com.my/en/product/king-cup-mackerel-155g-410748,https://www.lotuss.com.my/en/category/canned-food
 Canned Food,King Cup Mackerel,425 g,8.50,8.85,0.35,4.00,,https://www.lotuss.com.my/en/product/75116430,https://www.lotuss.com.my/en/category/canned-food
-Canned Food,King Cup Sardine,155 g,4.70,,,,,https://www.lotuss.com.my/en/product/king-cup-sardine-155g-410675,https://www.lotuss.com.my/en/category/canned-food
 Canned Food,King Cup Sardine,425 g,8.50,,,,,https://www.lotuss.com.my/en/product/king-cup-sardine-425g-2341514,https://www.lotuss.com.my/en/category/canned-food
+Canned Food,King Cup Sardine,155 g,4.70,,,,,https://www.lotuss.com.my/en/product/king-cup-sardine-155g-410675,https://www.lotuss.com.my/en/category/canned-food
 Canned Food,King Cup Sardines In Tmt Sauce,280 g,7.59,,,,,https://www.lotuss.com.my/en/product/king-cup-sardines-in-tmt-sauce-280g-73816469,https://www.lotuss.com.my/en/category/canned-food
 Canned Food,Lele China Braised Abalone10Pcsx425G,,31.90,,,,,https://www.lotuss.com.my/en/product/75196445,https://www.lotuss.com.my/en/category/canned-food
 Canned Food,Loreto Green Olives,150 g,7.65,,,,,https://www.lotuss.com.my/en/product/loreto-green-olives-150gm-74038389,https://www.lotuss.com.my/en/category/canned-food
@@ -1957,8 +1957,8 @@ Chilled &amp; Frozen,CP Blackpepper Sausage,100 g,4.50,,,,,https://www.lotuss.co
 Chilled &amp; Frozen,CP Butermilk Chicken Spaghetti,220 g,8.49,9.90,1.41,14.20,,https://www.lotuss.com.my/en/product/75154680,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,CP Cheese Chicken Burger,112 g,6.00,,,,,https://www.lotuss.com.my/en/product/75190569,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,CP Cheese Cocktail,100 g,4.50,,,,,https://www.lotuss.com.my/en/product/75190563,https://www.lotuss.com.my/en/category/chilled-frozen
-Chilled &amp; Frozen,CP Cheese Sausage,240 g,7.90,,,,,https://www.lotuss.com.my/en/product/75090060,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,CP Cheese Sausage,100 g,4.50,,,,,https://www.lotuss.com.my/en/product/75190560,https://www.lotuss.com.my/en/category/chilled-frozen
+Chilled &amp; Frozen,CP Cheese Sausage,240 g,7.90,,,,,https://www.lotuss.com.my/en/product/75090060,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,CP Cheese Sausage Roll,100 g,6.50,,,,,https://www.lotuss.com.my/en/product/75190566,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,CP Chicken Popcorn Original,550 g,21.90,,,,,https://www.lotuss.com.my/en/product/75090037,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,CP Chicken Roll,550 g,17.99,,,,,https://www.lotuss.com.my/en/product/75045931,https://www.lotuss.com.my/en/category/chilled-frozen
@@ -2480,13 +2480,13 @@ Chilled &amp; Frozen,Raffie Crispy Nugget,850 g,16.99,17.99,1.00,5.60,,https://w
 Chilled &amp; Frozen,Raffie Golden Nugget,850 g,15.99,16.89,0.90,5.30,,https://www.lotuss.com.my/en/product/raffie-golden-nugget-850g-74493310,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Raffie Honey Frankfurter,300 g,4.09,4.60,0.51,11.10,,https://www.lotuss.com.my/en/product/raffie-honey-chicken-frankfurters-10pcs-300g-74493329,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Ramly Beef Ball,800 g,18.70,,,,,https://www.lotuss.com.my/en/product/75117623,https://www.lotuss.com.my/en/category/chilled-frozen
-Chilled &amp; Frozen,Ramly Beef Burger,420 g,8.69,9.05,0.36,4.00,,https://www.lotuss.com.my/en/product/74951556,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Ramly Beef Burger,300 g,8.30,,,,,https://www.lotuss.com.my/en/product/74951793,https://www.lotuss.com.my/en/category/chilled-frozen
+Chilled &amp; Frozen,Ramly Beef Burger,420 g,8.69,9.05,0.36,4.00,,https://www.lotuss.com.my/en/product/74951556,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Ramly Beef Frank,,9.05,,,,,https://www.lotuss.com.my/en/product/75130200,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Ramly Chicken Ball,800 g,16.59,17.20,0.61,3.50,,https://www.lotuss.com.my/en/product/75117622,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Ramly Chicken Breakfast Sausage,400 g,10.65,,,,,https://www.lotuss.com.my/en/product/75173710,https://www.lotuss.com.my/en/category/chilled-frozen
-Chilled &amp; Frozen,Ramly Chicken Burger,420 g,8.49,8.95,0.46,5.10,,https://www.lotuss.com.my/en/product/74951815,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Ramly Chicken Burger,300 g,6.85,,,,,https://www.lotuss.com.my/en/product/74951823,https://www.lotuss.com.my/en/category/chilled-frozen
+Chilled &amp; Frozen,Ramly Chicken Burger,420 g,8.49,8.95,0.46,5.10,,https://www.lotuss.com.my/en/product/74951815,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Ramly Chicken Frankfurter,340 g,8.60,,,,,https://www.lotuss.com.my/en/product/75129527,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Ramly Chicken Nugget,1 kg,16.99,17.60,0.61,3.50,,https://www.lotuss.com.my/en/product/75117620,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Ramly Chicken Nugget Black Pepper,400 g,7.89,,,,,https://www.lotuss.com.my/en/product/75173709,https://www.lotuss.com.my/en/category/chilled-frozen
@@ -2979,7 +2979,6 @@ Chilled &amp; Frozen,Yumyum Baba Nyonya Chendol Durian Potong,6 x 60 g,9.48,9.95
 "Chocolates, Sweets &amp; Jelly",Transformer Tin Candy,20 g,2.50,,,,,https://www.lotuss.com.my/en/product/transformer-tin-candy-20g-74287737,https://www.lotuss.com.my/en/category/chocolates-sweets-jelly
 "Chocolates, Sweets &amp; Jelly",Twix,50 g,4.40,,,,,https://www.lotuss.com.my/en/product/twix-50g-168467,https://www.lotuss.com.my/en/category/chocolates-sweets-jelly
 "Chocolates, Sweets &amp; Jelly",Twix Funsize,159 g,10.90,14.99,4.09,27.30,,https://www.lotuss.com.my/en/product/75125051,https://www.lotuss.com.my/en/category/chocolates-sweets-jelly
-"Chocolates, Sweets &amp; Jelly",Vochelle Block Almond,140 g,8.29,10.99,2.70,24.60,,https://www.lotuss.com.my/en/product/vochelle-block-almond-175g-2609592,https://www.lotuss.com.my/en/category/chocolates-sweets-jelly
 "Chocolates, Sweets &amp; Jelly",Vochelle Block Hazelnut,140 g,8.29,10.99,2.70,24.60,,https://www.lotuss.com.my/en/product/vochelle-block-hazelnut-175g-2609606,https://www.lotuss.com.my/en/category/chocolates-sweets-jelly
 "Chocolates, Sweets &amp; Jelly",Vochelle Boxter Almonds,150 g,14.99,22.49,7.50,33.30,,https://www.lotuss.com.my/en/product/vochelle-tin-205g-almonds-512362,https://www.lotuss.com.my/en/category/chocolates-sweets-jelly
 "Chocolates, Sweets &amp; Jelly",Vochelle Boxter Hazelnuts,150 g,14.99,20.80,5.81,27.90,,https://www.lotuss.com.my/en/product/vochelle-tin-205g-hzlnuts-512648,https://www.lotuss.com.my/en/category/chocolates-sweets-jelly
@@ -3184,8 +3183,8 @@ Dairy,Farm Fresh Milk,568 ml,5.80,,,,,https://www.lotuss.com.my/en/product/75115
 Dairy,Farm Fresh Mixberries Yogurt,120 g,3.05,,,,,https://www.lotuss.com.my/en/product/farm-fresh-mixberries-yogurt-120gm-73996513,https://www.lotuss.com.my/en/category/dairy
 Dairy,Farm Fresh Mixberries Yogurt Drink,700 ml,5.35,6.25,0.90,14.40,,https://www.lotuss.com.my/en/product/farm-fresh-mixberries-yog-drink-700ml-70859639,https://www.lotuss.com.my/en/category/dairy
 Dairy,Farm Fresh Mixed Berries Yogurt Drink,200 ml,2.50,,,,,https://www.lotuss.com.my/en/product/75115849,https://www.lotuss.com.my/en/category/dairy
-Dairy,Farm Fresh Natural Yogurt,120 g,3.05,,,,,https://www.lotuss.com.my/en/product/farm-fresh-natural-yogurt-120gm-73996467,https://www.lotuss.com.my/en/category/dairy
 Dairy,Farm Fresh Natural Yogurt,400 g,6.25,,,,,https://www.lotuss.com.my/en/product/farm-fresh-natural-yogurt-400g-5014204,https://www.lotuss.com.my/en/category/dairy
+Dairy,Farm Fresh Natural Yogurt,120 g,3.05,,,,,https://www.lotuss.com.my/en/product/farm-fresh-natural-yogurt-120gm-73996467,https://www.lotuss.com.my/en/category/dairy
 Dairy,Farm Fresh Natural Yogurt Drink,700 ml,5.35,6.25,0.90,14.40,,https://www.lotuss.com.my/en/product/farm-fresh-natural-yog-drink-700ml-70859612,https://www.lotuss.com.my/en/category/dairy
 Dairy,Farm Fresh Natural Yogurt Drink,200 ml,2.40,,,,,https://www.lotuss.com.my/en/product/75115847,https://www.lotuss.com.my/en/category/dairy
 Dairy,Farm Fresh Original Yogurt,1.4 kg,15.99,17.40,1.41,8.10,,https://www.lotuss.com.my/en/product/farm-fresh-natural-yogurt-1-5kg-5014212,https://www.lotuss.com.my/en/category/dairy
@@ -3498,7 +3497,6 @@ Fresh Produce,Cf White Button Mushroom Sliced,125 g,6.49,,,,,https://www.lotuss.
 Fresh Produce,Champ Fungi White Button Mushroom,150 g,6.49,,,,,https://www.lotuss.com.my/en/product/cf-white-button-mushroom-150g-2595087,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Cheese Fish Tofu,160 g,4.39,,,,,https://www.lotuss.com.my/en/product/75117928,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Cheong Fatt Chopped Garlic,230 g,5.99,,,,,https://www.lotuss.com.my/en/product/cf-garlic-250g-2497336,https://www.lotuss.com.my/en/category/fresh-produce
-Fresh Produce,Cheong Fatt Tauhu Telur,3 x 120 g,2.59,,,,0.86,https://www.lotuss.com.my/en/product/cf-tauhu-telur-3sx120g-1836854,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Chicken Eggs A30pcs,,12.60,,,,,https://www.lotuss.com.my/en/product/chicken-eggs-a-30s-3167089,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Chicken Eggs B30pcs,,12.00,,,,,https://www.lotuss.com.my/en/product/chicken-eggs-b-30s-3167097,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Chicken Eggs C30pcs,,11.40,,,,,https://www.lotuss.com.my/en/product/chicken-eggs-c-30s-3167100,https://www.lotuss.com.my/en/category/fresh-produce
@@ -3578,7 +3576,7 @@ Fresh Produce,Frz Cencaru 4/6 (10% Glazing)Packx1Kg,,7.99,,,,,https://www.lotuss
 Fresh Produce,Frz Dory (Patin) Cube Cut (20% Glazing)Packx1Kg,,14.29,,,,,https://www.lotuss.com.my/en/product/75184748,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Frz Dory (Patin) Fillet (20% Glazing)Packx1Kg,,14.29,,,,,https://www.lotuss.com.my/en/product/75192396,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Frz Dory (Patin) Loins Cut (20% Glazing)Packx1Kg,,14.29,,,,,https://www.lotuss.com.my/en/product/75184747,https://www.lotuss.com.my/en/category/fresh-produce
-Fresh Produce,Frz Kembong 4/6 (10% Glazing)Packx1Kg,,9.49,,,,,https://www.lotuss.com.my/en/product/75113223,https://www.lotuss.com.my/en/category/fresh-produce
+Fresh Produce,Frz Kembong 4/6 (10% Glazing)Packx1Kg,,10.10,,,,,https://www.lotuss.com.my/en/product/75113223,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Frz Kembong 6/8 (10% Glazing)Packx1Kg,,9.79,,,,,https://www.lotuss.com.my/en/product/75113224,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Frz Kupang 1Kg Pack (10% Glazing),,8.49,,,,,https://www.lotuss.com.my/en/product/75121946,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Frz Lala Meat (40% Glazing)Packx500Gm,,8.50,,,,,https://www.lotuss.com.my/en/product/75169544,https://www.lotuss.com.my/en/category/fresh-produce
@@ -3716,8 +3714,8 @@ Fresh Produce,Limau Nipis 500Gm (Johor),,4.00,,,,,https://www.lotuss.com.my/en/p
 Fresh Produce,Lk Fresh Free Range Egg,,6.70,,,,,https://www.lotuss.com.my/en/product/lk-fresh-free-range-egg-74429930,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lobak Hijau/Green Radish-Kg (4757),,0.59,,,,,https://www.lotuss.com.my/en/product/lobak-hijau-green-radish-kg-4757-77526,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lobak Merah Australia Carrots 1Kg -Pkt,,4.99,,,,,https://www.lotuss.com.my/en/product/sun-city-australia-carrots-1kg-3668746,https://www.lotuss.com.my/en/category/fresh-produce
-Fresh Produce,Lobak Merah China/China Carrots -Kg (3932),,0.37,,,,,https://www.lotuss.com.my/en/product/75113407,https://www.lotuss.com.my/en/category/fresh-produce
-Fresh Produce,Lobak Merah Cina/China Carrot,500 g,2.69,,,,,https://www.lotuss.com.my/en/product/lobak-merah-cina-china-carrot-500g-2375567,https://www.lotuss.com.my/en/category/fresh-produce
+Fresh Produce,Lobak Merah China/China Carrots -Kg (3932),,0.40,,,,,https://www.lotuss.com.my/en/product/75113407,https://www.lotuss.com.my/en/category/fresh-produce
+Fresh Produce,Lobak Merah Cina/China Carrot,500 g,2.49,,,,,https://www.lotuss.com.my/en/product/lobak-merah-cina-china-carrot-500g-2375567,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lobak Putih /White Radish - Kg (3079),,0.29,,,,,https://www.lotuss.com.my/en/product/lobak-putih-kg-3079-1765159,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotus's Fresh Bawang Kecil,500 g,1.69,,,,,https://www.lotuss.com.my/en/product/lotuss-bwg-merah-kecil-500g-70346895,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotus's Fresh Jambu Batu M 2Pcs,2 pcs,5.99,,,,3.00,https://www.lotuss.com.my/en/product/lotuss-fresh-jambu-batu-m-2pcs-72799765,https://www.lotuss.com.my/en/category/fresh-produce
@@ -3782,7 +3780,7 @@ Fresh Produce,Lotuss Fresh Chicken Eggs Grade A10pcs,,3.96,,,,,https://www.lotus
 Fresh Produce,Lotuss Fresh Chicken Eggs Grade B10pcs,,3.45,,,,,https://www.lotuss.com.my/en/product/lotuss-fresh-chicken-eggs-10s-b-74685783,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotuss Fresh Chicken Eggs Grade B30pcs,,10.70,,,,,https://www.lotuss.com.my/en/product/lotuss-fresh-chicken-eggs-30s-b-74685732,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotuss Fresh Chicken Eggs Grade C 30Pcs,30 pcs,6.95,,,,0.23,https://www.lotuss.com.my/en/product/lotuss-fresh-chicken-eggs-30s-c-74685767,https://www.lotuss.com.my/en/category/fresh-produce
-Fresh Produce,Lotuss Fresh Chicken Eggs Grade C10pcs,,2.73,,,,,https://www.lotuss.com.my/en/product/lotuss-fresh-chicken-eggs-10s-c-74685791,https://www.lotuss.com.my/en/category/fresh-produce
+Fresh Produce,Lotuss Fresh Chicken Eggs Grade C10pcs,,2.73,,,,,https://www.lotuss.com.my/en/product/lotuss-fresh-chicken-eggs-10s-c-74684825,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotuss Fresh Fried Fish Ball,150 g,3.59,,,,,https://www.lotuss.com.my/en/product/75146197,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotuss Fresh Fried Fish Cake,150 g,3.59,,,,,https://www.lotuss.com.my/en/product/75146155,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotuss Fresh Taugeh Hijau,,3.99,,,,,https://www.lotuss.com.my/en/product/lotuss-taugeh-hijau-250g-73588113,https://www.lotuss.com.my/en/category/fresh-produce
@@ -3888,8 +3886,8 @@ Fresh Produce,Mushroom Long Fish Cake 300G/Pkt,,4.85,,,,,https://www.lotuss.com.
 Fresh Produce,Mushroom Small Fried Fishball 160G/Pkt,,3.75,,,,,https://www.lotuss.com.my/en/product/mushroom-small-fried-fishball-160g-72851473,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Mushroom Small White Fish Ball,160 g,3.55,,,,,https://www.lotuss.com.my/en/product/mushroom-small-white-fish-ball-160g-72851465,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,My Fresh Green Kale,100 g,5.99,,,,,https://www.lotuss.com.my/en/product/75119087,https://www.lotuss.com.my/en/category/fresh-produce
-Fresh Produce,My Murni Kuey Teow Goreng,450 g,1.60,,,,,https://www.lotuss.com.my/en/product/75160397,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,My Murni Kuey Teow Goreng,900 g,3.60,,,,,https://www.lotuss.com.my/en/product/75160400,https://www.lotuss.com.my/en/category/fresh-produce
+Fresh Produce,My Murni Kuey Teow Goreng,450 g,1.60,,,,,https://www.lotuss.com.my/en/product/75160397,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,My Murni Kuey Teow Soup,450 g,1.60,,,,,https://www.lotuss.com.my/en/product/75160398,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,My Murni Mee Kuning,450 g,1.60,,,,,https://www.lotuss.com.my/en/product/75160396,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,My Murni Mee Kuning,900 g,3.50,,,,,https://www.lotuss.com.my/en/product/75160399,https://www.lotuss.com.my/en/category/fresh-produce
@@ -4036,6 +4034,7 @@ Fresh Produce,Tembikai Wangi (Johor) - Kg,,5.99,,,,,https://www.lotuss.com.my/en
 Fresh Produce,Tembikai Wangi Rock Tempatan-Kg(4789),,19.97,,,,,https://www.lotuss.com.my/en/product/tembikai-wangi-rock-tempatan-kg-4789-223530,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Tembikai Wangi Sun (Johor) - Kg,,6.99,,,,,https://www.lotuss.com.my/en/product/75101020,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Tempura Prawn,,15.00,,,,,https://www.lotuss.com.my/en/product/75123947,https://www.lotuss.com.my/en/category/fresh-produce
+Fresh Produce,Terung Bulat - Kg (3545),,0.78,,,,,https://www.lotuss.com.my/en/product/terung-bulat-kg-3545-1765523,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Terung Bulat Kecil,250 g,5.99,,,,,https://www.lotuss.com.my/en/product/terung-bulat-kecil-250g-74781154,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Terung Merah,350 g,4.49,,,,,https://www.lotuss.com.my/en/product/75171348,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Terung Panjang (Johor) - Kg (4165),,0.78,,,,,https://www.lotuss.com.my/en/product/74943685,https://www.lotuss.com.my/en/category/fresh-produce
@@ -4148,8 +4147,8 @@ Grocery,Adabi Cili Giling,150 g,3.65,,,,,https://www.lotuss.com.my/en/product/ad
 Grocery,Adabi Fettuccine,500 g,3.39,,,,,https://www.lotuss.com.my/en/product/75114269,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Fish Savoury Curry Powder,24 g,1.39,,,,,https://www.lotuss.com.my/en/product/adabi-fish-savoury-curry-powder-24g-74627694,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Kari Ayam/Daging,250 g,5.49,5.70,0.21,3.70,,https://www.lotuss.com.my/en/product/adabi-chicken-and-meat-curry-powder-250g-113999,https://www.lotuss.com.my/en/category/grocery
-Grocery,Adabi Kari Ayam/Daging,24 g,1.40,,,,,https://www.lotuss.com.my/en/product/adabi-chicken-and-meat-curry-powder-24g-113735,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Kari Ayam/Daging,1 kg,25.95,,,,,https://www.lotuss.com.my/en/product/adabi-chicken-and-meat-curry-1kg-114138,https://www.lotuss.com.my/en/category/grocery
+Grocery,Adabi Kari Ayam/Daging,24 g,1.40,,,,,https://www.lotuss.com.my/en/product/adabi-chicken-and-meat-curry-powder-24g-113735,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Kari Ikan,24 g,1.40,,,,,https://www.lotuss.com.my/en/product/adabi-fish-curry-powder-24g-112585,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Kari Ikan,250 g,5.99,6.29,0.30,4.80,,https://www.lotuss.com.my/en/product/adabi-fish-curry-powder-250g-112909,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Kari Ikan,1 kg,25.05,,,,,https://www.lotuss.com.my/en/product/75095001,https://www.lotuss.com.my/en/category/grocery
@@ -4201,8 +4200,8 @@ Grocery,Adabi Sambal Belacan Moden,200 g,6.79,,,,,https://www.lotuss.com.my/en/p
 Grocery,Adabi Sambal Belacan Tradisi,180 g,6.79,,,,,https://www.lotuss.com.my/en/product/adabi-sambal-belacan-tradition-spicy-180g-71044663,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Seafood Sauce,340 g,5.69,6.09,0.40,6.60,,https://www.lotuss.com.my/en/product/75099833,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Serbuk Campuran Kunyit,30 g,1.30,,,,,https://www.lotuss.com.my/en/product/adabi-turmeric-powder-blended-30g-115541,https://www.lotuss.com.my/en/category/grocery
-Grocery,Adabi Serbuk Campuran Kunyit,250 g,6.65,6.95,0.30,4.30,,https://www.lotuss.com.my/en/product/adabi-turmeric-powder-blended-250g-115835,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Serbuk Campuran Kunyit,100 g,2.70,,,,,https://www.lotuss.com.my/en/product/adabi-turmeric-powder-blended-100g-115827,https://www.lotuss.com.my/en/category/grocery
+Grocery,Adabi Serbuk Campuran Kunyit,250 g,6.65,6.95,0.30,4.30,,https://www.lotuss.com.my/en/product/adabi-turmeric-powder-blended-250g-115835,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Serbuk Gulai Daging,24 g,1.39,,,,,https://www.lotuss.com.my/en/product/adabi-serbuk-gulai-daging-24g-74812068,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Serbuk Gulai Daging,250 g,6.29,6.55,0.26,4.00,,https://www.lotuss.com.my/en/product/adabi-serbuk-gulai-daging-250-74811479,https://www.lotuss.com.my/en/category/grocery
 Grocery,Adabi Serbuk Gulai Ikan,250 g,6.55,,,,,https://www.lotuss.com.my/en/product/adabi-fish-savoury-curry-powder-250g-74627724,https://www.lotuss.com.my/en/category/grocery
@@ -4247,8 +4246,8 @@ Grocery,Ajinomoto,70 g,3.79,,,,,https://www.lotuss.com.my/en/product/75120937,ht
 Grocery,Ajinomoto,72 g,2.65,,,,,https://www.lotuss.com.my/en/product/aji-no-moto-flavor-enhancer-72g-160644,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ajinomoto,300 g,6.60,,,,,https://www.lotuss.com.my/en/product/aji-no-moto-monosodium-glutamat-tulen-300g-160806,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ajinomoto,150 g,4.60,,,,,https://www.lotuss.com.my/en/product/aji-no-moto-monosodium-glutamat-150g-160652,https://www.lotuss.com.my/en/category/grocery
-Grocery,Ajinomoto,500 g,8.80,,,,,https://www.lotuss.com.my/en/product/ajinomoto-500g-72025190,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ajinomoto,1 kg,13.95,,,,,https://www.lotuss.com.my/en/product/aji-no-moto-pure-monosodium-glutamate-1kg-160873,https://www.lotuss.com.my/en/category/grocery
+Grocery,Ajinomoto,500 g,8.80,,,,,https://www.lotuss.com.my/en/product/ajinomoto-500g-72025190,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ajinomoto,33 g,1.54,,,,,https://www.lotuss.com.my/en/product/aji-no-moto-33g-72700319,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ajinomoto,100 g,2.70,,,,,https://www.lotuss.com.my/en/product/ajinomoto-pure-monosodium-glutamate-100g-71297340,https://www.lotuss.com.my/en/category/grocery
 Grocery,Akasa Coconut Cooking Oil,1 liter,22.50,,,,,https://www.lotuss.com.my/en/product/75065185,https://www.lotuss.com.my/en/category/grocery
@@ -4312,8 +4311,8 @@ Grocery,B Crocker Supermoist Cake Mix Devil,430 g,11.05,,,,,https://www.lotuss.c
 Grocery,Baba Chilli Powder,250 g,7.20,,,,,https://www.lotuss.com.my/en/product/baba's-chilli-powder-250g-3375609,https://www.lotuss.com.my/en/category/grocery
 Grocery,Baba Chilli Powder,125 g,3.85,,,,,https://www.lotuss.com.my/en/product/baba's-chilli-powder-125g-3375595,https://www.lotuss.com.my/en/category/grocery
 Grocery,Baba Coriander Powder,250 g,4.65,,,,,https://www.lotuss.com.my/en/product/baba's-coriander-powder-250g-710431,https://www.lotuss.com.my/en/category/grocery
-Grocery,Baba Fish Curry Powder,250 g,5.60,,,,,https://www.lotuss.com.my/en/product/baba's-fish-curry-powder-250g-710245,https://www.lotuss.com.my/en/category/grocery
 Grocery,Baba Fish Curry Powder,1 kg,23.15,,,,,https://www.lotuss.com.my/en/product/baba's-fish-curry-powder-1kg-3375420,https://www.lotuss.com.my/en/category/grocery
+Grocery,Baba Fish Curry Powder,250 g,5.60,,,,,https://www.lotuss.com.my/en/product/baba's-fish-curry-powder-250g-710245,https://www.lotuss.com.my/en/category/grocery
 Grocery,Baba Meat Curry Powder,1 kg,23.15,,,,,https://www.lotuss.com.my/en/product/baba's-meat-curry-powder-1kg-3375455,https://www.lotuss.com.my/en/category/grocery
 Grocery,Baba Meat Curry Powder,250 g,5.60,,,,,https://www.lotuss.com.my/en/product/baba-s-meat-curry-powder-250g-710318,https://www.lotuss.com.my/en/category/grocery
 Grocery,Baba Turmeric Powder,25 g,1.15,,,,,https://www.lotuss.com.my/en/product/baba's-turmeric-powder-25g-3375498,https://www.lotuss.com.my/en/category/grocery
@@ -4342,8 +4341,8 @@ Grocery,Basso Extra Virgin Olive Oil,0.5 liter,32.95,,,,,https://www.lotuss.com.
 Grocery,Basso Extra Virgin Olive Oil,250 ml,19.45,,,,,https://www.lotuss.com.my/en/product/basso-extra-virgin-olive-oil-250ml-70235910,https://www.lotuss.com.my/en/category/grocery
 Grocery,Basso Grape Seed Oil,1 liter,37.40,,,,,https://www.lotuss.com.my/en/product/basso-grapeseed-oil-1l-70236062,https://www.lotuss.com.my/en/category/grocery
 Grocery,Basso Peanut Oil,1 liter,23.39,,,,,https://www.lotuss.com.my/en/product/basso-peanut-oil-1l-74684876,https://www.lotuss.com.my/en/category/grocery
-Grocery,Basso Pomace Olive Oil,1 liter,39.35,,,,,https://www.lotuss.com.my/en/product/basso-olive-pomace-oil-1l-384631,https://www.lotuss.com.my/en/category/grocery
 Grocery,Basso Pomace Olive Oil,0.5 liter,21.75,,,,,https://www.lotuss.com.my/en/product/basso-olive-pomace-oil-500ml-384666,https://www.lotuss.com.my/en/category/grocery
+Grocery,Basso Pomace Olive Oil,1 liter,39.35,,,,,https://www.lotuss.com.my/en/product/basso-olive-pomace-oil-1l-384631,https://www.lotuss.com.my/en/category/grocery
 Grocery,Basso Pomace Olive Oil,250 ml,12.59,,,,,https://www.lotuss.com.my/en/product/basso-olive-pomace-oil-250ml-70235929,https://www.lotuss.com.my/en/category/grocery
 Grocery,Basso Pure Olive Oil,0.5 liter,31.75,,,,,https://www.lotuss.com.my/en/product/basso-olive-oil-500ml-384623,https://www.lotuss.com.my/en/category/grocery
 Grocery,Basso Pure Olive Oil,1 liter,59.30,,,,,https://www.lotuss.com.my/en/product/basso-olive-oil-1l-384615,https://www.lotuss.com.my/en/category/grocery
@@ -4659,8 +4658,8 @@ Grocery,Daisy Corn Oil,1 kg,16.50,,,,,https://www.lotuss.com.my/en/product/daisy
 Grocery,Daisy Corn Oil,3 kg,35.90,,,,,https://www.lotuss.com.my/en/product/daisy-corn-oil-3-kg-169846,https://www.lotuss.com.my/en/category/grocery
 Grocery,Daisy Corn Oil,2 kg,24.90,,,,,https://www.lotuss.com.my/en/product/daisy-corn-oil-2kg-169765,https://www.lotuss.com.my/en/category/grocery
 Grocery,Daisy Corn Oil,500 g,7.25,7.95,0.70,8.80,,https://www.lotuss.com.my/en/product/daisy-corn-oil-500g-4151496,https://www.lotuss.com.my/en/category/grocery
-Grocery,Daisy Margarine,1 kg,10.69,13.35,2.66,19.90,,https://www.lotuss.com.my/en/product/daisy-margarine-1kg-1352830,https://www.lotuss.com.my/en/category/grocery
 Grocery,Daisy Margarine,2.5 kg,25.95,,,,,https://www.lotuss.com.my/en/product/daisy-margarine-2-5kg-74103768,https://www.lotuss.com.my/en/category/grocery
+Grocery,Daisy Margarine,1 kg,10.69,13.35,2.66,19.90,,https://www.lotuss.com.my/en/product/daisy-margarine-1kg-1352830,https://www.lotuss.com.my/en/category/grocery
 Grocery,Daisy Margarine,240 g,4.80,,,,,https://www.lotuss.com.my/en/product/daisy-margarine-240g-70646775,https://www.lotuss.com.my/en/category/grocery
 Grocery,Daisy Margarine,480 g,7.79,9.15,1.36,14.90,,https://www.lotuss.com.my/en/product/daisy-margarine-480g-70646783,https://www.lotuss.com.my/en/category/grocery
 Grocery,Daisy Peanut Butter (Creamy),500 g,12.85,,,,,https://www.lotuss.com.my/en/product/daisy-peanut-butter-creamy-500g-4350154,https://www.lotuss.com.my/en/category/grocery
@@ -4718,8 +4717,8 @@ Grocery,Dragon Fragrant Rice,1 kg,8.39,,,,,https://www.lotuss.com.my/en/product/
 Grocery,Dragon Healthy Red Rice,1 kg,12.50,,,,,https://www.lotuss.com.my/en/product/75112929,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ecobrown Golden Cream Parboiled,5 kg,25.85,,,,,https://www.lotuss.com.my/en/product/75151764,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ecobrowns Gold Wholegrain Rice Mix,5 kg,28.50,,,,,https://www.lotuss.com.my/en/product/74998765,https://www.lotuss.com.my/en/category/grocery
-Grocery,Ecobrowns Herbal Ponni Rice,5 kg,29.50,,,,,https://www.lotuss.com.my/en/product/75135368,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ecobrowns Herbal Ponni Rice,2 kg,13.30,,,,,https://www.lotuss.com.my/en/product/75135367,https://www.lotuss.com.my/en/category/grocery
+Grocery,Ecobrowns Herbal Ponni Rice,5 kg,29.50,,,,,https://www.lotuss.com.my/en/product/75135368,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ecobrowns Premiere Vermicelli,300 g,3.99,,,,,https://www.lotuss.com.my/en/product/ecobrowns-premiere-vermicelli-300g-70331030,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ecobrowns Sella Cream Basmathi,2 kg,18.75,,,,,https://www.lotuss.com.my/en/product/ecobrowns-sella-cream-basmathi-2kg-74535749,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ecobrowns Sella Cream Basmathi,5 kg,29.90,44.79,14.89,33.20,,https://www.lotuss.com.my/en/product/74998757,https://www.lotuss.com.my/en/category/grocery
@@ -4753,8 +4752,8 @@ Grocery,Eva Blackcurrant,450 g,5.45,,,,,https://www.lotuss.com.my/en/product/eva
 Grocery,Eva Mixed Fruit,450 g,5.45,,,,,https://www.lotuss.com.my/en/product/eva-mixed-fruit-450g-547964,https://www.lotuss.com.my/en/category/grocery
 Grocery,Eva Peanut Butter Creamy,500 g,13.99,16.90,2.91,17.20,,https://www.lotuss.com.my/en/product/75181764,https://www.lotuss.com.my/en/category/grocery
 Grocery,Eva Peanut Butter Crunchy,500 g,13.99,16.90,2.91,17.20,,https://www.lotuss.com.my/en/product/75181765,https://www.lotuss.com.my/en/category/grocery
-Grocery,Eva Plus Honey,1 kg,16.89,17.50,0.61,3.50,,https://www.lotuss.com.my/en/product/75146116,https://www.lotuss.com.my/en/category/grocery
 Grocery,Eva Plus Honey,500 g,9.95,12.90,2.95,22.90,,https://www.lotuss.com.my/en/product/75146117,https://www.lotuss.com.my/en/category/grocery
+Grocery,Eva Plus Honey,1 kg,16.89,17.50,0.61,3.50,,https://www.lotuss.com.my/en/product/75146116,https://www.lotuss.com.my/en/category/grocery
 Grocery,Eva Raspberry,450 g,5.45,,,,,https://www.lotuss.com.my/en/product/eva-raspberry-450g-548537,https://www.lotuss.com.my/en/category/grocery
 Grocery,Eva Strawberry,450 g,5.45,,,,,https://www.lotuss.com.my/en/product/eva-strawberry-450g-547603,https://www.lotuss.com.my/en/category/grocery
 Grocery,Faiza Basmathi Moghul Parboiled,5 kg,54.60,,,,,https://www.lotuss.com.my/en/product/75164317,https://www.lotuss.com.my/en/category/grocery
@@ -5071,8 +5070,8 @@ Grocery,Kimball Tomato Ketchup Pouch,1 kg,6.49,6.70,0.21,3.10,,https://www.lotus
 Grocery,Kimball Tomato Puree,300 g,4.49,4.90,0.41,8.40,,https://www.lotuss.com.my/en/product/kimball-tomato-puree-430g-2831708,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kimball Traditnl Tomato Pasta Sauce,300 g,4.99,5.39,0.40,7.40,,https://www.lotuss.com.my/en/product/75146871,https://www.lotuss.com.my/en/category/grocery
 Grocery,King Kg Koh Garlic Chilli Sauce,320 g,3.39,,,,,https://www.lotuss.com.my/en/product/king-kg-koh-garlic-chilli-sauce-340gm-71344195,https://www.lotuss.com.my/en/category/grocery
-Grocery,King Prawn Instant Pes Tomyum,227 g,6.99,,,,,https://www.lotuss.com.my/en/product/75103581,https://www.lotuss.com.my/en/category/grocery
 Grocery,King Prawn Instant Pes Tomyum,454 g,13.79,,,,,https://www.lotuss.com.my/en/product/75103580,https://www.lotuss.com.my/en/category/grocery
+Grocery,King Prawn Instant Pes Tomyum,227 g,6.99,,,,,https://www.lotuss.com.my/en/product/75103581,https://www.lotuss.com.my/en/category/grocery
 Grocery,King Prawn Steam Seafood Sauce,290 ml,6.39,,,,,https://www.lotuss.com.my/en/product/75103582,https://www.lotuss.com.my/en/category/grocery
 Grocery,King Rice Bran Oil,500 ml,13.50,,,,,https://www.lotuss.com.my/en/product/75120287,https://www.lotuss.com.my/en/category/grocery
 Grocery,King Rice Bran Oil,1 liter,19.90,,,,,https://www.lotuss.com.my/en/product/king-rice-bran-oil-1l-74738984,https://www.lotuss.com.my/en/category/grocery
@@ -5089,9 +5088,9 @@ Grocery,Kipas Udang Lemak Manis,500 ml,8.99,,,,,https://www.lotuss.com.my/en/pro
 Grocery,Kipas Udang Lemak Manis Soya Bean Sauce,345 ml,6.05,,,,,https://www.lotuss.com.my/en/product/kipas-udang-lemak-manis-345ml-3167917,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kipas Udang Lemak Masin,645 ml,9.29,9.50,0.21,2.20,,https://www.lotuss.com.my/en/product/kipas-udang-lemak-masin-645ml-3238075,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kipas Udang Lemak Masin,345 ml,6.15,,,,,https://www.lotuss.com.my/en/product/kipas-udang-lemak-masin-345ml-3167925,https://www.lotuss.com.my/en/category/grocery
-Grocery,Kj Kerisik Kelapa,100 g,2.29,,,,,https://www.lotuss.com.my/en/product/75124469,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kj Kerisik Kelapa,40 g,1.09,,,,,https://www.lotuss.com.my/en/product/75124468,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kj Kerisik Kelapa,500 g,7.29,,,,,https://www.lotuss.com.my/en/product/75124336,https://www.lotuss.com.my/en/category/grocery
+Grocery,Kj Kerisik Kelapa,100 g,2.29,,,,,https://www.lotuss.com.my/en/product/75124469,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kj Rempah Sup - Disp,5 g,1.29,,,,,https://www.lotuss.com.my/en/product/75124487,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kj Rempah Sup Tulang - Disp,5 g,1.45,,,,,https://www.lotuss.com.my/en/product/75124488,https://www.lotuss.com.my/en/category/grocery
 Grocery,Knife Classic Light Soy Sauce,500 ml,4.89,5.85,0.96,16.40,,https://www.lotuss.com.my/en/product/knife-classic-light-soy-sauce-500ml-3486591,https://www.lotuss.com.my/en/category/grocery
@@ -5238,8 +5237,8 @@ Grocery,Lotuss Bbq Sauce (Orient),250 g,3.59,3.99,0.40,10.00,,https://www.lotuss
 Grocery,Lotuss Bbq Seasoning,50 g,6.99,,,,,https://www.lotuss.com.my/en/product/75085038,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Beras Pulut Hitam,1 kg,12.00,,,,,https://www.lotuss.com.my/en/product/75193198,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Beras Pulut Hitam ,300 g,4.00,,,,,https://www.lotuss.com.my/en/product/75193197,https://www.lotuss.com.my/en/category/grocery
-Grocery,Lotuss Biji Gandum,500 g,3.99,,,,,https://www.lotuss.com.my/en/product/75193634,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Biji Gandum,100 g,0.99,,,,,https://www.lotuss.com.my/en/product/75193633,https://www.lotuss.com.my/en/category/grocery
+Grocery,Lotuss Biji Gandum,500 g,3.99,,,,,https://www.lotuss.com.my/en/product/75193634,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Biji Halba,500 g,3.30,,,,,https://www.lotuss.com.my/en/product/75193638,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Biji Halba,100 g,1.00,,,,,https://www.lotuss.com.my/en/product/75193637,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Biji Jintan Manis,500 g,5.00,,,,,https://www.lotuss.com.my/en/product/75193591,https://www.lotuss.com.my/en/category/grocery
@@ -5264,8 +5263,8 @@ Grocery,Lotuss Buah Keras,100 g,3.00,,,,,https://www.lotuss.com.my/en/product/75
 Grocery,Lotuss Buah Keras,50 g,1.50,,,,,https://www.lotuss.com.my/en/product/75193608,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Buah Pala,500 g,19.80,,,,,https://www.lotuss.com.my/en/product/75193600,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Buah Pala,100 g,4.50,,,,,https://www.lotuss.com.my/en/product/75193599,https://www.lotuss.com.my/en/category/grocery
-Grocery,Lotuss Buah Pelaga,100 g,22.90,,,,,https://www.lotuss.com.my/en/product/75193602,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Buah Pelaga,20 g,4.90,,,,,https://www.lotuss.com.my/en/product/75193601,https://www.lotuss.com.my/en/category/grocery
+Grocery,Lotuss Buah Pelaga,100 g,22.90,,,,,https://www.lotuss.com.my/en/product/75193602,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Bunga Lawang,50 g,2.00,,,,,https://www.lotuss.com.my/en/product/75193594,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Bunga Lawang,500 g,12.00,,,,,https://www.lotuss.com.my/en/product/75193596,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Bunga Lawang,100 g,3.50,,,,,https://www.lotuss.com.my/en/product/75193595,https://www.lotuss.com.my/en/category/grocery
@@ -5342,8 +5341,8 @@ Grocery,Lotuss Iodised Himalaya Rock Salt,400 g,1.30,,,,,https://www.lotuss.com.
 Grocery,Lotuss Iodised Refine Salt,1 kg,1.40,,,,,https://www.lotuss.com.my/en/product/75193158,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Iodised Vacuum Fine Salt,450 g,0.75,,,,,https://www.lotuss.com.my/en/product/lotussa-iodised-vacuum-fine-salt-450g-74683128,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Italian Seasoning,15 g,6.99,,,,,https://www.lotuss.com.my/en/product/75085135,https://www.lotuss.com.my/en/category/grocery
-Grocery,Lotuss Jeruk Lobak Cincang (Masin),200 g,2.20,,,,,https://www.lotuss.com.my/en/product/75193551,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Jeruk Lobak Cincang (Masin),1 kg,11.00,,,,,https://www.lotuss.com.my/en/product/75193552,https://www.lotuss.com.my/en/category/grocery
+Grocery,Lotuss Jeruk Lobak Cincang (Masin),200 g,2.20,,,,,https://www.lotuss.com.my/en/product/75193551,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Kacang Dhal Australia,1 kg,4.99,,,,,https://www.lotuss.com.my/en/product/75193280,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Kacang Dhal Australia,500 g,2.59,,,,,https://www.lotuss.com.my/en/product/75193616,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Kacang Dhal Australia,300 g,1.89,,,,,https://www.lotuss.com.my/en/product/75193615,https://www.lotuss.com.my/en/category/grocery
@@ -5382,8 +5381,8 @@ Grocery,Lotuss Lada Hitam,50 g,3.50,,,,,https://www.lotuss.com.my/en/product/lot
 Grocery,Lotuss Lada Putih,50 g,4.00,,,,,https://www.lotuss.com.my/en/product/lotuss-lada-putih-50g-74690329,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Lada Szechuan,100 g,8.00,,,,,https://www.lotuss.com.my/en/product/75193605,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Local Vermicelli,1.5 kg,7.99,8.49,0.50,5.90,,https://www.lotuss.com.my/en/product/lotuss-local-vermicelli-1-5kg-74700030,https://www.lotuss.com.my/en/category/grocery
-Grocery,Lotuss Longan Kering,300 g,25.50,,,,,https://www.lotuss.com.my/en/product/75193536,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Longan Kering,100 g,8.50,,,,,https://www.lotuss.com.my/en/product/75193535,https://www.lotuss.com.my/en/category/grocery
+Grocery,Lotuss Longan Kering,300 g,25.50,,,,,https://www.lotuss.com.my/en/product/75193536,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Longan Kering ,500 g,42.50,,,,,https://www.lotuss.com.my/en/product/75193537,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Macaroni,400 g,2.75,3.09,0.34,11.00,,https://www.lotuss.com.my/en/product/lotuss-macaroni-400g-74682253,https://www.lotuss.com.my/en/category/grocery
 Grocery,Lotuss Mayo,1 liter,8.45,8.99,0.54,6.00,,https://www.lotuss.com.my/en/product/lotuss-mayo-1l-74713817,https://www.lotuss.com.my/en/category/grocery
@@ -6014,8 +6013,8 @@ Grocery,Penang Ah Lai Prawn Noodle,4 x 100 g,10.59,,,,2.65,https://www.lotuss.co
 Grocery,Penang Ah Lai White Curry Noodle,4 x 110 g,10.59,,,,2.65,https://www.lotuss.com.my/en/product/75097441,https://www.lotuss.com.my/en/category/grocery
 Grocery,Pine Brand Thai Bean Vermicelli,500 g,16.99,,,,,https://www.lotuss.com.my/en/product/75115739,https://www.lotuss.com.my/en/category/grocery
 Grocery,Planta,240 g,5.99,6.30,0.31,4.90,,https://www.lotuss.com.my/en/product/planta-240g-74203150,https://www.lotuss.com.my/en/category/grocery
-Grocery,Planta,1 kg,12.80,16.30,3.50,21.50,,https://www.lotuss.com.my/en/product/planta-multi-purpose-margarine-1kg-74203274,https://www.lotuss.com.my/en/category/grocery
 Grocery,Planta,480 g,9.79,11.30,1.51,13.40,,https://www.lotuss.com.my/en/product/planta-480g-74203223,https://www.lotuss.com.my/en/category/grocery
+Grocery,Planta,1 kg,12.80,16.30,3.50,21.50,,https://www.lotuss.com.my/en/product/planta-multi-purpose-margarine-1kg-74203274,https://www.lotuss.com.my/en/category/grocery
 Grocery,Planta Baking Pouch,1 kg,12.90,,,,,https://www.lotuss.com.my/en/product/75181766,https://www.lotuss.com.my/en/category/grocery
 Grocery,Prai Caster Sugar,500 g,2.39,2.70,0.31,11.50,,https://www.lotuss.com.my/en/product/prai-caster-sugar-500g-399213,https://www.lotuss.com.my/en/category/grocery
 Grocery,Prai Coarse Grain Sugar,1 kg,2.85,,,,,https://www.lotuss.com.my/en/product/prai-coarse-grain-sugar-1kg-74138936,https://www.lotuss.com.my/en/category/grocery
@@ -6127,8 +6126,8 @@ Grocery,Rasto Nacho Cheese Sauce,250 g,8.79,10.49,1.70,16.20,,https://www.lotuss
 Grocery,Rasto Roasted Sesame Dressing,250 g,3.69,6.90,3.21,46.50,,https://www.lotuss.com.my/en/product/75205336,https://www.lotuss.com.my/en/category/grocery
 Grocery,Rasto Tradi Tomato Pasta Sauce,350 g,4.49,5.29,0.80,15.10,,https://www.lotuss.com.my/en/product/75130097,https://www.lotuss.com.my/en/category/grocery
 Grocery,Red Bull Energy Sparkling Pomelo,6 x 250 ml,18.89,,,,3.15,https://www.lotuss.com.my/en/product/75161638,https://www.lotuss.com.my/en/category/grocery
-Grocery,Red Eagle Blended Oil,5 kg,32.90,,,,,https://www.lotuss.com.my/en/product/red-eagle-blended-oil-5kg-162825,https://www.lotuss.com.my/en/category/grocery
 Grocery,Red Eagle Blended Oil,2 kg,15.25,,,,,https://www.lotuss.com.my/en/product/red-eagle-blended-oil-2kg-162655,https://www.lotuss.com.my/en/category/grocery
+Grocery,Red Eagle Blended Oil,5 kg,32.90,,,,,https://www.lotuss.com.my/en/product/red-eagle-blended-oil-5kg-162825,https://www.lotuss.com.my/en/category/grocery
 Grocery,Red Eagle Cooking Oil,1 kg,8.05,,,,,https://www.lotuss.com.my/en/product/red-eagle-cooking-oil-1kg-74154028,https://www.lotuss.com.my/en/category/grocery
 Grocery,Red Eagle Cooking Oil,500 g,4.99,,,,,https://www.lotuss.com.my/en/product/75119606,https://www.lotuss.com.my/en/category/grocery
 Grocery,Royal Umbrella Full Import Thai Frag,5 kg,39.85,,,,,https://www.lotuss.com.my/en/product/royal-umbrella-full-import-thai-frag-5kg-74717383,https://www.lotuss.com.my/en/category/grocery
@@ -6504,6 +6503,7 @@ Grocery,Vida Zero Salty Lychee,4 x 325 ml,9.49,,,,2.37,https://www.lotuss.com.my
 Grocery,Vits Italian Mi Goreng Aglio,4 x 85 g,7.49,,,,1.87,https://www.lotuss.com.my/en/product/75127010,https://www.lotuss.com.my/en/category/grocery
 Grocery,Vits Italian Mi Goreng Carbonara,4 x 85 g,7.49,,,,1.87,https://www.lotuss.com.my/en/product/75127011,https://www.lotuss.com.my/en/category/grocery
 Grocery,Vits Mi Segera Pan Mee,650 g,7.59,,,,,https://www.lotuss.com.my/en/product/75127009,https://www.lotuss.com.my/en/category/grocery
+Grocery,Vochelle Block Almond,140 g,8.29,10.99,2.70,24.60,,https://www.lotuss.com.my/en/product/vochelle-block-almond-175g-2609592,https://www.lotuss.com.my/en/category/grocery
 Grocery,Windmill Gheeblend,400 g,16.45,17.95,1.50,8.40,,https://www.lotuss.com.my/en/product/windmill-gheeblend-400g-74203304,https://www.lotuss.com.my/en/category/grocery
 Grocery,Windmill Gheeblend,800 g,27.99,28.95,0.96,3.30,,https://www.lotuss.com.my/en/product/windmill-gheeblend-800g-74203312,https://www.lotuss.com.my/en/category/grocery
 Grocery,Windmill Gheeblend,200 g,10.50,,,,,https://www.lotuss.com.my/en/product/windmill-gheeblend-200g-74203290,https://www.lotuss.com.my/en/category/grocery
@@ -7486,8 +7486,8 @@ Snacks,Resuka Broad Bean With Out Skin,350 g,8.99,,,,,https://www.lotuss.com.my/
 Snacks,Resuka Broad Bean With Skin,350 g,8.99,,,,,https://www.lotuss.com.my/en/product/75137828,https://www.lotuss.com.my/en/category/snacks
 Snacks,Resuka Coated Peanut Curry Sesame,350 g,8.99,,,,,https://www.lotuss.com.my/en/product/75137830,https://www.lotuss.com.my/en/category/snacks
 Snacks,Resuka Gold Peanut Cny Bucket,15 x 10 g,12.88,,,,0.86,https://www.lotuss.com.my/en/product/75196966,https://www.lotuss.com.my/en/category/snacks
-Snacks,Resuka Muruku Ayam Original,60 g,1.99,,,,,https://www.lotuss.com.my/en/product/75060760,https://www.lotuss.com.my/en/category/snacks
 Snacks,Resuka Muruku Ayam Original,450 g,6.99,8.99,2.00,22.20,,https://www.lotuss.com.my/en/product/75130269,https://www.lotuss.com.my/en/category/snacks
+Snacks,Resuka Muruku Ayam Original,60 g,1.99,,,,,https://www.lotuss.com.my/en/product/75060760,https://www.lotuss.com.my/en/category/snacks
 Snacks,Resuka Muruku Ayam Pedas Manis,450 g,6.99,8.99,2.00,22.20,,https://www.lotuss.com.my/en/product/75130270,https://www.lotuss.com.my/en/category/snacks
 Snacks,Resuka Muruku Ayam Pedas N Manis,60 g,1.99,,,,,https://www.lotuss.com.my/en/product/75060825,https://www.lotuss.com.my/en/category/snacks
 Snacks,Resuka Muruku Cny Pack,,7.89,,,,,https://www.lotuss.com.my/en/product/75131224,https://www.lotuss.com.my/en/category/snacks
