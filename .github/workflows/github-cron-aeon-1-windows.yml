@@ -128,7 +128,7 @@ jobs:
       
             Write-Output "=== Second attempt ==="
             python -u aeon_cdp_args_033.py -c aeon-categories-1.txt -o aeon-out-part1.csv
-            $isValid = Check-OutputFile -FilePath "aeon-out-part1.csv" -MinSize 5000
+            $isValid = Check-OutputFile -FilePath "aeon-out-part1.csv" -MinSize 6000
       
             if (-Not $isValid) {
               Write-Error "** Retry failed. Aborting. **"
