@@ -1,4 +1,4 @@
-name: Aeon 2a mac manual (aeon-branch-2)
+name: Aeon mac manual (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: aeon-branch-2 # Specify aeon-branch-2 directly for the primary checkout
+          ref: aeon-branch # Specify aeon-branch directly for the primary checkout
           path: .
 
       - name: Set up Python
@@ -46,15 +46,15 @@ jobs:
         run: |
           run_and_validate() {
             echo "Running script..."
-            python3 aeon_cdp_args_033.py -c aeon-categories-2.txt -o aeon-out-part2.csv
+            python3 aeon_cdp_args_033.py -c aeon-categories-5.txt -o aeon-out-part5.csv
       
-            if [ ! -f aeon-out-part2.csv ]; then
+            if [ ! -f aeon-out-part5.csv ]; then
               echo "** Output file does not exist **"
               return 1
             fi
       
-            filesize=$(stat -f%z aeon-out-part2.csv)
-            if [ "$filesize" -lt 2100 ]; then
+            filesize=$(stat -f%z aeon-out-part5.csv)
+            if [ "$filesize" -lt 3500 ]; then
               echo "** Output file is too small ($filesize bytes) **"
               return 1
             fi
@@ -66,8 +66,8 @@ jobs:
           # First attempt
           run_and_validate
           if [ $? -ne 0 ]; then
-            echo "⚠️ First attempt failed. Retrying in 15 seconds..."
-            sleep 15
+            echo "⚠️ First attempt failed. Retrying in 20 seconds..."
+            sleep 20
             run_and_validate
             if [ $? -ne 0 ]; then
               echo "❌ Second attempt failed. Aborting."
@@ -82,11 +82,11 @@ jobs:
 
       - name: Pull latest changes before push
         run: |
-          git pull origin aeon-branch-2 --rebase
+          git pull origin aeon-branch --rebase
 
       - name: Commit and push generated files
         run: |
-          cp aeon-out-part2.csv raw_data/
-          git add raw_data/aeon-out-part2.csv
+          cp aeon-out-part5.csv raw_data/
+          git add raw_data/aeon-out-part5.csv
           git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
-          git push origin aeon-branch-2
+          git push origin aeon-branch
