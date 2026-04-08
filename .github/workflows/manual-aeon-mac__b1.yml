@@ -1,4 +1,4 @@
-name: Aeon mac manual (aeon-branch)
+name: Manual Aeon mac (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
