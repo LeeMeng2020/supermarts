@@ -124,8 +124,8 @@ jobs:
           $isValid = Check-OutputFile -FilePath "aeon-out-part3.csv" -MinSize 5000
       
           if (-Not $isValid) {
-            Write-Output "Initial output file check failed. Retrying after 15 seconds..."
-            Start-Sleep -Seconds 15
+            Write-Output "Initial output file check failed. Retrying after 20 seconds..."
+            Start-Sleep -Seconds 20
       
             Write-Output "=== Second attempt ==="
             python -u aeon_cdp_args_033.py -c aeon-categories-3.txt -o aeon-out-part3.csv
