@@ -46,6 +46,7 @@ jobs:
         run: pip3 install -r requirements.txt
 
       - name: Run script and validate output with retry
+        timeout-minutes: 61     
         run: |
           run_and_validate() {
             echo "Running script..."
