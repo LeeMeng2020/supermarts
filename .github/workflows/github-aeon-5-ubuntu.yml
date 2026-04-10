@@ -1,0 +1,135 @@
+name: Manual Ubuntu test
+
+on:
+  workflow_dispatch: # manual trigger ability
+  schedule:
+    # Run every day at 7:33 AM MY time (11:33 PM UTC)
+    - cron: '33 23 * * *'     
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: aeon-branch
+          path: .
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.12'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full xvfb curl git
+
+      - name: Download 7-Zip installer with retry (Linux style)
+        run: |
+          url="https://www.7-zip.org/a/7z2301-linux-x64.tar.xz"
+          out="7zip.tar.xz"
+          maxAttempts=3
+          delaySeconds=20
+
+          for attempt in $(seq 1 $maxAttempts); do
+            echo "=== Download attempt $attempt of $maxAttempts ==="
+            if curl -fSL "$url" -o "$out"; then
+              echo "Download succeeded."
+              break
+            else
+              echo "** Attempt $attempt failed **"
+              if [ $attempt -lt $maxAttempts ]; then
+                echo "Retrying in $delaySeconds seconds..."
+                sleep $delaySeconds
+              else
+                echo "** All $maxAttempts attempts failed for zip. Aborting. **"
+                exit 1
+              fi
+            fi
+          done
+
+      - name: Start virtual display
+        run: |
+          export DISPLAY=:99
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "Virtual display started"
+
+      - name: Display system information
+        run: |
+          echo "Linux version:"
+          uname -a
+          echo "Python version:"
+          python -V
+          echo "IP address:"
+          curl https://ipinfo.io/ip
+
+      - name: Unzip .7z, copy categories and requirements
+        run: |
+          7z x runner-src/gather-aeon-src.7z -p${{ secrets.ZIP_PW }}
+          cp runner-src/requirements.txt .
+          cp runner-src/aeon-categories* .
+
+      - name: pip install
+        run: pip install -r requirements.txt
+
+      - name: Run script and validate output. With retry, timeout.
+        timeout-minutes: 120
+        run: |
+          check_output_file() {
+            local file=$1
+            local minsize=$2
+            if [ ! -f "$file" ]; then
+              echo "** Output file does not exist **"
+              return 1
+            fi
+            filesize=$(stat -c%s "$file")
+            if [ $filesize -lt $minsize ]; then
+              echo "** Output file too small ($filesize bytes) **"
+              return 1
+            fi
+            echo "Validation passed: output file seems OK."
+            return 0
+          }
+
+          run_with_timeout() {
+            local categories=$1
+            local output=$2
+            local timeoutMinutes=$3
+            local attemptLabel=$4
+
+            echo "=== $attemptLabel ==="
+            timeout ${timeoutMinutes}m python -u aeon_cdp_args_033.py -c "$categories" -o "$output"
+            check_output_file "$output" 5000
+          }
+
+          perAttemptTimeout=58
+
+          if ! run_with_timeout "aeon-categories-5.txt" "aeon-out-part5.csv" $perAttemptTimeout "First attempt"; then
+            echo "First attempt failed or timed out. Retrying after 20 seconds..."
+            sleep 20
+            if ! run_with_timeout "aeon-categories-5.txt" "aeon-out-part5.csv" $perAttemptTimeout "Second attempt"; then
+              echo "** Retry failed. Aborting. **"
+              exit 1
+            fi
+          fi
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes before push
+        run: git pull origin aeon-branch --rebase
+
+      - name: Commit and push generated files
+        run: |
+          cp aeon-out-part5.csv raw_data/
+          git add raw_data/aeon-out-part5.csv
+          git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
+          git push origin aeon-branch
+ 
