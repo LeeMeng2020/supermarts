@@ -64,13 +64,15 @@ jobs:
           echo "running scripts"
           python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_1.json &
           sleep 1
-          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_2.json
+          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_2.json &
+          sleep 1
+          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_3.json
           wait
           echo "Scripts done."
 
       - name: Validate output file
         run: |
-          FILES=("jaya_subang_one_thread_1.csv" "jaya_subang_one_thread_2.csv")
+          FILES=("jaya_subang_one_thread_1.csv" "jaya_subang_one_thread_2.csv "jaya_subang_one_thread_3.csv"")
           for FILE in "${FILES[@]}"; do
             echo "Checking if $FILE exists and is larger than 100 KB..."
             if [ ! -f "$FILE" ]; then
