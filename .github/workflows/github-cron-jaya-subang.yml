@@ -67,7 +67,7 @@ jobs:
           sleep 1
           python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_2.json &
           sleep 1
-          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_3.json
+          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_3.json &
           wait
           echo "Scripts done."
 
