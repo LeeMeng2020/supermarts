@@ -1,10 +1,10 @@
-name: Aeon flow 5 ubuntu (aeon-branch)
+name: Aeon flow 4 ubuntu (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 7:33 AM MY time (11:33 PM UTC)
-    - cron: '33 23 * * *'     
+    # Run every day at (11:26 AM PM UTC)
+    - cron: '26 23 * * *'   
 
 jobs:
   setup:
@@ -85,10 +85,10 @@ jobs:
 
           perAttemptTimeout=58
 
-          if ! run_with_timeout "aeon-categories-5.txt" "aeon-out-part5.csv" $perAttemptTimeout "First attempt"; then
+          if ! run_with_timeout "aeon-categories-4.txt" "aeon-out-part4.csv" $perAttemptTimeout "First attempt"; then
             echo "First attempt failed or timed out. Retrying after 20 seconds..."
             sleep 20
-            if ! run_with_timeout "aeon-categories-5.txt" "aeon-out-part5.csv" $perAttemptTimeout "Second attempt"; then
+            if ! run_with_timeout "aeon-categories-4.txt" "aeon-out-part4.csv" $perAttemptTimeout "Second attempt"; then
               echo "** Retry failed. Aborting. **"
               exit 1
             fi
@@ -104,8 +104,8 @@ jobs:
 
       - name: Commit and push generated files
         run: |
-          cp aeon-out-part5.csv raw_data/
-          git add raw_data/aeon-out-part5.csv
+          cp aeon-out-part4.csv raw_data/
+          git add raw_data/aeon-out-part4.csv
           git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
           git push origin aeon-branch
  
