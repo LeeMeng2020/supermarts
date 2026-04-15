@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # manual trigger ability
   schedule:
     # Run every day at
-    - cron: '39 23 * * *' 
+    - cron: '34 23 * * *' 
 
 jobs:
   setup:
@@ -48,10 +48,17 @@ jobs:
           cp -v runner-src/jaya_settings* .
           cp -v runner-src/jaya_requirements.txt .
 
+      - name: Random delay
+        run: |
+          DELAY=$((RANDOM % 9))   # Random number between 0 and 8
+          echo "Random sleep for $DELAY seconds..."
+          sleep $DELAY
+
       - name: pip install
         run: pip install -r jaya_requirements.txt
           
       - name: Run script
+        timeout-minutes: 60
         run: |
           echo "Install playwright chromium"
           python -m playwright install chromium --with-deps > /dev/null
