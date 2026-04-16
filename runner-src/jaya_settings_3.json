@@ -3,6 +3,7 @@
         "output_file": "jaya_one_thread_3.csv",
         "base_url": "https://jgut.jayagrocer.com",
         "goog_url": "https://www.google.com",
+        "ship_policy_url": "https://jgut.jayagrocer.com/policies/shipping-policy",		
         "categories": [
             "https://jgut.jayagrocer.com/collections/snacks",
             "https://jgut.jayagrocer.com/collections/fresh-market",
