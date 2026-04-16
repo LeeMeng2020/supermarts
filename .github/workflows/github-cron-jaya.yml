@@ -3,8 +3,8 @@ name: Jaya flow (gather-branch)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at
-    - cron: '34 23 * * *' 
+    # Run every day at (x:x AM PM UTC)
+    - cron: '33 23 * * *' 
 
 jobs:
   setup:
@@ -63,11 +63,11 @@ jobs:
           echo "Install playwright chromium"
           python -m playwright install chromium --with-deps > /dev/null
           echo "running scripts"
-          python jaya_pwright_2026_020_one_thread_arg.py -s jaya_settings_1.json &
+          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_settings_1.json &
           sleep 1
-          python jaya_pwright_2026_020_one_thread_arg.py -s jaya_settings_2.json &
+          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_settings_2.json &
           sleep 1
-          python jaya_pwright_2026_020_one_thread_arg.py -s jaya_settings_3.json &
+          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_settings_3.json &
           wait
           echo "Scripts done."
 
