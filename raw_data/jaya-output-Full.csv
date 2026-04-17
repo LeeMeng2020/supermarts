@@ -33,7 +33,7 @@ Bakery,Rye Bread 1unit,,7.80,,,,,https://jgut.jayagrocer.com/products/rye-bread-
 Bakery,Sesame Baguette 1unit,,7.20,,,,,https://jgut.jayagrocer.com/products/sesame-baguette-1-pc-1?variant=40939966562465,https://jgut.jayagrocer.com/collections/bakery
 Bakery,Soft Sourdough 1unit,,9.90,,,,,https://jgut.jayagrocer.com/products/soft-sourdough-1unit?variant=44873970253985,https://jgut.jayagrocer.com/collections/bakery
 Bakery,Sourdough Bread 1unit,,10.90,,,,,https://jgut.jayagrocer.com/products/sourdough-bread-1unit?variant=43353103466657,https://jgut.jayagrocer.com/collections/bakery
-Bakery,Sugar Ring Doughnut,,2.50,,,,,https://jgut.jayagrocer.com/products/sugar-ring-doughnut-5pcs-pack-1?variant=40940014207137,https://jgut.jayagrocer.com/collections/bakery
+Bakery,Sugar Ring Doughnut,,1.00,2.50,1.50,60.00,,https://jgut.jayagrocer.com/products/sugar-ring-doughnut-5pcs-pack-1?variant=40940014207137,https://jgut.jayagrocer.com/collections/bakery
 Bakery,Swiss Roll Pandan 1unit,,12.90,,,,,https://jgut.jayagrocer.com/products/swiss-roll-pandan-1unit?variant=44680492581025,https://jgut.jayagrocer.com/collections/bakery
 Bakery,Wholemeal Baguette 1unit,,7.50,,,,,https://jgut.jayagrocer.com/products/wholemeal-baguette-1-pc-1?variant=44534911893665,https://jgut.jayagrocer.com/collections/bakery
 Bakery,"Wholemeal Burger Bun pack, 5pcs",5 pcs,6.80,,,,1.36,https://jgut.jayagrocer.com/products/wholemeal-burger-bun-5pcs-1?variant=40940523389089,https://jgut.jayagrocer.com/collections/bakery
@@ -743,7 +743,6 @@ Beverages,Tealive Fun Pack Coffee 25g x 4,25 g x 4,8.90,,,,2.23,https://jgut.jay
 Beverages,Tealive Fun Pack Milk Tea 25g x 4,25 g x 4,8.90,,,,2.23,https://jgut.jayagrocer.com/products/tealive-fun-pack-milk-tea-25g-x-4?variant=45742633975969,https://jgut.jayagrocer.com/collections/beverages
 Beverages,Tealive Fun Pack Signature Coco 25g x 4,25 g x 4,8.90,,,,2.23,https://jgut.jayagrocer.com/products/tealive-fun-pack-signature-coco-25g-x-4?variant=45742633943201,https://jgut.jayagrocer.com/collections/beverages
 Beverages,Tealive Hazelnut Chocolate 25g x 5,25 g x 5,12.90,,,,2.58,https://jgut.jayagrocer.com/products/tealive-hazelnut-chocolate-25g-x-5?variant=45743338487969,https://jgut.jayagrocer.com/collections/beverages
-Beverages,Tealive Salted Dark Chocolate 25g x 5,25 g x 5,12.90,,,,2.58,https://jgut.jayagrocer.com/products/tealive-salted-dark-chocolate-25g-x-5?variant=45743338422433,https://jgut.jayagrocer.com/collections/beverages
 Beverages,Tealive Signature Coco 25g x 6,25 g x 6,12.90,,,,2.15,https://jgut.jayagrocer.com/products/tealive-signature-coco-25g-x-6?variant=45742633877665,https://jgut.jayagrocer.com/collections/beverages
 Beverages,Tealive Signature Coffee 25g x 6,25 g x 6,12.90,,,,2.15,https://jgut.jayagrocer.com/products/tealive-signature-coffee-25g-x-6?variant=45742633681057,https://jgut.jayagrocer.com/collections/beverages
 Beverages,Teapot Sweetened Creamer 500g,500 g,3.95,,,,,https://jgut.jayagrocer.com/products/teapot-sbcimsp-500g-1?variant=40939168891041,https://jgut.jayagrocer.com/collections/beverages
@@ -872,7 +871,7 @@ Breakfast,Amazin's Graze Salted Gula Melaka Granola 250g,250 g,21.20,,,,,https:/
 Breakfast,Auntie Rosie Kaya (Pandan) 200g,200 g,3.90,,,,,https://jgut.jayagrocer.com/products/auntie-rosie-kaya-pandan-200g?variant=44920294015137,https://jgut.jayagrocer.com/collections/breakfast
 Breakfast,Ayomayo Classic Almond Butter (Chunky) 180g,180 g,26.90,,,,,https://jgut.jayagrocer.com/products/ayomayo-classic-almond-butter-chunky-180g?variant=45013478932641,https://jgut.jayagrocer.com/collections/breakfast
 Breakfast,Ayomayo Dark Chocolate Almond Butter (Chunky) 180g,180 g,28.90,,,,,https://jgut.jayagrocer.com/products/ayomayo-dark-chocolate-almond-butter-chunky-180g?variant=45013479129249,https://jgut.jayagrocer.com/collections/breakfast
-Breakfast,Ayomayo Genmaicha Almond Butter (Chunky) 180g,180 g,27.99,28.90,0.91,3.10,,https://jgut.jayagrocer.com/products/ayomayo-genmaicha-almond-butter-chunky-180g?variant=45013478998177,https://jgut.jayagrocer.com/collections/breakfast
+Breakfast,Ayomayo Genmaicha Almond Butter (Chunky) 180g,180 g,28.90,,,,,https://jgut.jayagrocer.com/products/ayomayo-genmaicha-almond-butter-chunky-180g?variant=45013478998177,https://jgut.jayagrocer.com/collections/breakfast
 Breakfast,Ayomayo Matcha Almond Butter (Chunky) 180g,180 g,27.99,28.90,0.91,3.10,,https://jgut.jayagrocer.com/products/ayomayo-matcha-almond-butter-chunky-180g?variant=45013479030945,https://jgut.jayagrocer.com/collections/breakfast
 Breakfast,Ayomayo Pistachio Butter (Chunky) 90g,90 g,22.90,,,,,https://jgut.jayagrocer.com/products/ayomayo-pistachio-butter-chunky-90g?variant=45013479260321,https://jgut.jayagrocer.com/collections/breakfast
 Breakfast,Barakah Yemen Honey 150g,150 g,18.00,,,,,https://jgut.jayagrocer.com/products/barakah-yemen-honey-150g?variant=44854026338465,https://jgut.jayagrocer.com/collections/breakfast
@@ -909,7 +908,6 @@ Breakfast,Cameron Highland Wild Honey 500g,500 g,16.90,,,,,https://jgut.jayagroc
 Breakfast,Capilano Pure & Natural Honey 1kg,1 kg,48.90,,,,,https://jgut.jayagrocer.com/products/capilano-pure-natural-honey-1kg-1?variant=40939291246753,https://jgut.jayagrocer.com/collections/breakfast
 Breakfast,Capilano Twist And Squeeze Pure Australian Honey 400g,400 g,22.50,,,,,https://jgut.jayagrocer.com/products/capilano-pure-australian-honey-400g-1?variant=40939276533921,https://jgut.jayagrocer.com/collections/breakfast
 Breakfast,Capilano Upside Down Pure and Natural Honey 340g,340 g,20.90,,,,,https://jgut.jayagrocer.com/products/capilano-pure-natural-honey-340g-1?variant=40939234328737,https://jgut.jayagrocer.com/collections/breakfast
-Breakfast,Captain Classic Rolled Oats 800g,800 g,9.90,,,,,https://jgut.jayagrocer.com/products/captain-rolled-oats-800g?variant=40940197871777,https://jgut.jayagrocer.com/collections/breakfast
 Breakfast,Captain Instant Oatmeal 800g,800 g,7.99,9.90,1.91,19.30,,https://jgut.jayagrocer.com/products/captain-instant-oats-foil-pack-800g-1?variant=40939694719137,https://jgut.jayagrocer.com/collections/breakfast
 Breakfast,Captain Instant Oats (Jar) 1kg,1 kg,13.50,,,,,https://jgut.jayagrocer.com/products/captain-instant-oats-jar-1kg-1?variant=42522418643105,https://jgut.jayagrocer.com/collections/breakfast
 Breakfast,Captain Instant Rolled Oats 800g,800 g,9.90,,,,,https://jgut.jayagrocer.com/products/captain-instant-rolled-oats-800g?variant=43337880928417,https://jgut.jayagrocer.com/collections/breakfast
@@ -2111,7 +2109,7 @@ Food Essentials,Barilla Pomodoro Datterini 400g,400 g,13.99,18.60,4.61,24.80,,ht
 Food Essentials,Barilla Ricotta Tomato Cheese Pasta Sauce 400g,400 g,13.99,18.60,4.61,24.80,,https://jgut.jayagrocer.com/products/barilla-ricotta-pasta-sauce-400g-1?variant=40939593564321,https://jgut.jayagrocer.com/collections/food-essentials
 Food Essentials,Barilla Spaghetti Pasta No. 5 500g,500 g,6.49,8.40,1.91,22.70,,https://jgut.jayagrocer.com/products/barilla-spaghetti-pasta-500g-1?variant=40939592220833,https://jgut.jayagrocer.com/collections/food-essentials
 Food Essentials,Barilla Spaghetti Twin Pack 500g x 2,500 g x 2,12.90,,,,6.45,https://jgut.jayagrocer.com/products/barilla-spaghetti-twin-pack-500g-x-2?variant=44629367554209,https://jgut.jayagrocer.com/collections/food-essentials
-Food Essentials,Barilla Spaghettini Pasta No. 3 500g,500 g,8.40,,,,,https://jgut.jayagrocer.com/products/barilla-spaghettini-pasta-500g-1?variant=40939592286369,https://jgut.jayagrocer.com/collections/food-essentials
+Food Essentials,Barilla Spaghettini Pasta No. 3 500g,500 g,6.49,8.40,1.91,22.70,,https://jgut.jayagrocer.com/products/barilla-spaghettini-pasta-500g-1?variant=40939592286369,https://jgut.jayagrocer.com/collections/food-essentials
 Food Essentials,Basso Extra Virgin Olive Oil 1L,1 liter,58.99,64.90,5.91,9.10,,https://jgut.jayagrocer.com/products/basso-extra-virgin-olive-oil-1l-1?variant=40939282464929,https://jgut.jayagrocer.com/collections/food-essentials
 Food Essentials,Basso Extra Virgin Olive Oil 3L,3 liter,189.90,,,,,https://jgut.jayagrocer.com/products/basso-extra-virgin-olive-oil-3l-1?variant=40939488411809,https://jgut.jayagrocer.com/collections/food-essentials
 Food Essentials,Basso Extra Virgin Olive Oil 500ml,500 ml,34.50,,,,,https://jgut.jayagrocer.com/products/basso-extra-virgin-olive-oil-500ml-1?variant=40939410063521,https://jgut.jayagrocer.com/collections/food-essentials
@@ -2481,7 +2479,6 @@ Food Essentials,Ketomee Konjac Oat Fiber Pan Mee 250g,250 g,7.50,,,,,https://jgu
 Food Essentials,Ketomee Konjac Oat Fiber Spaghetti 250g,250 g,7.50,,,,,https://jgut.jayagrocer.com/products/ketomee-konjac-oat-fiber-spaghetti-250g?variant=43477460844705,https://jgut.jayagrocer.com/collections/food-essentials
 Food Essentials,Ketomee Konjac Oat Fiber Wantan Mee 250g,250 g,7.50,,,,,https://jgut.jayagrocer.com/products/ketomee-konjac-oat-fiber-wantan-mee-250g?variant=43477461270689,https://jgut.jayagrocer.com/collections/food-essentials
 Food Essentials,Ketomee Konjac Shirataki Skinny Noodles 150g,150 g,6.90,,,,,https://jgut.jayagrocer.com/products/ketomee-konjac-skinny-noodles-150g?variant=43477323776161,https://jgut.jayagrocer.com/collections/food-essentials
-Food Essentials,Ketomee Konjac Skinny Kuey Teow 250g,250 g,6.90,,,,,https://jgut.jayagrocer.com/products/ketomee-konjac-skinny-kuey-teow-250g?variant=43477461008545,https://jgut.jayagrocer.com/collections/food-essentials
 Food Essentials,Ketoslim Mo Konjac Noodle 270g,270 g,5.90,,,,,https://jgut.jayagrocer.com/products/ketoslim-mo-konjac-noodle-270g?variant=41975014850721,https://jgut.jayagrocer.com/collections/food-essentials
 Food Essentials,Ketoslim Mo Konjac Spinach 270g,270 g,5.90,,,,,https://jgut.jayagrocer.com/products/ketoslim-mo-konjac-spanach-270g?variant=41975014916257,https://jgut.jayagrocer.com/collections/food-essentials
 Food Essentials,Ketoslim Mo Konjac Udon Noodle 270g,270 g,5.90,,,,,https://jgut.jayagrocer.com/products/ketoslim-mo-konjac-udon-noodle-270g?variant=42809424380065,https://jgut.jayagrocer.com/collections/food-essentials
@@ -3204,7 +3201,6 @@ Fresh Market,"Aqina Chilled Pineapple Chicken Drumstick pack, 4pcs",4 pcs,14.85,
 Fresh Market,"Aqina Chilled Pineapple Chicken Thighs (ABF) pack, 3pcs",3 pcs,10.40,,,,3.47,https://jgut.jayagrocer.com/products/aqina-chilled-chicken-thighs-abf-3pcs-pack-450g?variant=42961611260065,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Aqina Chilled Pineapple Chicken Whole Leg 2pcs/pack 500g +/-,,13.30,,,,,https://jgut.jayagrocer.com/products/aqina-chilled-chicken-whole-leg-2pcs-per-pack?variant=42961611620513,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,"Aqina Chilled Pineapple Chicken Wings (ABF) pack, 4pcs",4 pcs,10.90,,,,2.73,https://jgut.jayagrocer.com/products/aqina-chilled-chicken-wings-abf-4pcs-pack-400g?variant=42961611489441,https://jgut.jayagrocer.com/collections/fresh-market
-Fresh Market,"Aqina Chilled Skinless and Boneless Pineapple Chicken Breast pack, 2pcs",2 pcs,12.50,,,,6.25,https://jgut.jayagrocer.com/products/aqina-chilled-skinless-and-boneless-chicken-breast-2pcs-pack-400g?variant=42961611751585,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Aqina Farm Chicken Fillet 0.5kg,0.5 kg,11.75,,,,,https://jgut.jayagrocer.com/products/aqina-farm-chicken-fillet-500g-1?variant=40955176517793,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,"Aqina Farm Frozen Chicken Skinless Boneless Thigh pack, 6pcs",6 pcs,17.00,,,,2.83,https://jgut.jayagrocer.com/products/aqina-skinless-boneless-chicken-thigh-frozen-500g-1?variant=40940522045601,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,"Aqina Farm Frozen Chicken Wing pack, 6pcs",6 pcs,14.10,,,,2.35,https://jgut.jayagrocer.com/products/aqina-chiken-wing-500g?variant=41763861528737,https://jgut.jayagrocer.com/collections/fresh-market
@@ -3361,7 +3357,7 @@ Fresh Market,First Pick Enoki Mushroom (Malaysia) 100g,100 g,1.20,,,,,https://jg
 Fresh Market,First Pick Gold Cream Onion (Australia) 500g,500 g,4.00,,,,,https://jgut.jayagrocer.com/products/gold-cream-onion-australia-500g-1?variant=40939445026977,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,First Pick Green Asparagus (Thailand) 250g,250 g,12.90,,,,,https://jgut.jayagrocer.com/products/asparagus-green-thailand-250g-1?variant=40939363565729,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,First Pick Pink Potato (Australia) 800g,800 g,11.50,,,,,https://jgut.jayagrocer.com/products/pink-potato-aus-p20-800g-1?variant=40939444961441,https://jgut.jayagrocer.com/collections/fresh-market
-Fresh Market,First Pick Russet Potato (USA) 1kg,1 kg,7.90,,,,,https://jgut.jayagrocer.com/products/potato-ea-russet-1kg-usa-p15?variant=42037066367137,https://jgut.jayagrocer.com/collections/fresh-market
+Fresh Market,First Pick Russet Potato (USA) 1kg,1 kg,9.70,,,,,https://jgut.jayagrocer.com/products/potato-ea-russet-1kg-usa-p15?variant=42037066367137,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,First Pick Traffic Light Capsicum (Malaysia) 500g,500 g,8.90,,,,,https://jgut.jayagrocer.com/products/capsicum-ea-traffic-light-500g-mys?variant=41741253050529,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,First Pick Washed Potatoes (Australia) 800g,800 g,11.90,,,,,https://jgut.jayagrocer.com/products/potato-washed-800g-aus-p20?variant=40939444994209,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Frais Funghi Mushroom Swiss  Brown (Malaysia) 150g,150 g,6.40,,,,,https://jgut.jayagrocer.com/products/ffs-mushroom-swiss-brown-malaysia-150g?variant=44377111593121,https://jgut.jayagrocer.com/collections/fresh-market
@@ -3452,7 +3448,6 @@ Fresh Market,Hokto Bunashimeji Mushroom (Malaysia) 100g,100 g,4.80,,,,,https://j
 Fresh Market,Holland Bean (Snow Pea) (China) 130g,130 g,4.30,,,,,https://jgut.jayagrocer.com/products/holland-bean-snow-pea-china-130g-1?variant=40939564007585,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Hong Kong Baby Kailan (Chinese Broccoli) (China) 200g,200 g,4.70,,,,,https://jgut.jayagrocer.com/products/hong-kong-baby-kailan-chinese-broccoli-china-200g?variant=45554608996513,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Hong Kong Baby Nai Pak Choy (China) 200g,200 g,4.70,,,,,https://jgut.jayagrocer.com/products/hong-kong-baby-nai-pak-choy-china-200g?variant=45554608963745,https://jgut.jayagrocer.com/collections/fresh-market
-Fresh Market,Hong Kong Baby Sawi (China) 200g,200 g,4.70,,,,,https://jgut.jayagrocer.com/products/hong-kong-baby-sawi-china-200g?variant=45554609029281,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Hong Kong Baby Siew Pak Choy (China) 200g,200 g,4.70,,,,,https://jgut.jayagrocer.com/products/siew-pak-choy-hk-baby-200g-chn-p20?variant=41741874692257,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Hong Kong Kailan (China) 200g,200 g,4.20,,,,,https://jgut.jayagrocer.com/products/kailan-hong-kong-200g-chn?variant=41741017284769,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Hong Kong Sawi (Choy Sam) (China) 200g,200 g,2.70,,,,,https://jgut.jayagrocer.com/products/hong-kong-choy-sum-sawi-hong-kong-200g?variant=35123710132385,https://jgut.jayagrocer.com/collections/fresh-market
@@ -3505,7 +3500,6 @@ Fresh Market,Lacto Plus III Chicken Chop 400g+/-,,13.50,,,,,https://jgut.jayagro
 Fresh Market,Lacto Plus III Chicken Drummet 400g+/-,,11.90,,,,,https://jgut.jayagrocer.com/products/lacto-plus-iii-chicken-drummet-400g?variant=43507166970017,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Lacto Plus III Chicken Thigh 400g+/-,,9.10,,,,,https://jgut.jayagrocer.com/products/lacto-plus-iii-chicken-thigh-400g?variant=43474162221217,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Lacto Plus III Skinless Boneless Chicken Breast 400g+/-,,13.30,,,,,https://jgut.jayagrocer.com/products/lacto-plus-iii-skinless-boneless-chicken-breast-400g?variant=43473932189857,https://jgut.jayagrocer.com/collections/fresh-market
-Fresh Market,Lacto Plus III Whole Leg 450g+/-,,11.90,,,,,https://jgut.jayagrocer.com/products/lacto-plus-iii-whole-leg-450g?variant=43451327545505,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Lacto Plus III Wings 400g+/-,,11.30,,,,,https://jgut.jayagrocer.com/products/lacto-plus-iii-wings-400g?variant=43451327348897,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Lady Finger (Kacang Bendi) (Malaysia) 200g,200 g,2.50,,,,,https://jgut.jayagrocer.com/products/lady-finger-okra-250g-1?variant=40940173787297,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Laksa Leaf (Daun Kesum) (Malaysia) 25g,25 g,0.80,,,,,https://jgut.jayagrocer.com/products/vietnamese-coriander-daun-kesum-25g-1?variant=42237483188385,https://jgut.jayagrocer.com/collections/fresh-market
@@ -3580,7 +3574,7 @@ Fresh Market,Pearl Brinjal (Malaysia) 1kg,1 kg,6.64,,,,,https://jgut.jayagrocer.
 Fresh Market,Peas Sprout (Malaysia) 200g,200 g,5.60,,,,,https://jgut.jayagrocer.com/products/organic-dou-miao-peas-sprouts-200g-1?variant=40939171578017,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Pecan Nut 125g,125 g,14.90,,,,,https://jgut.jayagrocer.com/products/pecan-nut-125g-1?variant=40940127223969,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Peeled Garlic (China) 200g,200 g,3.50,,,,,https://jgut.jayagrocer.com/products/peeled-garlic-china-200g?variant=43416485560481,https://jgut.jayagrocer.com/collections/fresh-market
-Fresh Market,Peeled Petai (Indonesia) 150g,150 g,12.90,,,,,https://jgut.jayagrocer.com/products/peeled-petai-indonesia-150g?variant=43835847868577,https://jgut.jayagrocer.com/collections/fresh-market
+Fresh Market,Peeled Petai (Indonesia) 150g,150 g,12.20,,,,,https://jgut.jayagrocer.com/products/peeled-petai-indonesia-150g?variant=43835847868577,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Peeled Roasted Chestnut (China) 128g,128 g,6.30,,,,,https://jgut.jayagrocer.com/products/peeled-roasted-chestnut-chn-c50-128g-1?variant=40940035309729,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Physalis Gooseberry (Columbia) 100g,100 g,13.90,,,,,https://jgut.jayagrocer.com/products/physalis-gooseberry-100g-col-c12?variant=41755960344737,https://jgut.jayagrocer.com/collections/fresh-market
 Fresh Market,Pine Nut 125g+/-,,24.05,,,,,https://jgut.jayagrocer.com/products/pine-nut-125g-1?variant=41740617613473,https://jgut.jayagrocer.com/collections/fresh-market
@@ -3710,7 +3704,7 @@ Fruits,Cameron Highland Strawberry (Malaysia) 250g,250 g,9.90,,,,,https://jgut.j
 Fruits,Cavendish Banana (Malaysia),,7.50,,,,,https://jgut.jayagrocer.com/products/cavendish-banana-mys-k13-1kg-1?variant=40939914657953,https://jgut.jayagrocer.com/collections/fruits
 Fruits,Cavendish Banana Bundle (Malaysia) 1pack,,7.30,,,,,https://jgut.jayagrocer.com/products/cavendish-banana-bundle-malaysia-1pack?variant=45230004633761,https://jgut.jayagrocer.com/collections/fruits
 Fruits,Cavendish Canna Banana Bundle 1pack,,7.90,,,,,https://jgut.jayagrocer.com/products/cavendish-canna-bundle-banana-1pack?variant=44841839165601,https://jgut.jayagrocer.com/collections/fruits
-Fruits,Celina Pear (South Africa) 800g,800 g,7.90,8.90,1.00,11.20,,https://jgut.jayagrocer.com/products/pear-qtee-800g-zaf-c10?variant=41740410519713,https://jgut.jayagrocer.com/collections/fruits
+Fruits,Celina Pear (South Africa) 800g,800 g,7.90,,,,,https://jgut.jayagrocer.com/products/pear-qtee-800g-zaf-c10?variant=41740410519713,https://jgut.jayagrocer.com/collections/fruits
 Fruits,"Century Pear (China) pack, 4pcs",4 pcs,8.90,,,,2.23,https://jgut.jayagrocer.com/products/century-pear-china-4pcs-pack?variant=42685966778529,https://jgut.jayagrocer.com/collections/fruits
 Fruits,Crips Red Apple (South Africa) 1unit,,2.90,,,,,https://jgut.jayagrocer.com/products/cripps-red-apple-zaf-c90-1pc?variant=40940188860577,https://jgut.jayagrocer.com/collections/fruits
 Fruits,"Crisp Red Apple (South Africa) pack, 8pcs",8 pcs,16.90,,,,2.11,https://jgut.jayagrocer.com/products/apple-crisp-red-8s-zaf-c10?variant=41740577636513,https://jgut.jayagrocer.com/collections/fruits
@@ -3733,7 +3727,6 @@ Fruits,Golden Pear (China),,4.20,,,,,https://jgut.jayagrocer.com/products/golden
 Fruits,Golden Susu Mango (Thailand) 1kg,1 kg,8.90,,,,,https://jgut.jayagrocer.com/products/golden-susu-mango-thailand-1kg?variant=41757910139041,https://jgut.jayagrocer.com/collections/fruits
 Fruits,"Gong Pear (China) pack, 4pcs",4 pcs,8.90,,,,2.23,https://jgut.jayagrocer.com/products/gong-pear-china-4pcs?variant=42255891857569,https://jgut.jayagrocer.com/collections/fruits
 Fruits,"Granny Smith Green Apple (South Africa) pack, 8pcs",8 pcs,16.90,,,,2.11,https://jgut.jayagrocer.com/products/granny-smith-green-apple-8s-zaf-1pack-1?variant=40940005261473,https://jgut.jayagrocer.com/collections/fruits
-Fruits,Grapefruit (Egypt) 1unit,,3.30,,,,,https://jgut.jayagrocer.com/products/grapefruit-egypt-1unit?variant=44817961615521,https://jgut.jayagrocer.com/collections/fruits
 Fruits,"Green Kiwi (Australia) pack, 5pcs",5 pcs,21.90,,,,4.38,https://jgut.jayagrocer.com/products/green-kiwi-australia-5pcs-pack?variant=45914224427169,https://jgut.jayagrocer.com/collections/fruits
 Fruits,Hami Melon (China),,11.90,,,,,https://jgut.jayagrocer.com/products/hami-melon-chn-k10-1kg-1?variant=40939875991713,https://jgut.jayagrocer.com/collections/fruits
 Fruits,Hass Avocado (USA) 1pack,,7.80,,,,,https://jgut.jayagrocer.com/products/hass-avocado-usa-1pack?variant=45846041723041,https://jgut.jayagrocer.com/collections/fruits
@@ -3741,7 +3734,6 @@ Fruits,Honey Jackfruit (Malaysia) 400g,400 g,9.20,,,,,https://jgut.jayagrocer.co
 Fruits,"Honey Murcott Mandarin (Taiwan) pack, 8pcs",8 pcs,18.90,,,,2.36,https://jgut.jayagrocer.com/products/taiwan-murcott-honey-mandarin-twn-c10-8pcs-pack?variant=40956168306849,https://jgut.jayagrocer.com/collections/fruits
 Fruits,Honey Punch Plum (Red) (South Africa) 500g,500 g,12.90,,,,,https://jgut.jayagrocer.com/products/honey-punch-plum-red-south-africa-500g?variant=42943904383137,https://jgut.jayagrocer.com/collections/fruits
 Fruits,Honeydew Melon (Malaysia) 1.2kg,1.2 kg,9.90,,,,,https://jgut.jayagrocer.com/products/melon-honey-dew-pc-mys?variant=41833493528737,https://jgut.jayagrocer.com/collections/fruits
-Fruits,Jg Sweet Sapphire Seedless Grape 450g,450 g,23.90,,,,,https://jgut.jayagrocer.com/products/jg-sweet-sapphire-seedless-grape-450g?variant=45846033825953,https://jgut.jayagrocer.com/collections/fruits
 Fruits,Josapine Pineapple (Malaysia) 1unit,,6.60,,,,,https://jgut.jayagrocer.com/products/josapine-pineapple-mys-1unit-1?variant=40939584979105,https://jgut.jayagrocer.com/collections/fruits
 Fruits,Jumbo Hass Avocado (Australia) 1unit,,14.90,,,,,https://jgut.jayagrocer.com/products/jumbo-hass-avocado-aus-c18-1pc-1?variant=40939538776225,https://jgut.jayagrocer.com/collections/fruits
 Fruits,King Ciku (Malaysia) 500g,500 g,15.90,,,,,https://jgut.jayagrocer.com/products/king-ciku-malaysia-500g?variant=42313393569953,https://jgut.jayagrocer.com/collections/fruits
@@ -3796,7 +3788,7 @@ Fruits,Sugar Plum/Sugar Prune (South Africa) 315g,315 g,7.90,,,,,https://jgut.ja
 Fruits,"SugarBee Apple (USA) pack, 6pcs",6 pcs,22.90,,,,3.82,https://jgut.jayagrocer.com/products/apple-sugarbee-6s-usa-c10?variant=41741962936481,https://jgut.jayagrocer.com/collections/fruits
 Fruits,"Sunkist Cara-Cara Orange (USA) pack, 5pcs",5 pcs,15.90,21.90,6.00,27.40,3.18,https://jgut.jayagrocer.com/products/sunkist-cara-cara-orange-usa-5pcs-pack?variant=44323706831009,https://jgut.jayagrocer.com/collections/fruits
 Fruits,"Sunkist Navel Orange (High Brix) (USA) pack, 6pcs",6 pcs,28.90,,,,4.82,https://jgut.jayagrocer.com/products/sunkist-navel-orange-high-brix-usa-6pcs-pack?variant=44856777310369,https://jgut.jayagrocer.com/collections/fruits
-Fruits,Sunkist Navel Orange (USA) 1unit,,6.60,,,,,https://jgut.jayagrocer.com/products/orange-sunkist-navel-usa-c56?variant=40956164636833,https://jgut.jayagrocer.com/collections/fruits
+Fruits,Sunkist Navel Orange (USA) 1unit,,5.50,,,,,https://jgut.jayagrocer.com/products/orange-sunkist-navel-usa-c56?variant=40956164636833,https://jgut.jayagrocer.com/collections/fruits
 Fruits,"Sweet Corn Yellow (Malaysia) pack, 2pcs",2 pcs,4.30,,,,2.15,https://jgut.jayagrocer.com/products/mascorn-sweet-corn-mys-c24-1pack-1?variant=40939856887969,https://jgut.jayagrocer.com/collections/fruits
 Fruits,Tango Mandarin (Bollo) (Spain) 800g,800 g,14.90,,,,,https://jgut.jayagrocer.com/products/tango-mandarin-bollo-spain-800g?variant=44864768802977,https://jgut.jayagrocer.com/collections/fruits
 Fruits,"Valencia Orange (Egypt) pack, 8pcs",8 pcs,13.90,,,,1.74,https://jgut.jayagrocer.com/products/orange-valencia-8s-zaf-c10?variant=41118685986977,https://jgut.jayagrocer.com/collections/fruits
@@ -4607,21 +4599,21 @@ Snacks,Love Earth Natural Goji Berry 120g,120 g,17.49,19.90,2.41,12.10,,https://
 Snacks,Love Earth Natural Roasted Walnut 230g,230 g,29.90,,,,,https://jgut.jayagrocer.com/products/love-earth-natural-roasted-walnut-230g?variant=43824991010977,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Lurpak Butter Salted In Foil 250g,250 g,22.95,,,,,https://jgut.jayagrocer.com/products/lurpak-butter-salted-in-foil-200gm-50gm?variant=41837057933473,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Lurpak Butter Unsalted Foil 250g,250 g,22.95,,,,,https://jgut.jayagrocer.com/products/lurpak-butter-unsalted-foil-200gm-50gm?variant=41837058064545,https://jgut.jayagrocer.com/collections/snacks
-Snacks,M&M Minis Chocolate Candies 35g,35 g,4.80,,,,,https://jgut.jayagrocer.com/products/m-m-minis-chocolate-candies-35g?variant=43043290185889,https://jgut.jayagrocer.com/collections/snacks
+Snacks,M&M Minis Chocolate Candies 35g,35 g,5.20,,,,,https://jgut.jayagrocer.com/products/m-m-minis-chocolate-candies-35g?variant=43043290185889,https://jgut.jayagrocer.com/collections/snacks
 Snacks,M&M Peanut Butter Singles (US) 46.2g,46.2 g,8.90,,,,,https://jgut.jayagrocer.com/products/m-m-peanut-butter-singles-us-46-2g?variant=43744668156065,https://jgut.jayagrocer.com/collections/snacks
-Snacks,M&M Peanut Chocolate Candies 180g,180 g,12.60,,,,,https://jgut.jayagrocer.com/products/m-m-s-peanut-chocolate-candies-200gm-1?variant=40939223449761,https://jgut.jayagrocer.com/collections/snacks
-Snacks,M&M Peanut Chocolate Candies 37g,37 g,3.30,,,,,https://jgut.jayagrocer.com/products/m-m-peanut-37g-1?variant=40939223875745,https://jgut.jayagrocer.com/collections/snacks
-Snacks,M&M Peanut Chocolate Candies 90g,90 g,6.90,,,,,https://jgut.jayagrocer.com/products/m-m-peanut-chocolate-candies-90g?variant=44920299782305,https://jgut.jayagrocer.com/collections/snacks
-Snacks,M&M Plain Chocolate Candies 180g,180 g,12.60,,,,,https://jgut.jayagrocer.com/products/m-m-plain-chocolate-candies-180g?variant=44920294703265,https://jgut.jayagrocer.com/collections/snacks
-Snacks,M&M Plain Chocolate Candies 37g,37 g,3.30,,,,,https://jgut.jayagrocer.com/products/m-m-plain-chocolate-candies-37g?variant=44920294736033,https://jgut.jayagrocer.com/collections/snacks
-Snacks,M&M Plain Chocolate Candies 90g,90 g,6.90,,,,,https://jgut.jayagrocer.com/products/m-m-plain-90g-1?variant=40939237081249,https://jgut.jayagrocer.com/collections/snacks
-Snacks,M&M's Crispy Chocolate Candies 30g,30 g,3.30,,,,,https://jgut.jayagrocer.com/products/m-ms-crispy-chocolate-candies-30g?variant=44920294768801,https://jgut.jayagrocer.com/collections/snacks
-Snacks,M&M's Tube Topper 28g,28 g,7.20,,,,,https://jgut.jayagrocer.com/products/m-ms-tube-topper-28g?variant=44735145607329,https://jgut.jayagrocer.com/collections/snacks
+Snacks,M&M Peanut Chocolate Candies 180g,180 g,13.70,,,,,https://jgut.jayagrocer.com/products/m-m-s-peanut-chocolate-candies-200gm-1?variant=40939223449761,https://jgut.jayagrocer.com/collections/snacks
+Snacks,M&M Peanut Chocolate Candies 37g,37 g,3.80,,,,,https://jgut.jayagrocer.com/products/m-m-peanut-37g-1?variant=40939223875745,https://jgut.jayagrocer.com/collections/snacks
+Snacks,M&M Peanut Chocolate Candies 90g,90 g,7.40,,,,,https://jgut.jayagrocer.com/products/m-m-peanut-chocolate-candies-90g?variant=44920299782305,https://jgut.jayagrocer.com/collections/snacks
+Snacks,M&M Plain Chocolate Candies 180g,180 g,13.70,,,,,https://jgut.jayagrocer.com/products/m-m-plain-chocolate-candies-180g?variant=44920294703265,https://jgut.jayagrocer.com/collections/snacks
+Snacks,M&M Plain Chocolate Candies 37g,37 g,3.80,,,,,https://jgut.jayagrocer.com/products/m-m-plain-chocolate-candies-37g?variant=44920294736033,https://jgut.jayagrocer.com/collections/snacks
+Snacks,M&M Plain Chocolate Candies 90g,90 g,7.40,,,,,https://jgut.jayagrocer.com/products/m-m-plain-90g-1?variant=40939237081249,https://jgut.jayagrocer.com/collections/snacks
+Snacks,M&M's Crispy Chocolate Candies 30g,30 g,3.80,,,,,https://jgut.jayagrocer.com/products/m-ms-crispy-chocolate-candies-30g?variant=44920294768801,https://jgut.jayagrocer.com/collections/snacks
+Snacks,M&M's Tube Topper 28g,28 g,7.40,,,,,https://jgut.jayagrocer.com/products/m-ms-tube-topper-28g?variant=44735145607329,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Magic Time Double Butter Popcorn 240g,240 g,13.99,15.80,1.81,11.50,,https://jgut.jayagrocer.com/products/magic-time-double-butter-popcorn-240g?variant=44920316461217,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Magic Time Light Butter Popcorn 240g,240 g,12.99,15.80,2.81,17.80,,https://jgut.jayagrocer.com/products/magic-time-light-butter-popcorn-240g-1?variant=43105607319713,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Magic Time Natural Premium Microwave Butter Popcorn 240g,240 g,15.80,,,,,https://jgut.jayagrocer.com/products/magic-time-natural-premium-microwave-butter-popcorn-240g?variant=44920316231841,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Magic Time Popcorn Fat Free Butter Popcorn 242.4g,242.4 g,15.80,,,,,https://jgut.jayagrocer.com/products/magic-time-p-corn94-f-f-butter-242-4g-1?variant=40939288166561,https://jgut.jayagrocer.com/collections/snacks
-Snacks,Maltesers Chocolate Ball 37g,37 g,4.90,,,,,https://jgut.jayagrocer.com/products/maltesers-chocolate-ball-37g-1?variant=44950428418209,https://jgut.jayagrocer.com/collections/snacks
+Snacks,Maltesers Chocolate Ball 37g,37 g,5.20,,,,,https://jgut.jayagrocer.com/products/maltesers-chocolate-ball-37g-1?variant=44950428418209,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Maltesers Extra Chocolate Pouch 120g,120 g,15.90,,,,,https://jgut.jayagrocer.com/products/maltesers-extra-chocolate-pouch-120g?variant=43885290979489,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Mamee Monster Noodle Snacks BBQ Flavour Family Pack 20g x 10,20 g x 10,5.20,,,,0.52,https://jgut.jayagrocer.com/products/mamee-monster-noodle-snacks-bbq-flavour-family-pack-25g-x-10?variant=45882402472097,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Manjun Laverland Crunch Sea Salt Korean Seaweed 4.5g x 3,4.5 g x 3,7.90,,,,2.63,https://jgut.jayagrocer.com/products/manjun-laverland-crunch-sea-salt-korean-seaweed-4-5g-x-4?variant=40940398575777,https://jgut.jayagrocer.com/collections/snacks
@@ -4873,10 +4865,10 @@ Snacks,Skittles Sour Candy 40g,40 g,2.70,,,,,https://jgut.jayagrocer.com/product
 Snacks,Sky Flakes Garlic Flavor Crackers 250g x 20,250 g x 20,10.40,,,,0.52,https://jgut.jayagrocer.com/products/sky-flakes-garlic-snack-crac20x250g-1?variant=40939904467105,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Snax Crunches Cheese Onion Crackers 160g x 12,160 g x 12,10.90,,,,0.91,https://jgut.jayagrocer.com/products/snax-crunches-cheese-onion-crackers-160g-x-12?variant=44587331584161,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Snek Ku Mimi Prawn Snack 20g x 8,20 g x 8,4.80,,,,0.60,https://jgut.jayagrocer.com/products/snek-ku-mimi-prawn-snack-20g-x-8?variant=45882311442593,https://jgut.jayagrocer.com/collections/snacks
-Snacks,Snickers Almond Dark Chocolate 40g,40 g,5.60,,,,,https://jgut.jayagrocer.com/products/snickers-almond-dark-chocolate-40g?variant=44941461586081,https://jgut.jayagrocer.com/collections/snacks
+Snacks,Snickers Almond Dark Chocolate 40g,40 g,5.90,,,,,https://jgut.jayagrocer.com/products/snickers-almond-dark-chocolate-40g?variant=44941461586081,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Snickers Butterscotch (Limited Edition) 40g,40 g,4.10,,,,,https://jgut.jayagrocer.com/products/snicker-butterscotch-chocolate-bar-40g?variant=45310744690849,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Snickers Fun Size Peanut Chocolate Bar 240g,240 g,15.80,,,,,https://jgut.jayagrocer.com/products/snickers-chocolate-fun-size-pack-240g-1?variant=40939222630561,https://jgut.jayagrocer.com/collections/snacks
-Snacks,Snickers Peanut Chocolate Bar 175g,175 g,12.20,,,,,https://jgut.jayagrocer.com/products/snickers-chocolate-35g-x-5pcs-1?variant=40939236917409,https://jgut.jayagrocer.com/collections/snacks
+Snacks,Snickers Peanut Chocolate Bar 175g,175 g,12.70,,,,,https://jgut.jayagrocer.com/products/snickers-chocolate-35g-x-5pcs-1?variant=40939236917409,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Snickers Strawberry 40g,40 g,4.10,,,,,https://jgut.jayagrocer.com/products/snickers-strawberry-chocolate-bar-40g?variant=45310744789153,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Snickers Strawberry Funsize 154g,154 g,15.80,,,,,https://jgut.jayagrocer.com/products/snickers-strawberry-funsize-154g?variant=45755201290401,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Sour Patch Lollies Kids Candies 190g,190 g,12.90,,,,,https://jgut.jayagrocer.com/products/sour-patch-lollies-kids-candies-190g?variant=43910061719713,https://jgut.jayagrocer.com/collections/snacks
@@ -5023,7 +5015,7 @@ Snacks,Woh Tempeh Chips Mala 100g,100 g,12.90,,,,,https://jgut.jayagrocer.com/pr
 Snacks,Woh Tempeh Chips Sour Cream 100g,100 g,12.90,,,,,https://jgut.jayagrocer.com/products/woh-tempeh-chips-sour-cream-100g?variant=45755199652001,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Wonka Nerds Candy Grape and Strawberry Flavours 46g,46 g,9.90,,,,,https://jgut.jayagrocer.com/products/wonka-nerds-candy-grape-and-strawberry-flavours-46-7g?variant=42792473559201,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Wonka Rainbow Nerds 142g,142 g,11.90,,,,,https://jgut.jayagrocer.com/products/wonka-rainbow-nerds-142g?variant=42782662721697,https://jgut.jayagrocer.com/collections/snacks
-Snacks,"Wrigley Doublemint Chewing Gum pack, 12pcs",12 pcs,3.80,,,,0.32,https://jgut.jayagrocer.com/products/wrigley-doublemint-chewing-gum-12pcs-pack?variant=44950429434017,https://jgut.jayagrocer.com/collections/snacks
+Snacks,"Wrigley Doublemint Chewing Gum pack, 12pcs",12 pcs,4.00,,,,0.33,https://jgut.jayagrocer.com/products/wrigley-doublemint-chewing-gum-12pcs-pack?variant=44950429434017,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Yamaei Ajiwai Cheese Pollock 1pack,,24.90,,,,,https://jgut.jayagrocer.com/products/yamaei-ajiwai-cheese-pollock?variant=44636022145185,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Yamaei Ajiwai Yaki Cheese 1pack,,15.90,,,,,https://jgut.jayagrocer.com/products/yamaei-ajiwai-yaki-cheese?variant=44636022309025,https://jgut.jayagrocer.com/collections/snacks
 Snacks,Yangban Double Roasted Seasoned Laver Seaweed 5g x 9,5 g x 9,24.90,,,,2.77,https://jgut.jayagrocer.com/products/yangban-double-roasted-seasoned-laver-seaweed-5g-x-9?variant=44494206238881,https://jgut.jayagrocer.com/collections/snacks
