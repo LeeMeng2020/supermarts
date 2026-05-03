@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.7
         with:
           ref: aeon-branch # Specify aeon-branch directly for the primary checkout
           path: .
