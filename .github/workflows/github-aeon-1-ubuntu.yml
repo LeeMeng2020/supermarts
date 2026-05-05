@@ -3,8 +3,8 @@ name: Aeon flow 1 ubuntu (aeon-branch)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 7:29 AM Msia time (11:29 PM UTC)
-    - cron: '29 23 * * *' 
+    # Run every day at 7:20 AM Msia time (11:20 PM UTC)
+    - cron: '20 23 * * *' 
 
 jobs:
   setup:
