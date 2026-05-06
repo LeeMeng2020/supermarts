@@ -51,7 +51,7 @@ jobs:
           ls -l
 
       - name: pip install
-        run: pip install -r requirements.txt
+        run: pip install -r village_requirements.txt
           
       - name: Run script
         run: |
