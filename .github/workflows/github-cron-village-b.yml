@@ -47,6 +47,7 @@ jobs:
         run: |
           7z x runner-src/gather-village-src.7z -p${{ secrets.ZIP_PW }}
           cp -v runner-src/village-categories.txt .
+          cp -v runner-src/village_requirements.txt .
           ls -l
 
       - name: pip install
