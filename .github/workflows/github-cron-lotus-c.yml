@@ -3,8 +3,8 @@ name: Lotus-c flow (gather-branch)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at
-    - cron: '30 23 * * *' 
+    # Run every day at UTC
+    - cron: '28 23 * * *' 
 
 jobs:
   setup:
