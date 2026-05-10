@@ -1,2 +1,2 @@
 # supermarts
-Supermarket prices
+Daily supermarket prices.
