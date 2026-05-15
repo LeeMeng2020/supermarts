@@ -52,7 +52,7 @@ jobs:
       - name: Run script
         run: |
           echo "running script"
-          python village_038_one_thread_args.py -c village_paradigm_jb-categoriess.txt -o village-gather-jb.csv
+          python village_038_one_thread_args.py -c village_paradigm_jb-categories.txt -o village-gather-jb.csv
           echo "Error log:"
           cat village_error_log.txt 
           
