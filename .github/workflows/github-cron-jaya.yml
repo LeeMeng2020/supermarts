@@ -47,6 +47,8 @@ jobs:
           7z x runner-src/gather-jaya-src.7z -p${{ secrets.ZIP_PW }}
           cp -v runner-src/jaya_settings* .
           cp -v runner-src/jaya_requirements.txt .
+          cp -v runner-src/jaya_fixer_settings.ini .
+          cp -v runner-src/jaya_fixer_02.py .
 
       - name: Random delay
         run: |
@@ -92,7 +94,7 @@ jobs:
       - name: Run processing script
         run: |
           echo "running processing script"
-          python jaya_fixer_01.py
+          python jaya_fixer_02.py
  
       - name: Set up Git
         run: |
