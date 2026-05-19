@@ -45,9 +45,9 @@ jobs:
       - name: Unzip gather-jaya and settings files
         run: |
           7z x runner-src/gather-jaya-src.7z -p${{ secrets.ZIP_PW }}
-          cp -v runner-src/jaya_fixer_subang_settings* .
+          cp -v runner-src/jaya_subang_settings* .
           cp -v runner-src/jaya_requirements.txt .
-          cp -v runner-src/jaya_fixer_settings.ini .
+          cp -v runner-src/jaya_fixer_subang_settings.ini .
           cp -v runner-src/jaya_fixer_02.py .
       - name: Random delay
         run: |
