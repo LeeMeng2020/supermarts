@@ -45,9 +45,10 @@ jobs:
       - name: Unzip gather-jaya and settings files
         run: |
           7z x runner-src/gather-jaya-src.7z -p${{ secrets.ZIP_PW }}
-          cp -v runner-src/jaya_subang_settings* .
+          cp -v runner-src/jaya_fixer_subang_settings* .
           cp -v runner-src/jaya_requirements.txt .
-
+          cp -v runner-src/jaya_fixer_settings.ini .
+          cp -v runner-src/jaya_fixer_02.py .
       - name: Random delay
         run: |
           DELAY=$((RANDOM % 9))   # Random number between 0 and 8
@@ -92,7 +93,7 @@ jobs:
       - name: Run processing script
         run: |
           echo "running processing script"
-          python jaya_subang_fixer_01.py
+          python jaya_fixer_02.py --config jaya_fixer_subang_settings.ini
  
       - name: Set up Git
         run: |
