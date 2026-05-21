@@ -37,6 +37,7 @@ jobs:
         run: |
           brew install p7zip
           brew install python   # ensures latest Python if needed
+          brew install pipx
           brew install make gcc # replaces build-essential
 
       - name: Unzip gather-jaya and settings files
@@ -54,7 +55,7 @@ jobs:
           sleep $DELAY
 
       - name: pip install
-        run: pip3 install -r jaya_requirements.txt   # ✅ use pip3 on macOS
+        run: pipx install -r jaya_requirements.txt   # ✅ use pip3 on macOS
 
       - name: Run script
         timeout-minutes: 60
