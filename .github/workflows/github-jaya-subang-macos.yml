@@ -37,8 +37,9 @@ jobs:
         run: |
           brew install p7zip
           brew install python   # ensures latest Python if needed
-          brew install pipx
+          brew install pipx     # ✅ install pipx
           brew install make gcc # replaces build-essential
+          pipx ensurepath
 
       - name: Unzip gather-jaya and settings files
         run: |
@@ -54,11 +55,13 @@ jobs:
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY
 
-      - name: pip install
-        run: pipx install -r jaya_requirements.txt   # ✅ use pip3 on macOS
+      - name: Install dependencies with pipx
+        run: |
+          # Use pipx’s runpip to install requirements into its managed venv
+          pipx runpip python install -r jaya_requirements.txt
 
       - name: Run script
-        timeout-minutes: 60
+        timeout-minutes: 57
         run: |
           echo "Install playwright chromium"
           python3 -m playwright install --with-deps --only-shell > /dev/null
