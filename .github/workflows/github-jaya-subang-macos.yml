@@ -1,47 +1,44 @@
-name: Jaya Subang flow (gather-branch)
+name: Jaya Subang flow Macos (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
     # Run every day at (x:x AM PM UTC)
-    - cron: '24 23 * * *' 
+    - cron: '23 23 * * *' 
 
 jobs:
   setup:
-    runs-on: ubuntu-24.04
+    runs-on: macos-15   # ✅ Changed runner to macOS 15
     permissions:
-      contents: write # Grant write permissions for pushing changes
-    
+      contents: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4.1.7
         with:
-          ref: gather-branch # Specify gather-branch directly for the primary checkout
-          path: . # CHANGE: Checkout to the root of the runner's working directory      
-        
+          ref: gather-branch
+          path: .
+
       - name: Display system information
         run: |
-          echo "Ubuntu version:"
-          lsb_release -a
+          echo "macOS version:"
+          sw_vers
           echo "Python version"
-          python -V
+          python3 -V
           echo "IP address"
           curl --no-progress-meter https://ipinfo.io/ip
-          
+
       - name: Update package lists
         run: |
-          sudo apt update
-          apt list --upgradable        
-        
+          brew update
+          brew outdated
+
       - name: Install basic utilities and 7-zip
         run: |
-          sudo apt-get install -y \
-            build-essential \
-            python3-problem-report \
-            linux-tools-common \
-            linux-libc-dev \
-            p7zip-full
-              
+          brew install p7zip
+          brew install python   # ensures latest Python if needed
+          brew install make gcc # replaces build-essential
+
       - name: Unzip gather-jaya and settings files
         run: |
           7z x runner-src/gather-jaya-src.7z -p${{ secrets.ZIP_PW }}
@@ -49,26 +46,27 @@ jobs:
           cp -v runner-src/jaya_requirements.txt .
           cp -v runner-src/jaya_fixer_subang_settings.ini .
           cp -v runner-src/jaya_fixer_02.py .
+
       - name: Random delay
         run: |
-          DELAY=$((RANDOM % 9))   # Random number between 0 and 8
+          DELAY=$((RANDOM % 9))
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY
 
       - name: pip install
-        run: pip install -r jaya_requirements.txt
-          
+        run: pip3 install -r jaya_requirements.txt   # ✅ use pip3 on macOS
+
       - name: Run script
         timeout-minutes: 60
         run: |
           echo "Install playwright chromium"
-          python -m playwright install --with-deps --only-shell > /dev/null
+          python3 -m playwright install --with-deps --only-shell > /dev/null
           echo "running scripts"
-          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_1.json &
+          python3 jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_1.json &
           sleep 1
-          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_2.json &
+          python3 jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_2.json &
           sleep 1
-          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_3.json &
+          python3 jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_3.json &
           wait
           echo "Scripts done."
 
@@ -81,7 +79,7 @@ jobs:
               echo "❌ File does not exist: $FILE"
               exit 1
             fi
-            FILESIZE=$(stat -c%s "$FILE")
+            FILESIZE=$(stat -f%z "$FILE")   # ✅ macOS stat syntax
             if [ "$FILESIZE" -lt 102400 ]; then
               echo "❌ File size is too small: ${FILESIZE} bytes"
               exit 1
@@ -93,8 +91,8 @@ jobs:
       - name: Run processing script
         run: |
           echo "running processing script"
-          python jaya_fixer_02.py --config jaya_fixer_subang_settings.ini
- 
+          python3 jaya_fixer_02.py --config jaya_fixer_subang_settings.ini
+
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -103,7 +101,7 @@ jobs:
       - name: Pull latest changes before push
         run: |
           git pull origin gather-branch --rebase
-    
+
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
@@ -112,4 +110,4 @@ jobs:
           git add raw_data/jaya_subang_one*
           git add raw_data/jaya_subang-output*
           git commit -m "Automated: Add generated Jaya Subang files" || echo "No changes to commit"
-          git push origin gather-branch      
+          git push origin gather-branch
