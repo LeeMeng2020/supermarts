@@ -1,4 +1,4 @@
-name: Manual test
+name: zManual test
 
 on:
   workflow_dispatch: # manual trigger ability

@@ -1,4 +1,4 @@
-name: Manual Ubuntu test
+name: zManual Ubuntu test
 
 on:
   workflow_dispatch: # manual trigger ability
