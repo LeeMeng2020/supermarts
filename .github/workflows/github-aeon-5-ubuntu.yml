@@ -1,4 +1,4 @@
-name: Aeon flow 4 ubuntu (aeon-branch)
+name: Aeon flow 5 ubuntu (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -104,8 +104,8 @@ jobs:
 
       - name: Commit and push generated files
         run: |
-          cp aeon-out-part4.csv raw_data/
-          git add raw_data/aeon-out-part4.csv
+          cp aeon-out-part5.csv raw_data/
+          git add raw_data/aeon-out-part5.csv
           git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
           git push origin aeon-branch
  
