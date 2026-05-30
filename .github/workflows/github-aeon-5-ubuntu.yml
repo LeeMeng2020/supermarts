@@ -14,15 +14,15 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v6.0.2
         with:
           ref: aeon-branch
           path: .
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.13.12'
+          python-version: '3.13.13'
 
       - name: Install system dependencies
         run: |
@@ -42,7 +42,7 @@ jobs:
           echo "Python version:"
           python -V
           echo "IP address:"
-          curl https://ipinfo.io/ip
+          curl --no-progress-meter https://ipinfo.io/ip
 
       - name: Unzip .7z, copy categories and requirements
         run: |
