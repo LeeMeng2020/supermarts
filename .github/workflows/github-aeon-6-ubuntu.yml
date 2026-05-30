@@ -8,7 +8,7 @@ on:
 
 jobs:
   setup:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     permissions:
       contents: write
 
@@ -22,14 +22,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.13.12'
+          python-version: '3.13.13'
 
-      - name: Install system dependencies, Chrome
+      - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y p7zip-full xvfb curl git
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo apt install ./google-chrome-stable_current_amd64.deb -y
 
       - name: Start virtual display
         run: |
@@ -44,7 +42,7 @@ jobs:
           echo "Python version:"
           python -V
           echo "IP address:"
-          curl --no-progress-meter https://ipinfo.io/ip
+          curl https://ipinfo.io/ip
 
       - name: Unzip .7z, copy categories and requirements
         run: |
