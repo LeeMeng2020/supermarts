@@ -42,7 +42,7 @@ jobs:
           echo "Python version:"
           python -V
           echo "IP address:"
-          curl https://ipinfo.io/ip
+          curl --no-progress-meter https://ipinfo.io/ip
 
       - name: Unzip .7z, copy categories and requirements
         run: |
