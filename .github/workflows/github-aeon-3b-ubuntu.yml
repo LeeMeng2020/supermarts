@@ -52,6 +52,12 @@ jobs:
 
       - name: pip install
         run: pip install -r requirements.txt
+        
+      - name: Random delay
+        run: |
+          DELAY=$((RANDOM % 9))   # Random number between 0 and 8
+          echo "Random sleep for $DELAY seconds..."
+          sleep $DELAY        
 
       - name: Run script and validate output. With retry, timeout.
         timeout-minutes: 120
