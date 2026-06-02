@@ -3,8 +3,8 @@ name: Aeon flow 2b ubuntu (aeon-branch-2)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at (11:16 AM PM UTC)
-    - cron: '16 23 * * *'   
+    # Run every day at (11:12 AM PM UTC)
+    - cron: '12 23 * * *'   
 
 jobs:
   setup:
@@ -14,15 +14,15 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v6.0.2
         with:
           ref: aeon-branch-2 # Specify aeon-branch-2 directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's working directory    
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.13.12'
+          python-version: '3.13.13'
 
       - name: Install system dependencies
         run: |
