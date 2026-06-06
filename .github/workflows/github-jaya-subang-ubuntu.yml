@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # manual trigger ability
   schedule:
     # Run every day at (x:x AM PM UTC)
-    - cron: '21 23 * * *' 
+    - cron: '20 23 * * *' 
 
 jobs:
   setup:
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6.0.2
         with:
-          ref: gather-branch # Specify gather-branch directly for the primary checkout
+          ref: jaya-branch # Specify jaya-branch directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's working directory      
         
       - name: Display system information
@@ -102,14 +102,14 @@ jobs:
 
       - name: Pull latest changes before push
         run: |
-          git pull origin gather-branch --rebase
+          git pull origin jaya-branch --rebase
     
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
-          cp jaya_subang_one* raw_data/
-          cp jaya_subang-output* raw_data/
-          git add raw_data/jaya_subang_one*
-          git add raw_data/jaya_subang-output*
-          git commit -m "Automated: Add generated Jaya Subang files" || echo "No changes to commit"
-          git push origin gather-branch      
+          cp jaya_one* raw_data/
+          cp jaya-output* raw_data/
+          git add raw_data/jaya_one*
+          git add raw_data/jaya-output*
+          git commit -m "Automated: Add generated Jaya files" || echo "No changes to commit"
+          git push origin jaya-branch    
