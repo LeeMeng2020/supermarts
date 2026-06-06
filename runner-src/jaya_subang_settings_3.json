@@ -1,0 +1,16 @@
+[
+    {
+        "output_file": "jaya_subang_one_thread_3.csv",
+        "base_url": "https://jgsj.jayagrocer.com",
+        "goog_url": "https://www.google.com",
+        "ship_policy_url": "https://jgsj.jayagrocer.com/policies/shipping-policy",
+        "categories": [
+            "https://jgsj.jayagrocer.com/collections/fresh-market",
+            "https://jgsj.jayagrocer.com/collections/food-essentials",
+            "https://jgsj.jayagrocer.com/collections/beauty-and-health",
+            "https://jgsj.jayagrocer.com/collections/feminine-care"
+        ]
+    }
+]
+
+
