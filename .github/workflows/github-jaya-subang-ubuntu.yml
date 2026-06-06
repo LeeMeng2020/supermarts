@@ -107,9 +107,9 @@ jobs:
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
-          cp jaya_one* raw_data/
-          cp jaya-output* raw_data/
-          git add raw_data/jaya_one*
-          git add raw_data/jaya-output*
-          git commit -m "Automated: Add generated Jaya files" || echo "No changes to commit"
+          cp jaya_subang_one* raw_data/
+          cp jaya_subang-output* raw_data/
+          git add raw_data/jaya_subang_one*
+          git add raw_data/jaya_subang-output*
+          git commit -m "Automated: Add generated Jaya Subang files" || echo "No changes to commit"
           git push origin jaya-branch    
