@@ -1,14 +1,14 @@
-name: Jaya Subang flow (jaya-branch)
+name: Jaya Extra flow (jaya-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
     # Run every day at (x:x AM PM UTC)
-    - cron: '20 23 * * *' 
+    - cron: '17 23 * * *' 
 
 jobs:
   setup:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-slim
     permissions:
       contents: write # Grant write permissions for pushing changes
     
@@ -48,8 +48,8 @@ jobs:
           cp -v runner-src/jaya_subang_settings* .
           cp -v runner-src/jaya_requirements.txt .
           cp -v runner-src/jaya_fixer_subang_settings.ini .
-          cp -v runner-src/jaya_fixer_03.py .
-          
+
+
       - name: Random delay
         run: |
           DELAY=$((RANDOM % 9))   # Random number between 0 and 8
@@ -65,17 +65,12 @@ jobs:
           echo "Install playwright chromium"
           python -m playwright install --with-deps --only-shell > /dev/null
           echo "running scripts"
-          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_1.json &
-          sleep 1
-          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_2.json &
-          sleep 1
-          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_3.json &
-          wait
+          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_subang_settings_4.json
           echo "Scripts done."
 
       - name: Validate output file
         run: |
-          FILES=("jaya_subang_one_thread_1.csv" "jaya_subang_one_thread_2.csv" "jaya_subang_one_thread_3.csv")
+          FILES=("jaya_subang_one_thread_4.csv")
           for FILE in "${FILES[@]}"; do
             echo "Checking if $FILE exists and is larger than 100 KB..."
             if [ ! -f "$FILE" ]; then
@@ -91,11 +86,6 @@ jobs:
           done
           echo "🎉 All files passed validation"
 
-      - name: Run processing script
-        run: |
-          echo "running processing script"
-          python jaya_fixer_03.py --config jaya_fixer_subang_settings.ini
- 
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -109,8 +99,6 @@ jobs:
         run: |
           mkdir -p raw_data
           cp jaya_subang_one* raw_data/
-          cp jaya_subang-output* raw_data/
           git add raw_data/jaya_subang_one*
-          git add raw_data/jaya_subang-output*
           git commit -m "Automated: Add generated Jaya Subang files" || echo "No changes to commit"
           git push origin jaya-branch    
