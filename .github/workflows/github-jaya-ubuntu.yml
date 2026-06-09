@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # manual trigger ability
   schedule:
     # Run every day at (x:x AM PM UTC)
-    - cron: '16 23 * * *' 
+    - cron: '17 23 * * *' 
 
 jobs:
   setup:
@@ -47,8 +47,9 @@ jobs:
           7z x runner-src/gather-jaya-src.7z -p${{ secrets.ZIP_PW }}
           cp -v runner-src/jaya_settings* .
           cp -v runner-src/jaya_requirements.txt .
+          cp -vp raw_data/jaya_one_thread_4.csv .
           cp -v runner-src/jaya_fixer_settings.ini .
-          cp -v runner-src/jaya_fixer_02.py .
+          cp -v runner-src/jaya_fixer_03.py .
 
       - name: Random delay
         run: |

@@ -1,4 +1,4 @@
-name: Jaya Extra1 flow (jaya-branch)
+name: Jaya Extra2 flow (jaya-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
