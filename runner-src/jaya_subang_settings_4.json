@@ -5,6 +5,7 @@
         "goog_url": "https://www.google.com",
         "ship_policy_url": "https://jgsj.jayagrocer.com/policies/shipping-policy",
         "categories": [
+		    "https://jgsj.jayagrocer.com/collections/laundry",
             "https://jgsj.jayagrocer.com/collections/beauty-and-health",
             "https://jgsj.jayagrocer.com/collections/feminine-care"
         ]
