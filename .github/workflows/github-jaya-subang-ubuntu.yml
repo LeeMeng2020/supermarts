@@ -59,8 +59,11 @@ jobs:
       - name: pip install
         run: pip install -r jaya_requirements.txt
 
+      - name: Pull latest changes
+        run: git pull
+
       - name: after delay, copy thread_4.csv
-        run: cp -vp raw_data/jaya_subang_one_thread_4.csv .
+        run: cp -v raw_data/jaya_subang_one_thread_4.csv .
 
       - name: Run script
         timeout-minutes: 60
