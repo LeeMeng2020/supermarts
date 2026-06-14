@@ -62,7 +62,7 @@ jobs:
       - name: Pull latest changes
         run: git pull
 
-      - name: after delay, copy thread_4.csv
+      - name: after some time, copy thread_4.csv
         run: cp -v raw_data/jaya_one_thread_4.csv .
          
       - name: Run script
