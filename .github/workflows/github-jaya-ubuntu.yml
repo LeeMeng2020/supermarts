@@ -58,12 +58,6 @@ jobs:
 
       - name: pip install
         run: pip install -r jaya_requirements.txt
-
-      - name: Pull latest changes
-        run: git pull
-
-      - name: after some time, copy thread_4.csv
-        run: cp -v raw_data/jaya_one_thread_4.csv .
          
       - name: Run script
         timeout-minutes: 60
@@ -96,6 +90,12 @@ jobs:
             echo "✅ File exists and is larger than 100 KB: ${FILESIZE} bytes"
           done
           echo "🎉 All files passed validation"
+
+      - name: Pull latest changes
+        run: pull origin jaya-branch --rebase
+
+      - name: copy thread_4.csv
+        run: cp -v raw_data/jaya_one_thread_4.csv .
 
       - name: Run processing script
         run: |
