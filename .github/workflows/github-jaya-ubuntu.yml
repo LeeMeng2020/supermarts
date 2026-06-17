@@ -92,7 +92,7 @@ jobs:
           echo "🎉 All files passed validation"
 
       - name: Pull latest changes
-        run: pull origin jaya-branch --rebase
+        run: git pull origin jaya-branch --rebase
 
       - name: copy thread_4.csv
         run: cp -v raw_data/jaya_one_thread_4.csv .
