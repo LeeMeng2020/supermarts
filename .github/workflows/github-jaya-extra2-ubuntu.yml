@@ -8,7 +8,7 @@ on:
 
 jobs:
   setup:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-24.04
     permissions:
       contents: write # Grant write permissions for pushing changes
     
@@ -35,7 +35,8 @@ jobs:
         
       - name: Install basic utilities and 7-zip
         run: |
-          sudo apt-get install -y \
+          sudo apt install -y \
+            ca-certificates \
             build-essential \
             python3-problem-report \
             linux-tools-common \
