@@ -26,9 +26,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y p7zip-full xvfb curl git
 
-      - name: Install Chromium
+      - name: Install Chrome
         run: |
-          sudo apt-get install -y chromium-browser
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
 
       - name: Download 7-Zip installer with retry (Linux style)
         run: |
