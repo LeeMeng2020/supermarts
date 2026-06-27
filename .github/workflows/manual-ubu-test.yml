@@ -26,6 +26,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y p7zip-full xvfb curl git
 
+      - name: Install Chrome
+        run: |
+          sudo apt-get install -y google-chrome-stable
+
       - name: Download 7-Zip installer with retry (Linux style)
         run: |
           url="https://www.7-zip.org/a/7z2301-linux-x64.tar.xz"
