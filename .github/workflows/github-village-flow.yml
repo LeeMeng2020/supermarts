@@ -26,7 +26,6 @@ jobs:
           echo "Python version"
           python -V
           echo "IP address"
-          curl --no-progress-meter https://ipinfo.io/ip
           curl --no-progress-meter https://api.ipify.org
           
       - name: Update package lists
