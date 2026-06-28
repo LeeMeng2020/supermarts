@@ -1,14 +1,14 @@
-name: Aeon flow 1 ubuntu (aeon-branch)
+name: Aeon flow 6 ubuntu (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
-    # Run every day at 7:15 AM Msia time (11:15 PM UTC)
-    - cron: '11 23 * * *' 
+    # Run every day at 
+    - cron: '15 23 * * *'     
 
 jobs:
   setup:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
       contents: write
 
@@ -20,7 +20,7 @@ jobs:
           path: .
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13.13'
 
@@ -85,10 +85,10 @@ jobs:
 
           perAttemptTimeout=58
 
-          if ! run_with_timeout "aeon-categories-1.txt" "aeon-out-part1.csv" $perAttemptTimeout "First attempt"; then
-            echo "First attempt failed or timed out. Retrying after 20 seconds..."
-            sleep 20
-            if ! run_with_timeout "aeon-categories-1.txt" "aeon-out-part1.csv" $perAttemptTimeout "Second attempt"; then
+          if ! run_with_timeout "aeon-categories-6.txt" "aeon-out-part6.csv" $perAttemptTimeout "First attempt"; then
+            echo "First attempt failed or timed out. Retrying after 25 seconds..."
+            sleep 25
+            if ! run_with_timeout "aeon-categories-6.txt" "aeon-out-part6.csv" $perAttemptTimeout "Second attempt"; then
               echo "** Retry failed. Aborting. **"
               exit 1
             fi
@@ -104,8 +104,8 @@ jobs:
 
       - name: Commit and push generated files
         run: |
-          cp aeon-out-part1.csv raw_data/
-          git add raw_data/aeon-out-part1.csv
+          cp aeon-out-part6.csv raw_data/
+          git add raw_data/aeon-out-part6.csv
           git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
           git push origin aeon-branch
  
