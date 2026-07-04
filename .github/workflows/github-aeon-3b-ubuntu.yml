@@ -60,7 +60,7 @@ jobs:
           sleep $DELAY        
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 120
+        timeout-minutes: 60
         run: |
           check_output_file() {
             local file=$1
@@ -89,7 +89,7 @@ jobs:
             check_output_file "$output" 5000
           }
 
-          perAttemptTimeout=58
+          perAttemptTimeout=29
 
           if ! run_with_timeout "aeon-categories-3.txt" "aeon-out-part3.csv" $perAttemptTimeout "First attempt"; then
             echo "First attempt failed or timed out. Retrying after 25 seconds..."
