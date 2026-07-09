@@ -54,7 +54,7 @@ jobs:
         run: pip install -r requirements_b.txt
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 60
+        timeout-minutes: 50
         run: |
           check_output_file() {
             local file=$1
@@ -83,7 +83,7 @@ jobs:
             check_output_file "$output" 5000
           }
 
-          perAttemptTimeout=29
+          perAttemptTimeout=25
 
           if ! run_with_timeout "aeon-categories-4.txt" "aeon-out-part4.csv" $perAttemptTimeout "First attempt"; then
             echo "First attempt failed or timed out. Retrying after 20 seconds..."
