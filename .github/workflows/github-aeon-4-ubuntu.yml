@@ -20,7 +20,7 @@ jobs:
           path: .
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13.13'
 
@@ -42,7 +42,7 @@ jobs:
           echo "Python version:"
           python -V
           echo "IP address:"
-          curl https://ipinfo.io/ip
+          curl --no-progress-meter https://ipinfo.io/ip
 
       - name: Unzip .7z, copy categories and requirements
         run: |
@@ -54,7 +54,7 @@ jobs:
         run: pip install -r requirements_b.txt
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 50
+        timeout-minutes: 45
         run: |
           check_output_file() {
             local file=$1
@@ -83,11 +83,11 @@ jobs:
             check_output_file "$output" 5000
           }
 
-          perAttemptTimeout=25
+          perAttemptTimeout=21
 
           if ! run_with_timeout "aeon-categories-4.txt" "aeon-out-part4.csv" $perAttemptTimeout "First attempt"; then
-            echo "First attempt failed or timed out. Retrying after 20 seconds..."
-            sleep 20
+            echo "First attempt failed or timed out. Retrying after 33 seconds..."
+            sleep 33
             if ! run_with_timeout "aeon-categories-4.txt" "aeon-out-part4.csv" $perAttemptTimeout "Second attempt"; then
               echo "** Retry failed. Aborting. **"
               exit 1
