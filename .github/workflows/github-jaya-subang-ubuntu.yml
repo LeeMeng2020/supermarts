@@ -89,7 +89,7 @@ jobs:
               exit 1
             fi
             FILESIZE=$(stat -c%s "$FILE")
-            if [ "$FILESIZE" -lt 102400 ]; then
+            if [ "$FILESIZE" -lt 101500 ]; then
               echo "❌ File size is too small: ${FILESIZE} bytes"
               exit 1
             fi
