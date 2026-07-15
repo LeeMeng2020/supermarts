@@ -41,7 +41,13 @@ jobs:
             python3-problem-report \
             linux-tools-common \
             linux-libc-dev \
-            p7zip-full
+            p7zip-full xvfb
+            
+      - name: Start virtual display
+        run: |
+          export DISPLAY=:99
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "Virtual display started"            
               
       - name: Unzip gather-jaya and settings files
         run: |
