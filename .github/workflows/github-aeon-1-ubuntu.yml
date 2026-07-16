@@ -86,8 +86,8 @@ jobs:
           perAttemptTimeout=21
 
           if ! run_with_timeout "aeon-categories-1.txt" "aeon-out-part1.csv" $perAttemptTimeout "First attempt"; then
-            echo "First attempt failed or timed out. Retrying after 33 seconds..."
-            sleep 33
+            echo "First attempt failed or timed out. Retrying after 45 seconds..."
+            sleep 45
             if ! run_with_timeout "aeon-categories-1.txt" "aeon-out-part1.csv" $perAttemptTimeout "Second attempt"; then
               echo "** Retry failed. Aborting. **"
               exit 1
