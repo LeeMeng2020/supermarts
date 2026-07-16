@@ -62,14 +62,16 @@ jobs:
         run: pip install -r jaya_requirements.txt
          
       - name: Run script
-        timeout-minutes: 50
+        timeout-minutes: 48
         run: |
           echo "Install playwright chromium"
           python -m playwright install chromium --with-deps > /dev/null
           echo "running scripts"
-          xvfb-run python jaya_pwright_2026_022_one_thread_arg.py -s jaya_settings_1.json &
+          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_settings_1.json &
           sleep 1
-          xvfb-run python jaya_pwright_2026_022_one_thread_arg.py -s jaya_settings_2.json &
+          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_settings_2.json &
+          sleep 1
+          python jaya_pwright_2026_022_one_thread_arg.py -s jaya_settings_3.json &
           wait
           echo "Scripts done."
 
