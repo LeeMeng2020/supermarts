@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v6.0.2
         with:
           ref: aeon-branch
-          path: .
+          path: . # Checkout to the root
 
       - name: Set up Python
         uses: actions/setup-python@v5

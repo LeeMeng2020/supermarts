@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v6.0.2
         with:
           ref: aeon-branch-2 # Specify aeon-branch-2 directly for the primary checkout
-          path: . # CHANGE: Checkout to the root of the runner's working directory    
+          path: . # Checkout to the root of the runner's working directory    
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -54,7 +54,7 @@ jobs:
         run: pip install -r requirements_b.txt
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 50
+        timeout-minutes: 45
         run: |
           check_output_file() {
             local file=$1
@@ -86,8 +86,8 @@ jobs:
           perAttemptTimeout=25
 
           if ! run_with_timeout "aeon-categories-2.txt" "aeon-out-part2.csv" $perAttemptTimeout "First attempt"; then
-            echo "First attempt failed or timed out. Retrying after 20 seconds..."
-            sleep 20
+            echo "First attempt failed or timed out. Retrying after 45 seconds..."
+            sleep 45
             if ! run_with_timeout "aeon-categories-2.txt" "aeon-out-part2.csv" $perAttemptTimeout "Second attempt"; then
               echo "** Retry failed. Aborting. **"
               exit 1
