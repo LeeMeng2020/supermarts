@@ -9,7 +9,7 @@ on:
 
 jobs:
   setup:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-24.04
     permissions:
       contents: write # Grant write permissions for pushing changes
     
@@ -48,6 +48,7 @@ jobs:
           7z x runner-src/gather-village-src.7z -p${{ secrets.ZIP_PW }}
           cp -v runner-src/village-categories.txt .
           cp -v runner-src/village_requirements.txt .
+          cp -v runner-src/vill_giza_settings.json .
           ls -l
 
       - name: pip install
@@ -62,7 +63,7 @@ jobs:
       - name: Run script
         run: |
           echo "running script"
-          python village_038_one_thread_args.py -c village-categories.txt -o village-gather.csv
+          python village_040_one_thread_args.py -c village-categories.txt -o village-gather.csv -s vill_giza_settings.json
           echo "Error log:"
           cat village_error_log.txt 
           
