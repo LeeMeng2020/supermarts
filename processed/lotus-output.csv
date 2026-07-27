@@ -378,6 +378,7 @@ Beverages,Cp12_Coca-Cola,1.5 liter,35.85,43.85,8.00,18.20,,https://www.lotuss.co
 Beverages,Cp12_Dl Uht Chocolate,1 liter,67.05,93.10,26.05,28.00,,https://www.lotuss.com.my/en/product/150093365,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cp12_Dl Uht Strawberry,1 liter,67.05,93.10,26.05,28.00,,https://www.lotuss.com.my/en/product/150093402,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cp12_Drinho Soya Bean,1 liter,31.45,,,,,https://www.lotuss.com.my/en/product/150115920,https://www.lotuss.com.my/en/category/beverages
+Beverages,Cp12_Fanta Grape,320 ml,18.65,,,,,https://www.lotuss.com.my/en/product/167739912,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cp12_M/Gold Uht Choc,1 liter,71.88,,,,,https://www.lotuss.com.my/en/product/150098339,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cp12_Minute Maid Refresh Orange,300 ml,28.39,,,,,https://www.lotuss.com.my/en/product/167461936,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cp12_Mountain Dew Pitch Black,1.5 liter,59.95,,,,,https://www.lotuss.com.my/en/product/167735032,https://www.lotuss.com.my/en/category/beverages
@@ -444,7 +445,6 @@ Beverages,Cp4_Sunquick Fruit Drink Orange,5 x 125 ml,14.75,15.85,1.10,6.90,2.95,
 Beverages,Cp4_Yeos Ice Tea Lemon,6 x 250 ml,19.95,,,,3.32,https://www.lotuss.com.my/en/product/167155090,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cp4_Yeos Longan Red Date,6 x 250 ml,19.95,25.00,5.05,20.20,3.32,https://www.lotuss.com.my/en/product/167758831,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cp4_Yeos Passion Fruit Tea,6 x 250 ml,24.79,,,,4.13,https://www.lotuss.com.my/en/product/167752495,https://www.lotuss.com.my/en/category/beverages
-Beverages,Cp6_Coke Zero,4 x 320 ml,37.70,43.65,5.95,13.60,9.43,https://www.lotuss.com.my/en/product/167740003,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cp6_Lotuss Mineral Water,1.5 liter,6.34,,,,,https://www.lotuss.com.my/en/product/167751178,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cp6_Lotuss Orange Cordial,2 liter,57.33,,,,,https://www.lotuss.com.my/en/product/167727384,https://www.lotuss.com.my/en/category/beverages
 Beverages,Cp6_Oatside Oat Milk Barista Edition,1 liter,53.90,57.55,3.65,6.30,,https://www.lotuss.com.my/en/product/167741393,https://www.lotuss.com.my/en/category/beverages
@@ -1928,6 +1928,7 @@ Chilled &amp; Frozen,Ak Breaded Drum H&S,750 g,22.80,24.69,1.89,7.70,,https://ww
 Chilled &amp; Frozen,Ak Breaded Drum Ori,750 g,22.80,24.69,1.89,7.70,,https://www.lotuss.com.my/en/product/75128782,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Ak Cfc Ori,750 g,23.59,,,,,https://www.lotuss.com.my/en/product/75128780,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Ak Rh Cfc,750 g,21.80,23.59,1.79,7.60,,https://www.lotuss.com.my/en/product/75128781,https://www.lotuss.com.my/en/category/chilled-frozen
+Chilled &amp; Frozen,Anchor Butter Minidish Unsalted,12 x 7 g,8.90,9.50,0.60,6.30,0.74,https://www.lotuss.com.my/en/product/75139749,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Aro Frozen Blueberry,1 kg,19.99,,,,,https://www.lotuss.com.my/en/product/75141451,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Aro Frozen Kiwi Sliced,1 kg,19.99,,,,,https://www.lotuss.com.my/en/product/75149144,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,Aro Frozen Mixed Berries,1 kg,19.99,,,,,https://www.lotuss.com.my/en/product/75141449,https://www.lotuss.com.my/en/category/chilled-frozen
@@ -2344,6 +2345,7 @@ Chilled &amp; Frozen,Kinder Bueno Ice Cream White,4 x 90 ml,34.99,,,,8.75,https:
 Chilled &amp; Frozen,Kinder Chocolate Ice Cream Stick,4 x 55 ml,28.90,,,,7.22,https://www.lotuss.com.my/en/product/75132843,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,King Crab Chunk,160 g,4.39,,,,,https://www.lotuss.com.my/en/product/75117933,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,King's Choc 'O' Chips Ice Cream,1.2 liter,7.99,9.50,1.51,15.90,,https://www.lotuss.com.my/en/product/kings-regular-choc-o-chip-i-crm-1-2l-72250348,https://www.lotuss.com.my/en/category/chilled-frozen
+Chilled &amp; Frozen,King's Mint Chocolate Chip Ice Cream,1.2 liter,7.99,9.50,1.51,15.90,,https://www.lotuss.com.my/en/product/kings-regular-choc-mint-chip-i-crm-1-2l-72250372,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,King's Potong Durian Pack,6 x 60 ml,10.35,,,,1.72,https://www.lotuss.com.my/en/product/75120830,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,King's Potong Pulut Hitam & Yam Multipack,6 x 60 ml,10.35,,,,1.72,https://www.lotuss.com.my/en/product/75124131,https://www.lotuss.com.my/en/category/chilled-frozen
 Chilled &amp; Frozen,King's Potong Pulut Hitam Pack,6 x 60 ml,10.35,,,,1.72,https://www.lotuss.com.my/en/product/75120829,https://www.lotuss.com.my/en/category/chilled-frozen
@@ -3091,7 +3093,6 @@ Chilled &amp; Frozen,Yumyum Baba Nyonya Chendol Durian Potong,6 x 60 g,9.95,,,,1
 "Chocolates, Sweets &amp; Jelly",Ylf Minions Marshmallow Mango,90 g,5.95,,,,,https://www.lotuss.com.my/en/product/75121069,https://www.lotuss.com.my/en/category/chocolates-sweets-jelly
 Dairy,Anchor Aerosol Whipped Cream,400 g,24.85,,,,,https://www.lotuss.com.my/en/product/75132956,https://www.lotuss.com.my/en/category/dairy
 Dairy,Anchor Butter Minidish Salted,12 x 7 g,8.90,9.50,0.60,6.30,0.74,https://www.lotuss.com.my/en/product/75139748,https://www.lotuss.com.my/en/category/dairy
-Dairy,Anchor Butter Minidish Unsalted,12 x 7 g,8.90,9.50,0.60,6.30,0.74,https://www.lotuss.com.my/en/product/75139749,https://www.lotuss.com.my/en/category/dairy
 Dairy,Anchor Cheese,200 g,9.15,9.55,0.40,4.20,,https://www.lotuss.com.my/en/product/anchor-cheddar-cheese-slices-12pcs-200g-70420203,https://www.lotuss.com.my/en/category/dairy
 Dairy,Anchor Pure New Zealand Butter,227 g,13.99,14.29,0.30,2.10,,https://www.lotuss.com.my/en/product/anchor-salted-pure-new-zealand-butter-227g-2051958,https://www.lotuss.com.my/en/category/dairy
 Dairy,Anchor Sliced Cheese Value Pack,400 g,18.25,,,,,https://www.lotuss.com.my/en/product/anchor-cheddar-cheese-24-slices-400g-71138080,https://www.lotuss.com.my/en/category/dairy
@@ -3868,7 +3869,7 @@ Fresh Produce,Lotuss Salad Bulat Biji,,3.99,,,,,https://www.lotuss.com.my/en/pro
 Fresh Produce,Lotuss Salad Campuran Klasik,230 g,6.49,,,,,https://www.lotuss.com.my/en/product/lotuss-salad-campuran-klasik-71009477,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotuss Salad Roket,50 g,6.99,,,,,https://www.lotuss.com.my/en/product/lotuss-salad-roket-50-gm-72988940,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotuss Sawi Bunga Cameron,300 g,3.39,,,,,https://www.lotuss.com.my/en/product/75168847,https://www.lotuss.com.my/en/category/fresh-produce
-Fresh Produce,Lotuss Sawi Bunga China,200 g,3.29,,,,,https://www.lotuss.com.my/en/product/lotuss-fresh-sawi-bunga-200g-1554263,https://www.lotuss.com.my/en/category/fresh-produce
+Fresh Produce,Lotuss Sawi Bunga Muda China,200 g,3.29,,,,,https://www.lotuss.com.my/en/product/lotuss-fresh-sawi-bunga-muda-200g-1554336,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotuss Sawi Cameron,300 g,2.89,,,,,https://www.lotuss.com.my/en/product/75168852,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotuss Sawi Muda,300 g,3.39,,,,,https://www.lotuss.com.my/en/product/75168853,https://www.lotuss.com.my/en/category/fresh-produce
 Fresh Produce,Lotuss Sawi Muda Pak Choy,300 g,3.29,,,,,https://www.lotuss.com.my/en/product/75168855,https://www.lotuss.com.my/en/category/fresh-produce
@@ -4564,6 +4565,7 @@ Grocery,Ced Peanut Butter Chocolate,250 g,7.50,,,,,https://www.lotuss.com.my/en/
 Grocery,Ced Peanut Butter Creamy,250 g,7.50,,,,,https://www.lotuss.com.my/en/product/75120369,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ced Peanut Butter Crunchy,250 g,7.50,,,,,https://www.lotuss.com.my/en/product/75120370,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ced Pure Honey,1 kg,19.50,,,,,https://www.lotuss.com.my/en/product/ced-pure-honey-1kg-215538,https://www.lotuss.com.my/en/category/grocery
+Grocery,Ced Pure Honey,500 g,11.59,12.99,1.40,10.80,,https://www.lotuss.com.my/en/product/215546,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ced Pure Honey,200 g,5.19,,,,,https://www.lotuss.com.my/en/product/75120367,https://www.lotuss.com.my/en/category/grocery
 Grocery,Ced Pure Honey,380 g,9.99,,,,,https://www.lotuss.com.my/en/product/75120368,https://www.lotuss.com.my/en/category/grocery
 Grocery,Cfo Acacia Honey,1 kg,49.79,,,,,https://www.lotuss.com.my/en/product/cfo-acacia-honey-1kg-73973491,https://www.lotuss.com.my/en/category/grocery
@@ -5102,7 +5104,6 @@ Grocery,Kimball Chicken Carbonara Pt Sauce,290 g,5.29,5.89,0.60,10.20,,https://w
 Grocery,Kimball Chilli Garlic Sos,325 g,4.39,,,,,https://www.lotuss.com.my/en/product/kimball-chilli-garlic-sos-325g-216739,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kimball Chilli Sos,500 g,4.29,4.69,0.40,8.50,,https://www.lotuss.com.my/en/product/kimball-chilli-sauce-500g-216356,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kimball Chilli Sos,340 g,3.89,,,,,https://www.lotuss.com.my/en/product/kimball-chilli-sos-340g-216224,https://www.lotuss.com.my/en/category/grocery
-Grocery,Kimball Chilli Sos Pouch,1 kg,5.60,,,,,https://www.lotuss.com.my/en/product/216542,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kimball Fettuccine,400 g,3.15,,,,,https://www.lotuss.com.my/en/product/kimball-fettuccine-pasta-400g-70965889,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kimball Jumbo Chilli Sauce,725 g,6.00,6.99,0.99,14.20,,https://www.lotuss.com.my/en/product/kbl-jumbo-chilli-sauce-725g-4772873,https://www.lotuss.com.my/en/category/grocery
 Grocery,Kimball Macaroni,400 g,3.15,,,,,https://www.lotuss.com.my/en/product/kimball-macaroni-pasta-400g-70907242,https://www.lotuss.com.my/en/category/grocery
@@ -5956,6 +5957,7 @@ Grocery,Nona Pudding Powder Honey Dew,85 g,3.10,3.45,0.35,10.10,,https://www.lot
 Grocery,Nona Pudding Powder Ros Bandung,85 g,3.10,3.45,0.35,10.10,,https://www.lotuss.com.my/en/product/75122892,https://www.lotuss.com.my/en/category/grocery
 Grocery,Nona Pudding Powder Taufufa,70 g,3.10,3.45,0.35,10.10,,https://www.lotuss.com.my/en/product/75122890,https://www.lotuss.com.my/en/category/grocery
 Grocery,Nona Sesame Oil,140 ml,6.90,,,,,https://www.lotuss.com.my/en/product/nona-sesame-oil-140ml-71218939,https://www.lotuss.com.my/en/category/grocery
+Grocery,Nona Tempura Flour,150 g,3.70,,,,,https://www.lotuss.com.my/en/product/nona-tempura-flour-150g-1405810,https://www.lotuss.com.my/en/category/grocery
 Grocery,Nona Tepung Ang Kwe(H),100 g,2.29,,,,,https://www.lotuss.com.my/en/product/nona-tepung-ang-kwe-h-100g-2547198,https://www.lotuss.com.my/en/category/grocery
 Grocery,Nona Tepung Ang Kwe(P),100 g,2.29,,,,,https://www.lotuss.com.my/en/product/nona-tepung-ang-kwe-p-100g-2547236,https://www.lotuss.com.my/en/category/grocery
 Grocery,Nongshim Claypot Bowl,117 g,4.95,,,,,https://www.lotuss.com.my/en/product/nongshim-claypot-bowl-117g-70000824,https://www.lotuss.com.my/en/category/grocery
