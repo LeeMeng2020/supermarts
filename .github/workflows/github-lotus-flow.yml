@@ -49,6 +49,7 @@ jobs:
         run: |
           7z x runner-src/gather-lotus-src.7z -p${{ secrets.ZIP_PW }}
           cp -v runner-src/lotus_categories* .
+          cp -v runner-src/lotus_settings.ini .          
           cp -v runner-src/requirements.txt .
 
       - name: pip install
@@ -56,11 +57,11 @@ jobs:
           
       - name: Run script
         run: |
-          python lotus_from_api_args_030.py -c lotus_categories_1.json -o lotus-from-api-part1.csv &
+          python lotus_from_api_args_032.py -c lotus_categories_1.json -o lotus-from-api-part1.csv &
           sleep 1
-          python lotus_from_api_args_030.py -c lotus_categories_2.json -o lotus-from-api-part2.csv &
+          python lotus_from_api_args_032.py -c lotus_categories_2.json -o lotus-from-api-part2.csv &
           sleep 1
-          python lotus_from_api_args_030.py -c lotus_categories_3.json -o lotus-from-api-part3.csv
+          python lotus_from_api_args_032.py -c lotus_categories_3.json -o lotus-from-api-part3.csv
           wait
           echo "Scripts done."
           echo "Error log:"
