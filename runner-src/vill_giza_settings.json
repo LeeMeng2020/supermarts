@@ -1,7 +1,7 @@
 {
   "base_url": "https://vgg.bites.com.my/",
-  "page_pause_delay": 0.57,
+  "page_pause_delay": 1.35,
   "page_retry_delay": 3.78,
-  "break_time_delay": 2.72,
+  "break_time_delay": 3.72,
   "page_pause_tuple": [15, 24, 33, 47, 60, 76, 96]
 }
