@@ -114,6 +114,10 @@ def main():
     new_order = ['Start URL', 'Category', 'Product', 'Unit', 'Price', 'Slash Price', 'Details Link']
     df = df[new_order]
 
+    # Fix RM 7.70 - RM 177.60
+    df['Price'] = df['Price'].str.replace(r"\s?RM(\d{1,2}\.\d{2}) - .+", r"\1", regex=True)
+
+
     # remove RM, From, commas and misc char fixes
     df['Price'] = df['Price'].str.replace('From ', '')
     df['Price'] = df['Price'].str.replace('RM ', '')
