@@ -103,6 +103,5 @@ jobs:
           cp jaya_one* raw_data/
           cp jaya-output* raw_data/
           git add raw_data/jaya_one*
-          git add raw_data/jaya-output*
           git commit -m "Automated: Add generated Jaya files" || echo "No changes to commit"
           git push origin jaya-branch    
