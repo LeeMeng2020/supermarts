@@ -58,7 +58,7 @@ jobs:
         run: pip install -r jaya_requirements.txt
          
       - name: Run script
-        timeout-minutes: 48
+        timeout-minutes: 46
         run: |
           echo "Install playwright chromium"
           python -m playwright install chromium --with-deps > /dev/null
@@ -101,7 +101,6 @@ jobs:
         run: |
           mkdir -p raw_data
           cp jaya_one* raw_data/
-          cp jaya-output* raw_data/
           git add raw_data/jaya_one*
           git commit -m "Automated: Add generated Jaya files" || echo "No changes to commit"
           git push origin jaya-branch    
