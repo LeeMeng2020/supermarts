@@ -5,7 +5,7 @@ on:
   schedule:
     # Run every day at 7:17 AM MY time (11:17 PM UTC)
     - cron: '53 22 * * *' 
-    - cron: '14 04 * * *'          
+    - cron: '12 04 * * *'          
 
 jobs:
   setup:
