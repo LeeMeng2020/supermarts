@@ -44,6 +44,7 @@ jobs:
           7z x runner-src/gather-jaya-src.7z -p${{ secrets.ZIP_PW }}
           cp -v runner-src/jaya_settings* .
           cp -v runner-src/jaya_requirements.txt .
+          cp -v runner-src/jaya_fixer_03.py .
 
       - name: pip install
         run: pip install -r jaya_requirements.txt
@@ -53,9 +54,9 @@ jobs:
           echo "Install playwright chromium"
           python -m playwright install chromium --with-deps > /dev/null
           echo "running scripts"
-          python jaya_pwright_2026_020_one_thread_arg.py -s jaya_settings_2.json &
+          python jaya_pwright_2026_023_arg.py -s jaya_settings_2.json &
           sleep 1
-          python jaya_pwright_2026_020_one_thread_arg.py -s jaya_settings_3.json
+          python jaya_pwright_2026_023_arg.py -s jaya_settings_3.json
           wait
           echo "Scripts done."
 
@@ -80,7 +81,7 @@ jobs:
       - name: Run processing script
         run: |
           echo "running processing script"
-          python jaya_fixer_01.py
+          python jaya_fixer_03.py
  
       - name: Set up Git
         run: |
