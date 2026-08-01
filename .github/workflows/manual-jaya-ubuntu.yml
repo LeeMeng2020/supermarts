@@ -1,4 +1,4 @@
-name: Jaya-manual (gather-branch)
+name: zJaya flow MANUAL (jaya-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -11,9 +11,9 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.2
         with:
-          ref: gather-branch # Specify gather-branch directly for the primary checkout
+          ref: jaya-branch # Specify jaya-branch directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's working directory      
         
       - name: Display system information
@@ -32,37 +32,46 @@ jobs:
         
       - name: Install basic utilities and 7-zip
         run: |
-          sudo apt-get install -y \
+          sudo apt install -y \
+            ca-certificates \
             build-essential \
             python3-problem-report \
             linux-tools-common \
             linux-libc-dev \
             p7zip-full
               
-      - name: Unzip gather-jaya
+      - name: Unzip gather-jaya and settings files
         run: |
-          7z x runner-src/gather-jaya-src.7z -p${{ secrets.ZIP_PW }}
+          7z x runner-src/gather-jaya-test.7z -p${{ secrets.ZIP_PW }}
           cp -v runner-src/jaya_settings* .
           cp -v runner-src/jaya_requirements.txt .
+          cp -v runner-src/jaya_fixer_settings.ini .
           cp -v runner-src/jaya_fixer_03.py .
+
+      - name: Random delay
+        run: |
+          DELAY=$((RANDOM % 9))   # Random number between 0 and 8
+          echo "Random sleep for $DELAY seconds..."
+          sleep $DELAY
 
       - name: pip install
         run: pip install -r jaya_requirements.txt
-          
+         
       - name: Run script
+        timeout-minutes: 46
         run: |
           echo "Install playwright chromium"
           python -m playwright install chromium --with-deps > /dev/null
           echo "running scripts"
-          python jaya_pwright_2026_023_arg.py -s jaya_settings_2.json &
+          python jaya_pwright_2026_023_arg.py -s jaya_settings_1.json &
           sleep 1
-          python jaya_pwright_2026_023_arg.py -s jaya_settings_3.json
+          python jaya_pwright_2026_023_arg.py -s jaya_settings_2.json &
           wait
           echo "Scripts done."
 
       - name: Validate output file
         run: |
-          FILES=("jaya_one_thread_2.csv")
+          FILES=("jaya_one_thread_1.csv" "jaya_one_thread_2.csv")
           for FILE in "${FILES[@]}"; do
             echo "Checking if $FILE exists and is larger than 100 KB..."
             if [ ! -f "$FILE" ]; then
@@ -70,7 +79,7 @@ jobs:
               exit 1
             fi
             FILESIZE=$(stat -c%s "$FILE")
-            if [ "$FILESIZE" -lt 102400 ]; then
+            if [ "$FILESIZE" -lt 101500 ]; then
               echo "❌ File size is too small: ${FILESIZE} bytes"
               exit 1
             fi
@@ -78,10 +87,6 @@ jobs:
           done
           echo "🎉 All files passed validation"
 
-      - name: Run processing script
-        run: |
-          echo "running processing script"
-          python jaya_fixer_03.py
  
       - name: Set up Git
         run: |
@@ -90,14 +95,12 @@ jobs:
 
       - name: Pull latest changes before push
         run: |
-          git pull origin gather-branch --rebase
+          git pull origin jaya-branch --rebase
     
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
           cp jaya_one* raw_data/
-          cp jaya-output* raw_data/
           git add raw_data/jaya_one*
-          git add raw_data/jaya-output*
           git commit -m "Automated: Add generated Jaya files" || echo "No changes to commit"
-          git push origin gather-branch      
+          git push origin jaya-branch    
