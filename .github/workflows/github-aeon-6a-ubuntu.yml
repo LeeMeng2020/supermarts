@@ -26,8 +26,9 @@ jobs:
 
       - name: Install system dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y p7zip-full xvfb curl git
+          sudo apt update
+          sudo apt install -y p7zip-full xvfb curl git
+          sudo apt install chromium-browser
 
       - name: Start virtual display
         run: |
