@@ -52,8 +52,7 @@ jobs:
           cp runner-src/aeon-categories* .
 
       - name: pip install
-        run: pip install --no-cache-dir -r requirements.txt
-+       # safer on ARM to avoid cache corruption
+        run: pip install --no-cache-dir -r requirements.txt  # safer on ARM to avoid cache corruption
 
       - name: Run script and validate output. With retry, timeout.
         timeout-minutes: 41
