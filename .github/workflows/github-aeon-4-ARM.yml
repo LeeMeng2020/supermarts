@@ -1,0 +1,113 @@
+name: Aeon flow 4 ARM (aeon-branch)
+
+on:
+  workflow_dispatch: # manual trigger ability
+  schedule:
+    # Run every day at 7:17 AM MY time (11:17 PM UTC)
+    - cron: '39 22 * * *' 
+    - cron: '01 04 * * *'          
+
+jobs:
+  setup:
+    runs-on: ubuntu-24.04-arm   # ARM runner label
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: aeon-branch
+          path: .
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'   # ARM runner default
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full xvfb curl git
+
+      - name: Start virtual display
+        run: |
+          export DISPLAY=:99
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "Virtual display started"
+
+      - name: Display system information
+        run: |
+          echo "Linux version:"
+          uname -a
+          echo "Python version:"
+          python -V
+          echo "IP address:"
+          curl --no-progress-meter https://ipinfo.io/ip
+
+      - name: Unzip .7z, copy categories and requirements
+        run: |
+          7z x runner-src/gather-aeon-src.7z -p${{ secrets.ZIP_PW }}
+          cp runner-src/requirements* .
+          cp runner-src/aeon-categories* .
+
+      - name: pip install
+        run: pip install --no-cache-dir -r requirements.txt
++       # safer on ARM to avoid cache corruption
+
+      - name: Run script and validate output. With retry, timeout.
+        timeout-minutes: 41
+        run: |
+          check_output_file() {
+            local file=$1
+            local minsize=$2
+            if [ ! -f "$file" ]; then
+              echo "** Output file does not exist **"
+              return 1
+            fi
+            filesize=$(stat -c%s "$file")
+            if [ $filesize -lt $minsize ]; then
+              echo "** Output file too small ($filesize bytes) **"
+              return 1
+            fi
+            echo "Validation passed: output file seems OK."
+            return 0
+          }
+
+          run_with_timeout() {
+            local categories=$1
+            local output=$2
+            local timeoutMinutes=$3
+            local attemptLabel=$4
+
+            echo "=== $attemptLabel ==="
+            timeout ${timeoutMinutes}m python -u aeon_cdp_args_040.py -c "$categories" -o "$output"
+            check_output_file "$output" 5000
+          }
+
+          perAttemptTimeout=20
+
+          if ! run_with_timeout "aeon-categories-4.txt" "aeon-out-part4.csv" $perAttemptTimeout "First attempt"; then
+            echo "First attempt failed or timed out. Retrying after 33 seconds..."
+            sleep 33
+            if ! run_with_timeout "aeon-categories-4.txt" "aeon-out-part4.csv" $perAttemptTimeout "Second attempt"; then
+              echo "** Retry failed. Aborting. **"
+              exit 1
+            fi
+          fi
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes before push
+        run: git pull origin aeon-branch --rebase
+
+      - name: Commit and push generated files
+        run: |
+          cp aeon-out-part4.csv raw_data/
+          git add raw_data/aeon-out-part4.csv
+          git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
+          git push origin aeon-branch
+ 
