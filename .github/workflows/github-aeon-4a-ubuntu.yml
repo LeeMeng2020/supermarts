@@ -1,35 +1,34 @@
-name: Aeon flow 4 ARM (aeon-branch)
+name: Aeon flow 4 ubuntu ALT (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
     # Run every day at 7:17 AM MY time (11:17 PM UTC)
-    - cron: '39 22 * * *' 
-    - cron: '01 04 * * *'          
+    - cron: '43 22 * * *' 
+    - cron: '02 04 * * *'          
 
 jobs:
   setup:
-    runs-on: ubuntu-24.04-arm   # ARM runner label
+    runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.2
         with:
           ref: aeon-branch
           path: .
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'   # ARM runner default
+          python-version: '3.13.13'
 
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y p7zip-full xvfb curl git
-          sudo apt install chromium-browser
 
       - name: Start virtual display
         run: |
@@ -53,10 +52,10 @@ jobs:
           cp runner-src/aeon-categories* .
 
       - name: pip install
-        run: pip install --no-cache-dir -r requirements.txt  # safer on ARM to avoid cache corruption
+        run: pip install -r requirements_b.txt
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 41
+        timeout-minutes: 45
         run: |
           check_output_file() {
             local file=$1
@@ -85,7 +84,7 @@ jobs:
             check_output_file "$output" 5000
           }
 
-          perAttemptTimeout=20
+          perAttemptTimeout=21
 
           if ! run_with_timeout "aeon-categories-4.txt" "aeon-out-part4.csv" $perAttemptTimeout "First attempt"; then
             echo "First attempt failed or timed out. Retrying after 33 seconds..."
