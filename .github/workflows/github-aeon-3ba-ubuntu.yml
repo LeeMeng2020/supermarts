@@ -4,8 +4,8 @@ on:
   workflow_dispatch: # manual trigger ability
   schedule:
     # Run every day at UTC
-    - cron: '40 22 * * *' 
-    - cron: '01 04 * * *'          
+    - cron: '38 22 * * *' 
+    - cron: '00 04 * * *'          
 
 jobs:
   setup:
@@ -56,12 +56,12 @@ jobs:
         
       - name: Random delay
         run: |
-          DELAY=$((RANDOM % 9))   # Random number between 0 and 8
+          DELAY=$((RANDOM % 8))   # Random number between 0 and 7
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY        
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 45
+        timeout-minutes: 43
         run: |
           check_output_file() {
             local file=$1
