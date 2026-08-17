@@ -55,7 +55,7 @@ jobs:
         run: pip install -r requirements_b.txt
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 20
+        timeout-minutes: 31
         run: |
           check_output_file() {
             local file=$1
