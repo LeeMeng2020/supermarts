@@ -42,13 +42,7 @@ jobs:
             linux-tools-common linux-libc-dev \
             p7zip-full xvfb curl \
             chromium-browser
-
-      - name: Start virtual display
-        run: |
-          export DISPLAY=:99
-          Xvfb :99 -screen 0 1920x1080x24 &
-          echo "Virtual display started"
-              
+           
       - name: Unzip gather-village-b.7z
         run: |
           7z x runner-src/gather-village-src.7z -p${{ secrets.ZIP_PW }}
