@@ -39,9 +39,9 @@ jobs:
           sudo apt-get install -y \
             build-essential \
             python3-problem-report \
-            linux-tools-common \
-            linux-libc-dev \
-            p7zip-full
+            linux-tools-common linux-libc-dev \
+            p7zip-full \
+            chromium-browser
               
       - name: Unzip gather-village-b.7z
         run: |
