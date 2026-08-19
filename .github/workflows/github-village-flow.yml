@@ -62,6 +62,7 @@ jobs:
           
       - name: Run script
         run: |
+          playwright install chromium
           echo "running script"
           python vill_002.py
           echo "Error log:"
