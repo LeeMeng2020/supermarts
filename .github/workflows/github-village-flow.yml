@@ -64,7 +64,7 @@ jobs:
         run: |
           playwright install chromium
           echo "running script"
-          python vill_002.py
+          python vill_003.py
           echo "Error log:"
           cat village_error_log.txt 
           
