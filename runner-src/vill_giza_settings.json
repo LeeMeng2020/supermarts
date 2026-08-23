@@ -1,8 +1,13 @@
 {
-  "base_url": "https://vgg.bites.com.my/",
-  "page_pause_delay": 3.65,
-  "page_pause_delay_b": 5.65,  
-  "page_retry_delay": 3.78,
-  "break_time_delay": 4.72,
-  "page_pause_tuple": [6, 15, 24, 33, 47, 60, 76, 96]
+  "MAIN_SITE_URL": "https://vgg.bites.com.my",
+  "CATEGORIES_FILE": "village-categories.txt",
+  "OUTPUT_CSV": "village-gather.csv",
+  "POSTCODE": "47400",
+  "POPUP_APPEAR_TIMEOUT_MS": 4000,
+  "POST_ENTRY_PAUSE_SEC": 2,
+  "CONTINUE_BUTTON_TIMEOUT_MS": 8000,
+  "RATE_LIMIT_DELAY_MIN_SEC": 6.35,
+  "RATE_LIMIT_DELAY_MAX_SEC": 12.55,
+  "SCROLL_MAX_ROUNDS": 15,
+  "SCROLL_IDLE_ROUNDS_TO_STOP": 2
 }
