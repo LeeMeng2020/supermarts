@@ -3,6 +3,7 @@
   "CATEGORIES_FILE": "village-categories.txt",
   "OUTPUT_CSV": "village-gather.csv",
   "POSTCODE": "47400",
+  "HEADLESS": true,
   "POPUP_APPEAR_TIMEOUT_MS": 4000,
   "POST_ENTRY_PAUSE_SEC": 2,
   "CONTINUE_BUTTON_TIMEOUT_MS": 8000,
