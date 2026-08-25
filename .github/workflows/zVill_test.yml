@@ -1,0 +1,43 @@
+name: zVill process CSV if Updated
+
+on:
+  schedule:
+  workflow_dispatch:       # Allow manual trigger
+
+jobs:
+  process-csv:
+    runs-on: ubuntu-slim
+
+    steps:
+      - name: Checkout gather-branch
+        uses: actions/checkout@v5
+        with:
+          ref: gather-branch
+
+      - name: Check file modification time
+        id: check_file
+        run: |
+          FILE="raw_data/village-gather.csv"
+          if [ ! -f "$FILE" ]; then
+            echo "File not found!"
+            exit 1
+          fi
+          # Get last commit time for the file
+          LAST_COMMIT=$(git log -1 --format="%ct" -- "$FILE")
+          NOW=$(date +%s)
+          AGE=$(( (NOW - LAST_COMMIT) / 60 ))
+          echo "File age (minutes): $AGE"
+          if [ $AGE -le 60 ]; then
+            echo "recent=true" >> $GITHUB_OUTPUT
+          else
+            echo "recent=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Copy and process file if recent
+        if: steps.check_file.outputs.recent == 'true'
+        run: echo "The file village-gather was changed within the last hour."
+
+
+      - name: Print message if not recent
+        if: steps.check_file.outputs.recent == 'false'
+        run: echo "The file has not changed within the last hour."
