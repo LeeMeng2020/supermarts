@@ -1,7 +1,6 @@
 name: zVill process CSV if Updated
 
 on:
-  schedule:
   workflow_dispatch:       # Allow manual trigger
 
 jobs:
