@@ -17,11 +17,53 @@ jobs:
         id: check_file
         run: |
           FILE="raw_data/village-gather.csv"
+          # Define file path
+
           if [ ! -f "$FILE" ]; then
             echo "File not found!"
             exit 1
           fi
+
           # Get last commit time for the file
+
+          # Show current branch and commit info
+          echo "=== Debug: Current branch and commit ==="
+          git rev-parse --abbrev-ref HEAD
+          git log -1 --stat -- "$FILE"
+
+          # Get last commit time for the file
+          LAST_COMMIT=$(git log -1 --format="%ct" -- "$FILE")
+          echo "=== Debug: Last commit timestamp (epoch) ==="
+          echo "$LAST_COMMIT"
+
+          # Convert commit time to human-readable
+          echo "=== Debug: Last commit time (UTC) ==="
+         date -u -d @"$LAST_COMMIT"
+
+          # Get current time
+          NOW=$(date +%s)
+          echo "=== Debug: Current time (epoch) ==="
+          echo "$NOW"
+
+          echo "=== Debug: Current time (UTC) ==="
+          date -u -d @"$NOW"
+
+          # Calculate file age in minutes
+          AGE=$(( (NOW - LAST_COMMIT) / 60 ))
+          echo "=== Debug: File age in minutes ==="
+          echo "$AGE"
+
+          # Decision logic
+          if [ $AGE -le 60 ]; then
+            echo "recent=true" >> $GITHUB_OUTPUT
+            echo "=== Debug: File is recent (<= 60 mins) ==="
+          else
+            echo "recent=false" >> $GITHUB_OUTPUT
+            echo "=== Debug: File is NOT recent (> 60 mins) ==="
+          fi
+
+
+
           LAST_COMMIT=$(git log -1 --format="%ct" -- "$FILE")
           NOW=$(date +%s)
           AGE=$(( (NOW - LAST_COMMIT) / 60 ))
