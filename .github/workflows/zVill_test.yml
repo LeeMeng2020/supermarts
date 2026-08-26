@@ -38,7 +38,7 @@ jobs:
 
           # Convert commit time to human-readable
           echo "=== Debug: Last commit time (UTC) ==="
-         date -u -d @"$LAST_COMMIT"
+          date -u -d @"$LAST_COMMIT"
 
           # Get current time
           NOW=$(date +%s)
@@ -60,18 +60,6 @@ jobs:
           else
             echo "recent=false" >> $GITHUB_OUTPUT
             echo "=== Debug: File is NOT recent (> 60 mins) ==="
-          fi
-
-
-
-          LAST_COMMIT=$(git log -1 --format="%ct" -- "$FILE")
-          NOW=$(date +%s)
-          AGE=$(( (NOW - LAST_COMMIT) / 60 ))
-          echo "File age (minutes): $AGE"
-          if [ $AGE -le 60 ]; then
-            echo "recent=true" >> $GITHUB_OUTPUT
-          else
-            echo "recent=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Copy and process file if recent
