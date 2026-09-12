@@ -1,0 +1,14 @@
+{
+  "MAIN_SITE_URL": "https://vgg.bites.com.my",
+  "CATEGORIES_FILE": "village-brief-categories.txt",
+  "OUTPUT_CSV": "village-brief.csv",
+  "POSTCODE": "47400",
+  "HEADLESS": true,
+  "POPUP_APPEAR_TIMEOUT_MS": 4000,
+  "POST_ENTRY_PAUSE_SEC": 2,
+  "CONTINUE_BUTTON_TIMEOUT_MS": 8000,
+  "RATE_LIMIT_DELAY_MIN_SEC": 6.36,
+  "RATE_LIMIT_DELAY_MAX_SEC": 12.55,
+  "SCROLL_MAX_ROUNDS": 15,
+  "SCROLL_IDLE_ROUNDS_TO_STOP": 2
+}
