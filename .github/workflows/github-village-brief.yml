@@ -1,0 +1,101 @@
+name: Village flow (gather-branch)
+
+on:
+  workflow_dispatch: # manual trigger ability
+  schedule:
+    # Run every day at UTC
+    - cron: '18 23 * * *'
+    - cron: '22 03 * * *'
+
+jobs:
+  setup:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write # Grant write permissions for pushing changes
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6.0.2
+        with:
+          ref: gather-branch # Specify gather-branch directly for the primary checkout
+          path: . # CHANGE: Checkout to the root of the runner's working directory      
+
+      - name: Display system information
+        run: |
+          echo "Ubuntu version:"
+          lsb_release -a
+          echo "Python version"
+          python -V
+          echo "IP address"
+          curl --no-progress-meter https://api.ipify.org
+          
+      - name: Update package lists
+        run: |
+          sudo apt update
+          apt list --upgradable        
+        
+      - name: Install basic utilities and 7-zip
+        run: |
+          sudo apt-get install -y \
+            build-essential \
+            python3-problem-report \
+            linux-tools-common linux-libc-dev \
+            p7zip-full xvfb curl \
+            chromium-browser
+           
+      - name: Unzip gather-village-b.7z
+        run: |
+          7z x runner-src/gather-village-src.7z -p${{ secrets.ZIP_PW }}
+          cp -v runner-src/village-brief-categories.txt .
+          cp -v runner-src/village_requirements.txt .
+          cp -v runner-src/vill_giza_brief_settings.json .
+          ls -l
+
+      - name: pip install
+        run: pip install -r village_requirements.txt
+        
+      - name: Random delay
+        run: |
+          DELAY=$((RANDOM % 8))   # Random number between 0 and 7
+          echo "Random sleep for $DELAY seconds..."
+          sleep $DELAY     
+          
+      - name: Run script
+        run: |
+          playwright install chromium
+          echo "running script"
+          python vill_004.py --config vill_giza_brief_settings.json
+          
+      - name: Validate output file
+        run: |
+          FILE="village-brief.csv"
+          echo "Checking if $FILE exists and is larger than 100 KB..."
+          if [ ! -f "$FILE" ]; then
+            echo "❌ File does not exist: $FILE"
+            exit 1
+          fi
+          FILESIZE=$(stat -c%s "$FILE")
+          if [ "$FILESIZE" -lt 100000 ]; then
+            echo "❌ File size is too small: ${FILESIZE} bytes"
+            exit 1
+          fi
+          echo "✅ File exists and is larger than 100 KB: ${FILESIZE} bytes"
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes before push
+        run: |
+          git pull origin gather-branch --rebase
+          git push origin gather-branch
+    
+      - name: Commit and push generated files
+        run: |
+          mkdir -p raw_data
+          mv village-gather.csv raw_data/
+          git add raw_data/village-brief.csv
+          git add processed/v*
+          git commit -m "Automated: Add generated Village files (brief)" || echo "No changes to commit"
+          git push origin gather-branch      
