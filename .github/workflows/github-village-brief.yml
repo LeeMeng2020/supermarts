@@ -1,4 +1,4 @@
-name: Village flow (gather-branch)
+name: Village brief flow (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -9,7 +9,7 @@ on:
 
 jobs:
   setup:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-slim
     permissions:
       contents: write # Grant write permissions for pushing changes
     
