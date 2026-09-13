@@ -25,9 +25,22 @@ jobs:
         run: |
           echo "Python version"
           python -V
-          playwright --version
           echo "IP address"
           curl --no-progress-meter https://api.ipify.org
+
+      - name: Update package lists
+        run: |
+          sudo apt update
+          apt list --upgradable        
+        
+      - name: Install basic utilities and 7-zip
+        run: |
+          sudo apt-get install -y \
+            build-essential \
+            python3-problem-report \
+            linux-tools-common linux-libc-dev \
+            p7zip-full xvfb curl \
+            chromium-browser
           
       - name: Unzip gather-village-b.7z
         run: |
