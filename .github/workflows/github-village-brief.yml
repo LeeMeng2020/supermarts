@@ -3,31 +3,32 @@ name: Village brief flow (gather-branch)
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
+    # Run every day at UTC
     - cron: '18 23 * * *'
     - cron: '22 03 * * *'
 
 jobs:
   setup:
-    runs-on: ubuntu-latest
-    container:
-      image: mcr.microsoft.com/playwright/python:v1.62.0-jammy
+    runs-on: ubuntu-slim
     permissions:
-      contents: write
+      contents: write # Grant write permissions for pushing changes
     
     steps:
       - name: Checkout code
         uses: actions/checkout@v6.0.2
         with:
-          ref: gather-branch
-          path: .
+          ref: gather-branch # Specify gather-branch directly for the primary checkout
+          path: . # CHANGE: Checkout to the root of the runner's working directory      
 
       - name: Display system information
         run: |
+          echo "Ubuntu version:"
+          lsb_release -a
           echo "Python version"
           python -V
           echo "IP address"
           curl --no-progress-meter https://api.ipify.org
-
+          
       - name: Update package lists
         run: |
           sudo apt update
@@ -41,7 +42,7 @@ jobs:
             linux-tools-common linux-libc-dev \
             p7zip-full xvfb curl \
             chromium-browser
-          
+           
       - name: Unzip gather-village-b.7z
         run: |
           7z x runner-src/gather-village-src.7z -p${{ secrets.ZIP_PW }}
@@ -58,7 +59,16 @@ jobs:
           DELAY=$((RANDOM % 8))   # Random number between 0 and 7
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY     
-          
+
+      - name: Install Playwright deps
+        run: |
+          sudo apt-get install -y \
+            libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 \
+            libcups2 libdrm2 libxkbcommon0 libxcomposite1 \
+            libxdamage1 libxfixes3 libxrandr2 libgbm1 \
+            libasound2 fonts-liberation
+          playwright install chromium
+
       - name: Run script
         run: |
           echo "running script"
@@ -96,4 +106,4 @@ jobs:
           git add raw_data/village-brief.csv
           git add processed/v*
           git commit -m "Automated: Add generated Village files (brief)" || echo "No changes to commit"
-          git push origin gather-branch
+          git push origin gather-branch      
