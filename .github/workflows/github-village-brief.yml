@@ -42,7 +42,7 @@ jobs:
             linux-tools-common linux-libc-dev \
             p7zip-full xvfb curl \
             chromium-browser
-           
+          
       - name: Unzip gather-village-b.7z
         run: |
           7z x runner-src/gather-village-src.7z -p${{ secrets.ZIP_PW }}
@@ -102,7 +102,7 @@ jobs:
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
-          mv village-gather.csv raw_data/
+          mv village-brief.csv raw_data/
           git add raw_data/village-brief.csv
           git add processed/v*
           git commit -m "Automated: Add generated Village files (brief)" || echo "No changes to commit"
