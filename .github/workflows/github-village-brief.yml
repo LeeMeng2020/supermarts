@@ -23,8 +23,6 @@ jobs:
 
       - name: Display system information
         run: |
-          echo "Ubuntu version:"
-          lsb_release -a
           echo "Python version"
           python -V
           playwright --version
