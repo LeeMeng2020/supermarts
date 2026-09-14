@@ -81,21 +81,21 @@ jobs:
           fi
           echo "✅ File exists and is larger than 100 KB: ${FILESIZE} bytes"
 
+      - name: Pull latest changes and village-brief.csv 
+        run: |
+          git pull origin gather-branch --rebase
+          cp -v raw_data/village-brief.csv .
+
       - name: Run processing script
         run: |
           echo "running processing script"
-          python village_fixer_033.py
+          python village_fixer_035.py
 
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Pull latest changes before push
-        run: |
-          git pull origin gather-branch --rebase
-          git push origin gather-branch
-    
+          
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
