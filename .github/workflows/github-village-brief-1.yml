@@ -14,6 +14,9 @@ jobs:
     permissions:
       contents: write # Grant write permissions for pushing changes
     
+    env:
+      VILLAGE_OUT_FILE: village-brief-1.csv   # Centralized filename variable
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v6.0.2
@@ -77,13 +80,12 @@ jobs:
           
       - name: Validate output file
         run: |
-          FILE="village-brief.csv"
-          echo "Checking if $FILE exists and is larger than 20 KB..."
-          if [ ! -f "$FILE" ]; then
-            echo "❌ File does not exist: $FILE"
+          echo "Checking if $VILLAGE_OUT_FILE exists and is larger than 20 KB..."
+          if [ ! -f "$VILLAGE_OUT_FILE" ]; then
+            echo "❌ File does not exist: $VILLAGE_OUT_FILE"
             exit 1
           fi
-          FILESIZE=$(stat -c%s "$FILE")
+          FILESIZE=$(stat -c%s "$VILLAGE_OUT_FILE")
           if [ "$FILESIZE" -lt 20000 ]; then
             echo "❌ File size is too small: ${FILESIZE} bytes"
             exit 1
@@ -103,8 +105,8 @@ jobs:
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
-          mv village-brief-1.csv raw_data/
-          git add raw_data/village-brief-1.csv
+          mv "$VILLAGE_OUT_FILE" raw_data/
+          git add raw_data/"$VILLAGE_OUT_FILE"
           git add processed/v*
           git commit -m "Automated: Add generated Village files (brief-1)" || echo "No changes to commit"
-          git push origin gather-branch      
+          git push origin gather-branch
