@@ -1,4 +1,4 @@
-name: Village brief flow (gather-branch)
+name: Village brief-1 flow (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -47,9 +47,9 @@ jobs:
       - name: Unzip gather-village-b.7z
         run: |
           7z x runner-src/gather-village-src.7z -p${{ secrets.ZIP_PW }}
-          cp -v runner-src/village-brief-categories.txt .
+          cp -v runner-src/village-categories* .
           cp -v runner-src/village_requirements.txt .
-          cp -v runner-src/vill_giza_brief_settings.json .
+          cp -v runner-src/vill_giza_brief_1_settings.json .
           ls -l
 
       - name: pip install
@@ -73,7 +73,7 @@ jobs:
       - name: Run script
         run: |
           echo "running script"
-          python vill_004.py --config vill_giza_brief_settings.json
+          python vill_004.py --config vill_giza_brief_1_settings.json
           
       - name: Validate output file
         run: |
@@ -103,8 +103,8 @@ jobs:
       - name: Commit and push generated files
         run: |
           mkdir -p raw_data
-          mv village-brief.csv raw_data/
-          git add raw_data/village-brief.csv
+          mv village-brief-1.csv raw_data/
+          git add raw_data/village-brief-1.csv
           git add processed/v*
-          git commit -m "Automated: Add generated Village files (brief)" || echo "No changes to commit"
+          git commit -m "Automated: Add generated Village files (brief-1)" || echo "No changes to commit"
           git push origin gather-branch      
