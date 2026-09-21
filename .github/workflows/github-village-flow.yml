@@ -81,10 +81,10 @@ jobs:
           fi
           echo "✅ File exists and is larger than 100 KB: ${FILESIZE} bytes"
 
-      - name: Pull latest changes and village-brief.csv 
+      - name: Pull latest changes and village-briefx files
         run: |
           git pull origin gather-branch --rebase
-          cp -v raw_data/village-brief.csv .
+          cp -v raw_data/village-brief* .
 
       - name: Run processing script
         run: |
