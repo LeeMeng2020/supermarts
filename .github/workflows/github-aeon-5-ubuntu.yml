@@ -9,7 +9,7 @@ on:
 
 jobs:
   setup:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
 
@@ -87,8 +87,8 @@ jobs:
           perAttemptTimeout=21
 
           if ! run_with_timeout "aeon-categories-5.txt" "aeon-out-part5.csv" $perAttemptTimeout "First attempt"; then
-            echo "First attempt failed or timed out. Retrying after 33 seconds..."
-            sleep 33
+            echo "First attempt failed or timed out. Retrying after 36 seconds..."
+            sleep 36
             if ! run_with_timeout "aeon-categories-5.txt" "aeon-out-part5.csv" $perAttemptTimeout "Second attempt"; then
               echo "** Retry failed. Aborting. **"
               exit 1
