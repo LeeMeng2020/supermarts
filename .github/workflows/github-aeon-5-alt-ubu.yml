@@ -1,14 +1,15 @@
-name: Aeon flow 5 macos (aeon-branch)
+name: Aeon flow 5 ALT ubuntu (aeon-branch)
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # manual trigger ability
   schedule:
-    - cron: '53 22 * * *'
-    - cron: '13 04 * * *'
+    # Run every day at (11:18 AM PM UTC)
+    - cron: '42 22 * * *'
+    - cron: '02 04 * * *'      
 
 jobs:
   setup:
-    runs-on: macos-15
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
 
@@ -26,24 +27,21 @@ jobs:
 
       - name: Install system dependencies
         run: |
-          brew update
-          brew install coreutils
-          brew install p7zip
-          brew install git curl
-          brew install xquartz   # provides X11 server
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full xvfb curl git
 
       - name: Start virtual display
         run: |
           export DISPLAY=:99
-          /opt/X11/bin/Xvfb :99 -screen 0 1920x1080x24 &
+          Xvfb :99 -screen 0 1920x1080x24 &
           echo "Virtual display started"
 
       - name: Display system information
         run: |
-          echo "macOS version:"
-          sw_vers
+          echo "Linux version:"
+          uname -a
           echo "Python version:"
-          python3 -V
+          python -V
           echo "IP address:"
           curl --no-progress-meter https://ipinfo.io/ip
 
@@ -54,7 +52,7 @@ jobs:
           cp runner-src/aeon-categories* .
 
       - name: pip install
-        run: pip3 install -r requirements_b.txt
+        run: pip install -r requirements_b.txt
 
       - name: Run script and validate output. With retry, timeout.
         timeout-minutes: 45
@@ -66,7 +64,7 @@ jobs:
               echo "** Output file does not exist **"
               return 1
             fi
-            filesize=$(stat -f%z "$file")   # macOS syntax
+            filesize=$(stat -c%s "$file")
             if [ $filesize -lt $minsize ]; then
               echo "** Output file too small ($filesize bytes) **"
               return 1
@@ -82,7 +80,7 @@ jobs:
             local attemptLabel=$4
 
             echo "=== $attemptLabel ==="
-            gtimeout ${timeoutMinutes}m python3 -u aeon_cdp_args_040.py -c "$categories" -o "$output"
+            timeout ${timeoutMinutes}m python -u aeon_cdp_args_040.py -c "$categories" -o "$output"
             check_output_file "$output" 5000
           }
 
@@ -111,3 +109,4 @@ jobs:
           git add raw_data/aeon-out-part5.csv
           git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
           git push origin aeon-branch
+ 
