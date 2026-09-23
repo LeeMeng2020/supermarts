@@ -31,12 +31,11 @@ jobs:
           brew install p7zip
           brew install git curl
           brew install xquartz   # provides X11 server
-          brew install xvfb      # optional, if your scraper requires xvfb
 
       - name: Start virtual display
         run: |
           export DISPLAY=:99
-          Xvfb :99 -screen 0 1920x1080x24 &
+          /opt/X11/bin/Xvfb :99 -screen 0 1920x1080x24 &
           echo "Virtual display started"
 
       - name: Display system information
