@@ -1,12 +1,12 @@
-name: Village brief-1 flow (gather-branch)
+name: Village brief-2 flow (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
   schedule:
     # Run every day at UTC
-    - cron: '21 22 * * *'
-    - cron: '02 23 * * *'      
-    - cron: '21 03 * * *'
+    - cron: '24 22 * * *'
+    - cron: '05 23 * * *'      
+    - cron: '24 03 * * *'
 
 jobs:
   setup:
@@ -15,7 +15,7 @@ jobs:
       contents: write # Grant write permissions for pushing changes
     
     env:
-      VILLAGE_OUT_FILE: village-brief-1.csv   # Centralized filename variable
+      VILLAGE_OUT_FILE: village-brief-2.csv   # Centralized filename variable
 
     steps:
       - name: Checkout code
@@ -76,7 +76,7 @@ jobs:
       - name: Run script
         run: |
           echo "running script"
-          python vill_004.py --config vill_giza_brief_1_settings.json
+          python vill_004.py --config vill_giza_brief_2_settings.json
           
       - name: Validate output file
         run: |
@@ -108,5 +108,5 @@ jobs:
           mv "$VILLAGE_OUT_FILE" raw_data/
           git add raw_data/"$VILLAGE_OUT_FILE"
           git add processed/v*
-          git commit -m "Automated: Add generated Village files (brief-1)" || echo "No changes to commit"
+          git commit -m "Automated: Add generated Village files (brief-2)" || echo "No changes to commit"
           git push origin gather-branch
