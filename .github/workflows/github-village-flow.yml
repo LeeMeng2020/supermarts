@@ -83,6 +83,27 @@ jobs:
 
       - name: Pull latest changes and village-briefx files
         run: |
+          MAX_AGE=$((8 * 60 * 60))
+          NOW=$(date +%s)
+          
+          for FILE in raw_data/village-brief-1.csv raw_data/village-brief-2.csv; do
+            LAST_COMMIT=$(git log -1 --format=%ct -- "$FILE")
+          
+            if [ -z "$LAST_COMMIT" ]; then
+              echo "❌ Cannot determine last commit for $FILE"
+              exit 1
+            fi
+          
+            AGE=$((NOW - LAST_COMMIT))
+          
+            if [ "$AGE" -gt "$MAX_AGE" ]; then
+              echo "❌ $FILE has not been updated in more than 8 hours"
+              echo "   Age: $((AGE / 3600)) hours"
+              exit 1
+            fi
+          
+            echo "✅ $FILE last updated $((AGE / 3600)) hours ago"
+          done
           git pull origin gather-branch --rebase
           cp -v raw_data/village-brief* .
 
