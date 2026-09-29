@@ -81,7 +81,7 @@ jobs:
           fi
           echo "✅ File exists and is larger than 100 KB: ${FILESIZE} bytes"
 
-      - name: Pull latest changes and village-briefx files
+      - name: Pull latest changes and village-briefx files, check age
         run: |
           MAX_AGE=$((8 * 60 * 60))
           NOW=$(date +%s)
