@@ -61,6 +61,7 @@ jobs:
           sleep $DELAY     
           
       - name: Run script
+        timeout-minutes: 50
         run: |
           playwright install chromium
           echo "running script"
