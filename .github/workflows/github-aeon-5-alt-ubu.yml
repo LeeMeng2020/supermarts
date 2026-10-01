@@ -5,11 +5,11 @@ on:
   schedule:
     # Run every day at (11:18 AM PM UTC)
     - cron: '42 22 * * *'
-    - cron: '02 04 * * *'      
+    - cron: '01 04 * * *'      
 
 jobs:
   setup:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
 
