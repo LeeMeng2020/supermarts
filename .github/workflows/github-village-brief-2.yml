@@ -6,7 +6,7 @@ on:
     # Run every day at UTC
     - cron: '24 22 * * *'
     - cron: '05 23 * * *'      
-    - cron: '24 03 * * *'
+    - cron: '14 03 * * *'
 
 jobs:
   setup:
