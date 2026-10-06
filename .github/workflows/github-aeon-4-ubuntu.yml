@@ -84,7 +84,7 @@ jobs:
             check_output_file "$output" 5000
           }
 
-          perAttemptTimeout=21
+          perAttemptTimeout=20
 
           if ! run_with_timeout "aeon-categories-4.txt" "aeon-out-part4.csv" $perAttemptTimeout "First attempt"; then
             echo "First attempt failed or timed out. Retrying after 33 seconds..."
