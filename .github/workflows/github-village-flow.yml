@@ -2,10 +2,6 @@ name: Village flow (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
-  schedule:
-    # Run every day at UTC
-    - cron: '19 23 * * *'
-    - cron: '23 03 * * *'
 
 jobs:
   setup:
