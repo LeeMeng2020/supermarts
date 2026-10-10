@@ -2,10 +2,6 @@ name: Aeon flow 4 ubuntu ALT (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
-  schedule:
-    # Run every day at 7:17 AM MY time (11:17 PM UTC)
-    - cron: '43 22 * * *' 
-    - cron: '02 04 * * *'          
 
 jobs:
   setup:
