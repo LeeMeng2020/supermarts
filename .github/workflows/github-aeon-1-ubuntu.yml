@@ -2,11 +2,7 @@ name: Aeon flow 1 ubuntu (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
-  schedule:
-    # Run every day at UTC
-    - cron: '51 22 * * *'
-    - cron: '11 04 * * *'       
-
+ 
 jobs:
   setup:
     runs-on: ubuntu-latest
