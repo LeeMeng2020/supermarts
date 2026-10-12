@@ -1,11 +1,7 @@
 name: Aeon flow 3b ubuntu (aeon-brch-2)
 
 on:
-  workflow_dispatch: # manual trigger ability
-  schedule:
-    # Run every day at UTC
-    - cron: '13 23 * * *' 
-    - cron: '13 05 * * *'          
+  workflow_dispatch: # manual trigger ability     
 
 jobs:
   setup:
