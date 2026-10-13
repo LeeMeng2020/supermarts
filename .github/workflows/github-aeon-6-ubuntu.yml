@@ -2,10 +2,6 @@ name: Aeon flow 6 ubuntu (aeon-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
-  schedule:
-    # Run every day at 
-    - cron: '06 23 * * *' 
-    - cron: '17 05 * * *'      
 
 jobs:
   setup:
