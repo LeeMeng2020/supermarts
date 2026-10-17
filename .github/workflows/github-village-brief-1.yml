@@ -71,7 +71,7 @@ jobs:
       - name: Run script
         run: |
           echo "running script"
-          python vill_004.py --config vill_giza_brief_1_settings.json
+          python vill_005.py --config vill_giza_brief_1_settings.json
           
       - name: Validate output file
         run: |
