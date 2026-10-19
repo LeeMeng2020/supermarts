@@ -19,6 +19,36 @@ jobs:
           ref: gather-branch # Specify gather-branch directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's working directory      
 
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13.13'
+
+      - name: Check if recent file already exists
+        id: freshness_check
+        run: |
+          FILE="raw_data/$VILLAGE_OUT_FILE"
+          MAX_AGE=$((60 * 60))
+          NOW=$(date +%s)
+
+          LAST_COMMIT=$(git log -1 --format=%ct -- "$FILE")
+
+          if [ -z "$LAST_COMMIT" ]; then
+            echo "No previous file found, scraping needed."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          AGE=$((NOW - LAST_COMMIT))
+
+          if [ "$AGE" -lt "$MAX_AGE" ]; then
+            echo "File recently updated, no scraping needed."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "File older than 60 minutes, scraping needed."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Display system information
         run: |
           echo "Ubuntu version:"
@@ -29,11 +59,13 @@ jobs:
           curl --no-progress-meter https://api.ipify.org
           
       - name: Update package lists
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           sudo apt update
           apt list --upgradable        
         
       - name: Install basic utilities and 7-zip
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           sudo apt-get install -y \
             build-essential \
@@ -43,6 +75,7 @@ jobs:
             chromium-browser
           
       - name: Unzip gather-village-b.7z
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           7z x runner-src/gather-village-src.7z -p${{ secrets.ZIP_PW }}
           cp -v runner-src/village-categories* .
@@ -51,15 +84,18 @@ jobs:
           ls -l
 
       - name: pip install
+        if: steps.freshness_check.outputs.skip != 'true'
         run: pip install -r village_requirements.txt
         
       - name: Random delay
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           DELAY=$((RANDOM % 8))   # Random number between 0 and 7
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY     
 
       - name: Install Playwright deps
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           sudo apt-get install -y \
             libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 \
@@ -69,11 +105,13 @@ jobs:
           playwright install chromium
 
       - name: Run script
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           echo "running script"
           python vill_005.py --config vill_giza_brief_1_settings.json
           
       - name: Validate output file
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           echo "Checking if $VILLAGE_OUT_FILE exists and is larger than 20 KB..."
           if [ ! -f "$VILLAGE_OUT_FILE" ]; then
@@ -88,16 +126,19 @@ jobs:
           echo "✅ File exists and is larger than 20 KB: ${FILESIZE} bytes"
 
       - name: Set up Git
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Pull latest changes before push
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           git pull origin gather-branch --rebase
           git push origin gather-branch
     
       - name: Commit and push generated files
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           mkdir -p raw_data
           mv "$VILLAGE_OUT_FILE" raw_data/

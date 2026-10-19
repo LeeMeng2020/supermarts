@@ -27,7 +27,7 @@ jobs:
       - name: Check if recent file already exists
         id: freshness_check
         run: |
-          FILE="raw_data/village-brief-3.csv"
+          FILE="raw_data/$VILLAGE_OUT_FILE"
           MAX_AGE=$((60 * 60))
           NOW=$(date +%s)
 
