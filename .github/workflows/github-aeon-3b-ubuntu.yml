@@ -76,7 +76,7 @@ jobs:
           cp runner-src/aeon-categories* .
 
       - name: pip install
-
+        if: steps.freshness_check.outputs.skip != 'true'
         run: pip install -r requirements_b.txt
         
       - name: Random delay
@@ -87,7 +87,7 @@ jobs:
           sleep $DELAY        
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 45
+        timeout-minutes: 43
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           check_output_file() {

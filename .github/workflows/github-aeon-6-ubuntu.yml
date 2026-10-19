@@ -21,12 +21,39 @@ jobs:
         with:
           python-version: '3.13.13'
 
+      - name: Check if recent file already exists
+        id: freshness_check
+        run: |
+          FILE="raw_data/aeon-out-part6.csv"
+          MAX_AGE=$((60 * 60))
+          NOW=$(date +%s)
+
+          LAST_COMMIT=$(git log -1 --format=%ct -- "$FILE")
+
+          if [ -z "$LAST_COMMIT" ]; then
+            echo "No previous file found, scraping needed."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          AGE=$((NOW - LAST_COMMIT))
+
+          if [ "$AGE" -lt "$MAX_AGE" ]; then
+            echo "File recently updated, no scraping needed."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "File older than 60 minutes, scraping needed."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Install system dependencies
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           sudo apt-get update
           sudo apt-get install -y p7zip-full xvfb curl git
 
       - name: Start virtual display
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           export DISPLAY=:99
           Xvfb :99 -screen 0 1920x1080x24 &
@@ -42,16 +69,26 @@ jobs:
           curl --no-progress-meter https://ipinfo.io/ip
 
       - name: Unzip .7z, copy categories and requirements
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           7z x runner-src/gather-aeon-src.7z -p${{ secrets.ZIP_PW }}
           cp runner-src/requirements* .
           cp runner-src/aeon-categories* .
 
       - name: pip install
+        if: steps.freshness_check.outputs.skip != 'true'
         run: pip install -r requirements_b.txt
+        
+      - name: Random delay
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: |
+          DELAY=$((RANDOM % 8))   # Random number between 0 and 7
+          echo "Random sleep for $DELAY seconds..."
+          sleep $DELAY        
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 45
+        timeout-minutes: 43
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           check_output_file() {
             local file=$1
@@ -84,7 +121,7 @@ jobs:
 
           if ! run_with_timeout "aeon-categories-6.txt" "aeon-out-part6.csv" $perAttemptTimeout "First attempt"; then
             echo "First attempt failed or timed out. Retrying after 33 seconds..."
-            sleep 33
+            sleep 38
             if ! run_with_timeout "aeon-categories-6.txt" "aeon-out-part6.csv" $perAttemptTimeout "Second attempt"; then
               echo "** Retry failed. Aborting. **"
               exit 1
@@ -97,9 +134,11 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Pull latest changes before push
+        if: steps.freshness_check.outputs.skip != 'true'
         run: git pull origin aeon-branch --rebase
 
       - name: Commit and push generated files
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           cp aeon-out-part6.csv raw_data/
           git add raw_data/aeon-out-part6.csv
