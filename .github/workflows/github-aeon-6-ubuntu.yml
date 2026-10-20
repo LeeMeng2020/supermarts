@@ -24,6 +24,8 @@ jobs:
       - name: Check if recent file already exists
         id: freshness_check
         run: |
+          git pull origin aeon-branch --rebase
+
           FILE="raw_data/aeon-out-part6.csv"
           MAX_AGE=$((60 * 60))
           NOW=$(date +%s)
@@ -129,6 +131,7 @@ jobs:
           fi
 
       - name: Set up Git
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
