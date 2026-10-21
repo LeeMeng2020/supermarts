@@ -27,8 +27,10 @@ jobs:
       - name: Check if recent file already exists
         id: freshness_check
         run: |
+          git pull origin gather-branch --rebase
+
           FILE="raw_data/$VILLAGE_OUT_FILE"
-          MAX_AGE=$((60 * 60))
+          MAX_AGE=$((60 * 58))
           NOW=$(date +%s)
 
           LAST_COMMIT=$(git log -1 --format=%ct -- "$FILE")
@@ -45,7 +47,7 @@ jobs:
             echo "File recently updated, no scraping needed."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
-            echo "File older than 60 minutes, scraping needed."
+            echo "File older than 59 minutes, scraping needed."
             echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
 
@@ -90,7 +92,7 @@ jobs:
       - name: Random delay
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          DELAY=$((RANDOM % 8))   # Random number between 0 and 7
+          DELAY=$((RANDOM % 5))   # Random number between 0 and 4
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY     
 

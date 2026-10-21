@@ -115,6 +115,10 @@ jobs:
           echo "running processing script"
           python village_fixer_035.py
 
+      - name: Pull latest changes before push
+        run: |
+          git pull origin gather-branch --rebase
+
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -128,13 +132,6 @@ jobs:
           git add raw_data/village-gather.csv
           git add processed/v*
 
-          git fetch origin gather-branch
-          git rebase origin/gather-branch || {
-            echo "Rebase conflict: remote branch changed while this job was running."
-            echo "Resolve the conflict and retry the workflow."
-            exit 1
-          }
-
           git commit -m "Automated: Add generated Village files" || echo "No changes to commit"
-
-          git push origin HEAD:gather-branch
+          git push origin
+          
