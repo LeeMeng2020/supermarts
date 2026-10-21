@@ -1,4 +1,4 @@
-name: Lotus-c flow (gather-branch)
+name: Lotus-c flow (lotus-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6.0.2
         with:
-          ref: gather-branch # Specify gather-branch directly for the primary checkout
+          ref: lotus-branch # Specify lotus-branch directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's working directory      
         
       - name: Display system information
@@ -91,8 +91,8 @@ jobs:
 
       - name: Pull latest changes before push
         run: |
-          git pull origin gather-branch --rebase
-          git push origin gather-branch
+          git pull origin lotus-branch --rebase
+          git push origin lotus-branch
 
       - name: Commit and push generated files
         run: |
@@ -103,4 +103,4 @@ jobs:
           git add raw_data/lotus*
           git add processed/lotus*
           git commit -m "Automated: Add generated Lotus files" || echo "No changes to commit"
-          git push origin gather-branch    
+          git push origin lotus-branch    
