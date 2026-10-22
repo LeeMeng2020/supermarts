@@ -26,6 +26,9 @@ jobs:
     env:
       VILLAGE_OUT_FILE: ${{ inputs.outfile }}
 
+    env:
+      ZIP_PW: ${{ secrets.ZIP_PW }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v6.0.2
@@ -92,8 +95,6 @@ jobs:
           
       - name: Unzip gather-village-b.7z
         if: steps.freshness_check.outputs.skip != 'true'
-        env:
-          ZIP_PW: ${{ secrets.ZIP_PW }}
         run: |
           test -n "$ZIP_PW" || { echo "ZIP_PW secret is empty"; exit 1; }
           7z x runner-src/gather-village-src.7z -p"$ZIP_PW"
