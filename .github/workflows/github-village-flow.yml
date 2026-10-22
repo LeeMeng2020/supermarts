@@ -32,12 +32,12 @@ jobs:
         
       - name: Install basic utilities and 7-zip
         run: |
-          sudo apt-get install -y \
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
             build-essential \
             python3-problem-report \
             linux-tools-common linux-libc-dev \
             p7zip-full xvfb curl \
-            chromium-browser
+            chromium
            
       - name: Unzip gather-village-b.7z
         run: |
@@ -85,14 +85,16 @@ jobs:
 
       - name: Random delay
         run: |
-          DELAY=$((RANDOM % 9))   # Random number between 0 and 8
+          DELAY=$((RANDOM % 8))   # Random number between 0 and 7
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY     
           
       - name: Run script
-        timeout-minutes: 49
+        timeout-minutes: 48
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+          CHROME_BIN: /usr/bin/chromium
         run: |
-          playwright install chromium
           echo "running script"
           python vill_005.py
           
