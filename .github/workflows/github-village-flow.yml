@@ -33,6 +33,7 @@ jobs:
       - name: Install basic utilities and 7-zip
         run: |
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            ca-certificates \
             build-essential \
             python3-problem-report \
             linux-tools-common linux-libc-dev \
@@ -49,7 +50,9 @@ jobs:
           ls -l
 
       - name: pip install
-        run: pip install -r village_requirements.txt
+        run: | 
+          pip install -r village_requirements.txt
+          playwright install chromium
 
       - name: Pull latest changes and village-briefx files, check age
         run: |
