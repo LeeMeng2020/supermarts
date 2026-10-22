@@ -11,3 +11,4 @@ jobs:
       config: vill_giza_brief_1_settings.json
       outfile: village-brief-1.csv
       commit_suffix: brief-1
+      zip_pw: ${{ secrets.ZIP_PW }}

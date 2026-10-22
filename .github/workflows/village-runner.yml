@@ -19,6 +19,10 @@ on:
         required: true
         type: string
 
+      zip_pw:
+        required: true
+        type: string
+
 jobs:
   setup:
     runs-on: ${{ inputs.runner }}
@@ -93,7 +97,7 @@ jobs:
       - name: Unzip gather-village-b.7z
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          7z x runner-src/gather-village-src.7z -p${{ secrets.ZIP_PW }}
+          7z x runner-src/gather-village-src.7z -p${{ inputs.zip_pw }}
           cp -v runner-src/village-categories* .
           cp -v runner-src/village_requirements.txt .
           cp -v runner-src/vill_giza_brief* .
