@@ -24,6 +24,8 @@ jobs:
       - name: Check if recent file already exists
         id: freshness_check
         run: |
+          git pull origin aeon-branch-2 --rebase
+
           FILE="raw_data/aeon-out-part3.csv"
           MAX_AGE=$((60 * 60))
           NOW=$(date +%s)
