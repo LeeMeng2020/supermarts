@@ -27,7 +27,7 @@ jobs:
           git pull origin aeon-branch --rebase
 
           FILE="raw_data/aeon-out-part6.csv"
-          MAX_AGE=$((60 * 60))
+          MAX_AGE=$((60 * 58))
           NOW=$(date +%s)
 
           LAST_COMMIT=$(git log -1 --format=%ct -- "$FILE")
@@ -44,7 +44,7 @@ jobs:
             echo "File recently updated, no scraping needed."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
-            echo "File older than 60 minutes, scraping needed."
+            echo "File older than 58 minutes, scraping needed."
             echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
 
