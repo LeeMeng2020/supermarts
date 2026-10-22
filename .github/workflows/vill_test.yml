@@ -1,0 +1,13 @@
+name: Village Brief TEST
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call:
+    uses: ./.github/workflows/village-runner.yml
+    with:
+      runner: ubuntu-24.04
+      config: vill_giza_brief_4_settings.json
+      outfile: village-brief-4.csv
+      commit_suffix: brief-4
