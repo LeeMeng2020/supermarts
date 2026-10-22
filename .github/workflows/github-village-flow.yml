@@ -45,6 +45,7 @@ jobs:
           cp -v runner-src/village-categories.txt .
           cp -v runner-src/village_requirements.txt .
           cp -v runner-src/vill_giza_settings.json .
+          cp -v runner-src/village_fixer.ini .
           ls -l
 
       - name: pip install
@@ -113,7 +114,7 @@ jobs:
       - name: Run processing script
         run: |
           echo "running processing script"
-          python village_fixer_035.py
+          python village_fixer_036.py
 
       - name: Pull latest changes before push
         run: |
