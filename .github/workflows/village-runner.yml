@@ -45,7 +45,7 @@ jobs:
           git pull origin gather-branch --rebase
 
           FILE="raw_data/$VILLAGE_OUT_FILE"
-          MAX_AGE=$((60 * 58))
+          MAX_AGE=$((60 * 5))
           NOW=$(date +%s)
 
           LAST_COMMIT=$(git log -1 --format=%ct -- "$FILE")
@@ -62,7 +62,7 @@ jobs:
             echo "File recently updated, no scraping needed."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
-            echo "File older than 58 minutes, scraping needed."
+            echo "File older than 5 minutes, scraping needed."
             echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
 
