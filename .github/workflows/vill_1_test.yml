@@ -4,10 +4,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  setup:
-    permissions:
-      contents: write # Grant write permissions for pushing changes
-
   call:
     uses: ./.github/workflows/village-runner.yml
     with:
