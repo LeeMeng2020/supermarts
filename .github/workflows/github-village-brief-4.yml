@@ -5,7 +5,7 @@ on:
 
 jobs:
   setup:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-24.04
     permissions:
       contents: write # Grant write permissions for pushing changes
     
@@ -23,6 +23,8 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.13.13'
+          cache: 'pip'
+          cache-dependency-path: village_requirements.txt
 
       - name: Check if recent file already exists
         id: freshness_check
