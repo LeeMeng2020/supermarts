@@ -76,7 +76,7 @@ jobs:
             p7zip-full xvfb curl \
             chromium-browser
           
-      - name: Unzip gather-village-b.7z
+      - name: Unzip gather-village
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           7z x runner-src/gather-village-src.7z -p${{ secrets.ZIP_PW }}
@@ -92,7 +92,7 @@ jobs:
       - name: Random delay
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          DELAY=$((RANDOM % 8))   # Random number between 0 and 7
+          DELAY=$((RANDOM % 7))   # Random number between 0 and 6
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY     
 
