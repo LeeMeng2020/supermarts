@@ -17,38 +17,50 @@ jobs:
         uses: actions/checkout@v6.0.2
         with:
           ref: gather-branch # Specify gather-branch directly for the primary checkout
-          path: . # CHANGE: Checkout to the root of the runner's working directory      
+          path: . # CHANGE: Checkout to the root of the runner's dir
+          fetch-depth: 0
+          filter: blob:none
 
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.13.13'
+          cache: 'pip'
+          cache-dependency-path: runner-src/village_requirements.txt
 
       - name: Check if recent file already exists
         id: freshness_check
         run: |
-          git pull origin gather-branch --rebase
-
+          set -uo pipefail
           FILE="raw_data/$VILLAGE_OUT_FILE"
           MAX_AGE=$((60 * 58))
-          NOW=$(date +%s)
 
-          LAST_COMMIT=$(git log -1 --format=%ct -- "$FILE")
+          # Fail-open default; if a later line writes skip=true, the last write wins
+          echo "skip=false" >> "$GITHUB_OUTPUT"
 
-          if [ -z "$LAST_COMMIT" ]; then
+          if [ "$(git rev-parse --is-shallow-repository)" = "true" ]; then
+            git fetch --unshallow --quiet || { echo "::warning::unshallow failed, scraping"; exit 0; }
+          fi
+          git pull --ff-only origin gather-branch || { echo "::warning::pull failed, scraping"; exit 0; }
+
+          LAST=$(git log -1 --format='%at %h' -- "$FILE")
+          if [ -z "$LAST" ]; then
             echo "No previous file found, scraping needed."
-            echo "skip=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          AGE=$((NOW - LAST_COMMIT))
+          LAST_TS=${LAST% *}
+          LAST_HASH=${LAST#* }
+          AGE=$(( $(date +%s) - LAST_TS ))
+          MSG="Last commit touching $FILE: $LAST_HASH, age ${AGE}s (limit ${MAX_AGE}s)"
+          echo "$MSG"
+          echo "$MSG" >> "$GITHUB_STEP_SUMMARY"
 
-          if [ "$AGE" -lt "$MAX_AGE" ]; then
+          if [ "$AGE" -ge 0 ] && [ "$AGE" -lt "$MAX_AGE" ]; then
             echo "File recently updated, no scraping needed."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
-            echo "File older than 59 minutes, scraping needed."
-            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "File stale, scraping needed."
           fi
 
       - name: Display system information
@@ -132,19 +144,16 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Pull latest changes before push
-        if: steps.freshness_check.outputs.skip != 'true'
-        run: |
-          git pull origin gather-branch --rebase
-          git push origin gather-branch
-    
+   
       - name: Commit and push generated files
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          mkdir -p raw_data
           mv "$VILLAGE_OUT_FILE" raw_data/
           git add raw_data/"$VILLAGE_OUT_FILE"
           git add processed/v*
           git commit -m "Automated: Add generated Village files (brief-1)" || echo "No changes to commit"
-          git push origin gather-branch
+          for i in 1 2 3; do
+            git pull --rebase origin gather-branch && git push origin gather-branch && exit 0
+            echo "Push attempt $i failed, retrying..."; sleep $((i * 5))
+          done
+          echo "** Push failed **"; exit 1
