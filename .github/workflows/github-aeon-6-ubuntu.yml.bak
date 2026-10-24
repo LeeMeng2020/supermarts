@@ -1,0 +1,150 @@
+name: Aeon flow 6 ubuntu (aeon-branch)
+
+on:
+  workflow_dispatch: # manual trigger ability
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6.0.2
+        with:
+          ref: aeon-branch
+          path: .
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13.13'
+
+      - name: Check if recent file already exists
+        id: freshness_check
+        run: |
+          git pull origin aeon-branch --rebase
+
+          FILE="raw_data/aeon-out-part6.csv"
+          MAX_AGE=$((60 * 58))
+          NOW=$(date +%s)
+
+          LAST_COMMIT=$(git log -1 --format=%ct -- "$FILE")
+
+          if [ -z "$LAST_COMMIT" ]; then
+            echo "No previous file found, scraping needed."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          AGE=$((NOW - LAST_COMMIT))
+
+          if [ "$AGE" -lt "$MAX_AGE" ]; then
+            echo "File recently updated, no scraping needed."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "File older than 58 minutes, scraping needed."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install system dependencies
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full xvfb curl git
+
+      - name: Start virtual display
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: |
+          export DISPLAY=:99
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "Virtual display started"
+
+      - name: Display system information
+        run: |
+          echo "Linux version:"
+          uname -a
+          echo "Python version:"
+          python -V
+          echo "IP address:"
+          curl --no-progress-meter https://ipinfo.io/ip
+
+      - name: Unzip .7z, copy categories and requirements
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: |
+          7z x runner-src/gather-aeon-src.7z -p${{ secrets.ZIP_PW }}
+          cp runner-src/requirements* .
+          cp runner-src/aeon-categories* .
+
+      - name: pip install
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: pip install -r requirements_b.txt
+        
+      - name: Random delay
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: |
+          DELAY=$((RANDOM % 8))   # Random number between 0 and 7
+          echo "Random sleep for $DELAY seconds..."
+          sleep $DELAY        
+
+      - name: Run script and validate output. With retry, timeout.
+        timeout-minutes: 43
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: |
+          check_output_file() {
+            local file=$1
+            local minsize=$2
+            if [ ! -f "$file" ]; then
+              echo "** Output file does not exist **"
+              return 1
+            fi
+            filesize=$(stat -c%s "$file")
+            if [ $filesize -lt $minsize ]; then
+              echo "** Output file too small ($filesize bytes) **"
+              return 1
+            fi
+            echo "Validation passed: output file seems OK."
+            return 0
+          }
+
+          run_with_timeout() {
+            local categories=$1
+            local output=$2
+            local timeoutMinutes=$3
+            local attemptLabel=$4
+
+            echo "=== $attemptLabel ==="
+            timeout ${timeoutMinutes}m python -u aeon_cdp_args_040.py -c "$categories" -o "$output"
+            check_output_file "$output" 5000
+          }
+
+          perAttemptTimeout=20
+
+          if ! run_with_timeout "aeon-categories-6.txt" "aeon-out-part6.csv" $perAttemptTimeout "First attempt"; then
+            echo "First attempt failed or timed out. Retrying after 33 seconds..."
+            sleep 38
+            if ! run_with_timeout "aeon-categories-6.txt" "aeon-out-part6.csv" $perAttemptTimeout "Second attempt"; then
+              echo "** Retry failed. Aborting. **"
+              exit 1
+            fi
+          fi
+
+      - name: Set up Git
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes before push
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: git pull origin aeon-branch --rebase
+
+      - name: Commit and push generated files
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: |
+          cp aeon-out-part6.csv raw_data/
+          git add raw_data/aeon-out-part6.csv
+          git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
+          git push origin aeon-branch
+ 
