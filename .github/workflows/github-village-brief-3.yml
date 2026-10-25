@@ -94,7 +94,7 @@ jobs:
       - name: Random delay
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          DELAY=$((RANDOM % 7))   # Random number between 0 and 6
+          DELAY=$((RANDOM % 5))   # Random number between 0 and 4
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY     
 
@@ -134,7 +134,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-    
+   
       - name: Commit and push generated files
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
