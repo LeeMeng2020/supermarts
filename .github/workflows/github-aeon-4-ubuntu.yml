@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.13.13'
+          cache: 'pip'
+          cache-dependency-path: runner-src/requirements_b.txt
 
       - name: Check if recent file already exists
         id: freshness_check
@@ -128,15 +130,15 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Pull latest changes before push
-        if: steps.freshness_check.outputs.skip != 'true'
-        run: git pull origin aeon-branch --rebase
-
       - name: Commit and push generated files
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           cp aeon-out-part4.csv raw_data/
           git add raw_data/aeon-out-part4.csv
           git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
-          git push origin aeon-branch
- 
+          for i in 1 2 3; do
+            git pull --rebase origin aeon-branch && git push origin aeon-branch && exit 0
+            echo "Push attempt $i failed, retrying..."; sleep $((i * 5))
+          done
+          echo "** Push failed **"; exit 1
+          

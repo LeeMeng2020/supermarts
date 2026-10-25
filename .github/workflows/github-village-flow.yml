@@ -128,10 +128,6 @@ jobs:
           echo "running processing script"
           python village_fixer_036.py
 
-      - name: Pull latest changes before push
-        run: |
-          git pull origin gather-branch --rebase
-
       - name: Set up Git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -146,5 +142,9 @@ jobs:
           git add processed/v*
 
           git commit -m "Automated: Add generated Village files" || echo "No changes to commit"
-          git push origin
-          
+          for i in 1 2 3; do
+            git pull --rebase origin gather-branch && git push origin gather-branch && exit 0
+            echo "Push attempt $i failed, retrying..."; sleep $((i * 5))
+          done
+          echo "** Push failed **"; exit 1          
+       

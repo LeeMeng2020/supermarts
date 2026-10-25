@@ -134,12 +134,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Pull latest changes before push
-        if: steps.freshness_check.outputs.skip != 'true'
-        run: |
-          git pull origin gather-branch --rebase
-          git push origin gather-branch
     
       - name: Commit and push generated files
         if: steps.freshness_check.outputs.skip != 'true'
@@ -149,4 +143,8 @@ jobs:
           git add raw_data/"$VILLAGE_OUT_FILE"
           git add processed/v*
           git commit -m "Automated: Add generated Village files (brief-3)" || echo "No changes to commit"
-          git push origin gather-branch
+          for i in 1 2 3; do
+            git pull --rebase origin gather-branch && git push origin gather-branch && exit 0
+            echo "Push attempt $i failed, retrying..."; sleep $((i * 5))
+          done
+          echo "** Push failed **"; exit 1

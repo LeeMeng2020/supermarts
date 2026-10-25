@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.13.13'
+          cache: 'pip'
+          cache-dependency-path: runner-src/requirements_b.txt
 
       - name: Install system dependencies
         run: |
@@ -51,7 +53,7 @@ jobs:
         run: pip install -r requirements_b.txt
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 45
+        timeout-minutes: 43
         run: |
           check_output_file() {
             local file=$1

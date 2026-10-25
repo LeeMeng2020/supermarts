@@ -131,15 +131,15 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Pull latest changes before push
-        if: steps.freshness_check.outputs.skip != 'true'
-        run: git pull origin aeon-branch-2 --rebase
-
       - name: Commit and push generated files
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           cp aeon-out-part2.csv raw_data/
           git add raw_data/aeon-out-part2.csv
-          git commit -m "Automated: Add generated Aeon file Alt" || echo "No changes to commit"
-          git push origin aeon-branch-2
+          git commit -m "Automated: Add generated Aeon-2b Alt file" || echo "No changes to commit"
+          for i in 1 2 3; do
+            git pull --rebase origin aeon-branch-2 && git push origin aeon-branch-2 && exit 0
+            echo "Push attempt $i failed, retrying..."; sleep $((i * 5))
+          done
+          echo "** Push failed **"; exit 1
  
