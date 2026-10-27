@@ -64,7 +64,7 @@ jobs:
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           sudo apt-get update
-          sudo apt-get install -y p7zip-full xvfb curl git
+          sudo apt-get install -y p7zip-full xvfb
 
       - name: Start virtual display
         if: steps.freshness_check.outputs.skip != 'true'
@@ -94,7 +94,7 @@ jobs:
         run: pip install -r requirements_b.txt
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 43
+        timeout-minutes: 42
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           check_output_file() {
@@ -146,7 +146,7 @@ jobs:
         run: |
           cp aeon-out-part1.csv raw_data/
           git add raw_data/aeon-out-part1.csv
-          git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
+          git commit -m "Automated: Add generated Aeon 1 file" || echo "No changes to commit"
           for i in 1 2 3; do
             git pull --rebase origin aeon-branch && git push origin aeon-branch && exit 0
             echo "Push attempt $i failed, retrying..."; sleep $((i * 5))
