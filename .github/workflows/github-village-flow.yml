@@ -43,9 +43,10 @@ jobs:
             ca-certificates \
             build-essential \
             python3-problem-report \
-            linux-tools-common linux-libc-dev \
-            p7zip-full xvfb curl \
-            chromium
+            linux-tools-common xvfb
+          # linux-libc-dev
+          # sudo apt-get install -y p7zip-full curl 
+          # sudo apt-get install -y chromium
            
       - name: Unzip gather-village-b.7z
         run: |
@@ -59,7 +60,6 @@ jobs:
       - name: pip install
         run: | 
           pip install -r village_requirements.txt
-          playwright install chromium
 
       - name: Pull latest changes and village-briefx files, check age
         run: |
@@ -95,12 +95,17 @@ jobs:
 
       - name: Random delay
         run: |
-          DELAY=$((RANDOM % 8))   # Random number between 0 and 7
+          DELAY=$((RANDOM % 5))   # Random number between 0 and 4
           echo "Random sleep for $DELAY seconds..."
-          sleep $DELAY     
+          sleep $DELAY
+
+      - name: Install Playwright deps
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: |
+          playwright install --with-deps chromium
           
       - name: Run script
-        timeout-minutes: 48
+        timeout-minutes: 40
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
           CHROME_BIN: /usr/bin/chromium

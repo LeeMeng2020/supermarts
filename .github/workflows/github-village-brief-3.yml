@@ -19,7 +19,7 @@ jobs:
           ref: gather-branch # Specify gather-branch directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's dir
           fetch-depth: 0
-          filter: blob:none     
+          filter: blob:none
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -81,7 +81,8 @@ jobs:
       - name: Install basic utilities and 7-zip
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          sudo apt-get install -y \
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            ca-certificates \
             build-essential \
             python3-problem-report \
             linux-tools-common xvfb

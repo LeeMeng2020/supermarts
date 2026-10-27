@@ -19,7 +19,7 @@ jobs:
           ref: gather-branch # Specify gather-branch directly for the primary checkout
           path: . # CHANGE: Checkout to the root of the runner's dir
           fetch-depth: 0
-          filter: blob:none     
+          filter: blob:none
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -84,10 +84,11 @@ jobs:
           sudo apt-get install -y \
             build-essential \
             python3-problem-report \
-            linux-tools-common linux-libc-dev \
-            p7zip-full xvfb curl \
-            chromium-browser
-          
+            linux-tools-common xvfb
+          # linux-libc-dev
+          # sudo apt-get install -y p7zip-full curl 
+          # sudo apt-get install -y chromium-browser
+
       - name: Unzip gather-village
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
@@ -111,12 +112,7 @@ jobs:
       - name: Install Playwright deps
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          sudo apt-get install -y \
-            libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 \
-            libcups2 libdrm2 libxkbcommon0 libxcomposite1 \
-            libxdamage1 libxfixes3 libxrandr2 libgbm1 \
-            libasound2t64 fonts-liberation
-          playwright install chromium
+          playwright install --with-deps chromium
 
       - name: Run script
         if: steps.freshness_check.outputs.skip != 'true'
