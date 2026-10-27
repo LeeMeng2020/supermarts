@@ -14,7 +14,9 @@ jobs:
         uses: actions/checkout@v6.0.2
         with:
           ref: aeon-branch
-          path: .
+          path: . # Checkout to the root
+          fetch-depth: 0
+          filter: blob:none
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -26,28 +28,36 @@ jobs:
       - name: Check if recent file already exists
         id: freshness_check
         run: |
-          git pull origin aeon-branch --rebase
-
+          set -uo pipefail
           FILE="raw_data/aeon-out-part4.csv"
-          MAX_AGE=$((60 * 60))
-          NOW=$(date +%s)
+          MAX_AGE=$((60 * 58))
 
-          LAST_COMMIT=$(git log -1 --format=%ct -- "$FILE")
+          # Fail-open default; if a later line writes skip=true, the last write wins
+          echo "skip=false" >> "$GITHUB_OUTPUT"
 
-          if [ -z "$LAST_COMMIT" ]; then
+          if [ "$(git rev-parse --is-shallow-repository)" = "true" ]; then
+            git fetch --unshallow --quiet || { echo "::warning::unshallow failed, scraping"; exit 0; }
+          fi
+          git pull --ff-only origin aeon-branch || { echo "::warning::pull failed, scraping"; exit 0; }
+
+          LAST=$(git log -1 --format='%at %h' -- "$FILE")
+          if [ -z "$LAST" ]; then
             echo "No previous file found, scraping needed."
-            echo "skip=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          AGE=$((NOW - LAST_COMMIT))
+          LAST_TS=${LAST% *}
+          LAST_HASH=${LAST#* }
+          AGE=$(( $(date +%s) - LAST_TS ))
+          MSG="Last commit touching $FILE: $LAST_HASH, age ${AGE}s (limit ${MAX_AGE}s)"
+          echo "$MSG"
+          echo "$MSG" >> "$GITHUB_STEP_SUMMARY"
 
-          if [ "$AGE" -lt "$MAX_AGE" ]; then
+          if [ "$AGE" -ge 0 ] && [ "$AGE" -lt "$MAX_AGE" ]; then
             echo "File recently updated, no scraping needed."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
-            echo "File older than 60 minutes, scraping needed."
-            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "File stale, scraping needed."
           fi
 
       - name: Install system dependencies
@@ -118,7 +128,7 @@ jobs:
 
           if ! run_with_timeout "aeon-categories-4.txt" "aeon-out-part4.csv" $perAttemptTimeout "First attempt"; then
             echo "First attempt failed or timed out. Retrying after 33 seconds..."
-            sleep 38
+            sleep 39
             if ! run_with_timeout "aeon-categories-4.txt" "aeon-out-part4.csv" $perAttemptTimeout "Second attempt"; then
               echo "** Retry failed. Aborting. **"
               exit 1
@@ -126,6 +136,7 @@ jobs:
           fi
 
       - name: Set up Git
+        if: steps.freshness_check.outputs.skip != 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -135,10 +146,9 @@ jobs:
         run: |
           cp aeon-out-part4.csv raw_data/
           git add raw_data/aeon-out-part4.csv
-          git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
+          git commit -m "Automated: Add generated Aeon 4 Alt file" || echo "No changes to commit"
           for i in 1 2 3; do
             git pull --rebase origin aeon-branch && git push origin aeon-branch && exit 0
             echo "Push attempt $i failed, retrying..."; sleep $((i * 5))
           done
           echo "** Push failed **"; exit 1
-          
