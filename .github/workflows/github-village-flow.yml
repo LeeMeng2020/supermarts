@@ -111,7 +111,7 @@ jobs:
           CHROME_BIN: /usr/bin/chromium
         run: |
           echo "running script"
-          python vill_005.py
+          python vill_006.py
           
       - name: Validate output file
         run: |

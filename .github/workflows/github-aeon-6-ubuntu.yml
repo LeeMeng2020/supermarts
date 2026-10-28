@@ -3,6 +3,10 @@ name: Aeon flow 6 ubuntu (aeon-branch)
 on:
   workflow_dispatch: # manual trigger ability
 
+env:
+  OUT_FILE: aeon-out-part6.csv
+  CATEGORIES_FILE: aeon-categories-6.txt
+
 jobs:
   setup:
     runs-on: ubuntu-latest
@@ -64,7 +68,7 @@ jobs:
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           sudo apt-get update
-          sudo apt-get install -y p7zip-full xvfb curl git
+          sudo apt-get install -y p7zip-full xvfb
 
       - name: Start virtual display
         if: steps.freshness_check.outputs.skip != 'true'
@@ -133,10 +137,10 @@ jobs:
 
           perAttemptTimeout=20
 
-          if ! run_with_timeout "aeon-categories-6.txt" "aeon-out-part6.csv" $perAttemptTimeout "First attempt"; then
-            echo "First attempt failed or timed out. Retrying after 33 seconds..."
+          if ! run_with_timeout "$CATEGORIES_FILE" "$OUT_FILE" $perAttemptTimeout "First attempt"; then
+            echo "First attempt failed or timed out. Retrying after 39 seconds..."
             sleep 39
-            if ! run_with_timeout "aeon-categories-6.txt" "aeon-out-part6.csv" $perAttemptTimeout "Second attempt"; then
+            if ! run_with_timeout "$CATEGORIES_FILE" "$OUT_FILE" $perAttemptTimeout "Second attempt"; then
               echo "** Retry failed. Aborting. **"
               exit 1
             fi
@@ -151,9 +155,9 @@ jobs:
       - name: Commit and push generated files
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          cp aeon-out-part6.csv raw_data/
-          git add raw_data/aeon-out-part6.csv
-          git commit -m "Automated: Add generated Aeon file" || echo "No changes to commit"
+          cp "$OUT_FILE" raw_data/
+          git add "raw_data/$OUT_FILE"
+          git commit -m "Automated: Add generated Aeon 6 file" || echo "No changes to commit"
           for i in 1 2 3; do
             git pull --rebase origin aeon-branch && git push origin aeon-branch && exit 0
             echo "Push attempt $i failed, retrying..."; sleep $((i * 5))

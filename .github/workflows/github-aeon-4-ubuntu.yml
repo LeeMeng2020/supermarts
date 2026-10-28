@@ -33,7 +33,7 @@ jobs:
         id: freshness_check
         run: |
           set -uo pipefail
-          FILE="raw_data/${OUT_FILE}"
+          FILE="raw_data/aeon-out-part6.csv"
           MAX_AGE=$((60 * 58))
 
           # Fail-open default; if a later line writes skip=true, the last write wins

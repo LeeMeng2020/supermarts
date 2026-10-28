@@ -118,7 +118,7 @@ jobs:
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           echo "running script"
-          python vill_005.py --config vill_giza_brief_4_settings.json
+          python vill_006.py --config vill_giza_brief_4_settings.json
           
       - name: Validate output file
         if: steps.freshness_check.outputs.skip != 'true'
