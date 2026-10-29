@@ -64,7 +64,7 @@ jobs:
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           sudo apt-get update
-          sudo apt-get install -y p7zip-full xvfb curl git
+          sudo apt-get install -y p7zip-full xvfb
 
       - name: Start virtual display
         if: steps.freshness_check.outputs.skip != 'true'
