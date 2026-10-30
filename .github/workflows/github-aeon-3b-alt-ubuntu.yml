@@ -1,7 +1,11 @@
-name: Aeon flow 3b ALT ubuntu (aeon-brch-2)
+name: Aeon flow 2b ALT ubuntu (aeon-brch-2)
 
 on:
   workflow_dispatch: # manual trigger ability
+
+env:
+  OUT_FILE: aeon-out-part2.csv
+  CATEGORIES_FILE: aeon-categories-2.txt
 
 jobs:
   setup:
@@ -13,8 +17,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6.0.2
         with:
-          ref: aeon-branch-2 # Specify aeon-branch-2 directly for the primary checkout
-          path: . # Checkout to the root of the runner's working directory    
+          ref: aeon-branch-2 # Specify aeon-branch-2 directly
+          path: . # Checkout to the root
+          fetch-depth: 0
+          filter: blob:none
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -26,35 +32,43 @@ jobs:
       - name: Check if recent file already exists
         id: freshness_check
         run: |
-          git pull origin aeon-branch-2 --rebase
+          set -uo pipefail
+          FILE="raw_data/${OUT_FILE}"
+          MAX_AGE=$((60 * 58))
 
-          FILE="raw_data/aeon-out-part3.csv"
-          MAX_AGE=$((60 * 60))
-          NOW=$(date +%s)
+          # Fail-open default; if a later line writes skip=true, the last write wins
+          echo "skip=false" >> "$GITHUB_OUTPUT"
 
-          LAST_COMMIT=$(git log -1 --format=%ct -- "$FILE")
+          if [ "$(git rev-parse --is-shallow-repository)" = "true" ]; then
+            git fetch --unshallow --quiet || { echo "::warning::unshallow failed, scraping"; exit 0; }
+          fi
+          git pull --ff-only origin aeon-branch-2 || { echo "::warning::pull failed, scraping"; exit 0; }
 
-          if [ -z "$LAST_COMMIT" ]; then
+          LAST=$(git log -1 --format='%at %h' -- "$FILE")
+          if [ -z "$LAST" ]; then
             echo "No previous file found, scraping needed."
-            echo "skip=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          AGE=$((NOW - LAST_COMMIT))
+          LAST_TS=${LAST% *}
+          LAST_HASH=${LAST#* }
+          AGE=$(( $(date +%s) - LAST_TS ))
+          MSG="Last commit touching $FILE: $LAST_HASH, age ${AGE}s (limit ${MAX_AGE}s)"
+          echo "$MSG"
+          echo "$MSG" >> "$GITHUB_STEP_SUMMARY"
 
-          if [ "$AGE" -lt "$MAX_AGE" ]; then
+          if [ "$AGE" -ge 0 ] && [ "$AGE" -lt "$MAX_AGE" ]; then
             echo "File recently updated, no scraping needed."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
-            echo "File older than 60 minutes, scraping needed."
-            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "File stale, scraping needed."
           fi
 
       - name: Install system dependencies
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           sudo apt-get update
-          sudo apt-get install -y p7zip-full xvfb curl git
+          sudo apt-get install -y p7zip-full xvfb
 
       - name: Start virtual display
         if: steps.freshness_check.outputs.skip != 'true'
@@ -82,13 +96,6 @@ jobs:
       - name: pip install
         if: steps.freshness_check.outputs.skip != 'true'
         run: pip install -r requirements_b.txt
-        
-      - name: Random delay
-        if: steps.freshness_check.outputs.skip != 'true'
-        run: |
-          DELAY=$((RANDOM % 8))   # Random number between 0 and 7
-          echo "Random sleep for $DELAY seconds..."
-          sleep $DELAY        
 
       - name: Run script and validate output. With retry, timeout.
         timeout-minutes: 43
@@ -123,10 +130,10 @@ jobs:
 
           perAttemptTimeout=20
 
-          if ! run_with_timeout "aeon-categories-3.txt" "aeon-out-part3.csv" $perAttemptTimeout "First attempt"; then
-            echo "First attempt failed or timed out. Retrying after 45 seconds..."
-            sleep 45
-            if ! run_with_timeout "aeon-categories-3.txt" "aeon-out-part3.csv" $perAttemptTimeout "Second attempt"; then
+          if ! run_with_timeout "$CATEGORIES_FILE" "$OUT_FILE" $perAttemptTimeout "First attempt"; then
+            echo "First attempt failed or timed out. Retrying after 39 seconds..."
+            sleep 39
+            if ! run_with_timeout "$CATEGORIES_FILE" "$OUT_FILE" $perAttemptTimeout "Second attempt"; then
               echo "** Retry failed. Aborting. **"
               exit 1
             fi
@@ -141,12 +148,11 @@ jobs:
       - name: Commit and push generated files
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          cp aeon-out-part3.csv raw_data/
-          git add raw_data/aeon-out-part3.csv
+          cp "$OUT_FILE" raw_data/
+          git add "raw_data/$OUT_FILE"
           git commit -m "Automated: Add generated Aeon-2b Alt file" || echo "No changes to commit"
           for i in 1 2 3; do
             git pull --rebase origin aeon-branch-2 && git push origin aeon-branch-2 && exit 0
             echo "Push attempt $i failed, retrying..."; sleep $((i * 5))
           done
           echo "** Push failed **"; exit 1
- 
