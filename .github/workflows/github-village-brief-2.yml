@@ -81,7 +81,8 @@ jobs:
       - name: Install basic utilities and 7-zip
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          sudo apt-get install -y \
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            ca-certificates \
             build-essential \
             python3-problem-report \
             linux-tools-common xvfb
@@ -118,7 +119,7 @@ jobs:
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           echo "running script"
-          python vill_005.py --config vill_giza_brief_2_settings.json
+          python vill_006.py --config vill_giza_brief_2_settings.json
           
       - name: Validate output file
         if: steps.freshness_check.outputs.skip != 'true'
