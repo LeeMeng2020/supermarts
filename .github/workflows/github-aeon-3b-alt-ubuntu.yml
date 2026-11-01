@@ -4,8 +4,8 @@ on:
   workflow_dispatch: # manual trigger ability
 
 env:
-  OUT_FILE: aeon-out-part2.csv
-  CATEGORIES_FILE: aeon-categories-2.txt
+  OUT_FILE: aeon-out-part3.csv
+  CATEGORIES_FILE: aeon-categories-3.txt
 
 jobs:
   setup:
