@@ -98,7 +98,7 @@ jobs:
         run: pip install -r requirements_b.txt
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 43
+        timeout-minutes: 42
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           check_output_file() {

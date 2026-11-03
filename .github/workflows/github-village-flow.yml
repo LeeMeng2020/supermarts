@@ -45,7 +45,6 @@ jobs:
             python3-problem-report \
             linux-tools-common xvfb
           # linux-libc-dev
-          # sudo apt-get install -y p7zip-full curl 
           # sudo apt-get install -y chromium
            
       - name: Unzip gather-village-b.7z

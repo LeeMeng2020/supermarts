@@ -100,7 +100,7 @@ jobs:
       - name: Random delay
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          DELAY=$((RANDOM % 8))   # Random number between 0 and 7
+          DELAY=$((RANDOM % 7))   # Random number between 0 and 6
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY        
 
