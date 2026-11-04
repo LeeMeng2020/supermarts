@@ -1,4 +1,4 @@
-name: Village brief-4 ARM test (gather-branch)
+name: Village brief-4 ARM (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
