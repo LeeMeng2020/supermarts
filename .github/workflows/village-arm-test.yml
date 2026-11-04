@@ -84,8 +84,8 @@ jobs:
           sudo apt-get install -y \
             build-essential \
             python3-problem-report \
-            linux-tools-common \ 
-            xvfb p7zip-full
+            xvfb\
+            p7zip-full
 
           # linux-libc-dev
           # sudo apt-get install -y p7zip-full curl 
