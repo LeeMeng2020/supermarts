@@ -170,6 +170,7 @@ https://vgg.bites.com.my/collections/groceries,Groceries,SAN REMO NAPOLITANA SAU
 https://vgg.bites.com.my/collections/groceries,Groceries,LEGGO'S CARBONARA 490G,RM11.79,RM13.80,https://vgg.bites.com.my/collections/groceries/products/leggo-s-carbonara-490g
 https://vgg.bites.com.my/collections/groceries,Groceries,SAN REMO BOLOGNESE & MUSHROOM PASTA SAUCE 500GM,RM12.89,RM13.70,https://vgg.bites.com.my/collections/groceries/products/san-remo-bolognese-mushroom-pasta-sauce-500gm
 https://vgg.bites.com.my/collections/groceries,Groceries,MEDELLA COCONUT COOKING OIL 1L,RM25.99,RM28.90,https://vgg.bites.com.my/collections/groceries/products/medella-coconut-cooking-oil-1l
+https://vgg.bites.com.my/collections/groceries,Groceries,CAP RAMBUTAN BASMATHI PUSA KING 1121 2KG,RM22.35,,https://vgg.bites.com.my/collections/groceries/products/cap-rambutan-basmathi-pusa-king-1121-2kg
 https://vgg.bites.com.my/collections/groceries,Groceries,JASMINE BIHUN 400G,RM3.09,RM3.50,https://vgg.bites.com.my/collections/groceries/products/jasmine-bihun-400g
 https://vgg.bites.com.my/collections/groceries,Groceries,ADABI S.NASI GORENG CINA 17G,RM1.55,,https://vgg.bites.com.my/collections/groceries/products/adabi-s-nasi-goreng-cina-17g
 https://vgg.bites.com.my/collections/groceries,Groceries,AJI-SHIO BLCK PEPPER 80G,RM7.50,,https://vgg.bites.com.my/collections/groceries/products/aji-shio-blck-pepper-80g
@@ -450,7 +451,6 @@ https://vgg.bites.com.my/collections/groceries,Groceries,JULIE'S GOLDEN CRACKERS
 https://vgg.bites.com.my/collections/groceries,Groceries,JULIE'S BUTTER WAFFLES 100G,RM5.80,,https://vgg.bites.com.my/collections/groceries/products/julie-s-butter-waffles-100g
 https://vgg.bites.com.my/collections/groceries,Groceries,ARNOTTS CHOC TIM TAM CLASSIC DARK 200G,RM13.49,RM15.50,https://vgg.bites.com.my/collections/groceries/products/arnotts-choc-tim-tam-classic-dark-200g
 https://vgg.bites.com.my/collections/groceries,Groceries,ARNOTTS SCOTCH FINGER 250G,RM15.95,,https://vgg.bites.com.my/collections/groceries/products/arnotts-scotch-finger-250g
-https://vgg.bites.com.my/collections/groceries,Groceries,ARNOTTS SHAPES CHEDDAR 175G,RM13.20,,https://vgg.bites.com.my/collections/groceries/products/arnotts-shapes-cheddar-175g
 https://vgg.bites.com.my/collections/groceries,Groceries,ST.DALFOUR BLACKCURANT JAM 284G,RM16.79,RM20.40,https://vgg.bites.com.my/collections/groceries/products/st-dalfour-blackcurant-jam-284g
 https://vgg.bites.com.my/collections/groceries,Groceries,ST.DALFOUR ORANGE MARMALADE 284G,RM16.79,RM20.40,https://vgg.bites.com.my/collections/groceries/products/st-dalfour-orange-marmalade-284g
 https://vgg.bites.com.my/collections/groceries,Groceries,ST.DALFOUR APRICOT JAM 284G,RM16.79,RM20.40,https://vgg.bites.com.my/collections/groceries/products/st-dalfour-apricot-jam-284g
@@ -600,7 +600,6 @@ https://vgg.bites.com.my/collections/groceries,Groceries,POKKA JASMINE GREEN TEA
 https://vgg.bites.com.my/collections/groceries,Groceries,EAU CLAIRE MINERAL WATER 1.5L,RM2.00,,https://vgg.bites.com.my/collections/groceries/products/eau-claire-mineral-water-1-5l
 https://vgg.bites.com.my/collections/groceries,Groceries,COCA COLA ZERO SUGAR CAN 320ML,RM2.10,,https://vgg.bites.com.my/collections/groceries/products/coca-cola-zero-sugar-can-320ml
 https://vgg.bites.com.my/collections/groceries,Groceries,CADBURY 3IN1 HOT CHOCOLATE 390G,RM21.20,RM21.45,https://vgg.bites.com.my/collections/groceries/products/cadbury-3in1-hot-chocolate-390g
-https://vgg.bites.com.my/collections/groceries,Groceries,100 PLUS ORIGINAL RS 500ML,RM2.40,,https://vgg.bites.com.my/collections/groceries/products/100-plus-original-rs-500ml
 https://vgg.bites.com.my/collections/groceries,Groceries,100 PLUS ORIGINAL RS 1.5L,RM3.69,RM4.45,https://vgg.bites.com.my/collections/groceries/products/100-plus-original-rs-15l
 https://vgg.bites.com.my/collections/groceries,Groceries,100 PLUS ORIGINAL 1.5L,RM3.69,RM4.45,https://vgg.bites.com.my/collections/groceries/products/100-plus-original-15l
 https://vgg.bites.com.my/collections/groceries,Groceries,100 PLUS ACTIVE ASP 1L,RM3.29,RM3.50,https://vgg.bites.com.my/collections/groceries/products/100-plus-active-asp-1l
@@ -1333,6 +1332,7 @@ https://vgg.bites.com.my/collections/groceries,Groceries,KINDER BUENO WHITE T2 3
 https://vgg.bites.com.my/collections/groceries,Groceries,7UP 1.5L,RM3.19,RM4.70,https://vgg.bites.com.my/collections/groceries/products/7up-1-5l
 https://vgg.bites.com.my/collections/groceries,Groceries,7UP 500ML,RM2.70,,https://vgg.bites.com.my/collections/groceries/products/7up-500ml
 https://vgg.bites.com.my/collections/groceries,Groceries,ANCHOR WHEAT FLOUR 1KG,RM2.99,RM3.90,https://vgg.bites.com.my/collections/groceries/products/anchor-wheat-flour-1kg
+https://vgg.bites.com.my/collections/groceries,Groceries,DORITOS SMOKIN BBQ 190G,RM13.80,,https://vgg.bites.com.my/collections/groceries/products/doritos-smokin-bbq-190g
 https://vgg.bites.com.my/collections/groceries,Groceries,LAY'S ROCK EXTRA BBQ 50G,RM4.10,,https://vgg.bites.com.my/collections/groceries/products/lay-s-rock-extra-bbq-50g
 https://vgg.bites.com.my/collections/groceries,Groceries,MILO ACTIV-GO UHT 4X125ML,RM5.65,,https://vgg.bites.com.my/collections/groceries/products/milo-activ-go-uht-4x125ml
 https://vgg.bites.com.my/collections/groceries,Groceries,JULIE'S PEANUT BUTTER SANDWICH 120G,RM4.40,,https://vgg.bites.com.my/collections/groceries/products/julie-s-peanut-butter-sandwich-120g
@@ -1376,6 +1376,7 @@ https://vgg.bites.com.my/collections/groceries,Groceries,HUP SENG CHOC TEDDY BEA
 https://vgg.bites.com.my/collections/groceries,Groceries,SAN REMO DRY PASTA QUICK COOK SPAGHETTI 500G,RM4.89,RM5.45,https://vgg.bites.com.my/collections/groceries/products/san-remo-dry-pasta-quick-cook-spaghetti-500g
 https://vgg.bites.com.my/collections/groceries,Groceries,RUFFLES CN SOUR CREAM 170G,RM11.99,RM14.50,https://vgg.bites.com.my/collections/groceries/products/ruffles-cn-sour-cream-170g
 https://vgg.bites.com.my/collections/groceries,Groceries,MAGGI SYIOK TOM YAM KAW 96G,RM4.60,,https://vgg.bites.com.my/collections/groceries/products/maggi-syiok-tom-yam-kaw-96g
+https://vgg.bites.com.my/collections/groceries,Groceries,DORITOS NACHO CHEESE 190G,RM13.60,,https://vgg.bites.com.my/collections/groceries/products/doritos-nacho-cheese-190g
 https://vgg.bites.com.my/collections/groceries,Groceries,NATURE VALLEY ROASTED ALMOND 210G,RM14.20,,https://vgg.bites.com.my/collections/groceries/products/nature-valley-roasted-almond-210g
 https://vgg.bites.com.my/collections/groceries,Groceries,OREO VANILLA MP 9X27.6G,RM8.05,,https://vgg.bites.com.my/collections/groceries/products/oreo-vanilla-mp-9x27-6g
 https://vgg.bites.com.my/collections/groceries,Groceries,OREO B&W CHOCOLATE 119.6G,RM3.35,,https://vgg.bites.com.my/collections/groceries/products/oreo-b-w-chocolate-119-6g
@@ -1410,6 +1411,7 @@ https://vgg.bites.com.my/collections/groceries,Groceries,KING RICE BRAN OIL 1L,R
 https://vgg.bites.com.my/collections/groceries,Groceries,VOORTMAN SUGAR FREE STRAWBERRY WAFERS 255G,RM13.05,,https://vgg.bites.com.my/collections/groceries/products/voortman-sugar-free-strawberry-wafers-255g
 https://vgg.bites.com.my/collections/groceries,Groceries,VOORTMAN SUGAR FREE VANILLA WAFERS 255G,RM13.05,,https://vgg.bites.com.my/collections/groceries/products/voortman-sugar-free-vanilla-wafers-255g
 https://vgg.bites.com.my/collections/groceries,Groceries,SAMYANG HOT CHICKEN CREAMY CARBONARA RAMEN 5X140G,RM23.99,RM29.30,https://vgg.bites.com.my/collections/groceries/products/samyang-hot-chicken-creamy-carbonara-ramen-5x140g
+https://vgg.bites.com.my/collections/groceries,Groceries,DORITOS TACO 190G,RM13.80,,https://vgg.bites.com.my/collections/groceries/products/doritos-taco-190g
 https://vgg.bites.com.my/collections/groceries,Groceries,A1 VEGETARIAN SPICE SOUP 40GM,RM12.10,,https://vgg.bites.com.my/collections/groceries/products/a1-vegetarian-spice-soup-40gm
 https://vgg.bites.com.my/collections/groceries,Groceries,MI SEDAAP CUP NOODLE GORENG 81G,RM2.75,,https://vgg.bites.com.my/collections/groceries/products/mi-sedaap-cup-noodle-goreng-81g
 https://vgg.bites.com.my/collections/groceries,Groceries,JATI PUSA FINEST BASMATHI 1121 5KG,RM36.99,RM45.70,https://vgg.bites.com.my/collections/groceries/products/jati-pusa-finest-basmathi-1121-5kg
@@ -1421,6 +1423,8 @@ https://vgg.bites.com.my/collections/groceries,Groceries,LOVE EARTH MUSHROOM SEA
 https://vgg.bites.com.my/collections/groceries,Groceries,OLD TOWN KOPITIAM SMOOTH ROAST LESS SUGAR 15SX25G,RM18.49,RM21.00,https://vgg.bites.com.my/collections/groceries/products/old-town-kopitiam-smooth-roast-less-sugar-15sx25g
 https://vgg.bites.com.my/collections/groceries,Groceries,OLD TOWN WHITE COFFEE SALTED CARAMEL 15SX35G,RM18.49,RM21.00,https://vgg.bites.com.my/collections/groceries/products/old-town-white-coffee-salted-caramel-15sx35g
 https://vgg.bites.com.my/collections/groceries,Groceries,SANITARIUM WEET BIX 375G,RM12.70,,https://vgg.bites.com.my/collections/groceries/products/sanitarium-weet-bix-375g
+https://vgg.bites.com.my/collections/groceries,Groceries,DORITOS ROASTED CORN 190G,RM13.60,,https://vgg.bites.com.my/collections/groceries/products/doritos-roasted-corn-190g
+https://vgg.bites.com.my/collections/groceries,Groceries,DORITOS SPICY NACHO 190G,RM13.60,,https://vgg.bites.com.my/collections/groceries/products/doritos-spicy-nacho-190g
 https://vgg.bites.com.my/collections/groceries,Groceries,LAY'S CN TRUFFLE 170G,RM13.99,RM14.80,https://vgg.bites.com.my/collections/groceries/products/lay-s-cn-truffle-170g
 https://vgg.bites.com.my/collections/groceries,Groceries,SAMYANG HOT CHICKEN QUATTRO CHEESE RAMEN 5X145G,RM30.60,,https://vgg.bites.com.my/collections/groceries/products/samyang-hot-chicken-quattro-cheese-ramen-5x145g
 https://vgg.bites.com.my/collections/groceries,Groceries,CADBURY FREDDO STRAWBERRY SHAREPACK 180G,RM25.90,,https://vgg.bites.com.my/collections/groceries/products/cadbury-freddo-strawberry-sharepack-180g
@@ -1438,6 +1442,10 @@ https://vgg.bites.com.my/collections/groceries,Groceries,LAY'S CN SALT & VINEGAR
 https://vgg.bites.com.my/collections/groceries,Groceries,LAY'S CN SOUR CREAM & ONION 170G,RM13.29,RM14.50,https://vgg.bites.com.my/collections/groceries/products/lays-cn-sour-cream-onion-170g
 https://vgg.bites.com.my/collections/groceries,Groceries,MR POTATO BBQ 140G,RM4.59,RM5.95,https://vgg.bites.com.my/collections/groceries/products/mr-potato-bbq-140g
 https://vgg.bites.com.my/collections/groceries,Groceries,MR POTATO TOMATO 140G,RM4.59,RM5.95,https://vgg.bites.com.my/collections/groceries/products/mr-potato-tomato-140g
+https://vgg.bites.com.my/collections/groceries,Groceries,CHEETOS CN CRUNCHY CHEESE 215G,RM14.80,,https://vgg.bites.com.my/collections/groceries/products/cheetos-cn-crunchy-cheese-215g
+https://vgg.bites.com.my/collections/groceries,Groceries,CHEETOS CN FLAMIN HOT 215G,RM15.00,,https://vgg.bites.com.my/collections/groceries/products/cheetos-cn-flamin-hot-215g
+https://vgg.bites.com.my/collections/groceries,Groceries,CHEETOS CN CHEDDAR JALAPENO 215G,RM15.00,,https://vgg.bites.com.my/collections/groceries/products/cheetos-cn-cheddar-jalapeno-215g
+https://vgg.bites.com.my/collections/groceries,Groceries,CHEETOS TH CHEESE PUFFS 200G,RM14.80,,https://vgg.bites.com.my/collections/groceries/products/cheetos-th-cheese-puffs-200g
 https://vgg.bites.com.my/collections/groceries,Groceries,NESCAFE ORIGINAL CAN 6X240ML,RM13.89,RM15.40,https://vgg.bites.com.my/collections/groceries/products/nescafe-original-can-6x240ml
 https://vgg.bites.com.my/collections/groceries,Groceries,LAVAZZA QUALITA ORO TIN 250G,RM48.30,,https://vgg.bites.com.my/collections/groceries/products/lavazza-qualita-oro-tin-250g
 https://vgg.bites.com.my/collections/groceries,Groceries,DUTCH LADY UHT KURMA 6X200ML,RM10.20,RM11.20,https://vgg.bites.com.my/collections/groceries/products/dutch-lady-uht-kurma-6x200ml
@@ -3103,6 +3111,7 @@ https://vgg.bites.com.my/collections/groceries,Groceries,SIMPLOT CRINKLE CUT F/F
 https://vgg.bites.com.my/collections/groceries,Groceries,LAY'S DOUBLE CRUNCH SMOKIN' BBQ 170G,RM13.29,RM14.70,https://vgg.bites.com.my/collections/groceries/products/lays-double-crunch-smokin-bbq-170g
 https://vgg.bites.com.my/collections/groceries,Groceries,LAY'S DOUBLE CRUNCH EXTRA CHEESE 170G,RM13.29,RM14.70,https://vgg.bites.com.my/collections/groceries/products/lays-double-crunch-extra-cheese-170g
 https://vgg.bites.com.my/collections/groceries,Groceries,LAY'S DOUBLE CRUNCH NORI SEAWEED 170G,RM13.29,RM14.70,https://vgg.bites.com.my/collections/groceries/products/lays-double-crunch-nori-seaweed-170g
+https://vgg.bites.com.my/collections/groceries,Groceries,CAP RAMBUTAN PUSA KING PARBOILED 1121 2KG,RM22.35,,https://vgg.bites.com.my/collections/groceries/products/cap-rambutan-pusa-king-parboiled-1121-2kg
 https://vgg.bites.com.my/collections/groceries,Groceries,WOOLWORTHS GREEN STUFFED OLIVES 450G,RM13.90,,https://vgg.bites.com.my/collections/groceries/products/woolworths-green-stuffed-olives-450g
 https://vgg.bites.com.my/collections/groceries,Groceries,WOOLWORTHS OLIVES GREEN WHOLE 450G,RM16.90,,https://vgg.bites.com.my/collections/groceries/products/woolworths-olives-green-whole-450g
 https://vgg.bites.com.my/collections/groceries,Groceries,WOOLWORTHS DICED ITALIAN TOMATO BASIL&OREGANO 400G,RM7.00,,https://vgg.bites.com.my/collections/groceries/products/woolworths-diced-italian-tomato-basil-oregano-400g
@@ -3237,6 +3246,9 @@ https://vgg.bites.com.my/collections/groceries,Groceries,LOVE EARTH ALOE VERA SE
 https://vgg.bites.com.my/collections/groceries,Groceries,WOOLWORTHS VEGETABLE LIQUID STOCK 1L,RM12.05,,https://vgg.bites.com.my/collections/groceries/products/woolworths-vegetable-liquid-stock-1l
 https://vgg.bites.com.my/collections/groceries,Groceries,KELLOGGS HONEY CRUNCH CORN FLAKES 250G,RM9.10,,https://vgg.bites.com.my/collections/groceries/products/kelloggs-honey-crunch-corn-flakes-250g
 https://vgg.bites.com.my/collections/groceries,Groceries,WOOLWORTHS DRINKING CHOCOLATE 400G,RM20.15,,https://vgg.bites.com.my/collections/groceries/products/woolworths-drinking-chocolate-400g
+https://vgg.bites.com.my/collections/groceries,Groceries,BRUNO BROWNIE CRISP CHOCOLATE 60G,RM9.90,,https://vgg.bites.com.my/collections/groceries/products/bruno-brownie-crisp-chocolate-60g
+https://vgg.bites.com.my/collections/groceries,Groceries,BRUNO BROWNIE CRISP MOCHA 60G,RM9.90,,https://vgg.bites.com.my/collections/groceries/products/bruno-brownie-crisp-mocha-60g
+https://vgg.bites.com.my/collections/groceries,Groceries,BRUNO BROWNIE CRISP MATCHA 60G,RM9.90,,https://vgg.bites.com.my/collections/groceries/products/bruno-brownie-crisp-matcha-60g
 https://vgg.bites.com.my/collections/groceries,Groceries,BRUNO BROWNIE CRISP THAI TEA 60G,RM7.99,RM10.05,https://vgg.bites.com.my/collections/groceries/products/bruno-brownie-crisp-thai-tea-60g
 https://vgg.bites.com.my/collections/groceries,Groceries,HOMESOY MULTIGRAIN 6X250ML,RM9.95,,https://vgg.bites.com.my/collections/groceries/products/homesoy-multigrain-6x250ml
 https://vgg.bites.com.my/collections/groceries,Groceries,ROYI KUIH APAM RED 500G,RM8.35,,https://vgg.bites.com.my/collections/groceries/products/royi-kuih-apam-red-500g
@@ -3953,6 +3965,7 @@ https://vgg.bites.com.my/collections/groceries,Groceries,CHIOS GARDENS 26 MANDAR
 https://vgg.bites.com.my/collections/groceries,Groceries,CHIOS GARDENS 3 FRUITS MIX 1L,RM13.19,RM15.10,https://vgg.bites.com.my/collections/groceries/products/chios-gardens-3-fruits-mix-1l
 https://vgg.bites.com.my/collections/groceries,Groceries,CHIOS GARDENS 7 APPLES 1L,RM13.19,RM15.10,https://vgg.bites.com.my/collections/groceries/products/chios-gardens-7-apples-1l
 https://vgg.bites.com.my/collections/groceries,Groceries,CHOBANI FIT VANILLA POUCH 150G,RM13.80,,https://vgg.bites.com.my/collections/groceries/products/chobani-fit-vanilla-pouch-150g
+https://vgg.bites.com.my/collections/groceries,Groceries,PUCK CREAM CHEESE SPREAD JAR 240G,RM16.70,,https://vgg.bites.com.my/collections/groceries/products/puck-cream-cheese-spread-jar-240g
 https://vgg.bites.com.my/collections/groceries,Groceries,PUCK CHEESE STICK 6X18G,RM15.20,,https://vgg.bites.com.my/collections/groceries/products/puck-cheese-stick-6x18g
 https://vgg.bites.com.my/collections/groceries,Groceries,HA'RITAGE HOLA GRANOLA COCOA 245G,RM16.99,RM19.70,https://vgg.bites.com.my/collections/groceries/products/ha-ritage-hola-granola-cocoa-245g
 https://vgg.bites.com.my/collections/groceries,Groceries,HA'RITAGE HOLA GRANOLA HONEY ALMOND 245G,RM16.99,RM19.70,https://vgg.bites.com.my/collections/groceries/products/ha-ritage-hola-granola-honey-almond-245g
@@ -4124,6 +4137,7 @@ https://vgg.bites.com.my/collections/groceries,Groceries,YOUNGER FARM GRANOLA CH
 https://vgg.bites.com.my/collections/groceries,Groceries,NESTUM 3IN1 QUINOA & BLACK RICE 10X32G,RM16.90,,https://vgg.bites.com.my/collections/groceries/products/nestum-3in1-quinoa-black-rice-10x32g
 https://vgg.bites.com.my/collections/groceries,Groceries,NESTUM 3IN1 OATS & BERRY 10X32G,RM16.90,,https://vgg.bites.com.my/collections/groceries/products/nestum-3in1-oats-berry-10x32g
 https://vgg.bites.com.my/collections/groceries,Groceries,OLDTOWN 3IN1 WHITE COFFEE PANDAN 13SX30G,RM18.49,RM21.00,https://vgg.bites.com.my/collections/groceries/products/oldtown-3in1-white-coffee-pandan-13sx30g
+https://vgg.bites.com.my/collections/groceries,Groceries,BRUNO BROWNIE CRISP CHOCOLATE SEASALT 60G,RM9.90,,https://vgg.bites.com.my/collections/groceries/products/bruno-brownie-crisp-chocolate-seasalt-60g
 https://vgg.bites.com.my/collections/groceries,Groceries,RADIANT ORGANIC QUICK OAT 500G,RM10.60,,https://vgg.bites.com.my/collections/groceries/products/radiant-organic-quick-oat-500g
 https://vgg.bites.com.my/collections/groceries,Groceries,MISURA PRIVOLAT BISCUITS WITH HONEY 400G,RM13.89,RM15.10,https://vgg.bites.com.my/collections/groceries/products/misura-privolat-biscuits-with-honey-400g
 https://vgg.bites.com.my/collections/groceries,Groceries,JIF CREAMY PEANUT BUTTER 16OZ FOC SANDWICH BAG,RM19.80,,https://vgg.bites.com.my/collections/groceries/products/jif-creamy-peanut-butter-16oz-foc-sandwich-bag
@@ -4703,6 +4717,7 @@ https://vgg.bites.com.my/collections/groceries,Groceries,MYOJO IPPEICHAN YOMISEN
 https://vgg.bites.com.my/collections/groceries,Groceries,ARAWANA BRAND SESAME OIL 220ML,RM9.39,RM9.90,https://vgg.bites.com.my/collections/groceries/products/arawana-brand-sesame-oil-220ml
 https://vgg.bites.com.my/collections/groceries,Groceries,ARAWANA BRAND GROUND SESAME OIL 220ML,RM10.79,RM11.30,https://vgg.bites.com.my/collections/groceries/products/arawana-brand-ground-sesame-oil-220ml
 https://vgg.bites.com.my/collections/groceries,Groceries,"LE ORG BABY NODDLES WHEAT, PUMPKIN, BEETROOT 180G",RM13.19,RM14.55,https://vgg.bites.com.my/collections/groceries/products/le-org-baby-noddles-wheat-pumpkin-beetroot-180g
+https://vgg.bites.com.my/collections/groceries,Groceries,SPRING HOME GOLDEN LAVA BUN 5'S,RM12.90,,https://vgg.bites.com.my/collections/groceries/products/spring-home-golden-lava-bun-5-s
 https://vgg.bites.com.my/collections/groceries,Groceries,OREO COOKIE SANDWICH W MINT CREME 124.6G,RM4.20,,https://vgg.bites.com.my/collections/groceries/products/oreo-cookie-sandwich-w-mint-creme-124-6g
 https://vgg.bites.com.my/collections/groceries,Groceries,KASUGAI TSUBU GUMMY PREMIUM GRAPE 75G,RM9.50,,https://vgg.bites.com.my/collections/groceries/products/kasugai-tsubu-gummy-premium-grape-75g
 https://vgg.bites.com.my/collections/groceries,Groceries,FRUIT ROLL-UPS STRAWBERRY SENSATION 5OZ,RM11.99,RM14.90,https://vgg.bites.com.my/collections/groceries/products/fruit-roll-ups-strawberry-sensation-5oz
