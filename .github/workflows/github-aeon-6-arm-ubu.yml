@@ -69,6 +69,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y p7zip-full xvfb
+          sudo apt-get install -y chromium-browser
 
       - name: Start virtual display
         if: steps.freshness_check.outputs.skip != 'true'
@@ -107,11 +108,6 @@ jobs:
           DELAY=$((RANDOM % 5))   # Random number between 0 and 4
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY        
-
-      - name: Install Playwright deps
-        if: steps.freshness_check.outputs.skip != 'true'
-        run: |
-          playwright install --with-deps chromium
 
       - name: Run script and validate output. With retry, timeout.
         timeout-minutes: 43
