@@ -104,9 +104,14 @@ jobs:
       - name: Random delay
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          DELAY=$((RANDOM % 7))   # Random number between 0 and 6
+          DELAY=$((RANDOM % 5))   # Random number between 0 and 4
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY        
+
+      - name: Install Playwright deps
+        if: steps.freshness_check.outputs.skip != 'true'
+        run: |
+          playwright install --with-deps chromium
 
       - name: Run script and validate output. With retry, timeout.
         timeout-minutes: 43
