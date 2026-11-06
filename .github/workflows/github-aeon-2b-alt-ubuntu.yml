@@ -76,11 +76,15 @@ jobs:
           export DISPLAY=:99
           Xvfb :99 -screen 0 1920x1080x24 &
           echo "Virtual display started"
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+          sleep 1
 
       - name: Display system information
         run: |
           echo "Linux version:"
           uname -a
+          echo "Architecture:"
+          uname -m
           echo "Python version:"
           python -V
           echo "IP address:"
@@ -150,7 +154,7 @@ jobs:
         run: |
           cp "$OUT_FILE" raw_data/
           git add "raw_data/$OUT_FILE"
-          git commit -m "Automated: Add generated Aeon-2b Akt file" || echo "No changes to commit"
+          git commit -m "Automated: Add generated Aeon-2b Alt file" || echo "No changes to commit"
           for i in 1 2 3; do
             git pull --rebase origin aeon-branch-2 && git push origin aeon-branch-2 && exit 0
             echo "Push attempt $i failed, retrying..."; sleep $((i * 5))
