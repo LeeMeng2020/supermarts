@@ -67,7 +67,11 @@ jobs:
       - name: Install system dependencies
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          sudo apt-get update
+          sudo apt update || {
+            echo "::warning::apt update failed; waiting 33 seconds before one retry"
+            sleep 33
+            sudo apt update || exit $?
+          }
           sudo apt-get install -y p7zip-full xvfb
 
       - name: Start virtual display
@@ -100,7 +104,7 @@ jobs:
       - name: Random delay
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          DELAY=$((RANDOM % 7))   # Random number between 0 and 6
+          DELAY=$((RANDOM % 6))   # Random number between 0 and 5
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY        
 
