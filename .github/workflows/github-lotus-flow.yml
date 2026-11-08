@@ -34,7 +34,11 @@ jobs:
           
       - name: Update package lists
         run: |
-          sudo apt update
+          sudo apt update || {
+            echo "::warning::apt update failed; waiting 33 seconds before one retry"
+            sleep 33
+            sudo apt update || exit $?
+          }
           apt list --upgradable        
         
       - name: Install basic utilities and 7-zip
