@@ -67,7 +67,11 @@ jobs:
       - name: Install system dependencies
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
-          sudo apt-get update
+          sudo apt update || {
+            echo "::warning::apt update failed; waiting 33 seconds before one retry"
+            sleep 33
+            sudo apt update || exit $?
+          }
           sudo apt-get install -y p7zip-full xvfb
           sudo apt-get install -y chromium-browser
 
