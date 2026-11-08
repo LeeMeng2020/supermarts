@@ -80,11 +80,15 @@ jobs:
           export DISPLAY=:99
           Xvfb :99 -screen 0 1920x1080x24 &
           echo "Virtual display started"
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+          sleep 1
 
       - name: Display system information
         run: |
           echo "Linux version:"
           uname -a
+          echo "Architecture:"
+          uname -m
           echo "Python version:"
           python -V
           echo "IP address:"
@@ -102,7 +106,7 @@ jobs:
         run: pip install -r requirements_b.txt
 
       - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 43
+        timeout-minutes: 42
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           check_output_file() {
