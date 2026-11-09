@@ -22,12 +22,29 @@ jobs:
           fetch-depth: 0
           filter: blob:none
 
-      - name: Set up Python
+      # Attempt 1: If a 504 gateway timeout occurs, continue instead of failing the job
+      - name: Set up Python (Attempt 1)
+        id: setup-python-1
+        continue-on-error: true
         uses: actions/setup-python@v6
         with:
           python-version: '3.13.13'
           cache: 'pip'
           cache-dependency-path: runner-src/requirements_b.txt
+
+      # Pause for 33 seconds to give GitHub's backend servers time to recover
+      - name: Wait before retry
+        if: steps.setup-python-1.outcome == 'failure'
+        run: sleep 33
+
+      # Attempt 2: Runs only if the first attempt failed
+      - name: Set up Python (Retry Fallback)
+        if: steps.setup-python-1.outcome == 'failure'
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+          cache-dependency-path: runner-src/requirements_b.txt          
 
       - name: Check if recent file already exists
         id: freshness_check
