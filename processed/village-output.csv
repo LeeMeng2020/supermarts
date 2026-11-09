@@ -1366,6 +1366,7 @@ Canned Food Instant Meals,Radiant Org Noodle Oat 250G,250 g,9.99,10.90,0.91,8.30
 Canned Food Instant Meals,Red Chef Penang Prawn Mee 4X90G,4 x 90 g,10.30,,,,https://vgg.bites.com.my/collections/canned-food-instant-meals/products/red-chef-penang-prawn-mee-4x90g,https://vgg.bites.com.my/collections/canned-food-instant-meals
 Canned Food Instant Meals,Red Chef Penang White Curry Mee 4X100G,4 x 100 g,10.30,,,,https://vgg.bites.com.my/collections/canned-food-instant-meals/products/red-chef-penang-white-curry-mee-4x100g,https://vgg.bites.com.my/collections/canned-food-instant-meals
 Canned Food Instant Meals,Ruski Noodle Tom Yam Kaw 5x80G,5 x 80 g,8.20,,,,https://vgg.bites.com.my/collections/canned-food-instant-meals/products/ruski-noodle-tom-yam-kaw-5sx80g,https://vgg.bites.com.my/collections/canned-food-instant-meals
+Canned Food Instant Meals,S&W Chilli Beans 439Gm,439 g,9.80,,,,https://vgg.bites.com.my/collections/canned-food-instant-meals/products/s-w-chilli-beans-439gm,https://vgg.bites.com.my/collections/canned-food-instant-meals
 Canned Food Instant Meals,S&W Pineapple Slices 567Gm,567 g,9.30,,,,https://vgg.bites.com.my/collections/canned-food-instant-meals/products/s-w-pineapple-slices-567gm,https://vgg.bites.com.my/collections/canned-food-instant-meals
 Canned Food Instant Meals,S&W Tomato Paste 170Gm,170 g,6.55,,,,https://vgg.bites.com.my/collections/canned-food-instant-meals/products/s-w-tomato-paste-170gm,https://vgg.bites.com.my/collections/canned-food-instant-meals
 Canned Food Instant Meals,Samyang Carbonara Hot Chicken Sauce 200G,200 g,16.10,,,,https://vgg.bites.com.my/collections/canned-food-instant-meals/products/samyang-carbonara-hot-chicken-sauce-200g,https://vgg.bites.com.my/collections/canned-food-instant-meals
@@ -1901,7 +1902,6 @@ Fridge,Farm Fresh Pasteurized Low Fat Milk 1L,1 liter,7.90,,,,https://vgg.bites.
 Fridge,Farm Fresh Salted Butter 200G,200 g,10.39,11.90,1.51,12.70,https://vgg.bites.com.my/collections/fridge/products/farm-fresh-salted-butter-200g,https://vgg.bites.com.my/collections/fridge
 Fridge,Farm Fresh Skinny Low Fat 2L,2 liter,16.70,17.00,0.30,1.80,https://vgg.bites.com.my/collections/fridge/products/farm-fresh-skinny-low-fat-2l,https://vgg.bites.com.my/collections/fridge
 Fridge,Farm Fresh Soy Milk Original 1L,1 liter,7.35,,,,https://vgg.bites.com.my/collections/fridge/products/farm-fresh-soy-milk-original-1l,https://vgg.bites.com.my/collections/fridge
-Fridge,Farm Fresh Soy Milk Unsweetened 1L,1 liter,7.35,,,,https://vgg.bites.com.my/collections/fridge/products/farm-fresh-soy-milk-unsweetened-1l,https://vgg.bites.com.my/collections/fridge
 Fridge,Farm Fresh Unsalted Butter 200G,200 g,10.39,11.90,1.51,12.70,https://vgg.bites.com.my/collections/fridge/products/farm-fresh-unsalted-butter-200g,https://vgg.bites.com.my/collections/fridge
 Fridge,Farmhouse L/Fat H.Cal Omega 1L,1 liter,12.70,,,,https://vgg.bites.com.my/collections/fridge/products/farmhouse-l-fat-h-cal-omega-1l,https://vgg.bites.com.my/collections/fridge
 Fridge,Farmhouse Uht Fresh Milk 1L,1 liter,8.05,,,,https://vgg.bites.com.my/collections/fridge/products/farmhouse-uht-fresh-milk-1l,https://vgg.bites.com.my/collections/fridge
@@ -2439,36 +2439,23 @@ Groceries,A-Ok Japanese Soft & Fluffy Cake Flour 900G,900 g,10.25,,,,https://vgg
 Groceries,A-Ok Japanese Soft White Bread Flour 900G,900 g,14.38,,,,https://vgg.bites.com.my/collections/groceries/products/a-ok-japanese-soft-white-bread-flour-900g,https://vgg.bites.com.my/collections/groceries
 Groceries,A-Ok Japanese Style Pancake & Waffle Mix 400G,400 g,9.66,,,,https://vgg.bites.com.my/collections/groceries/products/a-ok-japanese-style-pancake-waffle-mix-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,A-Ok Soft & Fine Self-Raising Flour 900G,900 g,10.63,,,,https://vgg.bites.com.my/collections/groceries/products/a-ok-soft-fine-self-raising-flour-900g,https://vgg.bites.com.my/collections/groceries
-Groceries,A1 Laksa Hot Pot 200G,200 g,11.50,,,,https://vgg.bites.com.my/collections/groceries/products/a1-laksa-hot-pot-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,A1 Lala Hot Pot 100G,100 g,11.50,,,,https://vgg.bites.com.my/collections/groceries/products/a1-lala-hot-pot-100g,https://vgg.bites.com.my/collections/groceries
-Groceries,A1 Vegetarian Laksa Hot Pot 200G,200 g,11.50,,,,https://vgg.bites.com.my/collections/groceries/products/a1-vegetarian-laksa-hot-pot-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,A1 Vegetarian Spice Soup 40Gm,40 g,12.10,,,,https://vgg.bites.com.my/collections/groceries/products/a1-vegetarian-spice-soup-40gm,https://vgg.bites.com.my/collections/groceries
-Groceries,A1 White Fish Broth Hot Pot 100G,100 g,11.50,,,,https://vgg.bites.com.my/collections/groceries/products/a1-white-fish-broth-hot-pot-100g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Asam Jawa Xtra 200G,200 g,5.10,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-asam-jawa-xtra-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Asam Pedas 70G,70 g,3.00,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-asam-pedas-70g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Kari Daging 250G,250 g,7.25,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-kari-daging-250g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Kari Ikan 250G,250 g,7.50,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-kari-ikan-250g,https://vgg.bites.com.my/collections/groceries
-Groceries,Adabi Kerutuk 250G,250 g,9.85,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-kerutuk-250g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Kicap Lemak Manis 340Ml,340 ml,5.75,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-kicap-lemak-manis-340ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Kicap Manis 340Ml,340 ml,5.50,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-kicap-manis-340ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Kicap Masin 340Ml,340 ml,5.50,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-kicap-masin-340ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Adabi Kurma Ayam/Daging 24G,24 g,1.80,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-kurma-ayam-daging-24g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Kurma Daging 250G,250 g,9.85,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-kurma-daging-250g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Perencah Bihun Goreng 30G,30 g,2.45,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-perencah-bihun-goreng-30g,https://vgg.bites.com.my/collections/groceries
-Groceries,Adabi Perencah Ikan Bakar 70G,70 g,3.00,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-perencah-ikan-bakar-70g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Perencah Mee Goreng 60G,60 g,3.00,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-perencah-mee-goreng-60g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Perencah Nasi Goreng 30G,30 g,2.45,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-perencah-nasi-goreng-30g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Perencah Rendang 120G,120 g,5.40,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-perencah-rendang-120g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Perencah Sup 250G,250 g,9.85,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-perencah-sup-250g,https://vgg.bites.com.my/collections/groceries
-Groceries,Adabi Perencah Tom Yam Putih 40G,40 g,2.45,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-perencah-tom-yam-putih-40g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Perencah Tomyam 40G,40 g,2.45,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-perencah-tomyam-40g,https://vgg.bites.com.my/collections/groceries
-Groceries,Adabi Rempah Briyani 100G,100 g,5.85,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-rempah-briyani-100g,https://vgg.bites.com.my/collections/groceries
-Groceries,Adabi Rendang Daging 30G,30 g,2.00,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-rendang-daging-30g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi S.Nasi Goreng Cina 17G,17 g,1.55,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-s-nasi-goreng-cina-17g,https://vgg.bites.com.my/collections/groceries
-Groceries,Adabi S.Nasi Goreng Kampung 17G,17 g,1.55,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-s-nasi-goreng-kampung-17g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Seafood Sauce 340G,340 g,6.65,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-seafood-sauce-340g,https://vgg.bites.com.my/collections/groceries
-Groceries,Adabi Serbuk Gulai Ikan 250G,250 g,7.40,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-serbuk-gulai-ikan-250g,https://vgg.bites.com.my/collections/groceries
-Groceries,Adabi Serbuk Kari Ayam & Daging 24G,24 g,1.50,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-serbuk-kari-ayam-daging-24g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Serbuk Kunyit 250G,250 g,7.95,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-serbuk-kunyit-250g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Serbuk Kunyit 30G,30 g,1.65,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-serbuk-kunyit-30g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Sos Pasta Asli 300G,300 g,7.15,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-sos-pasta-asli-300g,https://vgg.bites.com.my/collections/groceries
@@ -2477,32 +2464,17 @@ Groceries,Adabi Tepung Cucur Bawang 200G,200 g,4.60,,,,https://vgg.bites.com.my/
 Groceries,Adabi Tepung Cucur Ikan Bilis 200G,200 g,4.60,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-tepung-cucur-ikan-bilis-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Tepung Cucur Lemak Manis 200G,200 g,4.60,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-tepung-cucur-lemak-manis-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Adabi Tepung Cucur Udang 200G,200 g,4.60,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-tepung-cucur-udang-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Adabi Tepung Goreng Ayam 100G,100 g,3.35,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-tepung-goreng-ayam-100g,https://vgg.bites.com.my/collections/groceries
-Groceries,Adabi Tepung Goreng Ayam Pedas 100G,100 g,3.35,,,,https://vgg.bites.com.my/collections/groceries/products/adabi-tepung-goreng-ayam-pedas-100g,https://vgg.bites.com.my/collections/groceries
 Groceries,Aji-Shio Blck Pepper 80G,80 g,7.50,,,,https://vgg.bites.com.my/collections/groceries/products/aji-shio-blck-pepper-80g,https://vgg.bites.com.my/collections/groceries
 Groceries,Aji-Shio Pepper 80G,80 g,7.20,,,,https://vgg.bites.com.my/collections/groceries/products/aji-shio-pepper-80g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ajido Japanese Soy Sauce 350G,350 g,10.90,,,,https://vgg.bites.com.my/collections/groceries/products/ajido-japanese-soy-sauce-350g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ajido Teriyaki Sauce Bonito 400G,400 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/ajido-teriyaki-sauce-bonito-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ajido Teriyaki Sauce Original 400G,400 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/ajido-teriyaki-sauce-original-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Akasa Coconut Cooking Oil 1Kg,1 kg,26.50,,,,https://vgg.bites.com.my/collections/groceries/products/akasa-coconut-cooking-oil-1kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Alagappas Kari Ikan 250G,250 g,6.29,6.60,0.31,4.70,https://vgg.bites.com.my/collections/groceries/products/alagappas-kari-ikan-250g,https://vgg.bites.com.my/collections/groceries
 Groceries,Alpen Original Muesli 1.1Kg,1.1 kg,33.99,36.90,2.91,7.90,https://vgg.bites.com.my/collections/groceries/products/alpen-original-muesli-1-1kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Anchor Wheat Flour 1Kg,1 kg,2.99,3.90,0.91,23.30,https://vgg.bites.com.my/collections/groceries/products/anchor-wheat-flour-1kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Andrea Milano Organic Acv W Cmon & Tumeric 500Ml,500 ml,31.40,,,,https://vgg.bites.com.my/collections/groceries/products/andrea-milano-organic-acv-w-cmon-tumeric-500ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Andrea Milano Organic Acv W Gnger & Tumeric 500Ml,500 ml,27.69,31.40,3.71,11.80,https://vgg.bites.com.my/collections/groceries/products/andrea-milano-organic-acv-w-gnger-tumeric-500ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Andrea Milano Organic Pomegranate Vinegar 500Ml,500 ml,27.69,31.40,3.71,11.80,https://vgg.bites.com.my/collections/groceries/products/andrea-milano-organic-pomegranate-vinegar-500ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Angel Signature Oyster Sauce 800G,800 g,11.70,,,,https://vgg.bites.com.my/collections/groceries/products/angel-signature-oyster-sauce-800g,https://vgg.bites.com.my/collections/groceries
-Groceries,Arawana Brand Ground Sesame Oil 220Ml,220 ml,10.79,11.30,0.51,4.50,https://vgg.bites.com.my/collections/groceries/products/arawana-brand-ground-sesame-oil-220ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Arawana Brand Sesame Oil 220Ml,220 ml,9.39,9.90,0.51,5.20,https://vgg.bites.com.my/collections/groceries/products/arawana-brand-sesame-oil-220ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Authentic Parisien Croissant Almond 110G,110 g,8.50,,,,https://vgg.bites.com.my/collections/groceries/products/authentic-parisien-croissant-almond-110g,https://vgg.bites.com.my/collections/groceries
 Groceries,Authentic Parisien Croissant Chocolate 110G,110 g,8.50,,,,https://vgg.bites.com.my/collections/groceries/products/authentic-parisien-croissant-chocolate-110g,https://vgg.bites.com.my/collections/groceries
 Groceries,Authentic Parisien Mini Croissant 25G,25 g,2.45,,,,https://vgg.bites.com.my/collections/groceries/products/authentic-parisien-mini-croissant-25g,https://vgg.bites.com.my/collections/groceries
-Groceries,Aya Real Food Gillies Rendang 120G,120 g,21.90,,,,https://vgg.bites.com.my/collections/groceries/products/aya-real-food-gillies-rendang-120g,https://vgg.bites.com.my/collections/groceries
-Groceries,Aya Real Food Kalio 120G,120 g,19.90,,,,https://vgg.bites.com.my/collections/groceries/products/aya-real-food-kalio-120g,https://vgg.bites.com.my/collections/groceries
-Groceries,Aya Real Food Karashi Bilis 120G,120 g,21.90,,,,https://vgg.bites.com.my/collections/groceries/products/aya-real-food-karashi-bilis-120g,https://vgg.bites.com.my/collections/groceries
-Groceries,Aya Real Food Karashi Bilis Garlic 120G,120 g,21.90,,,,https://vgg.bites.com.my/collections/groceries/products/aya-real-food-karashi-bilis-garlic-120g,https://vgg.bites.com.my/collections/groceries
-Groceries,Aya Real Food Karashi Bilis Kombu 120G,120 g,21.90,,,,https://vgg.bites.com.my/collections/groceries/products/aya-real-food-karashi-bilis-kombu-120g,https://vgg.bites.com.my/collections/groceries
-Groceries,Aya Real Food Karashi Bilis Sichuan 120G,120 g,21.90,,,,https://vgg.bites.com.my/collections/groceries/products/aya-real-food-karashi-bilis-sichuan-120g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ayam Brand Assam Pedas 180G,180 g,5.19,5.60,0.41,7.30,https://vgg.bites.com.my/collections/groceries/products/ayam-brand-assam-pedas-180g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ayam Brand Curry Chicken 180G,180 g,5.19,5.60,0.41,7.30,https://vgg.bites.com.my/collections/groceries/products/ayam-brand-curry-chicken-180g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ayam Brand Fish Curry Paste 180G,180 g,5.19,5.60,0.41,7.30,https://vgg.bites.com.my/collections/groceries/products/ayam-brand-fish-curry-paste-180g,https://vgg.bites.com.my/collections/groceries
@@ -2517,16 +2489,11 @@ Groceries,Babas Ketumbar 125G,125 g,3.00,,,,https://vgg.bites.com.my/collections
 Groceries,Babas Serbuk Kari Ikan 250G,250 g,6.80,,,,https://vgg.bites.com.my/collections/groceries/products/babas-serbuk-kari-ikan-250g,https://vgg.bites.com.my/collections/groceries
 Groceries,Babas Serbuk Kunyit 125G,125 g,3.80,,,,https://vgg.bites.com.my/collections/groceries/products/babas-serbuk-kunyit-125g,https://vgg.bites.com.my/collections/groceries
 Groceries,Babas Serbuk Kunyit 250G,250 g,7.60,,,,https://vgg.bites.com.my/collections/groceries/products/babas-serbuk-kunyit-250g,https://vgg.bites.com.my/collections/groceries
-Groceries,Ballantyne Salted Butter Mini Tub 12X7G,12 x 7 g,10.99,12.25,1.26,10.30,https://vgg.bites.com.my/collections/groceries/products/ballantyne-salted-butter-mini-tub-12x7g,https://vgg.bites.com.my/collections/groceries
-Groceries,Ballantyne Spreadable Butter 200G,200 g,19.89,24.65,4.76,19.30,https://vgg.bites.com.my/collections/groceries/products/ballantyne-spreadable-butter-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ballantyne Unsalted Butter 250G,250 g,19.89,24.60,4.71,19.10,https://vgg.bites.com.my/collections/groceries/products/ballantyne-unsalted-butter-250g,https://vgg.bites.com.my/collections/groceries
-Groceries,Ballantyne Unsalted Butter Mini Tub 12X7G,12 x 7 g,10.99,12.25,1.26,10.30,https://vgg.bites.com.my/collections/groceries/products/ballantyne-unsalted-butter-mini-tub-12x7g,https://vgg.bites.com.my/collections/groceries
 Groceries,Barilla Base Per Bolognese 400G,400 g,14.49,18.65,4.16,22.30,https://vgg.bites.com.my/collections/groceries/products/barilla-base-per-bolognese-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Barilla Extra 25% Basilico 500G,500 g,14.49,18.90,4.41,23.30,https://vgg.bites.com.my/collections/groceries/products/barilla-extra-25-basilico-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Barilla Extra 25% Napoletana 500G,500 g,14.49,18.90,4.41,23.30,https://vgg.bites.com.my/collections/groceries/products/barilla-extra-25-napoletana-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Barilla Pesto Alla Genovese 190G,190 g,19.99,25.15,5.16,20.50,https://vgg.bites.com.my/collections/groceries/products/barilla-pesto-alla-genovese-190g,https://vgg.bites.com.my/collections/groceries
-Groceries,Barilla Pesto Basilico Pitascchio 190G,190 g,19.99,25.15,5.16,20.50,https://vgg.bites.com.my/collections/groceries/products/barilla-pesto-basilico-pitascchio-190g,https://vgg.bites.com.my/collections/groceries
-Groceries,Barilla Pomodoro Datterini 400G,400 g,14.99,18.90,3.91,20.70,https://vgg.bites.com.my/collections/groceries/products/barilla-pomodoro-datterini-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Barilla Pomodoroe Elicotta 400G,400 g,14.49,18.65,4.16,22.30,https://vgg.bites.com.my/collections/groceries/products/barilla-pomodoroe-elicotta-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Barilla Salsa Napoletana 400Gm,400 g,14.49,18.65,4.16,22.30,https://vgg.bites.com.my/collections/groceries/products/barilla-salsa-napoletana-400gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Barilla Sugo Al Basilico 400G,400 g,14.49,18.65,4.16,22.30,https://vgg.bites.com.my/collections/groceries/products/barilla-sugo-al-basilico-400g,https://vgg.bites.com.my/collections/groceries
@@ -2543,27 +2510,12 @@ Groceries,Bertolli Classico Olive Oil 100Ml,100 ml,13.35,,,,https://vgg.bites.co
 Groceries,Bertolli Classico Olive Oil 250Ml,250 ml,23.10,,,,https://vgg.bites.com.my/collections/groceries/products/bertolli-classico-olive-oil-250ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Bertolli Extra Virgin Olive Oil 1000Ml,1000 ml,82.65,,,,https://vgg.bites.com.my/collections/groceries/products/bertolli-extra-virgin-olive-oil-1000ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Bertolli Extra Virgin Olive Oil 250Ml,250 ml,24.40,,,,https://vgg.bites.com.my/collections/groceries/products/bertolli-extra-virgin-olive-oil-250ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Bestari Fritter Batter 250G,250 g,3.15,,,,https://vgg.bites.com.my/collections/groceries/products/bestari-fritter-batter-250g,https://vgg.bites.com.my/collections/groceries
-Groceries,Bestari Tepung Ayam Goreng Original 1Kg,1 kg,9.85,,,,https://vgg.bites.com.my/collections/groceries/products/bestari-tepung-ayam-goreng-original-1kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Bestari Tepung Tempura Original 150G,150 g,3.90,,,,https://vgg.bites.com.my/collections/groceries/products/bestari-tepung-tempura-original-150g,https://vgg.bites.com.my/collections/groceries
 Groceries,Betty Crocker Pancake Mix Buttermilk 400G,400 g,10.05,,,,https://vgg.bites.com.my/collections/groceries/products/betty-crocker-pancake-mix-buttermilk-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Betty Crocker Pancake Mix Original 400G,400 g,10.05,,,,https://vgg.bites.com.my/collections/groceries/products/betty-crocker-pancake-mix-original-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Bibik Express Series - Bawang Besar 400G,400 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/bibik-express-series-bawang-besar-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Bibik Express Series - Bawang Putih 400G,400 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/bibik-express-series-bawang-putih-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Bibik Express Series - Cili Kering 400G,400 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/bibik-express-series-cili-kering-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Bibik Express Series - Cili Padi 400G,400 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/bibik-express-series-cili-padi-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Bibik Express Series - Halia 400G,400 g,21.50,,,,https://vgg.bites.com.my/collections/groceries/products/bibik-express-series-halia-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Bibik Express Series - Kunyit 400G,400 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/bibik-express-series-kunyit-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Big Sister Light Cake 40% Mix Fruit Goodness 700G,700 g,29.30,,,,https://vgg.bites.com.my/collections/groceries/products/big-sister-light-cake-40-mix-fruit-goodness-700g,https://vgg.bites.com.my/collections/groceries
 Groceries,Bird Of Paradise Phkarhnei Org 1Kg,1 kg,10.05,,,,https://vgg.bites.com.my/collections/groceries/products/bird-of-paradise-phkarhnei-org-1kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Biscoff Spread Smooth 400G,400 g,28.10,,,,https://vgg.bites.com.my/collections/groceries/products/biscoff-spread-smooth-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Blue Elephant Thai Holy Basil Stir Fry Paste 70G,70 g,12.15,,,,https://vgg.bites.com.my/collections/groceries/products/blue-elephant-thai-holy-basil-stir-fry-paste-70g,https://vgg.bites.com.my/collections/groceries
-Groceries,Blue Elephant Tom Kha Paste 70G,70 g,12.15,,,,https://vgg.bites.com.my/collections/groceries/products/blue-elephant-tom-kha-paste-70g,https://vgg.bites.com.my/collections/groceries
-Groceries,Blue Elephant Tom Yam Chilli Paste 75G,75 g,12.15,,,,https://vgg.bites.com.my/collections/groceries/products/blue-elephant-tom-yam-chilli-paste-75g,https://vgg.bites.com.my/collections/groceries
-Groceries,Blue Elephant Yellow Curry Paste 70G,70 g,12.15,,,,https://vgg.bites.com.my/collections/groceries/products/blue-elephant-yellow-curry-paste-70g,https://vgg.bites.com.my/collections/groceries
 Groceries,Blue Key Self Raising Flour 1Kg,1 kg,5.35,,,,https://vgg.bites.com.my/collections/groceries/products/blue-key-self-raising-flour-1kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Bob's Red Mill Gluten Free Rolled Oats Quick 794G,794 g,47.50,,,,https://vgg.bites.com.my/collections/groceries/products/bob-s-red-mill-gluten-free-rolled-oats-quick-794g,https://vgg.bites.com.my/collections/groceries
-Groceries,Bonne Maman Figs Jam 370G,370 g,24.70,,,,https://vgg.bites.com.my/collections/groceries/products/bonne-maman-figs-jam-370g,https://vgg.bites.com.my/collections/groceries
 Groceries,Bonne Maman Strawberry Jam 370G,370 g,24.70,,,,https://vgg.bites.com.my/collections/groceries/products/bonne-maman-strawberry-jam-370g,https://vgg.bites.com.my/collections/groceries
 Groceries,Borges Classic Olive Oil 500Ml,500 ml,46.50,,,,https://vgg.bites.com.my/collections/groceries/products/borges-classic-olive-oil-500ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Borges Extra Virgin Olive Oil 1L,1 liter,91.00,,,,https://vgg.bites.com.my/collections/groceries/products/borges-extra-virgin-olive-oil-1l,https://vgg.bites.com.my/collections/groceries
@@ -2574,12 +2526,8 @@ Groceries,Brahims Kuah Satay 180Gm,180 g,7.20,,,,https://vgg.bites.com.my/collec
 Groceries,Brahims Pajeri Sauce 180Gm,180 g,7.20,,,,https://vgg.bites.com.my/collections/groceries/products/brahims-pajeri-sauce-180gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Brahims Spicy Tomato Sauce 180Gm,180 g,7.20,,,,https://vgg.bites.com.my/collections/groceries/products/brahims-spicy-tomato-sauce-180gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Buttercup L/Spread 1Kg,1 kg,21.99,24.40,2.41,9.90,https://vgg.bites.com.my/collections/groceries/products/buttercup-l-spread-1kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Camoli Camelina Oil 1Kg,1 kg,13.69,19.90,6.21,31.20,https://vgg.bites.com.my/collections/groceries/products/camoli-camelina-oil-1kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Cap Junjung K/Manis 500G,500 g,4.40,,,,https://vgg.bites.com.my/collections/groceries/products/cap-junjung-k-manis-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Cap Wangi Kerisik Kelapa 40G,40 g,1.10,,,,https://vgg.bites.com.my/collections/groceries/products/cap-wangi-kerisik-kelapa-40g,https://vgg.bites.com.my/collections/groceries
-Groceries,Cap Wangi Kerisik Kelapa 500G,500 g,11.00,,,,https://vgg.bites.com.my/collections/groceries/products/cap-wangi-kerisik-kelapa-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Captain Granola Cocoa Hazelnut 200G,200 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/captain-granola-cocoa-hazelnut-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Captain Granola Honey Almond 220G,220 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/captain-granola-honey-almond-220g,https://vgg.bites.com.my/collections/groceries
 Groceries,Captain Granola Strawberry Yoghurt 220G,220 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/captain-granola-strawberry-yoghurt-220g,https://vgg.bites.com.my/collections/groceries
 Groceries,Captain Instant Rolled Oats 800G,800 g,10.95,,,,https://vgg.bites.com.my/collections/groceries/products/captain-instant-rolled-oats-800g,https://vgg.bites.com.my/collections/groceries
 Groceries,Captain Oat Instant Oat 800G,800 g,10.95,,,,https://vgg.bites.com.my/collections/groceries/products/captain-oat-instant-oat-800g,https://vgg.bites.com.my/collections/groceries
@@ -2590,26 +2538,16 @@ Groceries,Carotino Cooking Oil 3Kg,3 kg,35.00,,,,https://vgg.bites.com.my/collec
 Groceries,Ced Peanut Butter Chocolate 500G,500 g,14.79,15.80,1.01,6.40,https://vgg.bites.com.my/collections/groceries/products/ced-peanut-butter-chocolate-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ced Peanut Butter Creamy 500G,500 g,14.79,15.80,1.01,6.40,https://vgg.bites.com.my/collections/groceries/products/ced-peanut-butter-creamy-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ced Peanut Butter Crunch 500G,500 g,14.79,15.80,1.01,6.40,https://vgg.bites.com.my/collections/groceries/products/ced-peanut-butter-crunch-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Ced Peanut Butter Honey Stripes 500G,500 g,14.79,15.80,1.01,6.40,https://vgg.bites.com.my/collections/groceries/products/ced-peanut-butter-honey-stripes-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ced Peanut Butter Strawberry 500G,500 g,14.79,15.80,1.01,6.40,https://vgg.bites.com.my/collections/groceries/products/ced-peanut-butter-strawberry-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Cfo Org Apple Cider Vineger 500Ml,500 ml,15.60,,,,https://vgg.bites.com.my/collections/groceries/products/cfo-org-apple-cider-vineger-500ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Chee Seng Pure Black Sesame Oil 320Ml,320 ml,18.75,,,,https://vgg.bites.com.my/collections/groceries/products/chee-seng-pure-black-sesame-oil-320ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Chee Seng Pure Black Sesame Oil 650Ml,650 ml,31.99,34.35,2.36,6.90,https://vgg.bites.com.my/collections/groceries/products/chee-seng-pure-black-sesame-oil-650ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Chee Seng Pure White Sesame Oil 320Ml,320 ml,18.75,,,,https://vgg.bites.com.my/collections/groceries/products/chee-seng-pure-white-sesame-oil-320ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Chocolake Kunafa Bonello 190G,190 g,35.70,,,,https://vgg.bites.com.my/collections/groceries/products/chocolake-kunafa-bonello-190g,https://vgg.bites.com.my/collections/groceries
-Groceries,Chocolake Kunafa Pistachio 190G,190 g,39.50,,,,https://vgg.bites.com.my/collections/groceries/products/chocolake-kunafa-pistachio-190g,https://vgg.bites.com.my/collections/groceries
 Groceries,Chocolate Bread 6S - 240G,240 g,5.60,,,,https://vgg.bites.com.my/collections/groceries/products/chocolate-bread-6s-240g,https://vgg.bites.com.my/collections/groceries
 Groceries,Cholula Chili Garlic 5Oz,,16.70,,,,https://vgg.bites.com.my/collections/groceries/products/cholula-chili-garlic-5oz,https://vgg.bites.com.my/collections/groceries
 Groceries,Cholula Hot Sauce 5Oz,,16.70,,,,https://vgg.bites.com.my/collections/groceries/products/cholula-hot-sauce-5oz,https://vgg.bites.com.my/collections/groceries
-Groceries,Cirio Pasta Sauce Bologna Vegan Ragu 340G,340 g,12.89,14.10,1.21,8.60,https://vgg.bites.com.my/collections/groceries/products/cirio-pasta-sauce-bologna-vegan-ragu-340g,https://vgg.bites.com.my/collections/groceries
-Groceries,Cirio Pasta Sauce Calabria Hot Chilli 340G,340 g,9.99,10.90,0.91,8.30,https://vgg.bites.com.my/collections/groceries/products/cirio-pasta-sauce-calabria-hot-chilli-340g,https://vgg.bites.com.my/collections/groceries
 Groceries,Classic Wheat Sourdough Bread 350G,350 g,12.80,,,,https://vgg.bites.com.my/collections/groceries/products/classic-wheat-sourdough-bread-350g,https://vgg.bites.com.my/collections/groceries
 Groceries,Clear Valley Blends 1Kg,1 kg,15.20,,,,https://vgg.bites.com.my/collections/groceries/products/clear-valley-blends-1kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Clear Valley Blends 3Kg,3 kg,33.90,,,,https://vgg.bites.com.my/collections/groceries/products/clear-valley-blends-3kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Clear Valley High Oleic Blends 1Kg,1 kg,18.70,,,,https://vgg.bites.com.my/collections/groceries/products/clear-valley-high-oleic-blends-1kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Clear Valley High Oleic Blends 3Kg,3 kg,47.20,,,,https://vgg.bites.com.my/collections/groceries/products/clear-valley-high-oleic-blends-3kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Cocoli Coconut Oil 1Kg,1 kg,24.40,,,,https://vgg.bites.com.my/collections/groceries/products/cocoli-coconut-oil-1kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Colavita Avocado Oil 750Ml,750 ml,63.80,,,,https://vgg.bites.com.my/collections/groceries/products/colavita-avocado-oil-750ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Colavita Extra Virgin Olive Oil 100 Italian 500Ml,500 ml,48.55,,,,https://vgg.bites.com.my/collections/groceries/products/colavita-extra-virgin-olive-oil-100-italian-500ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Colavita Extra Virgin Olive Oil Prem Select 1L,1 liter,58.99,72.50,13.51,18.60,https://vgg.bites.com.my/collections/groceries/products/colavita-extra-virgin-olive-oil-prem-select-1l,https://vgg.bites.com.my/collections/groceries
 Groceries,Colavita Extra Virgin Olive Oil Prem Select 250Ml,250 ml,20.99,25.05,4.06,16.20,https://vgg.bites.com.my/collections/groceries/products/colavita-extra-virgin-olive-oil-prem-select-250ml,https://vgg.bites.com.my/collections/groceries
@@ -2621,7 +2559,6 @@ Groceries,Colgate  Red Tp Fcm 175G,175 g,11.75,,,,https://vgg.bites.com.my/colle
 Groceries,Coo Wholemeal Sandwich 500G,500 g,4.90,,,,https://vgg.bites.com.my/collections/groceries/products/coo-wholemeal-sandwich-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Crying Thaiger Sriracha Hot Chilli Sauce 440Ml,440 ml,14.10,,,,https://vgg.bites.com.my/collections/groceries/products/crying-thaiger-sriracha-hot-chilli-sauce-440ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Csr Better Brown Sugar 1Kg,1 kg,5.95,,,,https://vgg.bites.com.my/collections/groceries/products/csr-better-brown-sugar-1kg,https://vgg.bites.com.my/collections/groceries
-Groceries,D.Desa Fucuk Campur 40G,40 g,5.10,,,,https://vgg.bites.com.my/collections/groceries/products/d-desa-fucuk-campur-40g,https://vgg.bites.com.my/collections/groceries
 Groceries,D/Swallow Garam Halus (Beriodin) 375G,375 g,1.30,,,,https://vgg.bites.com.my/collections/groceries/products/d-swallow-garam-halus-beriodin-375g,https://vgg.bites.com.my/collections/groceries
 Groceries,D/Swallow Garam Halus (Beriodin) 450G,450 g,1.35,,,,https://vgg.bites.com.my/collections/groceries/products/d-swallow-garam-halus-beriodin-450g,https://vgg.bites.com.my/collections/groceries
 Groceries,D/Swallow Garam Kasar (Beriodin) 350G,350 g,0.95,,,,https://vgg.bites.com.my/collections/groceries/products/d-swallow-garam-kasar-beriodin-350g,https://vgg.bites.com.my/collections/groceries
@@ -2630,11 +2567,6 @@ Groceries,Daesang Hot Pepper Bean Paste 500G,500 g,20.40,,,,https://vgg.bites.co
 Groceries,Daesang Korean Marinade For Beef 500G,500 g,19.25,,,,https://vgg.bites.com.my/collections/groceries/products/daesang-korean-marinade-for-beef-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Daesang Mixed Soy Bean Paste 500G,500 g,13.10,,,,https://vgg.bites.com.my/collections/groceries/products/daesang-mixed-soy-bean-paste-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Daesang Soy Bean Paste 500G,500 g,13.30,,,,https://vgg.bites.com.my/collections/groceries/products/daesang-soy-bean-paste-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Daisho Ajiko Gb Seasoning Powder 225G,225 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/daisho-ajiko-gb-seasoning-powder-225g,https://vgg.bites.com.my/collections/groceries
-Groceries,Daisho Goma Ponzu Gb 240G,240 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/daisho-goma-ponzu-gb-240g,https://vgg.bites.com.my/collections/groceries
-Groceries,Daisho Ippudo Kanshu Plant Base Nabe 750G,750 g,18.99,21.90,2.91,13.30,https://vgg.bites.com.my/collections/groceries/products/daisho-ippudo-kanshu-plant-base-nabe-750g,https://vgg.bites.com.my/collections/groceries
-Groceries,Daisho Ippudo Plant Based Spicy Tantan Soup 750G,750 g,18.99,21.90,2.91,13.30,https://vgg.bites.com.my/collections/groceries/products/daisho-ippudo-plant-based-spicy-tantan-soup-750g,https://vgg.bites.com.my/collections/groceries
-Groceries,Daisho Oden Nabe Soup 750G,750 g,18.99,21.90,2.91,13.30,https://vgg.bites.com.my/collections/groceries/products/daisho-oden-nabe-soup-750g,https://vgg.bites.com.my/collections/groceries
 Groceries,Daisho Roasted Sushi Seaweed 10S,10 pcs,12.50,,,,https://vgg.bites.com.my/collections/groceries/products/daisho-roasted-sushi-seaweed-10s,https://vgg.bites.com.my/collections/groceries
 Groceries,Daisho Sushi Su 360Ml,360 ml,12.45,,,,https://vgg.bites.com.my/collections/groceries/products/daisho-sushi-su-360ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Daisy Corn Oil 1Kg,1 kg,15.99,16.55,0.56,3.40,https://vgg.bites.com.my/collections/groceries/products/daisy-corn-oil-1kg,https://vgg.bites.com.my/collections/groceries
@@ -2642,13 +2574,6 @@ Groceries,Daisy Corn Oil 2Kg,2 kg,30.19,31.25,1.06,3.40,https://vgg.bites.com.my
 Groceries,Daisy Corn Oil 500G,500 g,7.99,8.95,0.96,10.70,https://vgg.bites.com.my/collections/groceries/products/daisy-corn-oil-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Daisy Seri Kaya 480G,480 g,8.05,,,,https://vgg.bites.com.my/collections/groceries/products/daisy-seri-kaya-480g,https://vgg.bites.com.my/collections/groceries
 Groceries,Dancing Chef Korean Spicy Chicken Sauce 100G,100 g,8.80,,,,https://vgg.bites.com.my/collections/groceries/products/dancing-chef-korean-spicy-chicken-sauce-100g,https://vgg.bites.com.my/collections/groceries
-Groceries,Darbo Garden Strawberry 200G,200 g,15.35,,,,https://vgg.bites.com.my/collections/groceries/products/darbo-garden-strawberry-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,De Zhuang Mala Spice Mix 12 Degrees 100G,100 g,9.00,,,,https://vgg.bites.com.my/collections/groceries/products/de-zhuang-mala-spice-mix-12-degrees-100g,https://vgg.bites.com.my/collections/groceries
-Groceries,De Zhuang Mala Spice Mix 52 Degrees 100G,100 g,9.00,,,,https://vgg.bites.com.my/collections/groceries/products/de-zhuang-mala-spice-mix-52-degrees-100g,https://vgg.bites.com.my/collections/groceries
-Groceries,De Zhuang Pure Green Hot Pot Base 52 Degrees 220G,220 g,12.10,,,,https://vgg.bites.com.my/collections/groceries/products/de-zhuang-pure-green-hot-pot-base-52-degrees-220g,https://vgg.bites.com.my/collections/groceries
-Groceries,De Zhuang Spicy Hot Pot Base 12 Degrees 220G,220 g,11.10,,,,https://vgg.bites.com.my/collections/groceries/products/de-zhuang-spicy-hot-pot-base-12-degrees-220g,https://vgg.bites.com.my/collections/groceries
-Groceries,De Zhuang Spicy Hot Pot Base 52 Degrees 220G,220 g,12.10,,,,https://vgg.bites.com.my/collections/groceries/products/de-zhuang-spicy-hot-pot-base-52-degrees-220g,https://vgg.bites.com.my/collections/groceries
-Groceries,De Zhuang Tomato Hot Pot Base 220G,220 g,11.10,,,,https://vgg.bites.com.my/collections/groceries/products/de-zhuang-tomato-hot-pot-base-220g,https://vgg.bites.com.my/collections/groceries
 Groceries,Del Monte Tomato Ketchup 340G,340 g,5.20,,,,https://vgg.bites.com.my/collections/groceries/products/del-monte-tomato-ketchup-340g,https://vgg.bites.com.my/collections/groceries
 Groceries,Delfi Choco Hazelnut & Milk Spread 350G,350 g,17.49,18.60,1.11,6.00,https://vgg.bites.com.my/collections/groceries/products/delfi-choco-hazelnut-milk-spread-350g,https://vgg.bites.com.my/collections/groceries
 Groceries,Delfi Choco Hazelnut Spread 350G,350 g,17.49,18.60,1.11,6.00,https://vgg.bites.com.my/collections/groceries/products/delfi-choco-hazelnut-spread-350g,https://vgg.bites.com.my/collections/groceries
@@ -2656,38 +2581,24 @@ Groceries,Delfi Chocolate Syrup 350Ml,350 ml,14.85,,,,https://vgg.bites.com.my/c
 Groceries,Delfi Double Hazelnut Spread 350G,350 g,17.49,18.60,1.11,6.00,https://vgg.bites.com.my/collections/groceries/products/delfi-double-hazelnut-spread-350g,https://vgg.bites.com.my/collections/groceries
 Groceries,Delfi Rich Choco Spread 350G,350 g,17.49,18.60,1.11,6.00,https://vgg.bites.com.my/collections/groceries/products/delfi-rich-choco-spread-350g,https://vgg.bites.com.my/collections/groceries
 Groceries,Delfi Unsweetened Cocoa Powder 180G,180 g,17.65,,,,https://vgg.bites.com.my/collections/groceries/products/delfi-unsweetened-cocoa-powder-180g,https://vgg.bites.com.my/collections/groceries
-Groceries,Delfi Yuraku Big Thunder Share Pack (8X7.4G),,5.80,,,,https://vgg.bites.com.my/collections/groceries/products/delfi-yuraku-big-thunder-share-pack-8x7-4g,https://vgg.bites.com.my/collections/groceries
 Groceries,Delimas Tumisan Ikan Asam 120G,120 g,4.85,,,,https://vgg.bites.com.my/collections/groceries/products/delimas-tumisan-ikan-asam-120g,https://vgg.bites.com.my/collections/groceries
 Groceries,Delimas Tumisan Masak Lemak Cili Api 120G,120 g,6.25,,,,https://vgg.bites.com.my/collections/groceries/products/delimas-tumisan-masak-lemak-cili-api-120g,https://vgg.bites.com.my/collections/groceries
 Groceries,Delimas Tumisan Rendang 120G,120 g,4.85,,,,https://vgg.bites.com.my/collections/groceries/products/delimas-tumisan-rendang-120g,https://vgg.bites.com.my/collections/groceries
 Groceries,Delimas Tumisan Sambal Tumis 120G,120 g,4.85,,,,https://vgg.bites.com.my/collections/groceries/products/delimas-tumisan-sambal-tumis-120g,https://vgg.bites.com.my/collections/groceries
 Groceries,Dollee Pandan Kaya 330Gm,330 g,12.80,,,,https://vgg.bites.com.my/collections/groceries/products/dollee-pandan-kaya-330gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Double Happiness Beetroot 90G,90 g,14.50,,,,https://vgg.bites.com.my/collections/groceries/products/double-happiness-beetroot-90g,https://vgg.bites.com.my/collections/groceries
-Groceries,Double Happiness Pumpkin 90G,90 g,14.50,,,,https://vgg.bites.com.my/collections/groceries/products/double-happiness-pumpkin-90g,https://vgg.bites.com.my/collections/groceries
-Groceries,Double Happiness Sweet Potato 90G,90 g,14.50,,,,https://vgg.bites.com.my/collections/groceries/products/double-happiness-sweet-potato-90g,https://vgg.bites.com.my/collections/groceries
 Groceries,Double Pagoda Chives Shallot Oil 150Ml,150 ml,11.85,,,,https://vgg.bites.com.my/collections/groceries/products/double-pagoda-chives-shallot-oil-150ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Double Pagoda Garlic Sesame Oil 150Ml,150 ml,10.99,11.85,0.86,7.30,https://vgg.bites.com.my/collections/groceries/products/double-pagoda-garlic-sesame-oil-150ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Double Pagoda Ginger Sesame Oil 150Ml,150 ml,10.99,11.85,0.86,7.30,https://vgg.bites.com.my/collections/groceries/products/double-pagoda-ginger-sesame-oil-150ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Double Pagoda Pure Fragrant Sesame Oil 150Ml,150 ml,11.85,,,,https://vgg.bites.com.my/collections/groceries/products/double-pagoda-pure-fragrant-sesame-oil-150ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Duchef Tomato Puree 220G,220 g,4.05,,,,https://vgg.bites.com.my/collections/groceries/products/duchef-tomato-puree-220g,https://vgg.bites.com.my/collections/groceries
 Groceries,Duchef Tomato Puree 430G,430 g,5.75,,,,https://vgg.bites.com.my/collections/groceries/products/duchef-tomato-puree-430g,https://vgg.bites.com.my/collections/groceries
-Groceries,Eggo Choc Chip Waffles 12.3Oz,,26.60,,,,https://vgg.bites.com.my/collections/groceries/products/eggo-choc-chip-waffles-12-3oz,https://vgg.bites.com.my/collections/groceries
-Groceries,Eggo Homestyle Waffles 12.3Oz,,26.60,,,,https://vgg.bites.com.my/collections/groceries/products/eggo-homestyle-waffles-12-3oz,https://vgg.bites.com.my/collections/groceries
-Groceries,Eggo Mini Buttermilk Pancake 14.1Oz,,26.60,,,,https://vgg.bites.com.my/collections/groceries/products/eggo-mini-buttermilk-pancake-14-1oz,https://vgg.bites.com.my/collections/groceries
-Groceries,Eggo Strawberry Waffles 12.3Oz,,26.60,,,,https://vgg.bites.com.my/collections/groceries/products/eggo-strawberry-waffles-12-3oz,https://vgg.bites.com.my/collections/groceries
 Groceries,El Sabor Salsa Dip 315Gm,315 g,17.65,,,,https://vgg.bites.com.my/collections/groceries/products/el-sabor-salsa-dip-315gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Elephant Cooking Caramel 740Ml,740 ml,12.99,13.45,0.46,3.40,https://vgg.bites.com.my/collections/groceries/products/elephant-cooking-caramel-740ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Elephant Thick Sauce 375Ml,375 ml,7.85,,,,https://vgg.bites.com.my/collections/groceries/products/elephant-thick-sauce-375ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Equal 300 Tablets 25.5G,25.5 g,20.69,25.85,5.16,20.00,https://vgg.bites.com.my/collections/groceries/products/equal-300-tablets-25-5g,https://vgg.bites.com.my/collections/groceries
-Groceries,Eva Creamy Peanut Butter 500G,500 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/eva-creamy-peanut-butter-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Eva Crunchy Peanut Butter 500G,500 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/eva-crunchy-peanut-butter-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Farmcow Dairy Spread 250G,250 g,7.80,,,,https://vgg.bites.com.my/collections/groceries/products/farmcow-dairy-spread-250g,https://vgg.bites.com.my/collections/groceries
 Groceries,Filippo Berio Extra Light Olive Oil 1L,1 liter,86.90,,,,https://vgg.bites.com.my/collections/groceries/products/filippo-berio-extra-light-olive-oil-1l,https://vgg.bites.com.my/collections/groceries
 Groceries,Filippo Berio Extra Virgin Olive Oil 1L,1 liter,88.90,,,,https://vgg.bites.com.my/collections/groceries/products/filippo-berio-extra-virgin-olive-oil-1l,https://vgg.bites.com.my/collections/groceries
 Groceries,Filippo Berio Hot Chilli Pesto Sauce 190G,190 g,16.10,,,,https://vgg.bites.com.my/collections/groceries/products/filippo-berio-hot-chilli-pesto-sauce-190g,https://vgg.bites.com.my/collections/groceries
 Groceries,Fillipo Berio Pure Olive Oil 250Ml,250 ml,25.90,,,,https://vgg.bites.com.my/collections/groceries/products/fillipo-berio-pure-olive-oil-250ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Fix & Fogg Everything Butter 275G,275 g,29.29,30.30,1.01,3.30,https://vgg.bites.com.my/collections/groceries/products/fix-fogg-everything-butter-275g,https://vgg.bites.com.my/collections/groceries
-Groceries,Fix & Fogg Peanut Butter Super Crunchy 375G,375 g,29.29,30.30,1.01,3.30,https://vgg.bites.com.my/collections/groceries/products/fix-fogg-peanut-butter-super-crunchy-375g,https://vgg.bites.com.my/collections/groceries
 Groceries,French's Classic Yellow Mustard 226G,226 g,12.20,,,,https://vgg.bites.com.my/collections/groceries/products/french-s-classic-yellow-mustard-226g,https://vgg.bites.com.my/collections/groceries
 Groceries,Frisolac 1 600G,600 g,91.60,,,,https://vgg.bites.com.my/collections/groceries/products/frisolac-1-600g,https://vgg.bites.com.my/collections/groceries
 Groceries,"Fruit Hitz Apple, Banana & Blueberry 90G",90 g,6.60,,,,https://vgg.bites.com.my/collections/groceries/products/fruit-hitz-apple-banana-blueberry-90g,https://vgg.bites.com.my/collections/groceries
@@ -2708,25 +2619,13 @@ Groceries,Gowell Classic Wraps 400G,400 g,17.10,,,,https://vgg.bites.com.my/coll
 Groceries,Gowell Lower Carb Wraps 400G,400 g,21.15,,,,https://vgg.bites.com.my/collections/groceries/products/gowell-lower-carb-wraps-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Greenlove Gold Cup Ev Groundnut Oil 1.8L,1.8 liter,37.99,38.90,0.91,2.30,https://vgg.bites.com.my/collections/groceries/products/greenlove-gold-cup-ev-groundnut-oil-1-8l,https://vgg.bites.com.my/collections/groceries
 Groceries,Greenlove Sunflower Oil 1.8L,1.8 liter,24.99,27.75,2.76,9.90,https://vgg.bites.com.my/collections/groceries/products/greenlove-sunflower-oil-1-8l,https://vgg.bites.com.my/collections/groceries
-Groceries,Grilled Wagyu Sausage Pastry 80G,80 g,13.90,,,,https://vgg.bites.com.my/collections/groceries/products/grilled-wagyu-sausage-pastry-80g,https://vgg.bites.com.my/collections/groceries
-Groceries,H Bagel Matcha 100G (Rt),,4.90,,,,https://vgg.bites.com.my/collections/groceries/products/h-bagel-matcha-100g-rt,https://vgg.bites.com.my/collections/groceries
-Groceries,H Bagel Original 100G (Rt),,4.50,,,,https://vgg.bites.com.my/collections/groceries/products/h-bagel-original-100g-rt,https://vgg.bites.com.my/collections/groceries
-Groceries,H Bagel Parmesan Cheese 100G (Rt),,3.99,4.90,0.91,18.60,https://vgg.bites.com.my/collections/groceries/products/h-bagel-parmesan-cheese-100g-rt,https://vgg.bites.com.my/collections/groceries
-Groceries,H Bagel Wholemeal 100G (Rt),,4.90,,,,https://vgg.bites.com.my/collections/groceries/products/h-bagel-wholemeal-100g-rt,https://vgg.bites.com.my/collections/groceries
-Groceries,H Le Rustique Olive & Spices Sourdough 160G,160 g,8.90,,,,https://vgg.bites.com.my/collections/groceries/products/h-le-rustique-olive-spices-sourdough-160g,https://vgg.bites.com.my/collections/groceries
-Groceries,H Le Rustique Seeds & Grains Sourdough 160G,160 g,7.90,,,,https://vgg.bites.com.my/collections/groceries/products/h-le-rustique-seeds-grains-sourdough-160g,https://vgg.bites.com.my/collections/groceries
-Groceries,Ha'Ritage Hola Granola Cocoa 245G,245 g,16.99,19.70,2.71,13.80,https://vgg.bites.com.my/collections/groceries/products/ha-ritage-hola-granola-cocoa-245g,https://vgg.bites.com.my/collections/groceries
-Groceries,Ha'Ritage Hola Granola Honey Almond 245G,245 g,16.99,19.70,2.71,13.80,https://vgg.bites.com.my/collections/groceries/products/ha-ritage-hola-granola-honey-almond-245g,https://vgg.bites.com.my/collections/groceries
-Groceries,Ha'Ritage Hola Granola Yoghurt Mixberries 245G,245 g,16.99,19.70,2.71,13.80,https://vgg.bites.com.my/collections/groceries/products/ha-ritage-hola-granola-yoghurt-mixberries-245g,https://vgg.bites.com.my/collections/groceries
 Groceries,Hai Yong Pucuk Goreng Mini 200Gm,200 g,14.10,,,,https://vgg.bites.com.my/collections/groceries/products/hai-yong-pucuk-goreng-mini-200gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Hai's Bottle Chili Steamboat Chilli 185G,185 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/hais-bottle-chili-steamboat-chilli-185g,https://vgg.bites.com.my/collections/groceries
 Groceries,Haidilao Basic Stir Fry Sauce 220G,220 g,13.70,,,,https://vgg.bites.com.my/collections/groceries/products/haidilao-basic-stir-fry-sauce-220g,https://vgg.bites.com.my/collections/groceries
-Groceries,Haidilao Herbs & Spices Hot Pot Sauce 110G,110 g,13.70,,,,https://vgg.bites.com.my/collections/groceries/products/haidilao-herbs-spices-hot-pot-sauce-110g,https://vgg.bites.com.my/collections/groceries
 Groceries,Haidilao Mushroom Flavor Hot Pot Seasoning 110G,110 g,13.50,,,,https://vgg.bites.com.my/collections/groceries/products/haidilao-mushroom-flavor-hot-pot-seasoning-110g,https://vgg.bites.com.my/collections/groceries
 Groceries,Haidilao Shrimp Soup Hot Pot Seasoning 200G,200 g,13.70,,,,https://vgg.bites.com.my/collections/groceries/products/haidilao-shrimp-soup-hot-pot-seasoning-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Haidilao Soup Base For Hot Pot 220G,220 g,13.70,,,,https://vgg.bites.com.my/collections/groceries/products/haidilao-soup-base-for-hot-pot-220g,https://vgg.bites.com.my/collections/groceries
 Groceries,Haidilao Tomato Flavor Hot Pot Seasoning 200G,200 g,13.50,,,,https://vgg.bites.com.my/collections/groceries/products/haidilao-tomato-flavor-hot-pot-seasoning-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Haidilao Broth Flavor Hot Pot Seasoning 110G,110 g,13.70,,,,https://vgg.bites.com.my/collections/groceries/products/haidilao-broth-flavor-hot-pot-seasoning-110g,https://vgg.bites.com.my/collections/groceries
 Groceries,Hamadaya Japanese Reduced Salt Soy Sauce 500Ml,500 ml,16.95,,,,https://vgg.bites.com.my/collections/groceries/products/hamadaya-japanese-reduced-salt-soy-sauce-500ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Heinz Baked Beans Tomato 3X300G,3 x 300 g,26.25,,,,https://vgg.bites.com.my/collections/groceries/products/heinz-baked-beans-tomato-3x300g,https://vgg.bites.com.my/collections/groceries
 Groceries,Heinz Bbq Sauce Honey & Garlic 600G,600 g,19.10,,,,https://vgg.bites.com.my/collections/groceries/products/heinz-bbq-sauce-honey-garlic-600g,https://vgg.bites.com.my/collections/groceries
@@ -2739,7 +2638,6 @@ Groceries,Heinz Distilled White Vinegar 32Oz Halal,,15.80,,,,https://vgg.bites.c
 Groceries,Heinz Hot Chili 300G,300 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/heinz-hot-chili-300g,https://vgg.bites.com.my/collections/groceries
 Groceries,Heinz Mayonnaise Top Down 220Ml,220 ml,11.75,,,,https://vgg.bites.com.my/collections/groceries/products/heinz-mayonnaise-top-down-220ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Heinz Organic Tomato Ketchup 500Ml,500 ml,25.20,,,,https://vgg.bites.com.my/collections/groceries/products/heinz-organic-tomato-ketchup-500ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Heinz Original Salad Dressing 200G,200 g,8.50,,,,https://vgg.bites.com.my/collections/groceries/products/heinz-original-salad-dressing-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Heinz Quarts Apple Cider Vinegar 32Oz Halal,,25.65,,,,https://vgg.bites.com.my/collections/groceries/products/heinz-quarts-apple-cider-vinegar-32oz-halal,https://vgg.bites.com.my/collections/groceries
 Groceries,Heinz Squeezable Ketchup 325G,325 g,12.20,,,,https://vgg.bites.com.my/collections/groceries/products/heinz-squeezable-ketchup-325g,https://vgg.bites.com.my/collections/groceries
 Groceries,Heinz Tomato Ketchup 300G,300 g,5.70,,,,https://vgg.bites.com.my/collections/groceries/products/heinz-tomato-ketchup-300g,https://vgg.bites.com.my/collections/groceries
@@ -2748,10 +2646,7 @@ Groceries,Heinz Yellow Sqz Mustard 9Oz,,15.10,,,,https://vgg.bites.com.my/collec
 Groceries,Hellmann Light Mayonnaise Squeezy 430Ml,430 ml,14.99,19.90,4.91,24.70,https://vgg.bites.com.my/collections/groceries/products/hellmann-light-mayonnaise-squeezy-430ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Hellmann Real Mayonnaise Squeezy 430Ml,430 ml,14.99,19.90,4.91,24.70,https://vgg.bites.com.my/collections/groceries/products/hellmann-real-mayonnaise-squeezy-430ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Hellmann's Roasted Sesame Dressing 250Ml,250 ml,14.50,,,,https://vgg.bites.com.my/collections/groceries/products/hellmann-s-roasted-sesame-dressing-250ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Hellmann's Roasted Truffle Dressing 250Ml,250 ml,14.50,,,,https://vgg.bites.com.my/collections/groceries/products/hellmann-s-roasted-truffle-dressing-250ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Hellmann's Smoky Caesar Dressing 250Ml,250 ml,14.50,,,,https://vgg.bites.com.my/collections/groceries/products/hellmann-s-smoky-caesar-dressing-250ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Hershey's Strawberry Syrup 623G,623 g,20.50,,,,https://vgg.bites.com.my/collections/groceries/products/hershey-s-strawberry-syrup-623g,https://vgg.bites.com.my/collections/groceries
-Groceries,Hersheys Cocoa Powder Unsweetened 226G,226 g,24.99,27.90,2.91,10.40,https://vgg.bites.com.my/collections/groceries/products/hersheys-cocoa-powder-unsweetened-226g,https://vgg.bites.com.my/collections/groceries
 Groceries,Hexa Cayenne Pepper Powder 40G,40 g,5.85,,,,https://vgg.bites.com.my/collections/groceries/products/hexa-cayenne-pepper-powder-40g,https://vgg.bites.com.my/collections/groceries
 Groceries,Hexa Chili Flakes 30G,30 g,4.80,,,,https://vgg.bites.com.my/collections/groceries/products/hexa-chili-flakes-30g,https://vgg.bites.com.my/collections/groceries
 Groceries,Hexa Chilly Powder 40G,40 g,3.75,,,,https://vgg.bites.com.my/collections/groceries/products/hexa-chilly-powder-40g,https://vgg.bites.com.my/collections/groceries
@@ -2779,7 +2674,6 @@ Groceries,Hup Seng Sugar Cracker 428G,428 g,5.65,,,,https://vgg.bites.com.my/col
 Groceries,Hup Seng Wang Wang Seaweed 136G,136 g,7.80,,,,https://vgg.bites.com.my/collections/groceries/products/hup-seng-wang-wang-seaweed-136g,https://vgg.bites.com.my/collections/groceries
 Groceries,Huy Fong Sriracha Hot Chili Sauce 17Oz,,23.20,,,,https://vgg.bites.com.my/collections/groceries/products/huy-fong-sriracha-hot-chili-sauce-17oz,https://vgg.bites.com.my/collections/groceries
 Groceries,Ikan Bilis Kopek Belah Putih Tempatan +/-100G,,10.75,,,,https://vgg.bites.com.my/collections/groceries/products/ikan-bilis-kopek-belah-putih-tempatan-100g,https://vgg.bites.com.my/collections/groceries
-Groceries,Ikan Bilis Serdang Tempatan (+/-300G),,17.97,,,,https://vgg.bites.com.my/collections/groceries/products/ikan-bilis-serdang-tempatan-300g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ikan Masin Tenggirijeruk Small Btl,,20.90,,,,https://vgg.bites.com.my/collections/groceries/products/ikan-masin-tenggirijeruk-small-btl,https://vgg.bites.com.my/collections/groceries
 Groceries,Indomie Mi Goreng Hot&Spicy 5X80G,5 x 80 g,5.90,,,,https://vgg.bites.com.my/collections/groceries/products/indomie-mi-goreng-hotspicy-5x80g,https://vgg.bites.com.my/collections/groceries
 Groceries,Insulation Bag,,1.00,,,,https://vgg.bites.com.my/collections/groceries/products/insulation-bag,https://vgg.bites.com.my/collections/groceries
@@ -2787,12 +2681,6 @@ Groceries,Itp Foods Nacho's Cheese 200G,200 g,9.90,,,,https://vgg.bites.com.my/c
 Groceries,Itp Foods Nasi Lemak 200G,200 g,8.00,,,,https://vgg.bites.com.my/collections/groceries/products/itp-foods-nasi-lemak-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Itp Foods Soto Ayam 200G,200 g,8.00,,,,https://vgg.bites.com.my/collections/groceries/products/itp-foods-soto-ayam-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Itp Foods Thai Steam 200G,200 g,8.00,,,,https://vgg.bites.com.my/collections/groceries/products/itp-foods-thai-steam-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Itsuki Hokkaido Shio Ramen 172G,172 g,13.99,15.35,1.36,8.90,https://vgg.bites.com.my/collections/groceries/products/itsuki-hokkaido-shio-ramen-172g,https://vgg.bites.com.my/collections/groceries
-Groceries,Itsuki Kaigai Kyushu Tokyu Shoyu Ramen 176G,176 g,13.99,15.35,1.36,8.90,https://vgg.bites.com.my/collections/groceries/products/itsuki-kaigai-kyushu-tokyu-shoyu-ramen-176g,https://vgg.bites.com.my/collections/groceries
-Groceries,Itsuki Kaigai Sapporo Miso Ramen 188G,188 g,13.99,15.35,1.36,8.90,https://vgg.bites.com.my/collections/groceries/products/itsuki-kaigai-sapporo-miso-ramen-188g,https://vgg.bites.com.my/collections/groceries
-Groceries,Itsuki Kyoto Miso Tonkotsu Ramen 176G,176 g,13.99,15.35,1.36,8.90,https://vgg.bites.com.my/collections/groceries/products/itsuki-kyoto-miso-tonkotsu-ramen-176g,https://vgg.bites.com.my/collections/groceries
-Groceries,Jif Creamy Peanut Butter 16Oz Foc Sandwich Bag,,19.80,,,,https://vgg.bites.com.my/collections/groceries/products/jif-creamy-peanut-butter-16oz-foc-sandwich-bag,https://vgg.bites.com.my/collections/groceries
-Groceries,Jif Crunchy Peanut Butter 16Oz Foc Sandwich Bag,,19.80,,,,https://vgg.bites.com.my/collections/groceries/products/jif-crunchy-peanut-butter-16oz-foc-sandwich-bag,https://vgg.bites.com.my/collections/groceries
 Groceries,Jif Lemon Bottle 100Ml,100 ml,10.90,,,,https://vgg.bites.com.my/collections/groceries/products/jif-lemon-bottle-100ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Jif Peanut Butter Creamy 16Oz,,19.80,,,,https://vgg.bites.com.my/collections/groceries/products/jif-peanut-butter-creamy-16oz,https://vgg.bites.com.my/collections/groceries
 Groceries,Jif Peanut Butter Creamy No Sugar Added 15.5Oz,,20.05,,,,https://vgg.bites.com.my/collections/groceries/products/jif-peanut-butter-creamy-no-sugar-added-15-5oz,https://vgg.bites.com.my/collections/groceries
@@ -2806,12 +2694,6 @@ Groceries,John West Tuna Chunk Olive Oil Blend 425G,425 g,26.25,,,,https://vgg.b
 Groceries,John West Tuna Slices Smoked In Oil 125G,125 g,14.10,,,,https://vgg.bites.com.my/collections/groceries/products/john-west-tuna-slices-smoked-in-oil-125g,https://vgg.bites.com.my/collections/groceries
 Groceries,Jongga Rice Cake (Sliced Type) 500G,500 g,11.39,13.40,2.01,15.00,https://vgg.bites.com.my/collections/groceries/products/jongga-rice-cake-sliced-type-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Julie's Le-Mond Puff Chocolate 180G,180 g,6.15,,,,https://vgg.bites.com.my/collections/groceries/products/julie-s-le-mond-puff-chocolate-180g,https://vgg.bites.com.my/collections/groceries
-Groceries,Jw Bites Agar-Agar Jelly Powder 10G,10 g,5.25,,,,https://vgg.bites.com.my/collections/groceries/products/jw-bites-agar-agar-jelly-powder-10g,https://vgg.bites.com.my/collections/groceries
-Groceries,Jw Konnyaku Jelly Powder 10G,10 g,5.25,,,,https://vgg.bites.com.my/collections/groceries/products/jw-konnyaku-jelly-powder-10g,https://vgg.bites.com.my/collections/groceries
-Groceries,K. Roger's Sugar Free Digestive W/Sesame 105G,105 g,8.40,,,,https://vgg.bites.com.my/collections/groceries/products/k-roger-s-sugar-free-digestive-w-sesame-105g,https://vgg.bites.com.my/collections/groceries
-Groceries,K. Roger's Sugar Free Oatmeal Cornflakes 105G,105 g,8.40,,,,https://vgg.bites.com.my/collections/groceries/products/k-roger-s-sugar-free-oatmeal-cornflakes-105g,https://vgg.bites.com.my/collections/groceries
-Groceries,K.Harrodson Butter Cookies- Blueberry 150G,150 g,11.90,,,,https://vgg.bites.com.my/collections/groceries/products/k-harrodson-butter-cookies-blueberry-150g,https://vgg.bites.com.my/collections/groceries
-Groceries,K.Harrodson Butter Cookies- Raspberry 150G,150 g,11.90,,,,https://vgg.bites.com.my/collections/groceries/products/k-harrodson-butter-cookies-raspberry-150g,https://vgg.bites.com.my/collections/groceries
 Groceries,K.Harrodson Butter Cookies-Bb&Almond 400G,400 g,25.65,,,,https://vgg.bites.com.my/collections/groceries/products/k-harrodson-butter-cookies-bb-almond-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,K.Harrodson Butter Cookies-Rasp&Almond 400G,400 g,25.65,,,,https://vgg.bites.com.my/collections/groceries/products/k-harrodson-butter-cookies-rasp-almond-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Kara Coconut Cream 200Ml++,,4.20,4.30,0.10,2.30,https://vgg.bites.com.my/collections/groceries/products/kara-coconut-cream-200ml,https://vgg.bites.com.my/collections/groceries
@@ -2833,7 +2715,6 @@ Groceries,Kellogg's Froot Loops 285G,285 g,14.90,,,,https://vgg.bites.com.my/col
 Groceries,Kellogg's Frosties 175G,175 g,9.90,,,,https://vgg.bites.com.my/collections/groceries/products/kelloggs-frosties-175g,https://vgg.bites.com.my/collections/groceries
 Groceries,Kellogg's Frosties 300G,300 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/kellogg-s-frosties-300g,https://vgg.bites.com.my/collections/groceries
 Groceries,Kellogg's Fun Pack 170G,170 g,12.05,,,,https://vgg.bites.com.my/collections/groceries/products/kellogg-s-fun-pack-170g,https://vgg.bites.com.my/collections/groceries
-Groceries,Kellogg's Granola Deluxe Nuts 220G,220 g,26.00,,,,https://vgg.bites.com.my/collections/groceries/products/kellogg-s-granola-deluxe-nuts-220g,https://vgg.bites.com.my/collections/groceries
 Groceries,Kellogg's Nutri Grain 290G,290 g,30.30,,,,https://vgg.bites.com.my/collections/groceries/products/kellogg-s-nutri-grain-290g,https://vgg.bites.com.my/collections/groceries
 Groceries,Kellogg's Unicorn Froot Loops 285G,285 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/kellogg-s-unicorn-froot-loops-285g,https://vgg.bites.com.my/collections/groceries
 Groceries,Kelloggs Granola Boost Protein Extra 200G,200 g,23.50,,,,https://vgg.bites.com.my/collections/groceries/products/kelloggs-granola-boost-protein-extra-200g,https://vgg.bites.com.my/collections/groceries
@@ -2848,7 +2729,6 @@ Groceries,Kewpie Mayonnaise 450G,450 g,22.45,,,,https://vgg.bites.com.my/collect
 Groceries,Kewpie Mayonnaise Japanese Style 130Ml,130 ml,6.50,,,,https://vgg.bites.com.my/collections/groceries/products/kewpie-mayonnaise-japanese-style-130ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Kewpie Mayonnaise Japanese Style 520Ml,520 ml,20.10,,,,https://vgg.bites.com.my/collections/groceries/products/kewpie-mayonnaise-japanese-style-520ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Kewpie Sandwich Spread Spicy Blck Pepper 310Ml,310 ml,11.85,,,,https://vgg.bites.com.my/collections/groceries/products/kewpie-sandwich-spread-spicy-blck-pepper-310ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Kg Mini Rainbow Rice Ball 320Gm,320 g,8.40,,,,https://vgg.bites.com.my/collections/groceries/products/kg-mini-rainbow-rice-ball-320gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Kg Pastry Mini R/Ball Peanut 300G,300 g,8.40,,,,https://vgg.bites.com.my/collections/groceries/products/kg-pastry-mini-r-ball-peanut-300g,https://vgg.bites.com.my/collections/groceries
 Groceries,Kg Pastry Mini R/Ball Red Bean 300G,300 g,8.40,,,,https://vgg.bites.com.my/collections/groceries/products/kg-pastry-mini-r-ball-red-bean-300g,https://vgg.bites.com.my/collections/groceries
 Groceries,Kg Pastry Mini R/Ball Sesame 300G,300 g,8.40,,,,https://vgg.bites.com.my/collections/groceries/products/kg-pastry-mini-r-ball-sesame-300g,https://vgg.bites.com.my/collections/groceries
@@ -2890,8 +2770,6 @@ Groceries,Knife Cooking Oil 2Kg,2 kg,15.99,16.30,0.31,1.90,https://vgg.bites.com
 Groceries,Knife Cooking Oil 3Kg,3 kg,24.10,,,,https://vgg.bites.com.my/collections/groceries/products/knife-cooking-oil-3kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Knife Golden Dark Caramel Sauce 500Ml,500 ml,8.89,9.90,1.01,10.20,https://vgg.bites.com.my/collections/groceries/products/knife-golden-dark-caramel-sauce-500ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Knife Golden Light Soy Sauce 500Ml,500 ml,8.89,9.90,1.01,10.20,https://vgg.bites.com.my/collections/groceries/products/knife-golden-light-soy-sauce-500ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Knife Japanese Sesame Oil 150Ml,150 ml,9.99,11.50,1.51,13.10,https://vgg.bites.com.my/collections/groceries/products/knife-japanese-sesame-oil-150ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Knife Japanese Sesame Oil 360Ml,360 ml,18.99,19.90,0.91,4.60,https://vgg.bites.com.my/collections/groceries/products/knife-japanese-sesame-oil-360ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Knife Light Soy Sauce 500Ml,500 ml,6.25,,,,https://vgg.bites.com.my/collections/groceries/products/knife-light-soy-sauce-500ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Knife Sesame Oil 315Ml,315 ml,12.65,,,,https://vgg.bites.com.my/collections/groceries/products/knife-sesame-oil-315ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Knorr All In One Seasoning 300Gm,300 g,7.00,,,,https://vgg.bites.com.my/collections/groceries/products/knorr-all-in-one-seasoning-300gm,https://vgg.bites.com.my/collections/groceries
@@ -2911,22 +2789,14 @@ Groceries,Labour Cooking Oil 1Kg,1 kg,6.90,,,,https://vgg.bites.com.my/collectio
 Groceries,Labour Cooking Oil 2Kg,2 kg,13.20,,,,https://vgg.bites.com.my/collections/groceries/products/labour-cooking-oil-2kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Labour Cooking Oil 500G,500 g,4.35,,,,https://vgg.bites.com.my/collections/groceries/products/labour-cooking-oil-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Labour Cooking Oil 5Kg,5 kg,30.90,,,,https://vgg.bites.com.my/collections/groceries/products/labour-cooking-oil-5kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Lacust Chili's Mate Original 200G,200 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/lacust-chili-s-mate-original-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Lacust Chili's Mate Super Hot 200G,200 g,14.29,15.90,1.61,10.10,https://vgg.bites.com.my/collections/groceries/products/lacust-chili-s-mate-super-hot-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Lacust Chili's Mate Whitebait 200G,200 g,17.29,18.90,1.61,8.50,https://vgg.bites.com.my/collections/groceries/products/lacust-chili-s-mate-whitebait-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Lacust Spicy Garlic With Olive Oil 200G,200 g,20.50,,,,https://vgg.bites.com.my/collections/groceries/products/lacust-spicy-garlic-with-olive-oil-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ladys Choice  Real Mayonnaise Sachet 40Ml,40 ml,1.90,,,,https://vgg.bites.com.my/collections/groceries/products/ladys-choice-real-mayonnaise-sachet-40ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Ladys Choice Peanut Butter Choco Stripe 330G,330 g,17.05,,,,https://vgg.bites.com.my/collections/groceries/products/ladys-choice-peanut-butter-choco-stripe-330g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ladys Choice Peanut Butter Choco Stripe 500G,500 g,21.25,,,,https://vgg.bites.com.my/collections/groceries/products/ladys-choice-peanut-butter-choco-stripe-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ladys Choice Peanut Butter Chunky 500G,500 g,20.20,,,,https://vgg.bites.com.my/collections/groceries/products/ladys-choice-peanut-butter-chunky-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ladys Choice Real Mayonnaise 450Ml,450 ml,16.20,,,,https://vgg.bites.com.my/collections/groceries/products/ladys-choice-real-mayonnaise-450ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Lakanto Keto Dark Chocolate Peanut Spread 250G,250 g,25.90,,,,https://vgg.bites.com.my/collections/groceries/products/lakanto-keto-dark-chocolate-peanut-spread-250g,https://vgg.bites.com.my/collections/groceries
-Groceries,Lazat Serbuk Kunyit 100G,100 g,4.25,,,,https://vgg.bites.com.my/collections/groceries/products/lazat-serbuk-kunyit-100g,https://vgg.bites.com.my/collections/groceries
 Groceries,Le Almond Flour 200G,200 g,18.90,,,,https://vgg.bites.com.my/collections/groceries/products/le-almond-flour-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Le Mushroom Seasoning Tp 2X150G,2 x 150 g,36.99,38.90,1.91,4.90,https://vgg.bites.com.my/collections/groceries/products/le-mushroom-seasoning-tp-2x150g,https://vgg.bites.com.my/collections/groceries
-Groceries,Le Nutri Oat-Mazing Inst Cerl Bberry Chia 12X28G,12 x 28 g,28.49,29.90,1.41,4.70,https://vgg.bites.com.my/collections/groceries/products/le-nutri-oat-mazing-inst-cerl-bberry-chia-12x28g,https://vgg.bites.com.my/collections/groceries
-Groceries,Le Nutri Oat-Mazing Inst Cerl Choco 12X28G,12 x 28 g,28.49,29.90,1.41,4.70,https://vgg.bites.com.my/collections/groceries/products/le-nutri-oat-mazing-inst-cerl-choco-12x28g,https://vgg.bites.com.my/collections/groceries
-Groceries,Le Nutri Oat-Mazing Inst Cerl Soy Almond 12X28G,12 x 28 g,28.49,29.90,1.41,4.70,https://vgg.bites.com.my/collections/groceries/products/le-nutri-oat-mazing-inst-cerl-soy-almond-12x28g,https://vgg.bites.com.my/collections/groceries
 Groceries,Le Rustique Olive & Spices Sourdough 350G,350 g,16.50,,,,https://vgg.bites.com.my/collections/groceries/products/le-rustique-olive-spices-sourdough-350g,https://vgg.bites.com.my/collections/groceries
 Groceries,Le Rustique Seeds & Grains Sourdough 350G,350 g,14.30,,,,https://vgg.bites.com.my/collections/groceries/products/le-rustique-seeds-grains-sourdough-350g,https://vgg.bites.com.my/collections/groceries
 Groceries,Lea & Perrins Worcestershire Sauce 150Ml,150 ml,11.85,,,,https://vgg.bites.com.my/collections/groceries/products/lea-perrins-worcestershire-sauce-150ml,https://vgg.bites.com.my/collections/groceries
@@ -2972,14 +2842,10 @@ Groceries,Lsh Mushroom Oyster Sauce 765Gm,765 g,7.50,,,,https://vgg.bites.com.my
 Groceries,Lsh Premium Oyster Sauce 765Gm,765 g,10.50,,,,https://vgg.bites.com.my/collections/groceries/products/lsh-premium-oyster-sauce-765gm,https://vgg.bites.com.my/collections/groceries
 Groceries,M&S Coconut Low Fat 200Ml,200 ml,3.65,,,,https://vgg.bites.com.my/collections/groceries/products/m-s-coconut-low-fat-200ml,https://vgg.bites.com.my/collections/groceries
 Groceries,M&S Coconut Milk 200Ml,200 ml,3.90,,,,https://vgg.bites.com.my/collections/groceries/products/m-s-coconut-milk-200ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Madama Oliva Black Kalamon Olives 190G,190 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/madama-oliva-black-kalamon-olives-190g,https://vgg.bites.com.my/collections/groceries
-Groceries,Madama Oliva Black Pitted Leccino Olives 160G,160 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/madama-oliva-black-pitted-leccino-olives-160g,https://vgg.bites.com.my/collections/groceries
-Groceries,Madama Oliva Giant Green Pitted Mild Olives 160G,160 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/madama-oliva-giant-green-pitted-mild-olives-160g,https://vgg.bites.com.my/collections/groceries
 Groceries,Madama Oliva Green Cerignola Olives 190G,190 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/madama-oliva-green-cerignola-olives-190g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mae Pranom Dipping For Chic 390Gm,390 g,8.15,,,,https://vgg.bites.com.my/collections/groceries/products/mae-pranom-dipping-for-chic-390gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Mae Pranom Shrimp F/Crushed Chilli 134G,134 g,17.90,,,,https://vgg.bites.com.my/collections/groceries/products/mae-pranom-shrimp-f-crushed-chilli-134g,https://vgg.bites.com.my/collections/groceries
 Groceries,Maggi Ayam Percik 100G,100 g,4.90,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-ayam-percik-100g,https://vgg.bites.com.my/collections/groceries
-Groceries,Maggi Black Pepper 80G,80 g,4.90,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-black-pepper-80g,https://vgg.bites.com.my/collections/groceries
 Groceries,Maggi Chicken Cube 48X20G,48 x 20 g,1.50,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-chicken-cube-48x20g,https://vgg.bites.com.my/collections/groceries
 Groceries,Maggi Chicken Stock Cube 60G,60 g,3.40,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-chicken-stock-cube-60g,https://vgg.bites.com.my/collections/groceries
 Groceries,Maggi Chili Sauce 340G,340 g,4.35,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-chili-sauce-340g,https://vgg.bites.com.my/collections/groceries
@@ -2997,7 +2863,6 @@ Groceries,Maggi Satay 100G,100 g,4.90,,,,https://vgg.bites.com.my/collections/gr
 Groceries,Maggi Seasoning 200Ml,200 ml,6.90,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-seasoning-200ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Maggi Seasoning 390Ml,390 ml,11.95,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-seasoning-390ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Maggi Seasoning No Msg 100Ml,100 ml,5.05,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-seasoning-no-msg-100ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Maggi Tandoori 100G,100 g,4.90,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-tandoori-100g,https://vgg.bites.com.my/collections/groceries
 Groceries,Maggi Thai Chilli Sauce 350G,350 g,6.10,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-thai-chilli-sauce-350g,https://vgg.bites.com.my/collections/groceries
 Groceries,Maggi Thai Chilli Sauce 525G,525 g,8.45,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-thai-chilli-sauce-525g,https://vgg.bites.com.my/collections/groceries
 Groceries,Maggi Tom Yam 5X80G,5 x 80 g,6.30,,,,https://vgg.bites.com.my/collections/groceries/products/maggi-tom-yam-5x80g,https://vgg.bites.com.my/collections/groceries
@@ -3007,19 +2872,10 @@ Groceries,Mahsuri Kicap Manis 410Ml,410 ml,7.45,,,,https://vgg.bites.com.my/coll
 Groceries,Mahsuri Kicap Manis Pedas 410Ml,410 ml,7.45,,,,https://vgg.bites.com.my/collections/groceries/products/mahsuri-kicap-manis-pedas-410ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Mahsuri Sos Lada Hitam 490G,490 g,8.55,,,,https://vgg.bites.com.my/collections/groceries/products/mahsuri-sos-lada-hitam-490g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mahsuri Sos Tiga Rasa 530G,530 g,7.90,,,,https://vgg.bites.com.my/collections/groceries/products/mahsuri-sos-tiga-rasa-530g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mamami 5 Color Gloria Grains Mixed 400G,400 g,19.90,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-5-color-gloria-grains-mixed-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mamami 8 Multi Beans Porridge 400G,400 g,23.90,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-8-multi-beans-porridge-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mamami Black & Powerful Grains Mixed 400G,400 g,19.90,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-black-powerful-grains-mixed-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mamami Golden Multi-Mixed Grains 400G,400 g,19.90,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-golden-multi-mixed-grains-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mamami Green Earth Blends 400G,400 g,19.90,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-green-earth-blends-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mamami Natural Wave Plain Instant Noodle 320G,320 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-natural-wave-plain-instant-noodle-320g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mamami Natural Wave Pumpkin Instant Noodle 320G,320 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-natural-wave-pumpkin-instant-noodle-320g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mamami Natural Wave Spinach Instant Noodle 320G,320 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-natural-wave-spinach-instant-noodle-320g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mamami Org Wave Chia Meal 500G,500 g,14.80,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-org-wave-chia-meal-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mamami Organic Quinoa Mix 500G,500 g,26.29,26.80,0.51,1.90,https://vgg.bites.com.my/collections/groceries/products/mamami-organic-quinoa-mix-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mamami Organic Wave Instant Baby Oat  500G,500 g,8.60,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-organic-wave-instant-baby-oat-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mamami Overnight Oat Boost Box 4X120Gm,4 x 120 g,46.80,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-overnight-oat-boost-box-4x120gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mamami Pink & Beautiful Grains Mixed 400G,400 g,23.90,,,,https://vgg.bites.com.my/collections/groceries/products/mamami-pink-beautiful-grains-mixed-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mamee Express Cup Veg 60G,60 g,2.05,,,,https://vgg.bites.com.my/collections/groceries/products/mamee-express-cup-veg-60g,https://vgg.bites.com.my/collections/groceries
 Groceries,Marigold Evaporated Creamer 390Gm,390 g,3.90,,,,https://vgg.bites.com.my/collections/groceries/products/marigold-evaporated-creamer-390gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Marumiya Hon Katsuo Furikake 18G,18 g,8.00,,,,https://vgg.bites.com.my/collections/groceries/products/marumiya-hon-katsuo-furikake-18g,https://vgg.bites.com.my/collections/groceries
@@ -3029,15 +2885,7 @@ Groceries,Marumiya Pink No Ume Gomashio 45G,45 g,7.50,,,,https://vgg.bites.com.m
 Groceries,Marumiya Tarako Furikake 25G,25 g,6.90,,,,https://vgg.bites.com.my/collections/groceries/products/marumiya-tarako-furikake-25g,https://vgg.bites.com.my/collections/groceries
 Groceries,Marumiya Umami Sake Furikake 20G,20 g,6.90,,,,https://vgg.bites.com.my/collections/groceries/products/marumiya-umami-sake-furikake-20g,https://vgg.bites.com.my/collections/groceries
 Groceries,Marumiya Ume Katsuo Furikake Np 20G,20 g,7.90,,,,https://vgg.bites.com.my/collections/groceries/products/marumiya-ume-katsuo-furikake-np-20g,https://vgg.bites.com.my/collections/groceries
-Groceries,Marunaka Sesame Soba 300G,300 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/marunaka-sesame-soba-300g,https://vgg.bites.com.my/collections/groceries
-Groceries,Marunaka Sesame Somen 320G,320 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/marunaka-sesame-somen-320g,https://vgg.bites.com.my/collections/groceries
-Groceries,Marunaka Sesame Udon 320G,320 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/marunaka-sesame-udon-320g,https://vgg.bites.com.my/collections/groceries
 Groceries,Marutomo Soba Tsuyu Straight 360Ml,360 ml,11.49,12.05,0.56,4.60,https://vgg.bites.com.my/collections/groceries/products/marutomo-soba-tsuyu-straight-360ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Mascook Marmite Paste 180Gm,180 g,6.40,,,,https://vgg.bites.com.my/collections/groceries/products/mascook-marmite-paste-180gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Masfood Lemon Paste 150G,150 g,6.40,,,,https://vgg.bites.com.my/collections/groceries/products/masfood-lemon-paste-150g,https://vgg.bites.com.my/collections/groceries
-Groceries,Masfood Salted Egg Yolk Paste 120G,120 g,8.70,,,,https://vgg.bites.com.my/collections/groceries/products/masfood-salted-egg-yolk-paste-120g,https://vgg.bites.com.my/collections/groceries
-Groceries,Masfood Sour Sweet Paste 120Gm,120 g,6.40,,,,https://vgg.bites.com.my/collections/groceries/products/masfood-sour-sweet-paste-120gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Masfood Spicy Seafood Sauce 250G,250 g,10.30,,,,https://vgg.bites.com.my/collections/groceries/products/masfood-spicy-seafood-sauce-250g,https://vgg.bites.com.my/collections/groceries
 Groceries,Massimo Loaf Seeded Multigrain With Barley 360G,360 g,6.30,,,,https://vgg.bites.com.my/collections/groceries/products/massimo-loaf-seeded-multigrain-with-barley-360g,https://vgg.bites.com.my/collections/groceries
 Groceries,Massimo Ricco Chocolato Loaf 400G,400 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/massimo-ricco-chocolato-loaf-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Massimo Sandwich Loaf W.Wheat Germ 600G,600 g,4.80,,,,https://vgg.bites.com.my/collections/groceries/products/massimo-sandwich-loaf-w-wheat-germ-600g,https://vgg.bites.com.my/collections/groceries
@@ -3103,30 +2951,11 @@ Groceries,Meriah Rempah Tumis 35Gm,35 g,3.50,,,,https://vgg.bites.com.my/collect
 Groceries,Meriah S L/Hitam Kasar40,,6.15,,,,https://vgg.bites.com.my/collections/groceries/products/meriah-s-lhitam-kasar40,https://vgg.bites.com.my/collections/groceries
 Groceries,Mewah Natural Black Pepper Coarse 50G,50 g,6.30,,,,https://vgg.bites.com.my/collections/groceries/products/mewah-natural-black-pepper-coarse-50g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mewah Natural Italian Herbs 20G,20 g,9.90,,,,https://vgg.bites.com.my/collections/groceries/products/mewah-natural-italian-herbs-20g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf 101 Asam Style Fish Sauce 180Gm,180 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/mf-101-asam-style-fish-sauce-180gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf 101 Inst Curry Chicken Or Meat Paste 230Gm,230 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/mf-101-inst-curry-chicken-or-meat-paste-230gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Abalone&Herbal Spices 110Gm,110 g,18.00,,,,https://vgg.bites.com.my/collections/groceries/products/mf-abalone-herbal-spices-110gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Mf All Purpose Seasoning 65Gm,65 g,9.69,10.20,0.51,5.00,https://vgg.bites.com.my/collections/groceries/products/mf-all-purpose-seasoning-65gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Mf Chilli Flakes 18G,18 g,14.20,,,,https://vgg.bites.com.my/collections/groceries/products/mf-chilli-flakes-18g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Cordyceps Herbs Soup Soup 35G,35 g,6.50,,,,https://vgg.bites.com.my/collections/groceries/products/mf-cordyceps-herbs-soup-soup-35g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Curry Laksa Paste 200Gm,200 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/mf-curry-laksa-paste-200gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Emperor Herbs (Powder) 35G,35 g,6.50,,,,https://vgg.bites.com.my/collections/groceries/products/mf-emperor-herbs-powder-35g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mf Garam Masala 30Gm,30 g,12.50,,,,https://vgg.bites.com.my/collections/groceries/products/mf-garam-masala-30gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Mf Garlic Powder 50Gm,50 g,14.79,15.55,0.76,4.90,https://vgg.bites.com.my/collections/groceries/products/mf-garlic-powder-50gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Ginseng Chicken Soup 60G,60 g,10.40,,,,https://vgg.bites.com.my/collections/groceries/products/mf-ginseng-chicken-soup-60g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Hk Steam Paste 200G,200 g,6.40,,,,https://vgg.bites.com.my/collections/groceries/products/mf-hk-steam-paste-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Inst Asam Fish Paste 180Gm,180 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/mf-inst-asam-fish-paste-180gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Inst Cereal Prawn W Sh Egg Sesame 80Gm,80 g,6.50,,,,https://vgg.bites.com.my/collections/groceries/products/mf-inst-cereal-prawn-w-sh-egg-sesame-80gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Inst Chili Paste 180Gm,180 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/mf-inst-chili-paste-180gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Inst Crispy Cereal Chicken Cube 100Gm,100 g,6.50,,,,https://vgg.bites.com.my/collections/groceries/products/mf-inst-crispy-cereal-chicken-cube-100gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Inst Curry Chicken Or Meat Paste 200Gm,200 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/mf-inst-curry-chicken-or-meat-paste-200gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Inst Curry Fish Paste 230Gm,230 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/mf-inst-curry-fish-paste-230gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Inst Rendang Curry Paste 200Gm,200 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/mf-inst-rendang-curry-paste-200gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Inst Vegetarian Curry Paste 200Gm,200 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/mf-inst-vegetarian-curry-paste-200gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Meat Bone Tea Spices 35Gm,35 g,6.50,,,,https://vgg.bites.com.my/collections/groceries/products/mf-meat-bone-tea-spices-35gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Mf Moroccan Seasoning 47Gm,47 g,15.05,,,,https://vgg.bites.com.my/collections/groceries/products/mf-moroccan-seasoning-47gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Sambal Shrimp All Purpose Paste 180G,180 g,6.00,,,,https://vgg.bites.com.my/collections/groceries/products/mf-sambal-shrimp-all-purpose-paste-180g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mf Tea Egg Spices 38Gm,38 g,6.50,,,,https://vgg.bites.com.my/collections/groceries/products/mf-tea-egg-spices-38gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Milka Strawberry Yoghurt 100G,100 g,9.60,,,,https://vgg.bites.com.my/collections/groceries/products/milka-strawberry-yoghurt-100g,https://vgg.bites.com.my/collections/groceries
 Groceries,Milo Cereal 450G,450 g,17.50,,,,https://vgg.bites.com.my/collections/groceries/products/milo-cereal-450g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mission Chia Wraps 360G,360 g,9.50,,,,https://vgg.bites.com.my/collections/groceries/products/mission-chia-wraps-360g,https://vgg.bites.com.my/collections/groceries
@@ -3143,26 +2972,16 @@ Groceries,Mission Wraps Garlic 8's 360Gm,360 g,8.29,9.00,0.71,7.90,https://vgg.b
 Groceries,Mission Wraps Onion & Chive 8's 360Gm,360 g,8.29,9.00,0.71,7.90,https://vgg.bites.com.my/collections/groceries/products/mission-wraps-onion-chive-8-s-360gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Mission Wraps Potato 8's 360Gm,360 g,8.29,9.00,0.71,7.90,https://vgg.bites.com.my/collections/groceries/products/mission-wraps-potato-8-s-360gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Mission Wraps Wholegrain 8's 360Gm,360 g,8.29,9.00,0.71,7.90,https://vgg.bites.com.my/collections/groceries/products/mission-wraps-wholegrain-8-s-360gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Misura Dolcesenza Biscuits With Yogurts 400G,400 g,16.29,17.10,0.81,4.70,https://vgg.bites.com.my/collections/groceries/products/misura-dolcesenza-biscuits-with-yogurts-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Misura Fibrextra Whole Wheat Crackers 385G,385 g,13.89,15.10,1.21,8.00,https://vgg.bites.com.my/collections/groceries/products/misura-fibrextra-whole-wheat-crackers-385g,https://vgg.bites.com.my/collections/groceries
-Groceries,Misura Privolat Biscuits With Honey 400G,400 g,13.89,15.10,1.21,8.00,https://vgg.bites.com.my/collections/groceries/products/misura-privolat-biscuits-with-honey-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Misura Protein Bisc With Choc Drops & Oat 260G,260 g,16.29,17.10,0.81,4.70,https://vgg.bites.com.my/collections/groceries/products/misura-protein-bisc-with-choc-drops-oat-260g,https://vgg.bites.com.my/collections/groceries
 Groceries,Misura Protein Crackers With Soy 400G,400 g,13.89,15.10,1.21,8.00,https://vgg.bites.com.my/collections/groceries/products/misura-protein-crackers-with-soy-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mitsukan Honteri Mirin Su 500Ml,500 ml,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/mitsukan-honteri-mirin-su-500ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Mizkan Sesame Sauce Roasted Coarse 250Ml,250 ml,19.90,,,,https://vgg.bites.com.my/collections/groceries/products/mizkan-sesame-sauce-roasted-coarse-250ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Monin Caramel Syrup 25Cl,25cl,25.35,,,,https://vgg.bites.com.my/collections/groceries/products/monin-caramel-syrup-25cl,https://vgg.bites.com.my/collections/groceries
 Groceries,Monin Hazelnut Syrup 25Cl,25cl,25.35,,,,https://vgg.bites.com.my/collections/groceries/products/monin-hazelnut-syrup-25cl,https://vgg.bites.com.my/collections/groceries
 Groceries,Monin Passion Fruit Syrup 25Cl,25cl,25.35,,,,https://vgg.bites.com.my/collections/groceries/products/monin-passion-fruit-syrup-25cl,https://vgg.bites.com.my/collections/groceries
-Groceries,Mont Switzerland Caramel 750Ml,750 ml,21.50,,,,https://vgg.bites.com.my/collections/groceries/products/mont-switzerland-caramel-750ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Mont Switzerland Hazelnut 750Ml,750 ml,21.50,,,,https://vgg.bites.com.my/collections/groceries/products/mont-switzerland-hazelnut-750ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Mont Switzerland Salted Caramel 750Ml,750 ml,21.50,,,,https://vgg.bites.com.my/collections/groceries/products/mont-switzerland-salted-caramel-750ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Mont Switzerland Vanilla 750Ml,750 ml,21.50,,,,https://vgg.bites.com.my/collections/groceries/products/mont-switzerland-vanilla-750ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Mornflake Beta3 Oatbran Flakes Very Berry 400G,400 g,24.95,,,,https://vgg.bites.com.my/collections/groceries/products/mornflake-beta3-oatbran-flakes-very-berry-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mornflake Chocolatey Squares Cereal Pillows 375G,375 g,17.99,18.95,0.96,5.10,https://vgg.bites.com.my/collections/groceries/products/mornflake-chocolatey-squares-cereal-pillows-375g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mornflake Crispy Muesli Fruit&Nut 750G,750 g,33.79,39.05,5.26,13.50,https://vgg.bites.com.my/collections/groceries/products/mornflake-crispy-muesli-fruit-nut-750g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mornflake Crunchy Granola Original 500G,500 g,17.69,18.80,1.11,5.90,https://vgg.bites.com.my/collections/groceries/products/mornflake-crunchy-granola-original-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mornflake Orchard Oat Granola 500G,500 g,17.69,18.80,1.11,5.90,https://vgg.bites.com.my/collections/groceries/products/mornflake-orchard-oat-granola-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Mother's Choice Margarine 240G,240 g,5.20,,,,https://vgg.bites.com.my/collections/groceries/products/mother-s-choice-margarine-240g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mp Thai Chili Paste 114G,114 g,9.10,,,,https://vgg.bites.com.my/collections/groceries/products/mp-thai-chili-paste-114g,https://vgg.bites.com.my/collections/groceries
 Groceries,Mp Thai Chili Paste 228G,228 g,15.35,,,,https://vgg.bites.com.my/collections/groceries/products/mp-thai-chili-paste-228g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ms Frozen Squid Ring 500G,500 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/ms-frozen-squid-ring-500g,https://vgg.bites.com.my/collections/groceries
@@ -3175,11 +2994,7 @@ Groceries,Mu Artisan Non Gluten Light Soy Sauce 400Ml,400 ml,15.99,18.00,2.01,11
 Groceries,Mu Artisan Organic Bean Light Soy Sauce 400Ml,400 ml,15.99,18.25,2.26,12.40,https://vgg.bites.com.my/collections/groceries/products/mu-artisan-organic-bean-light-soy-sauce-400ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Munchy's Lexus Original Cookies 189G,189 g,6.20,,,,https://vgg.bites.com.my/collections/groceries/products/munchys-lexus-original-cookies-189g,https://vgg.bites.com.my/collections/groceries
 Groceries,N - Banana Bar 80G,80 g,4.10,,,,https://vgg.bites.com.my/collections/groceries/products/n-banana-bar-80g,https://vgg.bites.com.my/collections/groceries
-Groceries,N - Burnt Cheese Croissant - R,,7.90,,,,https://vgg.bites.com.my/collections/groceries/products/n-burnt-cheese-croissant-r,https://vgg.bites.com.my/collections/groceries
-Groceries,N - Chocolate Walnut Banana Cake (Ts),,15.20,,,,https://vgg.bites.com.my/collections/groceries/products/n-chocolate-walnut-banana-cake-ts,https://vgg.bites.com.my/collections/groceries
 Groceries,N - Classic Gourmet Bread 350G (3184-3),,12.75,,,,https://vgg.bites.com.my/collections/groceries/products/n-classic-gourmet-bread-350g-3184-3,https://vgg.bites.com.my/collections/groceries
-Groceries,N - Multigrain Loaf 410G (Cfg),,7.50,,,,https://vgg.bites.com.my/collections/groceries/products/n-multigrain-loaf-410g-cfg,https://vgg.bites.com.my/collections/groceries
-Groceries,N - Treasure Fruit Cake (Ts),,15.20,,,,https://vgg.bites.com.my/collections/groceries/products/n-treasure-fruit-cake-ts,https://vgg.bites.com.my/collections/groceries
 Groceries,N-Burger Bun Seeded 4' (4Pc),,5.25,,,,https://vgg.bites.com.my/collections/groceries/products/n-burger-bun-seeded-4-4pc,https://vgg.bites.com.my/collections/groceries
 Groceries,Naked S/Food Co. Granola Chocolate 288G,288 g,13.80,,,,https://vgg.bites.com.my/collections/groceries/products/naked-sfood-co-granola-chocolate-288g,https://vgg.bites.com.my/collections/groceries
 Groceries,Naked S/Food Co. Granola Original 288G,288 g,13.80,,,,https://vgg.bites.com.my/collections/groceries/products/naked-s-food-co-granola-original-288g,https://vgg.bites.com.my/collections/groceries
@@ -3194,7 +3009,6 @@ Groceries,Nandos Lemon & Herb Peri-Peri Sauce 125Gm,125 g,11.99,13.35,1.36,10.20
 Groceries,Nandos Lemon & Herb Peri-Peri Sauce 250Gm,250 g,19.05,,,,https://vgg.bites.com.my/collections/groceries/products/nandos-lemon-herb-peri-peri-sauce-250gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Nandos Medium Peri-Peri Sauce 250Gm,250 g,19.30,,,,https://vgg.bites.com.my/collections/groceries/products/nandos-medium-peri-peri-sauce-250gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Nandos Meduim Peri-Peri Sauce 125Gm,125 g,11.99,13.35,1.36,10.20,https://vgg.bites.com.my/collections/groceries/products/nandos-meduim-peri-peri-sauce-125gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Nanpengyou Xo Fishmaw Coll&Bl Sesame Soup 650G,650 g,25.65,,,,https://vgg.bites.com.my/collections/groceries/products/nanpengyou-xo-fishmaw-coll-bl-sesame-soup-650g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nanpengyou-Premium Golden Fish Maw Collagen Soup,,25.65,,,,https://vgg.bites.com.my/collections/groceries/products/nanpengyou-premium-golden-fish-maw-collagen-soup,https://vgg.bites.com.my/collections/groceries
 Groceries,Nat French Sea Salt Fine Fr 400Gm,400 g,12.90,,,,https://vgg.bites.com.my/collections/groceries/products/nat-french-sea-salt-fine-fr-400gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Natural Himalayan Salt Grinder 100G,100 g,12.05,,,,https://vgg.bites.com.my/collections/groceries/products/natural-himalayan-salt-grinder-100g,https://vgg.bites.com.my/collections/groceries
@@ -3222,7 +3036,6 @@ Groceries,Naturel Reduced Salt Margerine 250G,250 g,7.90,,,,https://vgg.bites.co
 Groceries,Naturel Reduced Salt Margerine 500G,500 g,12.50,,,,https://vgg.bites.com.my/collections/groceries/products/naturel-reduced-salt-margerine-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Naturel Soft Margerine 250G,250 g,7.90,,,,https://vgg.bites.com.my/collections/groceries/products/naturel-soft-margerine-250g,https://vgg.bites.com.my/collections/groceries
 Groceries,Naturel Soft Margerine 500G,500 g,12.50,,,,https://vgg.bites.com.my/collections/groceries/products/naturel-soft-margerine-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Naturel Sunflower Oil 1Kg,1 kg,14.29,14.90,0.61,4.10,https://vgg.bites.com.my/collections/groceries/products/naturel-sunflower-oil-1kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Naturel Sunflower Oil 3Kg,3 kg,30.39,36.80,6.41,17.40,https://vgg.bites.com.my/collections/groceries/products/naturel-sunflower-oil-3kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Nesquik Cereal Bars 6X25G,6 x 25 g,14.10,,,,https://vgg.bites.com.my/collections/groceries/products/nesquik-cereal-bars-6x25g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nestle Cornflakes Cereal 500G,500 g,16.35,,,,https://vgg.bites.com.my/collections/groceries/products/nestle-cornflakes-cereal-500g,https://vgg.bites.com.my/collections/groceries
@@ -3251,20 +3064,12 @@ Groceries,Nestle Nestum Honey Soft Pack 450G,450 g,11.30,,,,https://vgg.bites.co
 Groceries,Nestle Trix Cereal 330G,330 g,12.90,,,,https://vgg.bites.com.my/collections/groceries/products/nestle-trix-cereal-330g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nestum 3In1 Brown Rice 10X27G,10 x 27 g,14.25,,,,https://vgg.bites.com.my/collections/groceries/products/nestum-3in1-brown-rice-10x27g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nestum 3In1 Oat 8X30G,8 x 30 g,8.40,,,,https://vgg.bites.com.my/collections/groceries/products/nestum-3in1-oat-8x30g,https://vgg.bites.com.my/collections/groceries
-Groceries,Nestum 3In1 Oats & Berry 10X32G,10 x 32 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/nestum-3in1-oats-berry-10x32g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nestum 3In1 Ori 8X28G,8 x 28 g,8.40,,,,https://vgg.bites.com.my/collections/groceries/products/nestum-3in1-ori-8x28g,https://vgg.bites.com.my/collections/groceries
-Groceries,Nestum 3In1 Quinoa & Black Rice 10X32G,10 x 32 g,16.90,,,,https://vgg.bites.com.my/collections/groceries/products/nestum-3in1-quinoa-black-rice-10x32g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nestum All Fmly Ori 220G,220 g,6.20,,,,https://vgg.bites.com.my/collections/groceries/products/nestum-all-fmly-ori-220g,https://vgg.bites.com.my/collections/groceries
-Groceries,Nestum Allfmly Cereal Ori Soft Pack 450G,450 g,11.60,,,,https://vgg.bites.com.my/collections/groceries/products/nestum-allfmly-cereal-ori-soft-pack-450g,https://vgg.bites.com.my/collections/groceries
 Groceries,Neuvida Omega 9 Cooking Oil 1Kg,1 kg,21.90,,,,https://vgg.bites.com.my/collections/groceries/products/neuvida-omega-9-cooking-oil-1kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Nhf Chocolate Butter 180G,180 g,14.10,,,,https://vgg.bites.com.my/collections/groceries/products/nhf-chocolate-butter-180g,https://vgg.bites.com.my/collections/groceries
-Groceries,Nhf Dark Chocolate Chip 180G,180 g,14.10,,,,https://vgg.bites.com.my/collections/groceries/products/nhf-dark-chocolate-chip-180g,https://vgg.bites.com.my/collections/groceries
-Groceries,Nhf Green Tea & Spirulina 180G,180 g,14.10,,,,https://vgg.bites.com.my/collections/groceries/products/nhf-green-tea-spirulina-180g,https://vgg.bites.com.my/collections/groceries
-Groceries,Nhf Multi Seed 180G,180 g,14.10,,,,https://vgg.bites.com.my/collections/groceries/products/nhf-multi-seed-180g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nico Nico Aji Gin 10 Packs 11.4G,11.4 g,10.65,,,,https://vgg.bites.com.my/collections/groceries/products/nico-nico-aji-gin-10-packs-11-4g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nico Nico Full Size Temakiyasan 27G,27 g,15.20,,,,https://vgg.bites.com.my/collections/groceries/products/nico-nico-full-size-temakiyasan-27g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nico Nico Half Size Temakiyasan 10's,,12.00,,,,https://vgg.bites.com.my/collections/groceries/products/nico-nico-half-size-temakiyasan-10-s,https://vgg.bites.com.my/collections/groceries
-Groceries,Nissin Cisco Ciscorn Big Corn Flak 220G,220 g,14.10,,,,https://vgg.bites.com.my/collections/groceries/products/nissin-cisco-ciscorn-big-corn-flak-220g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nissin Seifun Karaage Ko+ 100G,100 g,8.00,,,,https://vgg.bites.com.my/collections/groceries/products/nissin-seifun-karaage-ko-100g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nona Crystal Jelly Raspberry 90Gm,90 g,3.50,,,,https://vgg.bites.com.my/collections/groceries/products/nona-crystal-jelly-raspberry-90gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Nona Crystal Jelly Strawberry 90Gm,90 g,3.50,,,,https://vgg.bites.com.my/collections/groceries/products/nona-crystal-jelly-strawberry-90gm,https://vgg.bites.com.my/collections/groceries
@@ -3275,41 +3080,23 @@ Groceries,Nona Oyster Sauce 255Gm,255 g,3.65,,,,https://vgg.bites.com.my/collect
 Groceries,Nutella Hazelnut Spread 200Gm,200 g,13.80,,,,https://vgg.bites.com.my/collections/groceries/products/nutella-hazelnut-spread-200gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Nutella T350G,,24.50,,,,https://vgg.bites.com.my/collections/groceries/products/nutella-t350g,https://vgg.bites.com.my/collections/groceries
 Groceries,Nutella T680G,,44.90,,,,https://vgg.bites.com.my/collections/groceries/products/nutella-t680g,https://vgg.bites.com.my/collections/groceries
-Groceries,Nuttelex Margerine Spread Buttery 500G,500 g,20.39,22.15,1.76,7.90,https://vgg.bites.com.my/collections/groceries/products/nuttelex-margerine-spread-buttery-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Nuttelex Olive Margarine Spread 500G,500 g,28.35,,,,https://vgg.bites.com.my/collections/groceries/products/nuttelex-olive-margarine-spread-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ocean Spray Craisins 50% Less Sugar 142G,142 g,11.19,13.20,2.01,15.20,https://vgg.bites.com.my/collections/groceries/products/ocean-spray-craisins-50-less-sugar-142g,https://vgg.bites.com.my/collections/groceries
 Groceries,Ocean Spray Craisins Ori Cranberries 142Gm,142 g,11.19,13.20,2.01,15.20,https://vgg.bites.com.my/collections/groceries/products/ocean-spray-craisins-ori-cranberries-142gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Olitalia Aglio Peperoncino Garlic&Hot Pepper 250M,250 m,37.45,,,,https://vgg.bites.com.my/collections/groceries/products/olitalia-aglio-peperoncino-garlic-hot-pepper-250m,https://vgg.bites.com.my/collections/groceries
 Groceries,Olitalia Funghi Porcini Olive Oil 250Ml,250 ml,38.95,,,,https://vgg.bites.com.my/collections/groceries/products/olitalia-funghi-porcini-olive-oil-250ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Olitalia Grapeseed Oil 500Ml,500 ml,22.95,,,,https://vgg.bites.com.my/collections/groceries/products/olitalia-grapeseed-oil-500ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Olitalia Lemon Olive Oil 250Ml,250 ml,37.45,,,,https://vgg.bites.com.my/collections/groceries/products/olitalia-lemon-olive-oil-250ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Olitalia Oregano Olive Oil 250Ml,250 ml,37.45,,,,https://vgg.bites.com.my/collections/groceries/products/olitalia-oregano-olive-oil-250ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Olitalia Rosemary Olive Oil 250Ml,250 ml,37.45,,,,https://vgg.bites.com.my/collections/groceries/products/olitalia-rosemary-olive-oil-250ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Orgran Apple & Cinnamon Pancake Mix 375G,375 g,22.80,,,,https://vgg.bites.com.my/collections/groceries/products/orgran-apple-cinnamon-pancake-mix-375g,https://vgg.bites.com.my/collections/groceries
-Groceries,Orgran Gf Crispibread G.Vege Sweet P.Pumpkin 125G,125 g,16.95,,,,https://vgg.bites.com.my/collections/groceries/products/orgran-gf-crispibread-g-vege-sweet-p-pumpkin-125g,https://vgg.bites.com.my/collections/groceries
-Groceries,Oriental Creamy Peanut Butter 230G,230 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/oriental-creamy-peanut-butter-230g,https://vgg.bites.com.my/collections/groceries
-Groceries,Oriental Crunchy Peanut Butter 230G,230 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/oriental-crunchy-peanut-butter-230g,https://vgg.bites.com.my/collections/groceries
 Groceries,Oriental Pandan Kaya 270G,270 g,8.90,,,,https://vgg.bites.com.my/collections/groceries/products/oriental-pandan-kaya-270g,https://vgg.bites.com.my/collections/groceries
 Groceries,Oriental Traditional Kaya 270G,270 g,8.90,,,,https://vgg.bites.com.my/collections/groceries/products/oriental-traditional-kaya-270g,https://vgg.bites.com.my/collections/groceries
-Groceries,Orihiro Konjac Jelly Mango & White Peach 12X20G,12 x 20 g,12.99,13.45,0.46,3.40,https://vgg.bites.com.my/collections/groceries/products/orihiro-konjac-jelly-mango-white-peach-12x20g,https://vgg.bites.com.my/collections/groceries
-Groceries,Orihiro Konnyaku Jelly Zero Cal Grape&Peach 12X20G,12 x 20 g,12.99,13.45,0.46,3.40,https://vgg.bites.com.my/collections/groceries/products/orihiro-konnyaku-jelly-zero-cal-grape-peach-12x20g,https://vgg.bites.com.my/collections/groceries
-Groceries,Ovomaltine Crunchy Cream Spread 380G,380 g,34.00,,,,https://vgg.bites.com.my/collections/groceries/products/ovomaltine-crunchy-cream-spread-380g,https://vgg.bites.com.my/collections/groceries
 Groceries,Pacific Foods Org Free Range Chic Broth 946Ml,946 ml,23.50,,,,https://vgg.bites.com.my/collections/groceries/products/pacific-foods-org-free-range-chic-broth-946ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Pagoda Corn Flour 400G,400 g,5.25,,,,https://vgg.bites.com.my/collections/groceries/products/pagoda-corn-flour-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Pagoda Sweet Potato Flour 500G,500 g,10.00,,,,https://vgg.bites.com.my/collections/groceries/products/pagoda-sweet-potato-flour-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Pam Cooking Spray Olive Oil 5 Oz,,29.30,,,,https://vgg.bites.com.my/collections/groceries/products/pam-cooking-spray-olive-oil-5-oz,https://vgg.bites.com.my/collections/groceries
 Groceries,Pama Plain Bihun Premium 350G,350 g,5.49,5.80,0.31,5.30,https://vgg.bites.com.my/collections/groceries/products/pama-plain-bihun-premium-350g,https://vgg.bites.com.my/collections/groceries
 Groceries,Pataks Butter Chicken Sauce 450G,450 g,19.15,,,,https://vgg.bites.com.my/collections/groceries/products/pataks-butter-chicken-sauce-450g,https://vgg.bites.com.my/collections/groceries
-Groceries,Peranakan Delights Nyonya Kapitan 180G,180 g,6.90,,,,https://vgg.bites.com.my/collections/groceries/products/peranakan-delights-nyonya-kapitan-180g,https://vgg.bites.com.my/collections/groceries
-Groceries,Peranakan Delights Nyonya Pongteh 180G,180 g,6.90,,,,https://vgg.bites.com.my/collections/groceries/products/peranakan-delights-nyonya-pongteh-180g,https://vgg.bites.com.my/collections/groceries
-Groceries,Peranakan Delights Nyonya Red Curry 180G,180 g,6.90,,,,https://vgg.bites.com.my/collections/groceries/products/peranakan-delights-nyonya-red-curry-180g,https://vgg.bites.com.my/collections/groceries
-Groceries,Peranakan Delights Nyonya Rendang 180G,180 g,6.90,,,,https://vgg.bites.com.my/collections/groceries/products/peranakan-delights-nyonya-rendang-180g,https://vgg.bites.com.my/collections/groceries
-Groceries,Peranakan Delights Nyonya Sambal 180G,180 g,6.90,,,,https://vgg.bites.com.my/collections/groceries/products/peranakan-delights-nyonya-sambal-180g,https://vgg.bites.com.my/collections/groceries
-Groceries,Peranakan Delights Nyonya Sauce 180G,180 g,6.90,,,,https://vgg.bites.com.my/collections/groceries/products/peranakan-delights-nyonya-sauce-180g,https://vgg.bites.com.my/collections/groceries
 Groceries,Planta Margarine 240G,240 g,6.89,7.35,0.46,6.30,https://vgg.bites.com.my/collections/groceries/products/planta-margarine-240g,https://vgg.bites.com.my/collections/groceries
 Groceries,Planta Margarine 480G,480 g,11.19,12.15,0.96,7.90,https://vgg.bites.com.my/collections/groceries/products/planta-margarine-480g,https://vgg.bites.com.my/collections/groceries
-Groceries,Planta Omegrow Spread 250G,250 g,7.90,,,,https://vgg.bites.com.my/collections/groceries/products/planta-omegrow-spread-250g,https://vgg.bites.com.my/collections/groceries
-Groceries,Planta Omegrow Spread 500G,500 g,12.50,,,,https://vgg.bites.com.my/collections/groceries/products/planta-omegrow-spread-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Prego Basil & Garlic Sauce 300G,300 g,4.99,5.95,0.96,16.10,https://vgg.bites.com.my/collections/groceries/products/prego-basil-garlic-sauce-300g,https://vgg.bites.com.my/collections/groceries
 Groceries,Prego Carbonara Mushroom 290G,290 g,4.99,5.95,0.96,16.10,https://vgg.bites.com.my/collections/groceries/products/prego-carbonara-mushroom-290g,https://vgg.bites.com.my/collections/groceries
 Groceries,Prego Carbonara Mushroom 350G,350 g,9.45,,,,https://vgg.bites.com.my/collections/groceries/products/prego-carbonara-mushroom-350g,https://vgg.bites.com.my/collections/groceries
@@ -3334,8 +3121,6 @@ Groceries,Quaker 3 In 1 Original 14's X 28G,28 g,11.69,12.75,1.06,8.30,https://v
 Groceries,Quaker 3 In 1 Vanilla 14's X 28G,28 g,12.75,,,,https://vgg.bites.com.my/collections/groceries/products/quaker-3-in-1-vanilla-14-s-x-28g,https://vgg.bites.com.my/collections/groceries
 Groceries,Quaker 3In1 Mocha 12x28G,12 x 28 g,11.69,12.75,1.06,8.30,https://vgg.bites.com.my/collections/groceries/products/quaker-3in1-mocha-12sx28g,https://vgg.bites.com.my/collections/groceries
 Groceries,Quaker Chia Multi-Grain 420G,420 g,17.85,,,,https://vgg.bites.com.my/collections/groceries/products/quaker-chia-multi-grain-420g,https://vgg.bites.com.my/collections/groceries
-Groceries,Quaker Five Black Multi-Grain Mix Oats 30G*18,,25.20,,,,https://vgg.bites.com.my/collections/groceries/products/quaker-five-black-multi-grain-mix-oats-30g-18,https://vgg.bites.com.my/collections/groceries
-Groceries,Quaker Five Prebiotic Mg 450G,450 g,20.79,21.80,1.01,4.60,https://vgg.bites.com.my/collections/groceries/products/quaker-five-prebiotic-mg-450g,https://vgg.bites.com.my/collections/groceries
 Groceries,Quaker Five Red Multigrain 480G,480 g,20.79,21.80,1.01,4.60,https://vgg.bites.com.my/collections/groceries/products/quaker-five-red-multigrain-480g,https://vgg.bites.com.my/collections/groceries
 Groceries,Quaker Instant Oat 1Kg,1 kg,15.40,,,,https://vgg.bites.com.my/collections/groceries/products/quaker-instant-oat-1kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Quaker Instant Oatmeal 1.2Kg,1.2 kg,15.15,,,,https://vgg.bites.com.my/collections/groceries/products/quaker-instant-oatmeal-12kg,https://vgg.bites.com.my/collections/groceries
@@ -3345,30 +3130,17 @@ Groceries,Quaker Quick Cook Oatmeal 1.2Kg,1.2 kg,15.20,,,,https://vgg.bites.com.
 Groceries,Quaker Quick Cook Oatmeal 300G,300 g,4.95,,,,https://vgg.bites.com.my/collections/groceries/products/quaker-quick-cook-oatmeal-300g,https://vgg.bites.com.my/collections/groceries
 Groceries,Quaker Quick Cook Oatmeal 800G,800 g,11.00,,,,https://vgg.bites.com.my/collections/groceries/products/quaker-quick-cook-oatmeal-800g,https://vgg.bites.com.my/collections/groceries
 Groceries,Quaker Whole Rolled Oats 800G,800 g,10.89,11.80,0.91,7.70,https://vgg.bites.com.my/collections/groceries/products/quaker-whole-rolled-oats-800g,https://vgg.bites.com.my/collections/groceries
-Groceries,Radiant Millet Noodle 250G,250 g,9.99,10.90,0.91,8.30,https://vgg.bites.com.my/collections/groceries/products/radiant-millet-noodle-250g,https://vgg.bites.com.my/collections/groceries
 Groceries,Radiant Org Fruity Breakfast Cereal 400G,400 g,16.60,,,,https://vgg.bites.com.my/collections/groceries/products/radiant-org-fruity-breakfast-cereal-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Radiant Org Hearty Breakfast Cereal 400G,400 g,16.60,,,,https://vgg.bites.com.my/collections/groceries/products/radiant-org-hearty-breakfast-cereal-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Radiant Org Nutty Breakfast Cereal 400G,400 g,16.60,,,,https://vgg.bites.com.my/collections/groceries/products/radiant-org-nutty-breakfast-cereal-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Radiant Organic Black Bean 500G,500 g,11.90,,,,https://vgg.bites.com.my/collections/groceries/products/radiant-organic-black-bean-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Radiant Organic Garbanzo 500G,500 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/radiant-organic-garbanzo-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Radiant Organic Mung Beans 500G,500 g,13.90,,,,https://vgg.bites.com.my/collections/groceries/products/radiant-organic-mung-beans-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Radiant Organic Quick Oat 500G,500 g,10.60,,,,https://vgg.bites.com.my/collections/groceries/products/radiant-organic-quick-oat-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Radiant Organic Rolled Oat 500G,500 g,10.90,,,,https://vgg.bites.com.my/collections/groceries/products/radiant-organic-rolled-oat-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Radiant Quinoa Noodle 250G,250 g,9.99,10.90,0.91,8.30,https://vgg.bites.com.my/collections/groceries/products/radiant-quinoa-noodle-250g,https://vgg.bites.com.my/collections/groceries
 Groceries,Rasaku Coconut Cream 200Ml,200 ml,3.35,,,,https://vgg.bites.com.my/collections/groceries/products/rasaku-coconut-cream-200ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Rasaku Coconut Milk 200Ml,200 ml,3.05,,,,https://vgg.bites.com.my/collections/groceries/products/rasaku-coconut-milk-200ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Rasaku Coconut Paste (Kerisik) 100G,100 g,2.70,,,,https://vgg.bites.com.my/collections/groceries/products/rasaku-coconut-paste-kerisik-100g,https://vgg.bites.com.my/collections/groceries
-Groceries,Rasto Chipotle Mayo 250Gm,250 g,8.99,12.90,3.91,30.30,https://vgg.bites.com.my/collections/groceries/products/rasto-chipotle-mayo-250gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Rasto Honey Mustard 250Gm,250 g,8.99,12.90,3.91,30.30,https://vgg.bites.com.my/collections/groceries/products/rasto-honey-mustard-250gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Rasto Peri Peri Hot Sauce 250Gm,250 g,8.99,12.90,3.91,30.30,https://vgg.bites.com.my/collections/groceries/products/rasto-peri-peri-hot-sauce-250gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Rasto Ranch Sauce 250Gm,250 g,8.99,12.90,3.91,30.30,https://vgg.bites.com.my/collections/groceries/products/rasto-ranch-sauce-250gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Rasto Tartar Sauce 250Gm,250 g,8.99,12.90,3.91,30.30,https://vgg.bites.com.my/collections/groceries/products/rasto-tartar-sauce-250gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Ready To Eat Japanese Chestnut Sweet Potato 130G,130 g,5.20,,,,https://vgg.bites.com.my/collections/groceries/products/ready-to-eat-japanese-chestnut-sweet-potato-130g,https://vgg.bites.com.my/collections/groceries
 Groceries,Real Good Nas Tomato Ketchup 310G,310 g,21.90,,,,https://vgg.bites.com.my/collections/groceries/products/real-good-nas-tomato-ketchup-310g,https://vgg.bites.com.my/collections/groceries
 Groceries,Red Eagle Fried Garlic Oil 200G,200 g,15.10,,,,https://vgg.bites.com.my/collections/groceries/products/red-eagle-fried-garlic-oil-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Red Eagle Fried Onion Oil 200G,200 g,15.10,,,,https://vgg.bites.com.my/collections/groceries/products/red-eagle-fried-onion-oil-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Red Eagle Mala Fried Garlic Oil 200G,200 g,17.60,,,,https://vgg.bites.com.my/collections/groceries/products/red-eagle-mala-fried-garlic-oil-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Red Island Extra Virgin Olive Oil 500Ml,500 ml,49.10,,,,https://vgg.bites.com.my/collections/groceries/products/red-island-extra-virgin-olive-oil-500ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Red Island Promo Pack 500Mlx2,500mlx2,86.60,,,,https://vgg.bites.com.my/collections/groceries/products/red-island-promo-pack-500mlx2,https://vgg.bites.com.my/collections/groceries
 Groceries,Remedy Organic Kombucha Ginger Lemon 250Ml,250 ml,9.00,,,,https://vgg.bites.com.my/collections/groceries/products/remedy-organic-kombucha-ginger-lemon-250ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Remedy Organic Kombucha Lemon Lime & Mint 250Ml,250 ml,9.00,,,,https://vgg.bites.com.my/collections/groceries/products/remedy-organic-kombucha-lemon-lime-mint-250ml,https://vgg.bites.com.my/collections/groceries
@@ -3380,16 +3152,12 @@ Groceries,Royi Kuih Apam Red 500G,500 g,8.35,,,,https://vgg.bites.com.my/collect
 Groceries,Royi Kuih Apam White 500G,500 g,8.35,,,,https://vgg.bites.com.my/collections/groceries/products/royi-kuih-apam-white-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Royi Kuih Apam Yellow 500G,500 g,8.35,,,,https://vgg.bites.com.my/collections/groceries/products/royi-kuih-apam-yellow-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Rustic Sourdough - 350G,350 g,12.50,,,,https://vgg.bites.com.my/collections/groceries/products/rustic-sourdough-350g,https://vgg.bites.com.my/collections/groceries
-Groceries,S&P Coconut Milk Pandan 200Ml,200 ml,4.00,,,,https://vgg.bites.com.my/collections/groceries/products/s-p-coconut-milk-pandan-200ml,https://vgg.bites.com.my/collections/groceries
-Groceries,S&P Santan Milk Regular 200Ml,200 ml,2.49,3.75,1.26,33.60,https://vgg.bites.com.my/collections/groceries/products/s-p-santan-milk-regular-200ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Saji Cooking Oil 5Kg,5 kg,30.90,,,,https://vgg.bites.com.my/collections/groceries/products/saji-cooking-oil-5kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Salt Sense Himalayan Pink Coarse Salt 500G,500 g,3.00,,,,https://vgg.bites.com.my/collections/groceries/products/salt-sense-himalayan-pink-coarse-salt-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Salt Sense Himalayan White Rock Salt 500G,500 g,2.90,,,,https://vgg.bites.com.my/collections/groceries/products/salt-sense-himalayan-white-rock-salt-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Salt Sense Nat Himalayan Pink Table Salt 400G,400 g,7.60,,,,https://vgg.bites.com.my/collections/groceries/products/salt-sense-nat-himalayan-pink-table-salt-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Salt Sense Natural Sea Salt-Coarse Grain 500G,500 g,2.90,,,,https://vgg.bites.com.my/collections/groceries/products/salt-sense-natural-sea-salt-coarse-grain-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Salt Sense Natural Sea Salt-Fine Grain 500G,500 g,2.75,,,,https://vgg.bites.com.my/collections/groceries/products/salt-sense-natural-sea-salt-fine-grain-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Samyang Tangle Creamy Mushroom Pasta 4X105G,4 x 105 g,25.90,,,,https://vgg.bites.com.my/collections/groceries/products/samyang-tangle-creamy-mushroom-pasta-4x105g,https://vgg.bites.com.my/collections/groceries
-Groceries,Samyang Tangle Garlic Oil Pasta 4X100G,4 x 100 g,25.90,,,,https://vgg.bites.com.my/collections/groceries/products/samyang-tangle-garlic-oil-pasta-4x100g,https://vgg.bites.com.my/collections/groceries
 Groceries,San Remo Bolognese & Mushroom Pasta Sauce 500Gm,500 g,12.89,13.70,0.81,5.90,https://vgg.bites.com.my/collections/groceries/products/san-remo-bolognese-mushroom-pasta-sauce-500gm,https://vgg.bites.com.my/collections/groceries
 Groceries,San Remo Napolitana Sauce 500Gm,500 g,12.89,13.70,0.81,5.90,https://vgg.bites.com.my/collections/groceries/products/san-remo-napolitana-sauce-500gm,https://vgg.bites.com.my/collections/groceries
 Groceries,San Remo Tomato Basil Pasta Sauce 500Gm,500 g,12.89,13.70,0.81,5.90,https://vgg.bites.com.my/collections/groceries/products/san-remo-tomato-basil-pasta-sauce-500gm,https://vgg.bites.com.my/collections/groceries
@@ -3398,19 +3166,13 @@ Groceries,Sanitarium Weet Bix 375G,375 g,12.70,,,,https://vgg.bites.com.my/colle
 Groceries,Sanitarium Weet-Bix Choco Crunch Bites 500G,500 g,28.25,,,,https://vgg.bites.com.my/collections/groceries/products/sanitarium-weet-bix-choco-crunch-bites-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,Sanitarium Weet-Bix Fruity Wild Berry 500Gm,500 g,28.35,,,,https://vgg.bites.com.my/collections/groceries/products/sanitarium-weet-bix-fruity-wild-berry-500gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Sanitarium Weetbix Bites Honey Cruncy 510G,510 g,28.35,,,,https://vgg.bites.com.my/collections/groceries/products/sanitarium-weetbix-bites-honey-cruncy-510g,https://vgg.bites.com.my/collections/groceries
-Groceries,Sanko San Katsuo Furidashi Kaigaimuke 20P 176G,176 g,31.90,,,,https://vgg.bites.com.my/collections/groceries/products/sanko-san-katsuo-furidashi-kaigaimuke-20p-176g,https://vgg.bites.com.my/collections/groceries
-Groceries,Sara Lee Mixed Berry Cheesecake 410G,410 g,35.50,,,,https://vgg.bites.com.my/collections/groceries/products/sara-lee-mixed-berry-cheesecake-410g,https://vgg.bites.com.my/collections/groceries
-Groceries,Sara Lee Strawberry Cheesecakes 410G,410 g,35.50,,,,https://vgg.bites.com.my/collections/groceries/products/sara-lee-strawberry-cheesecakes-410g,https://vgg.bites.com.my/collections/groceries
 Groceries,Saralee Hk All Purpose Pound Cake 300G,300 g,28.75,,,,https://vgg.bites.com.my/collections/groceries/products/saralee-hk-all-purpose-pound-cake-300g,https://vgg.bites.com.my/collections/groceries
 Groceries,Saralee Hk Chocolate Pound Cake 300G,300 g,28.75,,,,https://vgg.bites.com.my/collections/groceries/products/saralee-hk-chocolate-pound-cake-300g,https://vgg.bites.com.my/collections/groceries
 Groceries,Satang Thai Cooking Lime Water 1L,1 liter,5.35,,,,https://vgg.bites.com.my/collections/groceries/products/satang-thai-cooking-lime-water-1l,https://vgg.bites.com.my/collections/groceries
-Groceries,Savoir Oyster Flavoured Sauce 500G,500 g,6.90,,,,https://vgg.bites.com.my/collections/groceries/products/savoir-oyster-flavoured-sauce-500g,https://vgg.bites.com.my/collections/groceries
-Groceries,Savoir Traditional Woodfire Soy Sauce 500Ml,500 ml,10.95,,,,https://vgg.bites.com.my/collections/groceries/products/savoir-traditional-woodfire-soy-sauce-500ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Seri Murni Cooking Oil 3Kg,3 kg,19.60,,,,https://vgg.bites.com.my/collections/groceries/products/seri-murni-cooking-oil-3kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Seri Murni Cooking Oil 5Kg,5 kg,30.90,,,,https://vgg.bites.com.my/collections/groceries/products/seri-murni-cooking-oil-5kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Sf Honey Baked Ham 150G,150 g,18.90,,,,https://vgg.bites.com.my/collections/groceries/products/sf-honey-baked-ham-150g,https://vgg.bites.com.my/collections/groceries
 Groceries,Sgc Thin Soy-Sauce 750Ml,750 ml,8.39,8.75,0.36,4.10,https://vgg.bites.com.my/collections/groceries/products/sgc-thin-soy-sauce-750ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Shizhishan King Soy Sauce 500Ml+250Ml,,20.90,,,,https://vgg.bites.com.my/collections/groceries/products/shizhishan-king-soy-sauce-500ml-250ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Sing Long Belacan (Block) 150G,150 g,4.00,,,,https://vgg.bites.com.my/collections/groceries/products/sing-long-belacan-block-150g,https://vgg.bites.com.my/collections/groceries
 Groceries,Sing Long Black Pepper Coarse 50G,50 g,6.80,,,,https://vgg.bites.com.my/collections/groceries/products/sing-long-black-pepper-coarse-50g,https://vgg.bites.com.my/collections/groceries
 Groceries,Sing Long Black Pepper Sauce 300G,300 g,15.15,,,,https://vgg.bites.com.my/collections/groceries/products/sing-long-black-pepper-sauce-300g,https://vgg.bites.com.my/collections/groceries
@@ -3430,12 +3192,6 @@ Groceries,Skippy Peanut Butter No Sugar Added 280G,280 g,12.89,16.65,3.76,22.60,
 Groceries,Sl Ground Black Pepper 80G,80 g,8.90,,,,https://vgg.bites.com.my/collections/groceries/products/sl-ground-black-pepper-80g,https://vgg.bites.com.my/collections/groceries
 Groceries,Smart Balance Cooking Oil 1Kg,1 kg,13.70,,,,https://vgg.bites.com.my/collections/groceries/products/smart-balance-cooking-oil-1kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Smuckers Strawberry Preserves Jam 12Oz,,15.00,,,,https://vgg.bites.com.my/collections/groceries/products/smuckers-strawberry-preserves-jam-12oz,https://vgg.bites.com.my/collections/groceries
-Groceries,Somi Haconese Ebi No Umami 120G,120 g,13.90,,,,https://vgg.bites.com.my/collections/groceries/products/somi-haconese-ebi-no-umami-120g,https://vgg.bites.com.my/collections/groceries
-Groceries,Sp Golden Butter Rice Cake,,3.50,,,,https://vgg.bites.com.my/collections/groceries/products/sp-golden-butter-rice-cake,https://vgg.bites.com.my/collections/groceries
-Groceries,Sp Golden Pumpkin Bar,,6.80,,,,https://vgg.bites.com.my/collections/groceries/products/sp-golden-pumpkin-bar,https://vgg.bites.com.my/collections/groceries
-Groceries,Sp K Style Chocolate Chips Scone 70G,70 g,5.20,,,,https://vgg.bites.com.my/collections/groceries/products/sp-k-style-chocolate-chips-scone-70g,https://vgg.bites.com.my/collections/groceries
-Groceries,Sp K Style Onion & Cheese Scone 70G,70 g,5.20,,,,https://vgg.bites.com.my/collections/groceries/products/sp-k-style-onion-cheese-scone-70g,https://vgg.bites.com.my/collections/groceries
-Groceries,Sp K Style Raisin Scone 70G,70 g,5.20,,,,https://vgg.bites.com.my/collections/groceries/products/sp-k-style-raisin-scone-70g,https://vgg.bites.com.my/collections/groceries
 Groceries,St Dalfour Apple & Cinnamon 284G,284 g,18.69,20.40,1.71,8.40,https://vgg.bites.com.my/collections/groceries/products/st-dalfour-apple-cinnamon-284g,https://vgg.bites.com.my/collections/groceries
 Groceries,St Dalfour French Grape Jam 284G,284 g,18.69,20.40,1.71,8.40,https://vgg.bites.com.my/collections/groceries/products/st-dalfour-french-grape-jam-284g,https://vgg.bites.com.my/collections/groceries
 Groceries,St Dalfour Lemon & Lime 284G,284 g,16.79,20.40,3.61,17.70,https://vgg.bites.com.my/collections/groceries/products/st-dalfour-lemon-lime-284g,https://vgg.bites.com.my/collections/groceries
@@ -3462,11 +3218,8 @@ Groceries,Star Flavour Pineapple 25Ml,25 ml,3.05,,,,https://vgg.bites.com.my/col
 Groceries,Star Flavour Sweet Corn 25Ml,25 ml,3.05,,,,https://vgg.bites.com.my/collections/groceries/products/star-flavour-sweet-corn-25ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Star Flavour Tiramisu 30Ml,30 ml,4.30,,,,https://vgg.bites.com.my/collections/groceries/products/star-flavour-tiramisu-30ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Star Flavour Vanilla 25Ml,25 ml,3.05,,,,https://vgg.bites.com.my/collections/groceries/products/star-flavour-vanilla-25ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Star Gula Merah 500Gm,500 g,5.95,,,,https://vgg.bites.com.my/collections/groceries/products/star-gula-merah-500gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Star Tepung Jagung 400G,400 g,2.30,,,,https://vgg.bites.com.my/collections/groceries/products/star-tepung-jagung-400g,https://vgg.bites.com.my/collections/groceries
 Groceries,Steffi's Choice Strawberry Jam 340Gm,340 g,11.89,12.25,0.36,2.90,https://vgg.bites.com.my/collections/groceries/products/steffi-s-choice-strawberry-jam-340gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Steffi's Sugar Free Pandan Kaya 220G,220 g,11.59,12.30,0.71,5.80,https://vgg.bites.com.my/collections/groceries/products/steffi-s-sugar-free-pandan-kaya-220g,https://vgg.bites.com.my/collections/groceries
-Groceries,Steffi's Sugar Free Sri Kaya 220G,220 g,11.59,12.30,0.71,5.80,https://vgg.bites.com.my/collections/groceries/products/steffi-s-sugar-free-sri-kaya-220g,https://vgg.bites.com.my/collections/groceries
 Groceries,Sudee Bunga Kantan Cube 54G,54 g,6.70,,,,https://vgg.bites.com.my/collections/groceries/products/sudee-bunga-kantan-cube-54g,https://vgg.bites.com.my/collections/groceries
 Groceries,Sudee Cili Giling Cube 54G,54 g,4.55,,,,https://vgg.bites.com.my/collections/groceries/products/sudee-cili-giling-cube-54g,https://vgg.bites.com.my/collections/groceries
 Groceries,Sudee Cili Padi Cube 54G,54 g,5.35,,,,https://vgg.bites.com.my/collections/groceries/products/sudee-cili-padi-cube-54g,https://vgg.bites.com.my/collections/groceries
@@ -3479,7 +3232,6 @@ Groceries,Sunbeam Coconut Oil 2L,2 liter,40.85,,,,https://vgg.bites.com.my/colle
 Groceries,Sunbeam Sunflower Oil 2L,2 liter,16.99,23.30,6.31,27.10,https://vgg.bites.com.my/collections/groceries/products/sunbeam-sunflower-oil-2l,https://vgg.bites.com.my/collections/groceries
 Groceries,Sunflower Koshihikari Japonica Calrose Rice 5Kg,5 kg,29.39,34.80,5.41,15.50,https://vgg.bites.com.my/collections/groceries/products/sunflower-koshihikari-japonica-calrose-rice-5kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Sunflower Pure Basmathi Pusa 1121 5Kg,5 kg,33.99,47.95,13.96,29.10,https://vgg.bites.com.my/collections/groceries/products/sunflower-pure-basmathi-pusa-1121-5kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Sunflower Rice Bran Oil 1L,1 liter,17.99,22.50,4.51,20.00,https://vgg.bites.com.my/collections/groceries/products/sunflower-rice-bran-oil-1l,https://vgg.bites.com.my/collections/groceries
 Groceries,Swallow Globe Agar-Agar Clear 10G,10 g,4.19,5.25,1.06,20.20,https://vgg.bites.com.my/collections/groceries/products/swallow-globe-agar-agar-clear-10g,https://vgg.bites.com.my/collections/groceries
 Groceries,Swallow Globe Agar-Agar Green 10G,10 g,4.19,5.25,1.06,20.20,https://vgg.bites.com.my/collections/groceries/products/swallow-globe-agar-agar-green-10g,https://vgg.bites.com.my/collections/groceries
 Groceries,Swallow Globe Agar-Agar Red 10G,10 g,4.19,5.25,1.06,20.20,https://vgg.bites.com.my/collections/groceries/products/swallow-globe-agar-agar-red-10g,https://vgg.bites.com.my/collections/groceries
@@ -3496,15 +3248,8 @@ Groceries,Tae Pee Sweet Chilli Sauce 360G,360 g,8.40,,,,https://vgg.bites.com.my
 Groceries,Tae Pee Tomyam 227Gm-Extra 50%,,10.60,,,,https://vgg.bites.com.my/collections/groceries/products/tae-pee-tomyam-227gm-extra-50,https://vgg.bites.com.my/collections/groceries
 Groceries,Tae Pee Vege Tom Yum 227G,227 g,10.60,,,,https://vgg.bites.com.my/collections/groceries/products/tae-pee-vege-tom-yum-227g,https://vgg.bites.com.my/collections/groceries
 Groceries,Takara Hon Mirin 600Ml,600 ml,18.90,,,,https://vgg.bites.com.my/collections/groceries/products/takara-hon-mirin-600ml,https://vgg.bites.com.my/collections/groceries
-Groceries,Tasti Chewy Muesli Squares Choc Drizzle 175G,175 g,12.90,14.90,2.00,13.40,https://vgg.bites.com.my/collections/groceries/products/tasti-chewy-muesli-squares-choc-drizzle-175g,https://vgg.bites.com.my/collections/groceries
-Groceries,Tasti Double Choc Mega Nuts 6X40Gm,6 x 40 g,16.90,18.55,1.65,8.90,https://vgg.bites.com.my/collections/groceries/products/tasti-double-choc-mega-nuts-6x40gm,https://vgg.bites.com.my/collections/groceries
-Groceries,Tasti Nut Bars Choc Peanut 210G,210 g,15.90,17.90,2.00,11.20,https://vgg.bites.com.my/collections/groceries/products/tasti-nut-bars-choc-peanut-210g,https://vgg.bites.com.my/collections/groceries
-Groceries,Tasti Nut Bars Dark Choc Cranberry 210G,210 g,15.90,17.90,2.00,11.20,https://vgg.bites.com.my/collections/groceries/products/tasti-nut-bars-dark-choc-cranberry-210g,https://vgg.bites.com.my/collections/groceries
-Groceries,Tasti Nut Bars Nut Deluxe 210G,210 g,15.90,19.90,4.00,20.10,https://vgg.bites.com.my/collections/groceries/products/tasti-nut-bars-nut-deluxe-210g,https://vgg.bites.com.my/collections/groceries
 Groceries,Tasti Peanut Butter Mega Nuts 6X40Gm,6 x 40 g,18.55,,,,https://vgg.bites.com.my/collections/groceries/products/tasti-peanut-butter-mega-nuts-6x40gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Tean's Gourmet Assam Fish Paste 200G,200 g,5.99,6.70,0.71,10.60,https://vgg.bites.com.my/collections/groceries/products/tean-s-gourmet-assam-fish-paste-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Tean's Gourmet Chicken Curry Paste 200G,200 g,6.70,,,,https://vgg.bites.com.my/collections/groceries/products/tean-s-gourmet-chicken-curry-paste-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Tean's Gourmet Steaming Fish Paste 200G,200 g,6.70,,,,https://vgg.bites.com.my/collections/groceries/products/tean-s-gourmet-steaming-fish-paste-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Tean's Gourmet Stir Fry Paste 200G,200 g,6.70,,,,https://vgg.bites.com.my/collections/groceries/products/tean-s-gourmet-stir-fry-paste-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Tean's Gourmet Vegetarian Curry Paste 200G,200 g,6.70,,,,https://vgg.bites.com.my/collections/groceries/products/tean-s-gourmet-vegetarian-curry-paste-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Teans Crispy Prawn Chilli 320G,320 g,16.75,,,,https://vgg.bites.com.my/collections/groceries/products/teans-crispy-prawn-chilli-320g,https://vgg.bites.com.my/collections/groceries
@@ -3522,7 +3267,6 @@ Groceries,Togi White Pepper Soup Spices 35Gm,35 g,8.45,,,,https://vgg.bites.com.
 Groceries,Toh's Daily Chili Garlic - Tom Yum 200G,200 g,23.19,24.40,1.21,5.00,https://vgg.bites.com.my/collections/groceries/products/toh-s-daily-chili-garlic-tom-yum-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Toh's Daily Chli Garlic-Extra Spicy 200G,200 g,23.19,24.40,1.21,5.00,https://vgg.bites.com.my/collections/groceries/products/toh-s-daily-chli-garlic-extra-spicy-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Toh's Daily Chli Garlic-Original 200G,200 g,23.19,24.40,1.21,5.00,https://vgg.bites.com.my/collections/groceries/products/toh-s-daily-chli-garlic-original-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Tomorion Custard Pie 6S 138G,138 g,8.79,,,,https://vgg.bites.com.my/collections/groceries/products/tomorion-custard-pie-6s-138g,https://vgg.bites.com.my/collections/groceries
 Groceries,Torani Syrup Classic Hazelnut 375Ml,375 ml,27.79,29.90,2.11,7.10,https://vgg.bites.com.my/collections/groceries/products/torani-syrup-classic-hazelnut-375ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Torani Syrup Salted Caramel 375Ml,375 ml,27.79,29.90,2.11,7.10,https://vgg.bites.com.my/collections/groceries/products/torani-syrup-salted-caramel-375ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Torani Syrup Vanilla 375Ml,375 ml,27.79,29.90,2.11,7.10,https://vgg.bites.com.my/collections/groceries/products/torani-syrup-vanilla-375ml,https://vgg.bites.com.my/collections/groceries
@@ -3538,46 +3282,23 @@ Groceries,Van Houten Vegan Almond And Berries 45G,45 g,5.85,,,,https://vgg.bites
 Groceries,Van Houten Vegan Coconut Almond 45G,45 g,5.85,,,,https://vgg.bites.com.my/collections/groceries/products/van-houten-vegan-coconut-almond-45g,https://vgg.bites.com.my/collections/groceries
 Groceries,Van Houten Vegan Salted Caramel 45G,45 g,5.85,,,,https://vgg.bites.com.my/collections/groceries/products/van-houten-vegan-salted-caramel-45g,https://vgg.bites.com.my/collections/groceries
 Groceries,Vecorn Pure Corn Oil 2Kg,2 kg,30.30,,,,https://vgg.bites.com.my/collections/groceries/products/vecorn-pure-corn-oil-2kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Vegemite Gluten Free Spread 235G,235 g,28.25,,,,https://vgg.bites.com.my/collections/groceries/products/vegemite-gluten-free-spread-235g,https://vgg.bites.com.my/collections/groceries
 Groceries,Vesawit Cooking Oil 1Kg,1 kg,6.90,,,,https://vgg.bites.com.my/collections/groceries/products/vesawit-cooking-oil-1kg,https://vgg.bites.com.my/collections/groceries
 Groceries,Vesawit Cooking Oil 5Kg,5 kg,30.90,,,,https://vgg.bites.com.my/collections/groceries/products/vesawit-cooking-oil-5kg,https://vgg.bites.com.my/collections/groceries
-Groceries,Village Park Res Musang King Durian Kaya 275G,275 g,19.40,,,,https://vgg.bites.com.my/collections/groceries/products/village-park-res-musang-king-durian-kaya-275g,https://vgg.bites.com.my/collections/groceries
-Groceries,Village Park Res Sambal Ikan Bilis 250G,250 g,18.90,,,,https://vgg.bites.com.my/collections/groceries/products/village-park-res-sambal-ikan-bilis-250g,https://vgg.bites.com.my/collections/groceries
-Groceries,Village Park Res Sambal Petai 250G,250 g,20.90,,,,https://vgg.bites.com.my/collections/groceries/products/village-park-res-sambal-petai-250g,https://vgg.bites.com.my/collections/groceries
-Groceries,Village Park Res Signature Kaya 275G,275 g,14.50,,,,https://vgg.bites.com.my/collections/groceries/products/village-park-res-signature-kaya-275g,https://vgg.bites.com.my/collections/groceries
-Groceries,Waitrose Ci Salted Capers 100G,100 g,23.90,,,,https://vgg.bites.com.my/collections/groceries/products/waitrose-ci-salted-capers-100g,https://vgg.bites.com.my/collections/groceries
-Groceries,Waitrose Ess Plum Tomatoes 400G,400 g,7.90,,,,https://vgg.bites.com.my/collections/groceries/products/waitrose-ess-plum-tomatoes-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Waitrose French Onion & Red Wine Soup 400G,400 g,15.90,,,,https://vgg.bites.com.my/collections/groceries/products/waitrose-french-onion-red-wine-soup-400g,https://vgg.bites.com.my/collections/groceries
-Groceries,Waitrose Pickled Onions In Bals Vinegar 454G,454 g,23.90,,,,https://vgg.bites.com.my/collections/groceries/products/waitrose-pickled-onions-in-bals-vinegar-454g,https://vgg.bites.com.my/collections/groceries
-Groceries,Waitrose Pickled Silverskin Onions 280G,280 g,12.90,,,,https://vgg.bites.com.my/collections/groceries/products/waitrose-pickled-silverskin-onions-280g,https://vgg.bites.com.my/collections/groceries
-Groceries,Waitrose Tomato Chutney 315G,315 g,19.90,,,,https://vgg.bites.com.my/collections/groceries/products/waitrose-tomato-chutney-315g,https://vgg.bites.com.my/collections/groceries
 Groceries,Weetabix Minis Chocolate 500G,500 g,27.90,,,,https://vgg.bites.com.my/collections/groceries/products/weetabix-minis-chocolate-500g,https://vgg.bites.com.my/collections/groceries
 Groceries,White French Baguette 300G,300 g,5.90,,,,https://vgg.bites.com.my/collections/groceries/products/white-french-baguette-300g,https://vgg.bites.com.my/collections/groceries
-Groceries,Whole Earth 72% Cocoa Dark Chocolate 75G,75 g,18.59,20.60,2.01,9.80,https://vgg.bites.com.my/collections/groceries/products/whole-earth-72-cocoa-dark-chocolate-75g,https://vgg.bites.com.my/collections/groceries
-Groceries,Whole Earth Dark Chocolate 75G,75 g,18.59,20.60,2.01,9.80,https://vgg.bites.com.my/collections/groceries/products/whole-earth-dark-chocolate-75g,https://vgg.bites.com.my/collections/groceries
-Groceries,Whole Earth Milk Chocolate 75G,75 g,18.59,20.60,2.01,9.80,https://vgg.bites.com.my/collections/groceries/products/whole-earth-milk-chocolate-75g,https://vgg.bites.com.my/collections/groceries
-Groceries,Whole Earth Milk Chocolate With Hazelnuts 75G,75 g,18.59,20.60,2.01,9.80,https://vgg.bites.com.my/collections/groceries/products/whole-earth-milk-chocolate-with-hazelnuts-75g,https://vgg.bites.com.my/collections/groceries
 Groceries,Wholemeal Baguette - 320G,320 g,6.40,,,,https://vgg.bites.com.my/collections/groceries/products/wholemeal-baguette-320g,https://vgg.bites.com.my/collections/groceries
 Groceries,Windmill Corn Starch 350G,350 g,6.44,,,,https://vgg.bites.com.my/collections/groceries/products/windmill-corn-starch-350g,https://vgg.bites.com.my/collections/groceries
 Groceries,Windmill Potato Starch Flour 350Gm,350 g,9.93,,,,https://vgg.bites.com.my/collections/groceries/products/windmill-potato-starch-flour-350gm,https://vgg.bites.com.my/collections/groceries
 Groceries,Wonder's Cocoa Powder 100G,100 g,14.60,,,,https://vgg.bites.com.my/collections/groceries/products/wonder-s-cocoa-powder-100g,https://vgg.bites.com.my/collections/groceries
-Groceries,Woolworths Sriracha Mayonnaise 330Ml,330 ml,14.10,,,,https://vgg.bites.com.my/collections/groceries/products/woolworths-sriracha-mayonnaise-330ml,https://vgg.bites.com.my/collections/groceries
 Groceries,Yangban Double Roasted Seasoned Laver 9X5G,9 x 5 g,21.15,,,,https://vgg.bites.com.my/collections/groceries/products/yangban-double-roasted-seasoned-laver-9x5g,https://vgg.bites.com.my/collections/groceries
 Groceries,Yangban Roasted Laver W Olive Oil 9X5G,9 x 5 g,20.15,,,,https://vgg.bites.com.my/collections/groceries/products/yangban-roasted-laver-w-olive-oil-9x5g,https://vgg.bites.com.my/collections/groceries
 Groceries,Yangban Seasoned Laver Himalayan Salt 9x4.55G,9x4.55g,20.75,,,,https://vgg.bites.com.my/collections/groceries/products/yangban-seasoned-laver-himalayan-salt-9sx4-55g,https://vgg.bites.com.my/collections/groceries
 Groceries,Yarra Valley Raspberry Jam (Tub) 475G,475 g,7.45,14.90,7.45,50.00,https://vgg.bites.com.my/collections/groceries/products/yarra-valley-raspberry-jam-tub-475g,https://vgg.bites.com.my/collections/groceries
-Groceries,Yava Granola Chocolate Banana 200G,200 g,17.90,,,,https://vgg.bites.com.my/collections/groceries/products/yava-granola-chocolate-banana-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Yava Granola Chocolate Vanilla 200G,200 g,17.90,,,,https://vgg.bites.com.my/collections/groceries/products/yava-granola-chocolate-vanilla-200g,https://vgg.bites.com.my/collections/groceries
-Groceries,Yava Granola Coconut Banana 200G,200 g,17.90,,,,https://vgg.bites.com.my/collections/groceries/products/yava-granola-coconut-banana-200g,https://vgg.bites.com.my/collections/groceries
 Groceries,Yogood Blueberry & Cranberry Yog Bar 138G,138 g,15.20,,,,https://vgg.bites.com.my/collections/groceries/products/yogood-blueberry-cranberry-yog-bar-138g,https://vgg.bites.com.my/collections/groceries
 Groceries,Yogood Choc & Nut Muesli Bar 138G,138 g,15.20,,,,https://vgg.bites.com.my/collections/groceries/products/yogood-choc-nut-muesli-bar-138g,https://vgg.bites.com.my/collections/groceries
 Groceries,Yogood Cranberry & Mango Yog Bar 138G,138 g,15.40,,,,https://vgg.bites.com.my/collections/groceries/products/yogood-cranberry-mango-yog-bar-138g,https://vgg.bites.com.my/collections/groceries
 Groceries,Yogood Crisp & Crunch Fruit & Nut 280G,280 g,13.59,14.55,0.96,6.60,https://vgg.bites.com.my/collections/groceries/products/yogood-crisp-crunch-fruit-nut-280g,https://vgg.bites.com.my/collections/groceries
 Groceries,Yogood Glow Parfait Muesli Nuts & Chia 320G,320 g,16.80,,,,https://vgg.bites.com.my/collections/groceries/products/yogood-glow-parfait-muesli-nuts-chia-320g,https://vgg.bites.com.my/collections/groceries
-Groceries,Younger Farm Granola Caramel Almond 225G,225 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/younger-farm-granola-caramel-almond-225g,https://vgg.bites.com.my/collections/groceries
-Groceries,Younger Farm Granola Choc Hazelnut 225G,225 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/younger-farm-granola-choc-hazelnut-225g,https://vgg.bites.com.my/collections/groceries
-Groceries,Younger Farm Granola Chocolate Malt 225G,225 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/younger-farm-granola-chocolate-malt-225g,https://vgg.bites.com.my/collections/groceries
-Groceries,Younger Farm Granola Strawberry Yogurt Berry 200G,200 g,14.90,,,,https://vgg.bites.com.my/collections/groceries/products/younger-farm-granola-strawberry-yogurt-berry-200g,https://vgg.bites.com.my/collections/groceries
 Organics,Alce Nero Jam Blueberry 270G,270 g,27.50,,,,https://vgg.bites.com.my/collections/organics/products/alce-nero-jam-blueberry-270g,https://vgg.bites.com.my/collections/organics
 Organics,Alce Nero Org Aceto Balsamico Di Modena 250Ml,250 ml,16.50,,,,https://vgg.bites.com.my/collections/organics/products/alce-nero-org-aceto-balsamico-di-modena-250ml,https://vgg.bites.com.my/collections/organics
 Organics,Alce Nero Org Fusilli 500Gm,500 g,9.00,,,,https://vgg.bites.com.my/collections/organics/products/alce-nero-org-fusilli-500gm,https://vgg.bites.com.my/collections/organics
@@ -4920,7 +4641,6 @@ Snacks Sweets,Ovomaltine Crunchy Milk Chocolate Bar 100G,100 g,17.90,,,,https://
 Snacks Sweets,Pejoy Fp Vannila Hokkaido 112G,112 g,12.65,,,,https://vgg.bites.com.my/collections/snacks-sweets/products/pejoy-fp-vannila-hokkaido-112g,https://vgg.bites.com.my/collections/snacks-sweets
 Snacks Sweets,Pepperidge Farm Captiva Dark Choc Brownie 8.6 Oz,,25.25,,,,https://vgg.bites.com.my/collections/snacks-sweets/products/pepperidge-farm-captiva-dark-choc-brownie-8-6-oz,https://vgg.bites.com.my/collections/snacks-sweets
 Snacks Sweets,Pepperidge Farm Goldfish Cheddar (9X28G),,24.20,,,,https://vgg.bites.com.my/collections/snacks-sweets/products/pepperidge-farm-goldfish-cheddar-9x28g,https://vgg.bites.com.my/collections/snacks-sweets
-Snacks Sweets,Pepperidge Farm Goldfish Cheddar 187G,187 g,13.29,14.50,1.21,8.30,https://vgg.bites.com.my/collections/snacks-sweets/products/pepperidge-farm-goldfish-cheddar-187g,https://vgg.bites.com.my/collections/snacks-sweets
 Snacks Sweets,Pepperidge Farm Goldfish Original 187G,187 g,13.29,14.50,1.21,8.30,https://vgg.bites.com.my/collections/snacks-sweets/products/pepperidge-farm-goldfish-original-187g,https://vgg.bites.com.my/collections/snacks-sweets
 Snacks Sweets,Pierrot Gourmand 10 Caramel Lollipops 130G,130 g,22.90,,,,https://vgg.bites.com.my/collections/snacks-sweets/products/pierrot-gourmand-10-caramel-lollipops-130g,https://vgg.bites.com.my/collections/snacks-sweets
 Snacks Sweets,Pierrot Gourmand 10 Fruit Lollipops 130G,130 g,22.90,,,,https://vgg.bites.com.my/collections/snacks-sweets/products/pierrot-gourmand-10-fruit-lollipops-130g,https://vgg.bites.com.my/collections/snacks-sweets
