@@ -32,10 +32,10 @@ jobs:
           cache: 'pip'
           cache-dependency-path: runner-src/requirements_b.txt
 
-      # Pause for 33 seconds to give GitHub's backend servers time to recover
+      # Pause for 35 seconds to give GitHub's backend servers time to recover
       - name: Wait before retry
         if: steps.setup-python-1.outcome == 'failure'
-        run: sleep 33
+        run: sleep 35
 
       # Attempt 2: Runs only if the first attempt failed
       - name: Set up Python (Retry Fallback)
