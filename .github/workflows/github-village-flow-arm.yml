@@ -1,4 +1,4 @@
-name: Village brief-1 ARM (gather-branch)
+name: Village flow ARM (gather-branch)
 
 on:
   workflow_dispatch: # manual trigger ability
