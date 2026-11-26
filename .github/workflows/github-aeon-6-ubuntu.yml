@@ -135,7 +135,7 @@ jobs:
         id: run-script-1
         if: steps.freshness_check.outputs.skip != 'true'
         continue-on-error: true
-        timeout-minutes: 20
+        timeout-minutes: 19
         run: |
           rm -f "$OUT_FILE"
           python -u aeon_cdp_args_040.py -c "$CATEGORIES_FILE" -o "$OUT_FILE"
@@ -147,12 +147,12 @@ jobs:
       # Pause for 50 seconds before retrying
       - name: Wait before retry
         if: steps.run-script-1.outcome == 'failure'
-        run: sleep 50
+        run: sleep 52
 
       # Attempt 2: runs only if attempt 1 failed. Final attempt; if it fails, the job fails.
       - name: Run script (Retry)
         if: steps.run-script-1.outcome == 'failure'
-        timeout-minutes: 20
+        timeout-minutes: 19
         run: |
           rm -f "$OUT_FILE"
           python -u aeon_cdp_args_040.py -c "$CATEGORIES_FILE" -o "$OUT_FILE"
