@@ -11,6 +11,7 @@ jobs:
     
     env:
       VILLAGE_OUT_FILE: village-brief-4.csv   # Centralized filename variable
+      SETTINGS_FILE: vill_giza_brief_4_settings.json
 
     steps:
       - name: Checkout code
@@ -137,10 +138,11 @@ jobs:
           playwright install --with-deps chromium
 
       - name: Run script
+        id: run-script-1
         if: steps.freshness_check.outputs.skip != 'true'
         run: |
           echo "running script"
-          python vill_006.py --config vill_giza_brief_4_settings.json
+          python vill_006.py --config "$SETTINGS_FILE"
           
       - name: Validate output file
         if: steps.freshness_check.outputs.skip != 'true'
