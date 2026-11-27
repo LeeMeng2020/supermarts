@@ -6,6 +6,7 @@ on:
 env:
   OUT_FILE: aeon-out-part3.csv
   CATEGORIES_FILE: aeon-categories-3.txt
+  MIN_SIZE: 5000
 
 jobs:
   setup:
@@ -129,46 +130,35 @@ jobs:
           echo "Random sleep for $DELAY seconds..."
           sleep $DELAY        
 
-      - name: Run script and validate output. With retry, timeout.
-        timeout-minutes: 42
+      # Attempt 1: if the script or validation fails, continue instead of failing the job
+      - name: Run script (Attempt 1)
+        id: run-script-1
         if: steps.freshness_check.outputs.skip != 'true'
+        continue-on-error: true
+        timeout-minutes: 19
         run: |
-          check_output_file() {
-            local file=$1
-            local minsize=$2
-            if [ ! -f "$file" ]; then
-              echo "** Output file does not exist **"
-              return 1
-            fi
-            filesize=$(stat -c%s "$file")
-            if [ $filesize -lt $minsize ]; then
-              echo "** Output file too small ($filesize bytes) **"
-              return 1
-            fi
-            echo "Validation passed: output file seems OK."
-            return 0
-          }
+          rm -f "$OUT_FILE"
+          python -u aeon_cdp_args_040.py -c "$CATEGORIES_FILE" -o "$OUT_FILE"
+          if [ ! -f "$OUT_FILE" ] || [ "$(stat -c%s "$OUT_FILE")" -lt "$MIN_SIZE" ]; then
+            echo "** Output file missing or smaller than $MIN_SIZE bytes **"
+            exit 1
+          fi
 
-          run_with_timeout() {
-            local categories=$1
-            local output=$2
-            local timeoutMinutes=$3
-            local attemptLabel=$4
+      # Pause for 50 seconds before retrying
+      - name: Wait before retry
+        if: steps.run-script-1.outcome == 'failure'
+        run: sleep 52
 
-            echo "=== $attemptLabel ==="
-            timeout ${timeoutMinutes}m python -u aeon_cdp_args_040.py -c "$categories" -o "$output"
-            check_output_file "$output" 5000
-          }
-
-          perAttemptTimeout=20
-
-          if ! run_with_timeout "$CATEGORIES_FILE" "$OUT_FILE" $perAttemptTimeout "First attempt"; then
-            echo "First attempt failed or timed out. Retrying after 39 seconds..."
-            sleep 39
-            if ! run_with_timeout "$CATEGORIES_FILE" "$OUT_FILE" $perAttemptTimeout "Second attempt"; then
-              echo "** Retry failed. Aborting. **"
-              exit 1
-            fi
+      # Attempt 2: runs only if attempt 1 failed. Final attempt; if it fails, the job fails.
+      - name: Run script (Retry)
+        if: steps.run-script-1.outcome == 'failure'
+        timeout-minutes: 19
+        run: |
+          rm -f "$OUT_FILE"
+          python -u aeon_cdp_args_040.py -c "$CATEGORIES_FILE" -o "$OUT_FILE"
+          if [ ! -f "$OUT_FILE" ] || [ "$(stat -c%s "$OUT_FILE")" -lt "$MIN_SIZE" ]; then
+            echo "** Output file missing or smaller than $MIN_SIZE bytes **"
+            exit 1
           fi
 
       - name: Set up Git
