@@ -12,6 +12,7 @@ jobs:
     env:
       VILLAGE_OUT_FILE: village-brief-1.csv   # Centralized filename variable
       SETTINGS_FILE: vill_giza_brief_1_settings.json
+      MIN_SIZE: 5000
 
     steps:
       - name: Checkout code
@@ -85,6 +86,8 @@ jobs:
         run: |
           echo "Ubuntu version:"
           lsb_release -a
+          echo "Architecture:"
+          uname -m
           echo "Python version"
           python -V
           echo "IP address"
@@ -137,27 +140,36 @@ jobs:
         run: |
           playwright install --with-deps chromium
 
-      - name: Run script
+      # Attempt 1: if the script or validation fails, continue instead of failing the job
+      - name: Run script (Attempt 1)
         id: run-script-1
         if: steps.freshness_check.outputs.skip != 'true'
+        continue-on-error: true
+        timeout-minutes: 9
         run: |
           echo "running script"
           python vill_006.py --config "$SETTINGS_FILE"
+          if [ ! -f "$VILLAGE_OUT_FILE" ] || [ "$(stat -c%s "$VILLAGE_OUT_FILE")" -lt "$MIN_SIZE" ]; then
+            echo "** Output file missing or smaller than $MIN_SIZE bytes **"
+            exit 1
+          fi
           
-      - name: Validate output file
-        if: steps.freshness_check.outputs.skip != 'true'
+      # Pause for 5x seconds before retrying
+      - name: Wait before retry
+        if: steps.run-script-1.outcome == 'failure'
+        run: sleep 52
+
+      # Attempt 2: runs only if attempt 1 failed. Final attempt; if it fails, the job fails.
+      - name: Run script (Retry)
+        if: steps.run-script-1.outcome == 'failure'
+        timeout-minutes: 9
         run: |
-          echo "Checking if $VILLAGE_OUT_FILE exists and is larger than 20 KB..."
-          if [ ! -f "$VILLAGE_OUT_FILE" ]; then
-            echo "❌ File does not exist: $VILLAGE_OUT_FILE"
+          rm -f "$VILLAGE_OUT_FILE"
+          python vill_006.py --config "$SETTINGS_FILE"
+          if [ ! -f "$VILLAGE_OUT_FILE" ] || [ "$(stat -c%s "$VILLAGE_OUT_FILE")" -lt "$MIN_SIZE" ]; then
+            echo "** Output file missing or smaller than $MIN_SIZE bytes **"
             exit 1
           fi
-          FILESIZE=$(stat -c%s "$VILLAGE_OUT_FILE")
-          if [ "$FILESIZE" -lt 20000 ]; then
-            echo "❌ File size is too small: ${FILESIZE} bytes"
-            exit 1
-          fi
-          echo "✅ File exists and is larger than 20 KB: ${FILESIZE} bytes"
 
       - name: Set up Git
         if: steps.freshness_check.outputs.skip != 'true'

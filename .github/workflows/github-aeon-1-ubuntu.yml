@@ -137,7 +137,7 @@ jobs:
             exit 1
           fi
 
-      # Pause for 50 seconds before retrying
+      # Pause for 5x seconds before retrying
       - name: Wait before retry
         if: steps.run-script-1.outcome == 'failure'
         run: sleep 52
